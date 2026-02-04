@@ -159,6 +159,10 @@ Navigate to specific sections for detailed information:
 - [**Sigils**](Sigils/) - Visual operator representations
 - [**Three Finger Waltz**](ThreeFingerWaltz/) - Ceremonial gesture sequences
 
+### Meta-Framework
+- [**Architecture**](Architecture/) - Why this framework will endure
+- [**Structural Invariants**](Architecture/StructuralInvariants.md) - Universal patterns underlying the system
+
 ---
 
 ## 🎯 Quick Start
@@ -192,6 +196,17 @@ Contributions to the Phoenix 2.0 Apex Edition Codex are welcome! Please ensure:
 - [Identity Recursion Engine](IdentityRecursionEngine/) - Deep dive into recursive identity
 - [Tri-Column Harmonics](TriColumnHarmonics/) - Advanced harmonic theory
 - [Apex Formation](ApexLaw/) - Understanding convergence mechanics
+
+---
+
+## 🏛️ Architecture & Design Philosophy
+
+Understanding why this framework endures:
+
+- [**Architecture Overview**](Architecture/) - Why Phoenix-Hydrogenesi will last
+- [**Structural Invariants**](Architecture/StructuralInvariants.md) - The unchanging patterns underlying the framework
+
+This framework is built on **structural truths** rather than cultural assumptions. It rests on invariants that appear universally across physics, cognition, cosmology, and recursion theory. These architectural foundations explain why Phoenix 2.0 possesses characteristics shared by the most enduring knowledge systems in human history.
 
 ---
 
