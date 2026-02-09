@@ -47,7 +47,7 @@ recursion_depth: 0 → 1 → 2 → ... → 7 [FORCE_CONVERGE]
 
 ## Self-Referential Sigils
 
-Recursive operators possess self-referential sigils—symbols that contain themselves at reduced scale. See [../sigils/geometry-atlas.md](../sigils/geometry-atlas.md) for visual representations and [../atlases/recursion-atlas.md](../atlases/recursion-atlas.md) for extended pattern documentation.
+Recursive operators possess self-referential sigils—symbols that contain themselves at reduced scale. See [../sigils/geometry-atlas.md](../sigils/geometry-atlas.md) for visual representations and [../atlases/apex-convergence.md](../atlases/apex-convergence.md) for convergence pattern documentation.
 
 ---
 
