@@ -115,6 +115,13 @@ Phoenix-2.0-Apex-Edition/
 ### Core Documentation
 - [Quickstart Guide](./guides/quickstart.md) — Learn the basics of Phoenix 2.0
 - [Glossary](./guides/glossary.md) — Terminology reference
+- [Substrate Layer Chapter](./guides/substrate-layer-chapter.md) — Deep dive into the primordial field
+
+### Codex Architecture
+- [The Twelve Laws](./Universal-Laws/TwelveLawsCanon.md) — The canonical law reconstruction
+- [Triad Canon](./Universal-Laws/TriadCanon.md) — The Five Apex Laws
+- [Phoenix-Hydrogenesi Lineage Map](./Atlases/PhoenixHydrogenseiLineageMap.md) — Pillar relationships
+- [Codex Hierarchy Diagram](./Atlases/CodexHierarchyDiagram.md) — Full vertical architecture
 
 ### Operators
 Explore the eight fundamental operators:
