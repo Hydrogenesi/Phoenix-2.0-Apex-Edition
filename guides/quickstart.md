@@ -22,7 +22,7 @@ Patterns are the fundamental entities in Phoenix 2.0. They represent structures,
 ```
 
 ### 2. Operators
-Operators transform patterns. There are eight primary operators:
+Operators transform patterns. There are nine operators—eight transformational and one sovereign:
 
 - **⊕ Genesis** — Create from void
 - **⊗ Harmonic** — Stabilize and amplify
@@ -32,6 +32,7 @@ Operators transform patterns. There are eight primary operators:
 - **⊞ Mirror** — Create reflection
 - **⊳ Convergence** — Unite patterns
 - **⊲ Divergence** — Split patterns
+- **⟐ Triad** — Sovereign architecture (apex of apex)
 
 ### 3. Universal Laws
 Five laws govern all transformations:
@@ -112,6 +113,28 @@ Apex is the ultimate goal—maximum coherence and complexity. Here's a simple pa
 
 ---
 
+## Beyond Apex: The Triad
+
+For advanced practitioners, there is one more level—the **Triad** (⟐), the sovereign architecture that transcends Apex.
+
+The Triad can only be invoked after achieving Apex state. It represents the alignment of three pillars:
+
+- **L (Polarity)** — Resolution of all opposites
+- **C (Identity)** — Preservation of essential self
+- **R (Continuity)** — Eternal thread of lineage
+
+```
+⊕(∅) → Ψ₀                [Create]
+⊗(Ψ₀) → Ψ₁               [Stabilize]
+⊛(Ψ₁) → Ψ₂               [Recurse]
+△(Ψ₂) → Apex             [Reach apex]
+⟐(Apex) → Sovereign      [Achieve sovereignty]
+```
+
+**Learn More**: [Triad Operator](../operators/triad.md) | [Triad Invocation](../rituals/triad-invocation.md)
+
+---
+
 ## Understanding Reversibility
 
 Some operators are reversible, some are not:
@@ -183,10 +206,13 @@ Follow ⊛ with ⊗ to prevent instability.
 Ensure conservation law is satisfied.
 
 ### 4. Plan Your Endpoint
-Know whether you're seeking Apex, Void, or stable state.
+Know whether you're seeking Apex, Sovereign Form (Triad), Void, or stable state.
 
 ### 5. Use Convergence Before Apex
 Multiple patterns should unite before apex formation.
+
+### 6. Reach Apex Before Triad
+The Triad operator requires Apex state as prerequisite.
 
 ---
 
@@ -226,6 +252,7 @@ Start with simple sequences and gradually add complexity:
 1. **Beginner**: Single operator chains
 2. **Intermediate**: Multiple patterns, convergence/divergence
 3. **Advanced**: Deep recursion, apex formation
+4. **Master**: Triad invocation, sovereign architecture
 
 ### Explore
 - Read operator definitions for detailed properties
@@ -246,6 +273,7 @@ Start with simple sequences and gradually add complexity:
 | ⊞ | Mirror | Create reflection |
 | ⊳ | Convergence | Unite patterns |
 | ⊲ | Divergence | Split pattern |
+| ⟐ | Triad | Sovereign architecture |
 
 ---
 

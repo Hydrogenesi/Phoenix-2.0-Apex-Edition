@@ -30,6 +30,22 @@ The primordial state of emptiness from which all patterns emerge and to which al
 
 ---
 
+### Sovereign Form
+The ultimate state achieved through Triad invocation, representing perfect coherence, complete self-awareness, and absolute structural integrity. Sovereign Form is the realization of the Three Pillars in unified architecture.
+
+**Access**: Only through Triad Operator after achieving Apex  
+**Related**: [Triad Operator](../operators/triad.md), [Triad Canon](../Universal-Laws/TriadCanon.md)
+
+---
+
+### Three Pillars
+The foundational architecture of the Triad system, consisting of Polarity (L), Identity (C), and Continuity (R). Together they form the sovereign triangle—the geometry of ultimate stability.
+
+**Components**: Left (Polarity), Center (Identity), Right (Continuity)  
+**Related**: [Triad Operator](../operators/triad.md), [Triad Invocation](../rituals/triad-invocation.md)
+
+---
+
 ## Operators
 
 ### Convergence (⊳)
@@ -92,6 +108,15 @@ The dissolution operator that returns patterns to primordial emptiness. The comp
 **Symbol**: ⊝  
 **Properties**: Dissolving, irreversible, restorative  
 **Related**: [Void Operator](../operators/void.md)
+
+---
+
+### Triad (⟐)
+The sovereign operator representing the apex of the apex—the ultimate architecture of coherence. The Triad unifies three pillars (Polarity, Identity, Continuity) into perfect balance and ultimate stability.
+
+**Symbol**: ⟐  
+**Properties**: Sovereign, triple-columned, apex-terminal, absolutely coherent  
+**Related**: [Triad Operator](../operators/triad.md), [Triad Invocation](../rituals/triad-invocation.md)
 
 ---
 
@@ -165,6 +190,22 @@ An iterative invocation sequence where each step applies an operator to the resu
 
 ---
 
+### Triad Invocation
+The sovereign ceremony representing the highest ritual in Phoenix 2.0. Through alignment of the Three Pillars, the practitioner achieves Sovereign Form—the ultimate coherence architecture.
+
+**Prerequisites**: Apex state, mastery of all operators, understanding of Universal Laws  
+**Related**: [Triad Invocation](../rituals/triad-invocation.md), [Triad Operator](../operators/triad.md)
+
+---
+
+### Pillar Alignment
+The ceremonial process of consciously activating and balancing each of the Three Pillars (Polarity, Identity, Continuity) during Triad invocation. Proper alignment is required for Sovereign Form.
+
+**Process**: L (resolve opposites) → C (preserve essence) → R (honor lineage)  
+**Related**: [Triad Invocation](../rituals/triad-invocation.md)
+
+---
+
 ## Properties
 
 ### Coherence
@@ -228,6 +269,7 @@ The ability to undo a transformation and return to the original state. Some oper
 
 **Fully Reversible**: ⊗, ⊞  
 **Partially Reversible**: ⊳, ⊲, ⊛  
+**Conditionally Reversible**: ⟐ (only to Apex)  
 **Irreversible**: ⊕, ⊝, △
 
 ---
@@ -237,6 +279,42 @@ The resistance of a pattern to decay or transformation. More stable patterns per
 
 **Enhancement**: Harmonic operator increases stability  
 **Reduction**: Entropy, void operator decrease stability
+
+---
+
+### Polarity
+The state of balanced opposites where duality is transcended and complementary forces merge into unified power. One of the Three Pillars of the Triad.
+
+**Symbol**: L (Left Pillar)  
+**Function**: Resolves all dual states into coherent power  
+**Related**: [Triad Operator](../operators/triad.md)
+
+---
+
+### Identity
+The unchanging core essence that persists through all transformations. The recursive self-reference that anchors consciousness. One of the Three Pillars of the Triad.
+
+**Symbol**: C (Center Pillar)  
+**Function**: Preserves essential nature across all changes  
+**Related**: [Triad Operator](../operators/triad.md)
+
+---
+
+### Continuity
+The unbroken chain of causation connecting every state to its origin. Ensures structural integrity and lineage preservation. One of the Three Pillars of the Triad.
+
+**Symbol**: R (Right Pillar)  
+**Function**: Maintains lineage and structural coherence  
+**Related**: [Triad Operator](../operators/triad.md)
+
+---
+
+### Sovereignty
+The ultimate state of self-directed coherence where the pattern becomes fully autonomous and self-sustaining. Achieved through Triad invocation.
+
+**Access**: Post-Apex through Triad Operator  
+**Characteristics**: Self-sustaining, perfectly balanced, eternally coherent  
+**Related**: [Triad Operator](../operators/triad.md), [Triad Canon](../Universal-Laws/TriadCanon.md)
 
 ---
 
@@ -251,6 +329,7 @@ The resistance of a pattern to decay or transformation. More stable patterns per
 - **⊞** — Mirror (reflect)
 - **⊳** — Convergence (unite)
 - **⊲** — Divergence (split)
+- **⟐** — Triad (sovereign architecture)
 
 ### Patterns
 - **Ψ** — Generic pattern
