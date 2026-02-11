@@ -83,6 +83,8 @@ Each operator follows a **tri-column harmonic structure** and includes ceremonia
 ```
 Phoenix-2.0-Apex-Edition/
 ├── README.md                 # This file
+├── BUILD.md                  # Build system documentation
+├── Makefile                  # TRIAD SYSTEM build targets
 ├── operators/                # Operator definitions
 │   ├── genesis.md
 │   ├── harmonic.md
@@ -105,6 +107,11 @@ Phoenix-2.0-Apex-Edition/
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
+├── codex/                    # LaTeX source files
+│   └── phoenix_codex.tex
+├── scripts/                  # Build automation scripts
+│   ├── generate_sigil_cards.sh
+│   └── export_svg.sh
 └── LICENSE
 ```
 
@@ -115,6 +122,7 @@ Phoenix-2.0-Apex-Edition/
 ### Core Documentation
 - [Quickstart Guide](./guides/quickstart.md) — Learn the basics of Phoenix 2.0
 - [Glossary](./guides/glossary.md) — Terminology reference
+- [Build System](./BUILD.md) — Documentation build infrastructure
 
 ### Operators
 Explore the eight fundamental operators:
