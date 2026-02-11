@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+
+# LaTeX temporary files
+codex/*.aux
+codex/*.fdb_latexmk
+codex/*.fls
+codex/*.log
+codex/*.out
+codex/*.pdf
+codex/*.synctex.gz
+codex/*.toc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
