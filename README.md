@@ -105,6 +105,18 @@ Phoenix-2.0-Apex-Edition/
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
+├── TheThird/                 # Triadic Knot Protocol
+│   ├── README.md
+│   └── Examples/
+│       ├── Phoenix-to-Knot-Binding.md
+│       ├── Hydrogenesi-to-Knot-Binding.md
+│       ├── Triadic-Loop-Integration.md
+│       └── Apex-Convergence-Example.md
+├── Universal-Laws/           # Codex universal laws
+│   ├── README.md
+│   └── TriadCanon.md
+├── Atlases/                  # System architecture diagrams
+│   └── CodexHierarchyDiagram.md
 └── LICENSE
 ```
 
@@ -140,6 +152,14 @@ Master ceremonial invocation:
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
+
+### The Third: Triadic Knot Protocol
+Explore cross-pillar integration and binding topology:
+- [The Third Overview](./TheThird/README.md) — Introduction to the Triadic Knot Protocol
+- [Phoenix → Knot Binding](./TheThird/Examples/Phoenix-to-Knot-Binding.md) — Transform encoding
+- [Hydrogenesi → Knot Binding](./TheThird/Examples/Hydrogenesi-to-Knot-Binding.md) — Constraint validation
+- [Triadic Loop (P ↔ K ↔ H)](./TheThird/Examples/Triadic-Loop-Integration.md) — Complete closed loop
+- [Apex Convergence Example](./TheThird/Examples/Apex-Convergence-Example.md) — Practical apex formation
 
 ---
 
