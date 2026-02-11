@@ -50,10 +50,8 @@ EOF
 echo "Scanning markdown files..."
 echo ""
 
-# Find all markdown files
-MD_FILES=$(find . -name "*.md" -type f | grep -v "node_modules" | grep -v ".git" | sort)
-
-for md_file in $MD_FILES; do
+# Find all markdown files and process them safely
+while IFS= read -r -d '' md_file; do
     echo -e "${BLUE}Scanning:${NC} $md_file"
     
     # This is a placeholder - actual implementation would:
@@ -66,7 +64,7 @@ for md_file in $MD_FILES; do
     # Example output:
     # echo "  ${GREEN}✓${NC} [Law of Emergence](../laws/emergence.md)"
     # echo "  ${GREEN}✓${NC} [Recursive Operator](./recursive.md)"
-done
+done < <(find . -name "*.md" -type f -not -path "*/node_modules/*" -not -path "*/.git/*" -print0 | sort -z)
 
 echo ""
 echo "═══════════════════════════════════════════════════════════"

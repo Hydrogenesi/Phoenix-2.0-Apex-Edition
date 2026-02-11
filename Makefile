@@ -235,21 +235,23 @@ test-links:  ## Validate internal links
 test-structure:  ## Validate repository structure
 	@echo "🏗️  Validating repository structure..."
 	@echo "Checking required directories..."
-	@test -d operators || (echo "✗ Missing: operators/" && exit 1)
-	@echo "  ✓ operators/"
-	@test -d laws || (echo "✗ Missing: laws/" && exit 1)
-	@echo "  ✓ laws/"
-	@test -d rituals || (echo "✗ Missing: rituals/" && exit 1)
-	@echo "  ✓ rituals/"
-	@test -d guides || (echo "✗ Missing: guides/" && exit 1)
-	@echo "  ✓ guides/"
-	@test -d $(ATLASES_DIR) || (echo "✗ Missing: $(ATLASES_DIR)/" && exit 1)
-	@echo "  ✓ $(ATLASES_DIR)/"
+	@for dir in operators laws rituals guides $(ATLASES_DIR); do \
+		if [ -d "$$dir" ]; then \
+			echo "  ✓ $$dir/"; \
+		else \
+			echo "✗ Missing: $$dir/"; \
+			exit 1; \
+		fi; \
+	done
 	@echo "Checking core documentation files..."
-	@test -f README.md || (echo "✗ Missing: README.md" && exit 1)
-	@echo "  ✓ README.md"
-	@test -f LICENSE || (echo "✗ Missing: LICENSE" && exit 1)
-	@echo "  ✓ LICENSE"
+	@for file in README.md LICENSE; do \
+		if [ -f "$$file" ]; then \
+			echo "  ✓ $$file"; \
+		else \
+			echo "✗ Missing: $$file"; \
+			exit 1; \
+		fi; \
+	done
 	@echo "✓ Repository structure is valid!"
 
 # ═══════════════════════════════════════════════════════════

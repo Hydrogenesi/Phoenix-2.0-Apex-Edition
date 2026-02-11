@@ -188,12 +188,12 @@ if [ ! -d "$INPUT_DIR" ]; then
 fi
 
 # Process all markdown files
-find "$INPUT_DIR" -name "*.md" -type f | while read -r md_file; do
+while read -r md_file; do
     process_markdown_file "$md_file"
-done
+done < <(find "$INPUT_DIR" -name "*.md" -type f)
 
 # Process standalone .mmd files
-find "$INPUT_DIR" -name "*.mmd" -type f | while read -r mmd_file; do
+while read -r mmd_file; do
     log "Processing standalone: $mmd_file"
     SCANNED=$((SCANNED + 1))
     
@@ -205,7 +205,7 @@ find "$INPUT_DIR" -name "*.mmd" -type f | while read -r mmd_file; do
     else
         FAILED=$((FAILED + 1))
     fi
-done
+done < <(find "$INPUT_DIR" -name "*.mmd" -type f)
 
 # Print summary
 echo ""
