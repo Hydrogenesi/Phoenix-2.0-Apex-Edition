@@ -103,6 +103,12 @@ Phoenix-2.0-Apex-Edition/
 │   ├── recursion-cycles.md
 │   ├── apex-formation.md
 │   └── triadic-knot-protocol.md
+├── examples/                 # Practical integration examples
+│   ├── README.md
+│   ├── identity-preservation-example.md
+│   ├── conflict-resolution-example.md
+│   ├── system-integration-example.md
+│   └── resilient-architecture-example.md
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
@@ -142,6 +148,13 @@ Master ceremonial invocation:
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
 - [Triadic Knot Protocol](./rituals/triadic-knot-protocol.md) — Cross-pillar binding
+
+### Examples
+Explore practical applications:
+- [Identity Preservation](./examples/identity-preservation-example.md) — Maintain essence through transformation
+- [Conflict Resolution](./examples/conflict-resolution-example.md) — Resolve opposing forces
+- [System Integration](./examples/system-integration-example.md) — Integrate independent systems
+- [Resilient Architecture](./examples/resilient-architecture-example.md) — Build mutually-supporting structures
 
 ---
 
