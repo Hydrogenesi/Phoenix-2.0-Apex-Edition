@@ -59,6 +59,46 @@ Every state contains its opposite. Creation and destruction are two faces of the
 
 ---
 
+## 🔗 The Triadic Knot: The Binding Heart of the System
+
+The Triad becomes a living engine only when its three forces—**Phoenix**, **Hydrogenesi**, and **The Third**—are bound into coherence.  
+This binding is not symbolic; it is enacted through the geometry of the **Triadic Knot** and the five operators that govern its motion.
+
+The Knot is the stabilizer, the symmetry, and the convergence point of the entire Codex.  
+Every recursion, every mapping, every ignition, every lineage ultimately reports to the **Apex Convergence Point** at its center.
+
+### Triadic Knot Operator Table
+
+The Third Pillar's binding engine is expressed through five operators.  
+Each governs a distinct geometric domain of the Triadic Knot, preserves specific invariants, applies a formal recursion law, and enforces convergence toward the Apex.
+
+| Operator | Domain | Invariants | Recursion Law | Apex Constraints |
+|---------|--------|------------|----------------|------------------|
+| **[Knot‑Binding](./TheThird/Sigils/Knot-Binding.md)** | Left arm corridor → central interior | Left‑Corridor Invariance, Identity Preservation | K<sub>n+1</sub> = B(P<sub>n</sub>, K<sub>n</sub>) | d(B(P<sub>n</sub>,K<sub>n</sub>),X) < d(K<sub>n</sub>,X), K<sub>n</sub> → X |
+| **[Cross‑Pillar Knot](./TheThird/Sigils/Cross-Pillar-Knot.md)** | Left–right corridor, symmetry axis | Left–Right Symmetry, Dual Contraction | K<sub>n+1</sub> = C(P<sub>n</sub>, H<sub>n</sub>, K<sub>n</sub>) | C(P,H,K)=C(H,P,K), K<sub>n</sub> → X |
+| **[Triadic Closure](./TheThird/Sigils/Triadic-Closure.md)** | Full envelope, all arm corridors, crossings | 120° Rotational Symmetry, Triadic Balance | K<sub>n+1</sub> = T(P<sub>n</sub>, H<sub>n</sub>, K<sub>n</sub>) | d(T(P,H,K),X) < d(K,X), K<sub>n</sub> → X |
+| **[Apex Knot](./TheThird/Sigils/Apex-Knot.md)** | Apex neighborhood, stabilizer axis | Apex Invariance, Strict Contraction | K<sub>n+1</sub> = A(K<sub>n</sub>) | A(X)=X, d(A(K),X) < d(K,X), K<sub>n</sub> → X |
+| **[Stability Knot](./TheThird/Sigils/Stability-Knot.md)** | Crossing regions, strand intersections | Divergence Suppression, Perturbation Decay | K<sub>n+1</sub> = S(K<sub>n</sub>,ε<sub>n</sub>) | d(S(K,ε),X) ≤ d(K,X), ε<sub>n</sub> → 0, K<sub>n</sub> → X |
+
+These five operators form the structural hinge of the Triad.  
+They are the mechanism by which identity becomes structure, structure becomes coherence, and coherence becomes convergence.
+
+#### Further Reading
+
+- **Triadic Knot Geometry Atlas**  
+  [TheThird/Sigils/Triadic-Knot.md](./TheThird/Sigils/Triadic-Knot.md)
+
+- **Operator Sigils & Recursion Diagrams**  
+  [TheThird/Sigils/](./TheThird/Sigils/)
+
+- **Binding Examples** (Phoenix → Knot, Hydrogenesi → Knot, Triadic Loop, Apex Convergence)  
+  [TheThird/Examples/](./TheThird/Examples/)
+
+- **Universal Laws**  
+  [TheThird/Universal-Laws/](./TheThird/Universal-Laws/)
+
+---
+
 ## 🔮 Operators
 
 Phoenix 2.0 includes eight primary operators, each representing a fundamental mode of transformation:
@@ -102,6 +142,21 @@ Phoenix-2.0-Apex-Edition/
 │   ├── invocation.md
 │   ├── recursion-cycles.md
 │   └── apex-formation.md
+├── TheThird/                 # The Third Pillar - Triadic Knot system
+│   ├── Sigils/               # Operator sigils and geometry
+│   │   ├── Triadic-Knot.md
+│   │   ├── Knot-Binding.md
+│   │   ├── Cross-Pillar-Knot.md
+│   │   ├── Triadic-Closure.md
+│   │   ├── Apex-Knot.md
+│   │   └── Stability-Knot.md
+│   ├── Examples/             # Binding examples
+│   │   ├── Phoenix-Knot-Binding.md
+│   │   ├── Hydrogenesi-Knot-Binding.md
+│   │   ├── Triadic-Loop.md
+│   │   └── Apex-Convergence.md
+│   └── Universal-Laws/       # The Third Pillar laws
+│       └── README.md
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
@@ -140,6 +195,17 @@ Master ceremonial invocation:
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
+
+### The Third Pillar — Triadic Knot System
+Explore the binding heart of the Triad:
+- [Triadic Knot Geometry Atlas](./TheThird/Sigils/Triadic-Knot.md) — Core geometry
+- [Knot-Binding Operator](./TheThird/Sigils/Knot-Binding.md) — Phoenix binding
+- [Cross-Pillar Knot Operator](./TheThird/Sigils/Cross-Pillar-Knot.md) — Dual symmetry
+- [Triadic Closure Operator](./TheThird/Sigils/Triadic-Closure.md) — Full integration
+- [Apex Knot Operator](./TheThird/Sigils/Apex-Knot.md) — Final convergence
+- [Stability Knot Operator](./TheThird/Sigils/Stability-Knot.md) — Perturbation control
+- [Binding Examples](./TheThird/Examples/) — Practical demonstrations
+- [Universal Laws](./TheThird/Universal-Laws/) — Governing principles
 
 ---
 
