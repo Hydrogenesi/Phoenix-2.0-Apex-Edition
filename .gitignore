@@ -1,0 +1,29 @@
+# Build artifacts
+build/
+output/
+wiki/
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/

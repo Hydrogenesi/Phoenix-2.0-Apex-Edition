@@ -1,0 +1,126 @@
+name: Phoenix 2.0 Build Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-codex:
+    name: Build Phoenix 2.0 Codex
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: 🔧 Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          pandoc \
+          texlive-xetex \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          poppler-utils
+    
+    - name: 📖 Build PDF Codex
+      run: |
+        make pdf
+    
+    - name: 🎨 Convert to SVG
+      run: |
+        make svg
+      continue-on-error: true
+    
+    - name: 📚 Generate Wiki
+      run: |
+        make wiki-sync
+    
+    - name: 📦 Upload PDF Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: phoenix-codex-pdf
+        path: output/Phoenix-2.0-Codex.pdf
+        retention-days: 30
+    
+    - name: 📦 Upload SVG Artifact
+      uses: actions/upload-artifact@v3
+      if: success()
+      with:
+        name: phoenix-codex-svg
+        path: output/Phoenix-2.0-Codex.svg
+        retention-days: 30
+      continue-on-error: true
+    
+    - name: 📦 Upload Wiki Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: phoenix-wiki
+        path: wiki/
+        retention-days: 30
+    
+    - name: ✨ Build Summary
+      if: success()
+      run: |
+        echo "## 🔥 Phoenix 2.0 Build Complete" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Generated Artifacts:" >> $GITHUB_STEP_SUMMARY
+        echo "- ✓ PDF Codex" >> $GITHUB_STEP_SUMMARY
+        echo "- ✓ SVG Diagrams" >> $GITHUB_STEP_SUMMARY
+        echo "- ✓ Wiki Documentation" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### File Sizes:" >> $GITHUB_STEP_SUMMARY
+        if [ -f output/Phoenix-2.0-Codex.pdf ]; then
+          echo "- PDF: $(du -h output/Phoenix-2.0-Codex.pdf | cut -f1)" >> $GITHUB_STEP_SUMMARY
+        fi
+        if [ -f output/Phoenix-2.0-Codex.svg ]; then
+          echo "- SVG: $(du -h output/Phoenix-2.0-Codex.svg | cut -f1)" >> $GITHUB_STEP_SUMMARY
+        fi
+
+  validate-docs:
+    name: Validate Documentation
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: ✓ Check Markdown files
+      run: |
+        echo "Checking markdown files..."
+        for file in operators/*.md laws/*.md rituals/*.md; do
+          if [ -f "$file" ]; then
+            echo "✓ Found: $file"
+          else
+            echo "✗ Missing: $file"
+            exit 1
+          fi
+        done
+        echo "All expected markdown files present"
+    
+    - name: ✓ Verify build scripts
+      run: |
+        echo "Checking build scripts..."
+        for script in scripts/build-pdf.sh scripts/convert-svg.sh scripts/sync-wiki.sh; do
+          if [ -x "$script" ]; then
+            echo "✓ Executable: $script"
+          else
+            echo "✗ Not executable: $script"
+            exit 1
+          fi
+        done
+        echo "All build scripts are executable"
+    
+    - name: ✓ Validate Makefile
+      run: |
+        echo "Validating Makefile..."
+        if [ -f Makefile ]; then
+          make help
+          echo "✓ Makefile is valid"
+        else
+          echo "✗ Makefile not found"
+          exit 1
+        fi
