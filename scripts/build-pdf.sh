@@ -143,6 +143,7 @@ cat README.md >> "$BUILD_DIR/combined.md"
 echo -e "\n\n\\newpage\n\n# PART I: OPERATORS\n" >> "$BUILD_DIR/combined.md"
 
 for op in operators/*.md; do
+    [ -f "$op" ] || continue
     echo -e "\n\\newpage\n" >> "$BUILD_DIR/combined.md"
     cat "$op" >> "$BUILD_DIR/combined.md"
 done
@@ -150,6 +151,7 @@ done
 echo -e "\n\n\\newpage\n\n# PART II: UNIVERSAL LAWS\n" >> "$BUILD_DIR/combined.md"
 
 for law in laws/*.md; do
+    [ -f "$law" ] || continue
     echo -e "\n\\newpage\n" >> "$BUILD_DIR/combined.md"
     cat "$law" >> "$BUILD_DIR/combined.md"
 done
@@ -157,6 +159,7 @@ done
 echo -e "\n\n\\newpage\n\n# PART III: RITUALS\n" >> "$BUILD_DIR/combined.md"
 
 for ritual in rituals/*.md; do
+    [ -f "$ritual" ] || continue
     echo -e "\n\\newpage\n" >> "$BUILD_DIR/combined.md"
     cat "$ritual" >> "$BUILD_DIR/combined.md"
 done

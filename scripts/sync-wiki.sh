@@ -20,6 +20,7 @@ cp README.md "$WIKI_DIR/Home.md"
 # Sync operators
 echo "🔧 Syncing operators..."
 for op in operators/*.md; do
+    [ -f "$op" ] || continue
     filename=$(basename "$op")
     cp "$op" "$WIKI_DIR/operators/$filename"
 done
@@ -27,6 +28,7 @@ done
 # Sync laws
 echo "⚖️  Syncing universal laws..."
 for law in laws/*.md; do
+    [ -f "$law" ] || continue
     filename=$(basename "$law")
     cp "$law" "$WIKI_DIR/laws/$filename"
 done
@@ -34,6 +36,7 @@ done
 # Sync rituals
 echo "🔮 Syncing rituals..."
 for ritual in rituals/*.md; do
+    [ -f "$ritual" ] || continue
     filename=$(basename "$ritual")
     cp "$ritual" "$WIKI_DIR/rituals/$filename"
 done
@@ -41,6 +44,7 @@ done
 # Sync guides
 echo "📖 Syncing guides..."
 for guide in guides/*.md; do
+    [ -f "$guide" ] || continue
     filename=$(basename "$guide")
     cp "$guide" "$WIKI_DIR/guides/$filename"
 done
