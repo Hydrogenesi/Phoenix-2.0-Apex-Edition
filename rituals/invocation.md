@@ -219,6 +219,7 @@ Know your end state: Apex, Void, or stable pattern.
 
 - [Recursion Cycles](./recursion-cycles.md) — Iterative invocation patterns
 - [Apex Formation](./apex-formation.md) — Terminal invocation sequences
+- [Triadic Knot Protocol](./triadic-knot-protocol.md) — Cross-pillar binding patterns
 - [All Operators](../README.md#-operators) — Operator reference
 - [Universal Laws](../README.md#%EF%B8%8F-universal-laws) — Governing principles
 
