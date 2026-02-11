@@ -197,8 +197,8 @@ find "$INPUT_DIR" -name "*.mmd" -type f | while read -r mmd_file; do
     log "Processing standalone: $mmd_file"
     SCANNED=$((SCANNED + 1))
     
-    local base_name=$(basename "$mmd_file" .mmd)
-    local output_svg="$OUTPUT_DIR/${base_name}.svg"
+    base_name=$(basename "$mmd_file" .mmd)
+    output_svg="$OUTPUT_DIR/${base_name}.svg"
     
     if process_standalone_mermaid "$mmd_file" "$output_svg"; then
         PROCESSED=$((PROCESSED + 1))
