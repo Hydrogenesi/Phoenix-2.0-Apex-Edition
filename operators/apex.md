@@ -111,4 +111,4 @@ when depth(Ψₙ) ≥ threshold:
 
 ---
 
-[◀ Previous: Recursive Operator](./recursive.md) | [Back to Operators](../README.md#-operators) | [Next: Void Operator ▶](./void.md)
+[◀ Previous: Recursive Operator](./recursive.md) | [Back to Operators](../README.md#-operators) | [Next: Triad Operator ▶](./triad.md)

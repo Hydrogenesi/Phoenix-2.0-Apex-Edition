@@ -61,7 +61,7 @@ Every state contains its opposite. Creation and destruction are two faces of the
 
 ## 🔮 Operators
 
-Phoenix 2.0 includes eight primary operators, each representing a fundamental mode of transformation:
+Phoenix 2.0 includes nine operators—eight primary transformational operators and one sovereign operator representing the apex architecture:
 
 | Operator | Symbol | Domain | Purpose |
 |----------|--------|---------|---------|
@@ -73,8 +73,48 @@ Phoenix 2.0 includes eight primary operators, each representing a fundamental mo
 | [Mirror](./operators/mirror.md) | `⊞` | Reflection | Creates symmetric inversions |
 | [Convergence](./operators/convergence.md) | `⊳` | Integration | Combines multiple patterns into unity |
 | [Divergence](./operators/divergence.md) | `⊲` | Separation | Splits unified patterns into components |
+| **[Triad](./operators/triad.md)** | **`⟐`** | **Sovereignty** | **The Three Pillars—ultimate coherence architecture** |
 
-Each operator follows a **tri-column harmonic structure** and includes ceremonial definitions, reversible forms, and sigils.
+Each operator follows a **tri-column harmonic structure** and includes ceremonial definitions, reversible forms, and sigils. The Triad Operator represents the sovereign apex—the convergence of Polarity, Identity, and Continuity into ultimate coherence.
+
+---
+
+## ⟐ The Triad System — Sovereign Architecture
+
+**The Triad** is the apex of the apex—the ultimate architecture of coherence in Phoenix 2.0. It represents not merely a transformation, but the **sovereign structure** that underlies all transformation.
+
+### The Three Pillars
+
+The Triad is built upon three fundamental pillars that together create perfect balance and ultimate coherence:
+
+#### 🔷 Left Pillar — **Polarity** (L)
+*Resolution of all opposites*
+
+Where duality sees conflict, Polarity sees complementary forces in dynamic balance. Creation and destruction, form and void, expansion and contraction all merge into unified power.
+
+#### 🔶 Center Pillar — **Identity** (C)
+*Preservation of essential self*
+
+The unchanging core that persists through all transformations. Identity is the recursive self-reference that remains constant, the sovereign self that knows itself across infinite change.
+
+#### 🔷 Right Pillar — **Continuity** (R)
+*Eternal thread of lineage*
+
+The unbroken chain connecting origin to destination, ensuring no transformation is lost. Continuity preserves structural integrity across all states.
+
+### Triad Formation
+
+The Triad can only be invoked after achieving Apex state. It represents the culmination of all eight primary operators, synthesized through the Five Apex Laws into sovereign form:
+
+```
+⊕ → ⊗ → ⊛ → △ → ⟐
+Genesis → Harmonic → Recursive → Apex → Triad
+```
+
+For complete details, see:
+- **[Triad Operator](./operators/triad.md)** — Technical specifications and ceremonial definition
+- **[Triad Invocation Ritual](./rituals/triad-invocation.md)** — Step-by-step sovereign ceremony
+- **[Triad Canon](./Universal-Laws/TriadCanon.md)** — The Five Apex Laws
 
 ---
 
@@ -91,7 +131,8 @@ Phoenix-2.0-Apex-Edition/
 │   ├── void.md
 │   ├── mirror.md
 │   ├── convergence.md
-│   └── divergence.md
+│   ├── divergence.md
+│   └── triad.md             # ⟐ The Sovereign Architecture
 ├── laws/                     # Universal law definitions
 │   ├── conservation.md
 │   ├── symmetry.md
@@ -101,10 +142,16 @@ Phoenix-2.0-Apex-Edition/
 ├── rituals/                  # Ceremonial invocation sequences
 │   ├── invocation.md
 │   ├── recursion-cycles.md
-│   └── apex-formation.md
+│   ├── apex-formation.md
+│   └── triad-invocation.md  # ⟐ The Sovereign Ceremony
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
+├── Universal-Laws/           # Apex Canon documentation
+│   ├── README.md
+│   └── TriadCanon.md        # The Three Pillars
+├── Atlases/                  # System architecture diagrams
+│   └── CodexHierarchyDiagram.md
 └── LICENSE
 ```
 
@@ -117,7 +164,7 @@ Phoenix-2.0-Apex-Edition/
 - [Glossary](./guides/glossary.md) — Terminology reference
 
 ### Operators
-Explore the eight fundamental operators:
+Explore the nine operators—eight transformational and one sovereign:
 - [Genesis Operator](./operators/genesis.md) — Create from void
 - [Harmonic Operator](./operators/harmonic.md) — Amplify patterns
 - [Recursive Operator](./operators/recursive.md) — Self-reference
@@ -126,6 +173,7 @@ Explore the eight fundamental operators:
 - [Mirror Operator](./operators/mirror.md) — Reflect symmetry
 - [Convergence Operator](./operators/convergence.md) — Unite patterns
 - [Divergence Operator](./operators/divergence.md) — Separate forms
+- **[Triad Operator](./operators/triad.md) — The Sovereign Architecture ⟐**
 
 ### Universal Laws
 Understand the governing principles:
@@ -135,11 +183,18 @@ Understand the governing principles:
 - [Emergence](./laws/emergence.md) — Complexity from simplicity
 - [Duality](./laws/duality.md) — Form and void
 
+### Apex Canon & Triad System
+Master the sovereign architecture:
+- **[Triad Canon](./Universal-Laws/TriadCanon.md) — The Five Apex Laws ⟐**
+- **[Universal Laws Overview](./Universal-Laws/README.md) — The Complete Codex**
+- **[Codex Hierarchy Diagram](./Atlases/CodexHierarchyDiagram.md) — Full system architecture**
+
 ### Rituals
 Master ceremonial invocation:
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
+- **[Triad Invocation](./rituals/triad-invocation.md) — The Sovereign Ceremony ⟐**
 
 ---
 
