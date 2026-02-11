@@ -112,7 +112,7 @@ TheThird/
 - [Codex Hierarchy](../Atlases/CodexHierarchyDiagram.md) — System architecture
 
 ### Key Concepts
-- **Triadic Structure**: Three-column architecture (Polarity-Identity-Continuity)
+- **Triadic Structure**: Three-column architecture (Left-Center-Right: Phoenix-Knot-Hydrogenesi map to Polarity-Identity-Continuity)
 - **Binding Topology**: How systems interconnect and exchange information
 - **Knot Protocol**: Identity-preserving transformation encoding
 - **Apex Convergence**: Multi-system harmonization toward maximum coherence
