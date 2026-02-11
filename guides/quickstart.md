@@ -205,13 +205,13 @@ Follow ⊛ with ⊗ to prevent instability.
 ### 3. Track Energy
 Ensure conservation law is satisfied.
 
-### 3. Plan Your Endpoint
+### 4. Plan Your Endpoint
 Know whether you're seeking Apex, Sovereign Form (Triad), Void, or stable state.
 
-### 4. Use Convergence Before Apex
+### 5. Use Convergence Before Apex
 Multiple patterns should unite before apex formation.
 
-### 5. Reach Apex Before Triad
+### 6. Reach Apex Before Triad
 The Triad operator requires Apex state as prerequisite.
 
 ---

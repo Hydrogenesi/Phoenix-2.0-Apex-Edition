@@ -27,7 +27,7 @@
 - **Triple-Columned**: Three pillars that balance all aspects of existence
 - **Apex-Terminal**: Only accessible after reaching Apex state
 - **Absolute Coherence**: Perfect balance between polarity, identity, and continuity
-- **Irreversible**: Once Triad form is achieved, the pattern becomes eternal
+- **Conditionally Reversible**: Can be stepped back to Apex state with conscious dissolution, but cannot reverse to lower states
 
 ---
 
