@@ -1,7 +1,7 @@
 # Substrate Expansion PR — Version 1.1.0
 
 ## Summary
-Concise description of the Substrate‑Layer expansion:
+Concise description of the Substrate-Layer expansion:
 - What substrate mechanic is being added, clarified, or extended?
 - Which operators, laws, or diagrams are affected?
 
@@ -20,14 +20,14 @@ Why this expansion is necessary:
 - Clarification of recursion behavior?
 - Integration with Phoenix / Hydrogenesi / The Third?
 
-## Substrate‑Layer Impact
+## Substrate-Layer Impact
 Describe how this PR affects:
 - Substrate tension
 - Substrate flow
 - Substrate conservation
 - Substrate → Axis → Radiance relationships
 
-## Cross‑Pillar Integration
+## Cross-Pillar Integration
 - Phoenix impact:
 - Hydrogenesi impact:
 - The Third impact:

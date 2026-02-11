@@ -128,7 +128,7 @@ Substrate recursion occurs when substrate is folded back upon itself through the
 
 Substrate recursion follows the **Law of Recursion** (Law 4):
 
-> *Identity deepens through repeated self‑reference.*
+> *Identity deepens through repeated self-reference.*
 
 Recursive depth is bounded by the **Law of Confinement** (Law 5):
 
