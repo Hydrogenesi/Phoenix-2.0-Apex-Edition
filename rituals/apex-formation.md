@@ -319,6 +319,19 @@ Apex transcends duality by containing all opposites simultaneously.
 
 ---
 
+## Beyond Apex
+
+Once Apex is achieved, the path continues to the **Triad** (⟐)—the sovereign architecture that represents the apex of the apex. The Triad invocation requires:
+
+1. Successful Apex formation
+2. Alignment of the Three Pillars (Polarity, Identity, Continuity)
+3. Deep understanding of all Universal Laws
+4. Conscious intention to claim sovereignty
+
+See [Triad Invocation](./triad-invocation.md) for the complete sovereign ceremony.
+
+---
+
 ## Cross-References
 
 - [Invocation Sequences](./invocation.md) — Building blocks of apex
@@ -329,4 +342,4 @@ Apex transcends duality by containing all opposites simultaneously.
 
 ---
 
-[◀ Previous: Recursion Cycles](./recursion-cycles.md) | [Back to Rituals](../README.md#-quick-navigation)
+[◀ Previous: Recursion Cycles](./recursion-cycles.md) | [Back to Rituals](../README.md#-quick-navigation) | [Next: Triad Invocation ▶](./triad-invocation.md)
