@@ -18,9 +18,10 @@ It is a mechanics.
 
 Within these pages lie:
 
+• [The Twelve Laws](./TwelveLawsCanon.md) — the canonical reconstruction  
 • The Substrate Laws — the primordial field  
 • The Universal Laws — the structural invariants  
-• The Apex Laws — the Triad Canon  
+• [The Apex Laws](./TriadCanon.md) — the Triad Canon  
 • The Phoenix Engine — ignition and recursion  
 • The Hydrogenesi Engine — structure and continuity  
 • The Triad — the apex of the apex  
