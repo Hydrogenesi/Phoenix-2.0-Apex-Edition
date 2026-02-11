@@ -12,7 +12,6 @@ Each example demonstrates a specific use case for triadic knot patterns:
 2. **[Conflict Resolution](./conflict-resolution-example.md)** — Resolve opposing forces
 3. **[System Integration](./system-integration-example.md)** — Integrate three independent systems
 4. **[Resilient Architecture](./resilient-architecture-example.md)** — Build mutually-supporting structures
-5. **[Emergence Engineering](./emergence-engineering-example.md)** — Engineer apex-seeking patterns
 
 ---
 
