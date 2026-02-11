@@ -4,6 +4,10 @@
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
 [![Phoenix](https://img.shields.io/badge/Phoenix-2.0-orange.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/releases)
+
+> **Version 1.0.0 — The Sovereign Kernel Release**  
+> [📚 Wiki](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/wiki) | [📋 Release Notes](./wiki/Release-Notes.md) | [📝 CHANGELOG](./CHANGELOG.md)
 
 ---
 
@@ -83,7 +87,20 @@ Each operator follows a **tri-column harmonic structure** and includes ceremonia
 ```
 Phoenix-2.0-Apex-Edition/
 ├── README.md                 # This file
-├── operators/                # Operator definitions
+├── CHANGELOG.md              # Version history
+├── Makefile                  # Build system
+├── docs/                     # Core Codex documentation
+│   ├── sovereign-kernel.md   # Origin layer
+│   ├── triad-operators.md    # Tension, Binding, Apex
+│   ├── s-os-manual.md        # Sovereign Operating System
+│   ├── diagrams.md           # Visual architecture
+│   └── cover.tex             # LaTeX PDF cover
+├── wiki/                     # GitHub Wiki content
+│   ├── Home.md               # Wiki home page
+│   ├── _Sidebar.md           # Navigation
+│   ├── Triad-Index.md        # Complete reference
+│   └── Release-Notes.md      # v1.0.0 release
+├── operators/                # Primary operator definitions
 │   ├── genesis.md
 │   ├── harmonic.md
 │   ├── recursive.md
@@ -98,19 +115,30 @@ Phoenix-2.0-Apex-Edition/
 │   ├── recursion.md
 │   ├── emergence.md
 │   └── duality.md
-├── rituals/                  # Ceremonial invocation sequences
+├── rituals/                  # Ceremonial invocations
 │   ├── invocation.md
 │   ├── recursion-cycles.md
 │   └── apex-formation.md
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
-└── LICENSE
+├── scripts/                  # Build automation
+│   ├── generate-sigils.sh    # Sigil card generator
+│   └── export-svg.sh         # SVG diagram exporter
+└── .github/workflows/        # CI/CD pipelines
+    └── wiki-deploy.yml       # Auto-deploy Wiki
 ```
 
 ---
 
 ## 🚀 Quick Navigation
+
+### 🔥 v1.0.0 Core Architecture
+- [⊙ Sovereign Kernel](./docs/sovereign-kernel.md) — The Origin Point
+- [🔺 Triad Operators](./docs/triad-operators.md) — Tension, Binding, Apex
+- [⚙️ S-OS Manual](./docs/s-os-manual.md) — Sovereign Operating System
+- [🗺️ Full Diagrams](./docs/diagrams.md) — Visual Architecture
+- [📇 Triad Index](./wiki/Triad-Index.md) — Complete Reference
 
 ### Core Documentation
 - [Quickstart Guide](./guides/quickstart.md) — Learn the basics of Phoenix 2.0
@@ -127,6 +155,12 @@ Explore the eight fundamental operators:
 - [Convergence Operator](./operators/convergence.md) — Unite patterns
 - [Divergence Operator](./operators/divergence.md) — Separate forms
 
+### Triad Operators
+Master the three pillars of sovereignty:
+- [Tension Operator (↹)](./docs/triad-operators.md#i-tension-operator) — Polarity creation
+- [Binding Operator (⊶)](./docs/triad-operators.md#ii-binding-operator) — Identity unification
+- [Apex Operator (△)](./docs/triad-operators.md#iii-apex-operator) — Continuity achievement
+
 ### Universal Laws
 Understand the governing principles:
 - [Conservation](./laws/conservation.md) — Balance preservation
@@ -140,6 +174,40 @@ Master ceremonial invocation:
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
+
+---
+
+## 🏗️ Build System
+
+Phoenix 2.0 includes a complete production pipeline:
+
+```bash
+# Generate all artifacts
+make all
+
+# Generate sigil cards
+make sigils
+
+# Export diagrams to SVG
+make svg
+
+# Generate PDF with cover
+make pdf
+
+# Clean build artifacts
+make clean
+```
+
+See the [Makefile](./Makefile) for details.
+
+---
+
+## 📚 Documentation
+
+- **[Wiki Home](./wiki/Home.md)** — Complete documentation hub
+- **[Release Notes](./wiki/Release-Notes.md)** — v1.0.0 release details
+- **[CHANGELOG](./CHANGELOG.md)** — Version history
+- **[Triad Index](./wiki/Triad-Index.md)** — Alphabetical reference
 
 ---
 
