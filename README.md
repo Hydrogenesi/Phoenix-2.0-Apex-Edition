@@ -102,6 +102,13 @@ Phoenix-2.0-Apex-Edition/
 │   ├── invocation.md
 │   ├── recursion-cycles.md
 │   └── apex-formation.md
+├── TheThird/                 # Third Pillar binding engine
+│   ├── README.md
+│   ├── Sigils/               # Triadic Knot operator definitions
+│   └── Examples/             # Worked convergence examples
+├── Universal-Laws/           # Foundational principles and Triad Canon
+│   ├── README.md
+│   └── TriadCanon.md
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
@@ -140,6 +147,17 @@ Master ceremonial invocation:
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
+
+### The Third Pillar
+Explore the Triadic Knot binding engine:
+- [Third Pillar Overview](./TheThird/README.md) — Binding engine architecture
+- [Operator Sigils](./TheThird/Sigils/) — Five knot operators with formal laws
+- [Worked Examples](./TheThird/Examples/) — Phoenix→Knot, Hydrogenesi→Knot, and Apex convergence
+
+### Universal Laws & Triad Canon
+Foundational principles:
+- [Universal Laws](./Universal-Laws/README.md) — Twelve laws across three layers
+- [Triad Canon](./Universal-Laws/TriadCanon.md) — The Three Pillars architecture
 
 ---
 
