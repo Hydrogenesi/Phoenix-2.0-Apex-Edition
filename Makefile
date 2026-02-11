@@ -19,7 +19,7 @@ help:
 pdf:
 	@echo "Building PDF Codex artifacts..."
 	@if command -v latexmk >/dev/null 2>&1; then \
-		latexmk -pdf -interaction=nonstopmode codex/*.tex; \
+		latexmk -pdf -interaction=nonstopmode -output-directory=build codex/*.tex; \
 	else \
 		echo "Error: latexmk is not installed"; \
 		echo "Please install LaTeX and latexmk to build PDF documents"; \
@@ -40,7 +40,7 @@ svg:
 clean:
 	@echo "Cleaning build artifacts..."
 	@if command -v latexmk >/dev/null 2>&1; then \
-		latexmk -C codex/*.tex; \
+		latexmk -C -output-directory=build codex/*.tex; \
 	else \
 		echo "  latexmk not found, skipping LaTeX cleanup"; \
 		rm -f codex/*.aux codex/*.fdb_latexmk codex/*.fls codex/*.log codex/*.out codex/*.synctex.gz codex/*.toc; \

@@ -16,14 +16,16 @@ echo "Input: $PROJECT_ROOT/operators/*.md"
 echo "Output: $OUTPUT_DIR"
 
 # Process each operator file to extract sigils
+# Expected format: Operator markdown files contain the actual Unicode symbols
+# ⊕ (Genesis), ⊗ (Harmonic), ⊛ (Recursive), △ (Apex),
+# ⊝ (Void), ⊞ (Mirror), ⊳ (Convergence), ⊲ (Divergence)
 for operator_file in "$PROJECT_ROOT"/operators/*.md; do
     if [ -f "$operator_file" ]; then
         operator_name=$(basename "$operator_file" .md)
         echo "  Processing: $operator_name"
         
-        # Extract sigil symbols from markdown files
-        # This is a placeholder implementation - adjust based on actual sigil format
-        grep -E "Symbol|Sigil|⊕|⊗|⊛|△|⊝|⊞|⊳|⊲" "$operator_file" > "$OUTPUT_DIR/${operator_name}_sigil.txt" 2>/dev/null || true
+        # Extract lines containing operator symbols or sigil markers
+        grep -E "^#.*[⊕⊗⊛△⊝⊞⊳⊲]|Symbol|Sigil|^⊕|^⊗|^⊛|^△|^⊝|^⊞|^⊳|^⊲" "$operator_file" > "$OUTPUT_DIR/${operator_name}_sigil.txt" 2>/dev/null || true
     fi
 done
 
