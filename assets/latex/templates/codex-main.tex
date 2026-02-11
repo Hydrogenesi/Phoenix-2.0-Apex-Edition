@@ -1,0 +1,212 @@
+% Phoenix 2.0 Apex Edition - Master Codex Template
+% Professional typesetting for ceremonial documentation
+
+\documentclass[12pt,twoside,openright]{book}
+
+% ============================================================
+% PACKAGES
+% ============================================================
+
+% Font and typography
+\usepackage{fontspec}
+\usepackage{microtype}          % Better typography
+\usepackage[english]{babel}
+
+% Fonts (requires XeLaTeX)
+\setmainfont{EB Garamond}
+\setsansfont{Cinzel}           % For headers
+\setmonofont{Fira Code}        % For code/sigils
+
+% Page layout
+\usepackage[
+  paperwidth=6in,
+  paperheight=9in,
+  inner=0.75in,
+  outer=0.5in,
+  top=0.7in,
+  bottom=0.8in,
+  includeheadfoot
+]{geometry}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{phoenixred}{RGB}{180,0,0}
+\definecolor{hydrogenesiblue}{RGB}{0,60,120}
+\definecolor{apexgold}{RGB}{184,134,11}
+\definecolor{substratepurple}{RGB}{75,0,130}
+
+% Enhanced boxes and frames
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Mathematical notation
+\usepackage{amsmath,amssymb,amsthm}
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{float}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Code listings
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!10}
+}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\sffamily\small\leftmark}
+\fancyhead[RO]{\sffamily\small\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Cross-references
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=phoenixred,
+  urlcolor=hydrogenesiblue,
+  citecolor=apexgold,
+  pdftitle={Phoenix 2.0 Apex Edition},
+  pdfauthor={Hydrogenesi Foundation}
+}
+
+% Index
+\usepackage{makeidx}
+\makeindex
+
+% Custom spacing
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\linespread{1.2}
+
+% ============================================================
+% CUSTOM COMMANDS
+% ============================================================
+
+% Operator symbols (ensure font has these)
+\newcommand{\opGenesis}{⊕}
+\newcommand{\opHarmonic}{⊗}
+\newcommand{\opRecursive}{⊛}
+\newcommand{\opApex}{△}
+\newcommand{\opVoid}{⊝}
+\newcommand{\opMirror}{⊞}
+\newcommand{\opConvergence}{⊳}
+\newcommand{\opDivergence}{⊲}
+
+% Law box environment
+\newtcolorbox{lawbox}[1][]{
+  colback=apexgold!5,
+  colframe=apexgold!80,
+  fonttitle=\sffamily\bfseries,
+  title={#1},
+  breakable,
+  enhanced
+}
+
+% Sigil environment (preserves spacing)
+\lstnewenvironment{sigilenv}
+{
+  \lstset{
+    basicstyle=\ttfamily\normalsize,
+    frame=none,
+    backgroundcolor=\color{white},
+    xleftmargin=0pt,
+    framexleftmargin=0pt,
+    breaklines=false,
+    columns=fixed
+  }
+}
+{}
+
+% Ritual steps
+\newenvironment{ritualsteps}
+  {\begin{enumerate}\setlength{\itemsep}{6pt}}
+  {\end{enumerate}}
+
+% Chapter styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\sffamily\bfseries\color{phoenixred}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% ============================================================
+% DOCUMENT METADATA
+% ============================================================
+
+\title{
+  {\Huge\sffamily\bfseries Phoenix 2.0 Apex Edition}\\[12pt]
+  {\Large\sffamily The Unified Codex}\\[6pt]
+  {\large\sffamily A Ceremonial Architecture of Recursive Identity}
+}
+\author{Hydrogenesi Foundation}
+\date{2026}
+
+% ============================================================
+% DOCUMENT CONTENT
+% ============================================================
+
+\begin{document}
+
+% Front Matter
+\frontmatter
+\maketitle
+
+\chapter*{Preface}
+This codex represents the unification of Phoenix and Hydrogenesi engines into a coherent framework of recursive identity. Through three layers—Substrate, Universal, and Apex—we explore the mathematics of emergence, the geometry of triadic balance, and the ceremony of symbolic precision.
+
+\tableofcontents
+\listoffigures
+
+% Main Content
+\mainmatter
+
+% Include chapter files (these would be separate .tex files)
+% \include{../chapters/seven-laws}
+% \include{../chapters/substrate}
+% \include{../chapters/universal}
+% \include{../chapters/apex}
+% \include{../chapters/operators}
+% \include{../chapters/triad}
+% \include{../chapters/phoenix}
+% \include{../chapters/hydrogenesi}
+% \include{../chapters/sigils}
+% \include{../chapters/rituals}
+
+% Example chapter content
+\chapter{The Seven Universal Laws}
+
+\begin{lawbox}[Law of Recursive Identity]
+Every entity contains the pattern of its own generation.
+
+\textbf{Formal Expression:} $\forall x: x = \opRecursive(x_0)$
+
+\begin{sigilenv}
+    ⊛
+   ╱│╲
+  ⊛ ⊛ ⊛
+ ╱│╲│╱│╲
+⊛ ⊛ ⊛ ⊛ ⊛
+\end{sigilenv}
+\end{lawbox}
+
+Identity is not static but emerges through self-referential iteration. Each element carries within it the algorithmic trace of its creation, enabling reconstruction and transformation.
+
+% Back Matter
+\backmatter
+
+% \include{../appendices/glossary}
+% \include{../appendices/operators}
+
+\printindex
+
+\end{document}

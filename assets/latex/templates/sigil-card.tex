@@ -1,0 +1,76 @@
+% Phoenix 2.0 - Individual Law Card Template
+% 4x3 inch landscape format for printing
+
+\documentclass[10pt,landscape]{article}
+
+% Page setup for 4x3 cards
+\usepackage[
+  paperwidth=4in,
+  paperheight=3in,
+  margin=0.25in
+]{geometry}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
+\setmonofont{Fira Code}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{cardcolor}{RGB}{184,134,11}
+
+% No page numbers
+\pagestyle{empty}
+
+% Boxes
+\usepackage{tcolorbox}
+
+% ============================================================
+% CUSTOM COMMANDS
+% ============================================================
+
+\newcommand{\sigilcard}[3]{
+  % #1 = Law name
+  % #2 = Subtitle/meaning
+  % #3 = ASCII sigil
+  
+  \begin{tcolorbox}[
+    colback=white,
+    colframe=cardcolor,
+    width=\textwidth,
+    height=2.5in,
+    boxrule=2pt,
+    arc=3pt,
+    valign=center
+  ]
+    {\centering\Large\bfseries #1\par}
+    \vspace{4pt}
+    {\centering\small\itshape #2\par}
+    \vspace{8pt}
+    {\centering\ttfamily\normalsize
+    \begin{tabular}{c}
+    #3
+    \end{tabular}
+    \par}
+  \end{tcolorbox}
+}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+
+\begin{document}
+
+% Example card
+\sigilcard
+  {⊛ Recursive Operator}
+  {Every entity contains its own generation pattern}
+  {
+    \phantom{xxxx}⊛\\
+    \phantom{xxx}╱│╲\\
+    \phantom{xx}⊛ ⊛ ⊛\\
+    \phantom{x}╱│╲│╱│╲\\
+    ⊛ ⊛ ⊛ ⊛ ⊛
+  }
+
+\end{document}
