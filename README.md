@@ -102,9 +102,20 @@ Phoenix-2.0-Apex-Edition/
 │   ├── invocation.md
 │   ├── recursion-cycles.md
 │   └── apex-formation.md
+├── Universal-Laws/           # Extended Codex documentation
+│   ├── README.md
+│   ├── TwelveLawCanon.md
+│   ├── TriadCanon.md
+│   └── SubstrateLayer.md
+├── Atlases/                  # Structural diagrams and maps
+│   ├── CodexHierarchyDiagram.md
+│   └── PhoenixHydrogenesiLineageMap.md
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
+├── .github/                  # GitHub configuration
+│   └── PULL_REQUEST_TEMPLATE/
+│       └── substrate_expansion.md
 └── LICENSE
 ```
 
@@ -115,6 +126,16 @@ Phoenix-2.0-Apex-Edition/
 ### Core Documentation
 - [Quickstart Guide](./guides/quickstart.md) — Learn the basics of Phoenix 2.0
 - [Glossary](./guides/glossary.md) — Terminology reference
+
+### Extended Codex
+- [Universal Laws Overview](./Universal-Laws/README.md) — The complete Codex architecture
+- [Twelve-Law Canon](./Universal-Laws/TwelveLawCanon.md) — The canonical backbone
+- [Triad Canon](./Universal-Laws/TriadCanon.md) — The Apex Laws and Three Pillars
+- [Substrate Layer](./Universal-Laws/SubstrateLayer.md) — The primordial field
+
+### Structural Atlases
+- [Codex Hierarchy Diagram](./Atlases/CodexHierarchyDiagram.md) — Full vertical architecture
+- [Phoenix–Hydrogenesi Lineage Map](./Atlases/PhoenixHydrogenesiLineageMap.md) — Pillar relationships
 
 ### Operators
 Explore the eight fundamental operators:

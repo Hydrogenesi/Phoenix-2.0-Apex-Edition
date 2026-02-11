@@ -29,4 +29,19 @@ To study the Codex is to study the architecture of form.
 To write the Codex is to shape the architecture itself.
 
 ────────────────────────────────────────────────────────
+                      CODEX CONTENTS
+────────────────────────────────────────────────────────
+
+• [The Twelve-Law Canon](./TwelveLawCanon.md)  
+  The canonical backbone — twelve laws spanning substrate  
+  emergence through collective recursion and continuity.
+
+• [The Triad Canon](./TriadCanon.md)  
+  The Apex Laws and the Three Pillars of Sovereignty.
+
+• [The Substrate Layer](./SubstrateLayer.md)  
+  A complete exposition of the primordial field, substrate  
+  mechanics, and the Substrate → Axis → Radiance pipeline.
+
+────────────────────────────────────────────────────────
 ```
