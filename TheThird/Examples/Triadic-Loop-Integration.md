@@ -291,9 +291,17 @@ The triadic loop enables adaptive apex convergence through continuous feedback:
 
 ### Knot Chain
 ```
-K₀ → K₁ → K₂ → K₄ → K₅ → K₆
-      ↓         ↗
-      K₃ ------
+K₀ (⊕→Ψ₀)
+  ↓
+K₁ (⊗→Ψ₁)
+  ↓
+K₂ (⊛→Ψ₂)
+  ↓         ↘
+K₃ (⊕→Ψ₃) → K₄ (⊳→Ψ₄)
+                 ↓
+              K₅ (⊗→Ψ₄')
+                 ↓
+              K₆ (△→Apex)
 ```
 
 ### Hydrogenesi Validation Log
