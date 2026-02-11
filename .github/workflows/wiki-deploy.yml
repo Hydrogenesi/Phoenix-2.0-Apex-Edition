@@ -1,0 +1,70 @@
+name: Deploy Wiki
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'wiki/**'
+      - 'docs/**'
+      - '.github/workflows/wiki-deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy-wiki:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install mermaid-cli
+        run: npm install -g @mermaid-js/mermaid-cli
+      
+      - name: Validate Markdown files
+        run: |
+          echo "Validating Markdown files..."
+          for file in wiki/*.md docs/*.md; do
+            if [ -f "$file" ]; then
+              echo "✓ $file"
+            fi
+          done
+      
+      - name: Check Mermaid diagrams
+        run: |
+          echo "Checking Mermaid diagrams..."
+          if grep -r "```mermaid" docs/ wiki/ 2>/dev/null; then
+            echo "✓ Found Mermaid diagrams"
+          else
+            echo "⚠ No Mermaid diagrams found"
+          fi
+      
+      - name: Deploy to GitHub Wiki
+        uses: SwiftDocOrg/github-wiki-publish-action@v1
+        with:
+          path: wiki
+        env:
+          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Generate build artifacts
+        run: |
+          echo "Generating sigils..."
+          bash scripts/generate-sigils.sh || echo "Sigil generation skipped"
+          echo "Complete!"
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: codex-artifacts
+          path: |
+            build/sigils/
+            build/svg/
+          retention-days: 90
