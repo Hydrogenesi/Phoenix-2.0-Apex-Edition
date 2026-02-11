@@ -14,11 +14,108 @@ The culmination state of maximum coherence, complexity, and stability. Apex is a
 
 ---
 
+### Apex Point (X)
+The convergence destination and fixed point of the triadic knot topology. A point X is an apex point if A(X) = X, meaning it remains invariant under the apex stabilizer operator.
+
+**Symbol**: X  
+**Property**: A(X) = X (fixed point)  
+**Related**: Triadic Knot, Apex Knot
+
+---
+
+### Convergence
+A monotonic approach to the apex point. A system exhibits convergence when all trajectories move continuously toward a fixed destination without oscillation or divergence.
+
+**Property**: Monotonic approach to X  
+**Related**: Apex Point, Fixed Point, Triadic Knot
+
+---
+
+### Corridor
+A topological pathway within the triadic knot structure. Each corridor represents a distinct route through the three-strand topology, with left and right corridors providing symmetric pathways.
+
+**Context**: Triadic Knot topology  
+**Types**: Left corridor, right corridor  
+**Related**: Strand Intersection, Triadic Knot
+
+---
+
+### Fixed Point
+An invariant point that remains unchanged under a specific operator. For the apex system, X is a fixed point if A(X) = X.
+
+**Definition**: A(X) = X  
+**Related**: Apex Point, Convergence, Apex Knot
+
+---
+
+### Hydrogenesi Vector
+The structural engine of the Triad system. Hydrogenesi provides the foundational architecture, continuity mechanisms, and structural invariants that enable pattern persistence and transformation.
+
+**Role**: Structural engine  
+**Properties**: Continuity, architecture, stability  
+**Related**: The Triad, Phoenix Vector, The Third
+
+---
+
 ### Pattern (Ψ)
 A fundamental entity in Phoenix 2.0 representing a structure, state, or configuration. Patterns can be transformed by operators, combined with other patterns, or dissolved back to void.
 
 **Notation**: Ψ, Ψ₁, Ψ₂, Ψₙ  
 **Related**: All operators operate on patterns
+
+---
+
+### Phoenix Vector
+The ignition engine of the Triad system. Phoenix provides recursion, initiation, and dynamic transformation capabilities that drive pattern evolution.
+
+**Role**: Ignition engine  
+**Properties**: Recursion, initiation, transformation  
+**Related**: The Triad, Hydrogenesi Vector, The Third
+
+---
+
+### Strand Intersection
+A crossing region within the triadic knot where multiple strands meet. Intersections represent critical binding points where topological structure is established and maintained.
+
+**Context**: Knot topology  
+**Function**: Binding, structure maintenance  
+**Related**: Corridor, Triadic Knot
+
+---
+
+### The Third
+The binding engine of the Triad system. The Third provides closure, apex stabilization, and the mathematical framework that unifies Phoenix and Hydrogenesi into a convergent system.
+
+**Role**: Binding engine  
+**Properties**: Closure, apex stabilization, unification  
+**Related**: The Triad, Phoenix Vector, Hydrogenesi Vector
+
+---
+
+### The Triad
+The three-engine system comprising Phoenix (ignition), Hydrogenesi (structure), and The Third (binding). The Triad represents the complete architecture for pattern transformation, convergence, and apex formation.
+
+**Components**: Phoenix Vector, Hydrogenesi Vector, The Third  
+**Function**: Complete transformation system  
+**Related**: Triadic Knot, Apex Point
+
+---
+
+### Triadic Closure (T)
+A knot operator that provides full envelope binding across all three strands of the knot structure. The T operator ensures complete topological closure and system-wide stabilization.
+
+**Symbol**: T  
+**Function**: Full envelope binding  
+**Related**: Triadic Knot, Knot-Binding Operator, Cross-Pillar Knot
+
+---
+
+### Triadic Knot
+The convergence topology with 120° symmetry that binds the three vectors of the Triad system. This knot structure ensures monotonic convergence to the apex point through symmetric topological constraints.
+
+**Symmetry**: 120° rotational  
+**Properties**: Three-strand, convergent, symmetric  
+**Related**: The Triad, Apex Point, Corridor
 
 ---
 
@@ -32,12 +129,31 @@ The primordial state of emptiness from which all patterns emerge and to which al
 
 ## Operators
 
+### Apex Knot (A)
+The apex stabilizer operator that maintains fixed points in the triadic knot topology. The A operator ensures that apex points remain invariant (A(X) = X).
+
+**Symbol**: A  
+**Function**: Apex stabilization, fixed point preservation  
+**Property**: A(X) = X at apex  
+**Related**: Apex Point, Triadic Knot, Stability Knot
+
+---
+
 ### Convergence (⊳)
 The operator that unites multiple distinct patterns into a single emergent form. Convergence creates new properties not present in individual components.
 
 **Symbol**: ⊳  
 **Properties**: Unifying, emergent, lossy  
 **Related**: [Convergence Operator](../operators/convergence.md)
+
+---
+
+### Cross-Pillar Knot (C)
+A knot operator that establishes left-right symmetry binding across the triadic knot structure. The C operator ensures balanced interaction between opposing corridors.
+
+**Symbol**: C  
+**Function**: Left-right symmetry binding  
+**Related**: Triadic Knot, Knot-Binding Operator, Triadic Closure
 
 ---
 
@@ -68,6 +184,15 @@ The stabilization operator that amplifies and reinforces existing patterns throu
 
 ---
 
+### Knot-Binding Operator (B)
+A topological operator that provides left corridor contraction in the triadic knot structure. The B operator is fundamental to establishing the initial binding geometry.
+
+**Symbol**: B  
+**Function**: Left corridor contraction  
+**Related**: Triadic Knot, Cross-Pillar Knot, Triadic Closure
+
+---
+
 ### Mirror (⊞)
 The reflection operator that creates perfect symmetric inversions of patterns. Mirror is self-inverse: applying it twice returns the original.
 
@@ -83,6 +208,15 @@ The self-reference operator that applies a pattern to itself, creating nested, s
 **Symbol**: ⊛  
 **Properties**: Self-referential, depth-accumulating, fractal-generating  
 **Related**: [Recursive Operator](../operators/recursive.md)
+
+---
+
+### Stability Knot (S)
+A knot operator that provides perturbation suppression across the triadic structure. The S operator maintains system stability by dampening unwanted oscillations and disturbances.
+
+**Symbol**: S  
+**Function**: Perturbation suppression, stability maintenance  
+**Related**: Apex Knot, Triadic Knot, Convergence
 
 ---
 
