@@ -80,7 +80,7 @@ git init
 git add .
 git commit -m "Sync Phoenix 2.0 documentation"
 git remote add origin https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition.wiki.git
-git push -u origin master
+git push -u origin main
 ```
 
 ---
