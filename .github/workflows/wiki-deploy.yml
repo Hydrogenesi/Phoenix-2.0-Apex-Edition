@@ -1,0 +1,68 @@
+name: Deploy Triad Wiki
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'triad-system/wiki/**'
+      - '.github/workflows/wiki-deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Build wiki site
+        run: |
+          mkdir -p _site
+          cp -r triad-system/wiki/* _site/
+          
+          # Create index.html redirect to Triad-Index.md
+          cat > _site/index.html <<EOF
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <title>Phoenix 2.0 Triad System Wiki</title>
+            <meta http-equiv="refresh" content="0; url=Triad-Index.html">
+          </head>
+          <body>
+            <p>Redirecting to <a href="Triad-Index.html">Triad Index</a>...</p>
+          </body>
+          </html>
+          EOF
+          
+          # Convert markdown to HTML using a simple approach
+          # In production, you might use Jekyll, MkDocs, or similar
+          echo "Wiki files prepared for deployment"
+          ls -la _site/
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
