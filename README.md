@@ -101,7 +101,8 @@ Phoenix-2.0-Apex-Edition/
 ├── rituals/                  # Ceremonial invocation sequences
 │   ├── invocation.md
 │   ├── recursion-cycles.md
-│   └── apex-formation.md
+│   ├── apex-formation.md
+│   └── triadic-knot-protocol.md
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
@@ -140,6 +141,7 @@ Master ceremonial invocation:
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity
+- [Triadic Knot Protocol](./rituals/triadic-knot-protocol.md) — Cross-pillar binding
 
 ---
 

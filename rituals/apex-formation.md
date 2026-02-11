@@ -323,10 +323,11 @@ Apex transcends duality by containing all opposites simultaneously.
 
 - [Invocation Sequences](./invocation.md) — Building blocks of apex
 - [Recursion Cycles](./recursion-cycles.md) — Iterative path to apex
+- [Triadic Knot Protocol](./triadic-knot-protocol.md) — Cross-pillar binding patterns
 - [Apex Operator](../operators/apex.md) — Operator definition
 - [Law of Emergence](../laws/emergence.md) — Theoretical foundation
 - [Law of Conservation](../laws/conservation.md) — Energy requirements
 
 ---
 
-[◀ Previous: Recursion Cycles](./recursion-cycles.md) | [Back to Rituals](../README.md#-quick-navigation)
+[◀ Previous: Recursion Cycles](./recursion-cycles.md) | [Back to Rituals](../README.md#-quick-navigation) | [Next: Triadic Knot Protocol ▶](./triadic-knot-protocol.md)
