@@ -83,6 +83,8 @@ Each operator follows a **tri-column harmonic structure** and includes ceremonia
 ```
 Phoenix-2.0-Apex-Edition/
 ├── README.md                 # This file
+├── CHANGELOG.md              # Version history
+├── Makefile                  # Build system
 ├── operators/                # Operator definitions
 │   ├── genesis.md
 │   ├── harmonic.md
@@ -105,6 +107,15 @@ Phoenix-2.0-Apex-Edition/
 ├── guides/                   # Navigation and reference
 │   ├── quickstart.md
 │   └── glossary.md
+├── scripts/                  # Build automation
+│   ├── build-pdf.sh
+│   ├── convert-svg.sh
+│   ├── sync-wiki.sh
+│   └── README.md
+├── .github/                  # GitHub configuration
+│   ├── workflows/
+│   │   └── build-pipeline.yml
+│   └── PULL_REQUEST_TEMPLATE.md
 └── LICENSE
 ```
 
@@ -143,6 +154,39 @@ Master ceremonial invocation:
 
 ---
 
+## 🏗️ Build System
+
+Phoenix 2.0 includes a complete build pipeline for generating documentation in multiple formats:
+
+### Quick Start
+
+```bash
+make all         # Build PDF and SVG
+make pdf         # Generate PDF codex
+make svg         # Convert to SVG
+make wiki-sync   # Prepare wiki files
+make clean       # Remove build artifacts
+make help        # Show all targets
+```
+
+### Build Pipeline
+
+The build system transforms Markdown documentation into professional formats:
+
+- **PDF Codex**: Complete documentation with custom cover page
+- **SVG Graphics**: Vector graphics for web display
+- **Wiki Structure**: GitHub Wiki-compatible format
+
+### Requirements
+
+- `pandoc` - Document converter
+- `texlive-xetex` - LaTeX engine
+- `poppler-utils` - PDF utilities
+
+See [scripts/README.md](./scripts/README.md) for detailed build documentation.
+
+---
+
 ## 📜 License
 
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
@@ -152,6 +196,8 @@ This project is licensed under the MIT License — see the [LICENSE](./LICENSE) 
 ## 🌟 Contributing
 
 Phoenix 2.0 is a living documentation system. Contributions that maintain consistency with the universal laws and operator structure are welcome.
+
+Please see the [pull request template](./.github/PULL_REQUEST_TEMPLATE.md) for contribution guidelines.
 
 ---
 
