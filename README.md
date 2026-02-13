@@ -488,8 +488,6 @@ Convergence laws governing apex formation:
 
 ## 💡 Use Cases
 
-## 💡 Use Cases
-
 Phoenix 2.0 Apex Edition can model:
 - **Recursive systems** with guaranteed convergence
 - **Transformation sequences** with lineage preservation
