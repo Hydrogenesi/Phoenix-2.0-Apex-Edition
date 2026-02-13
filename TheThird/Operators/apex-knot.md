@@ -33,7 +33,7 @@ where:
 ### Invariants
 1. **Apex Invariance**: ApexKnot(apexPoint) = apexPoint (apex is fixed point)
 2. **Strict Contraction**: distance(ApexKnot(knotState), apexPoint) < distance(knotState, apexPoint) for all knotState ≠ apexPoint
-3. **Monotone Convergence**: distance(knotState₊₁, apexPoint) < distance(knotStateₙ, apexPoint)
+3. **Monotone Convergence**: distance(knotStateₙ₊₁, apexPoint) < distance(knotStateₙ, apexPoint)
 
 ---
 

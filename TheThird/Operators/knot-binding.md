@@ -105,12 +105,12 @@ Phoenix Domain → Left Entrance → Corridor → Binding Point → Central Knot
            ↓
        ┌───┴───┐
        │  Knot │───→ updatedKnot
-       │Binding│
+       │ Binding │
        └───┬───┘
            ↑
       currentKnot
 
-The Binding Sigil shows Phoenix pattern phoenixPattern
+The KnotBinding Sigil shows Phoenix pattern phoenixPattern
 entering from above, combining with current
 knot state currentKnot, producing bound state updatedKnot.
 ```
