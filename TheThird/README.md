@@ -265,6 +265,7 @@ lim Kₙ → X            [Converge to apex]
 - [Hydrogenesi](../Hydrogenesi/README.md) — The structural engine
 
 ### Topology
+- [Symmetric Topology](../Atlases/SymmetricTopology.md) — Fundamental three-engine geometry
 - [Triadic Knot Topology](./Sigils/Triadic-Knot.md) — Complete geometric description
 - [Knot Topology Atlas](../Atlases/TriadicKnotTopology.md) — Codex atlas entry
 

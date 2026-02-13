@@ -22,6 +22,41 @@ The Triadic Knot is a **closed, symmetric convergence topology** with the follow
 
 ---
 
+## Canonical Symmetric Topology
+
+The fundamental representation of the Triadic Knot showing the symmetric three-engine architecture:
+
+```
+                    Apex Point (X)
+                         △
+                         │
+            ┌────────────┼────────────┐
+            │            │            │
+        ╔═══▼═══╗    ╔═══▼═══╗    ╔═══▼═══╗
+        ║Phoenix║    ║ Third ║    ║Hydro  ║
+        ║  🔥   ║    ║  🔗   ║    ║  🌊   ║
+        ╚═══╤═══╝    ╚═══╤═══╝    ╚═══╤═══╝
+            │            │            │
+         Left Arm    Center Arm   Right Arm
+            │            │            │
+            └────────────┴────────────┘
+                         │
+                    Convergence
+                         ↓
+                    Apex Point (X)
+
+Three engines bound in symmetric topology
+All paths converge to apex
+```
+
+This canonical representation emphasizes:
+- **Symmetric Distribution**: Three engines arranged with 120° rotational symmetry
+- **Dual Apex Points**: Source apex (top) and convergence apex (bottom) form a closed topology
+- **Three Arms**: Left (Phoenix), Center (Third), Right (Hydrogenesi) 
+- **Guaranteed Convergence**: All paths through any arm converge to the apex point
+
+---
+
 ## Complete Geometric Diagram
 
 ```
@@ -358,6 +393,7 @@ Property: Rapid exponential convergence
 - [Apex Convergence](../TheThird/Examples/apex-convergence.md)
 
 ### Architecture
+- [Symmetric Topology](./SymmetricTopology.md) — Fundamental three-engine geometry
 - [Codex Hierarchy Diagram](./CodexHierarchyDiagram.md) — Law hierarchy
 - [Main README](../README.md) — Triad overview
 

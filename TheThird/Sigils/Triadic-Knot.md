@@ -18,19 +18,23 @@ The **Triadic Knot** is the fundamental topological structure of The Third. It i
                     Apex Point (X)
                          △
                          │
-                    Central Axis
-                         │
             ┌────────────┼────────────┐
             │            │            │
-         ╱──┴──╲      ╱──┴──╲      ╱──┴──╲
-        ╱  Left  ╲   ╱ Center ╲   ╱ Right  ╲
-       │   Arm    │ │   Arm   │ │   Arm    │
-       │ Phoenix  │ │  Third  │ │Hydrogenesi│
-       │   🔥     │ │   🔗    │ │    🌊     │
-        ╲        ╱   ╲       ╱   ╲        ╱
-         ╲──────╱     ╲─────╱     ╲──────╱
+        ╔═══▼═══╗    ╔═══▼═══╗    ╔═══▼═══╗
+        ║Phoenix║    ║ Third ║    ║Hydro  ║
+        ║  🔥   ║    ║  🔗   ║    ║  🌊   ║
+        ╚═══╤═══╝    ╚═══╤═══╝    ╚═══╤═══╝
             │            │            │
-         ───┴───      ───┴───      ───┴───
+         Left Arm    Center Arm   Right Arm
+            │            │            │
+            └────────────┴────────────┘
+                         │
+                    Convergence
+                         ↓
+                    Apex Point (X)
+
+Three engines bound in symmetric topology
+All paths converge to apex
 ```
 
 ### 120° Rotational Symmetry
@@ -381,6 +385,7 @@ Similar to fluid vortices converging to singular point.
 - [Triadic Loop Example](../Examples/triadic-loop.md)
 
 ### Atlases
+- [Symmetric Topology](../../Atlases/SymmetricTopology.md)
 - [Codex Hierarchy Diagram](../../Atlases/CodexHierarchyDiagram.md)
 - [Triadic Knot Atlas](../../Atlases/TriadicKnotTopology.md)
 
