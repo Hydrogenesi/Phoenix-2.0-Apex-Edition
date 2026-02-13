@@ -341,9 +341,7 @@ echo ""
 echo -e "${YELLOW}Step 6: Committing changes...${NC}"
 
 # Check if there are changes to commit
-if git diff --staged --quiet; then
-    echo -e "  ${BLUE}ℹ${NC} No changes to commit (Ceremonies/README.md already committed)"
-else
+if ! git diff --staged --quiet; then
     git commit -m "Phase 1: Establish Ceremonies layer
 
 - Create Ceremonies directory structure
@@ -354,6 +352,8 @@ else
 
 Phase 1 canonical execution complete."
     echo -e "  ${GREEN}✓${NC} Changes committed"
+else
+    echo -e "  ${BLUE}ℹ${NC} No changes to commit (Ceremonies/README.md already committed)"
 fi
 echo ""
 
