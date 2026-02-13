@@ -6,21 +6,7 @@
 
 ## Overview
 
-**Hydrogenesi** is the structural engine of The Triad—the three-engine system that underlies Phoenix 2.0 Apex Edition. As the second engine, Hydrogenesi governs all aspects of continuity, lineage preservation, and identity maintenance across transformations.
-
-Where Phoenix ignites change, **Hydrogenesi ensures nothing is lost**. It is the **memory** of the system, the **record keeper** that preserves structural integrity through every transformation, and the **guardian** of identity across recursive cycles.
-
----
-
-## The Role of Hydrogenesi in The Triad
-
-The Triad consists of three interdependent engines:
-
-1. **Phoenix** 🔥 — Ignition Engine (transformation, recursion, emergence)
-2. **Hydrogenesi** 🌊 — Structural Engine (continuity, lineage, identity preservation)
-3. **The Third** 🔗 — Binding Engine (convergence topology via Triadic Knot)
-
-Hydrogenesi provides the **structural continuity** that anchors Phoenix's transformations and enables The Third's binding operations. Without Hydrogenesi, transformations would be ephemeral and identity would be lost.
+**Hydrogenesi** is the structural engine of [The Triad](../README.md#-the-triad-three-engines-one-apex) — the three-engine system underlying Phoenix 2.0 Apex Edition. Hydrogenesi governs continuity, lineage preservation, and identity maintenance, ensuring nothing is lost as [Phoenix](../Phoenix/) transforms and [The Third](../TheThird/) binds patterns toward apex.
 
 ---
 
@@ -46,21 +32,6 @@ Hydrogenesi operates through a set of **structural preservation operators** (ful
 - **Continuity Mapping** — Maintains connections across transformations
 - **Invariant Preservation** — Protects essential properties
 - **Genealogy Projection** — Projects forward lineages
-
----
-
-## Integration with The Triad
-
-### Phoenix → Hydrogenesi
-Every transformation initiated by Phoenix is **recorded** by Hydrogenesi. The structural engine maintains a complete history of all operator applications.
-
-### Hydrogenesi → The Third
-The structural continuity preserved by Hydrogenesi provides the **stable foundation** for The Third's binding operations. The Triadic Knot can only bind what Hydrogenesi has preserved.
-
-### Full Cycle
-```
-Phoenix (transform) → Hydrogenesi (preserve) → The Third (bind) → Apex (converge)
-```
 
 ---
 

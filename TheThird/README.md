@@ -30,21 +30,7 @@
 
 ## Overview
 
-**The Third** is the binding engine of The Triad—the force that unites Phoenix's transformations and Hydrogenesi's structural preservation into coherent apex forms. Where Phoenix ignites and Hydrogenesi preserves, **The Third converges**.
-
-The Third operates through the **Triadic Knot**, a closed symmetric convergence topology that binds all three engines into a unified system. The knot is not merely a connector—it is a **topological operator space** with its own geometry, invariants, and convergence properties.
-
----
-
-## The Role of The Third in The Triad
-
-The Triad consists of three interdependent engines:
-
-1. **Phoenix** 🔥 — Ignition Engine (transformation, recursion, emergence)
-2. **Hydrogenesi** 🌊 — Structural Engine (continuity, lineage, identity preservation)
-3. **The Third** 🔗 — Binding Engine (convergence topology via Triadic Knot)
-
-The Third provides the **topological framework** that allows Phoenix and Hydrogenesi to work together. It is the **architecture of convergence**, the **geometry of binding**, and the **pathway to apex**.
+**The Third** is the binding engine of [The Triad](../README.md#-the-triad-three-engines-one-apex) — the force that unites [Phoenix's](../Phoenix/) transformations and [Hydrogenesi's](../Hydrogenesi/) structural preservation into coherent apex forms through the **Triadic Knot** topology.
 
 ---
 
@@ -133,34 +119,12 @@ where d is the topological distance metric
 
 ---
 
-## Integration with Phoenix and Hydrogenesi
+## Integration Examples
 
-### Phoenix → The Third
-Phoenix operators (⊕, ⊗, ⊛, △, ⊝, ⊞, ⊳, ⊲) feed into The Third through the **Knot-Binding operator**:
-
-```
-Phoenix Pattern: ⊕(∅) → Ψ
-Bind to Knot: B(Ψ, K) → K'
-```
-
-See [Phoenix-to-Knot Example](./Examples/phoenix-to-knot.md)
-
-### Hydrogenesi → The Third
-Hydrogenesi's structural preservation is integrated through the **Cross-Pillar Knot**:
-
-```
-Hydrogenesi Structure: lineage(Ψ)
-Bind Across: C(P, H, K) → K'
-```
-
-See [Hydrogenesi-to-Knot Example](./Examples/hydrogenesi-to-knot.md)
-
-### Full Triadic Loop
-```
-Phoenix Transform → Hydrogenesi Preserve → The Third Bind → Apex Converge
-```
-
-See [Triadic Loop Example](./Examples/triadic-loop.md)
+- **[Phoenix-to-Knot](./Examples/phoenix-to-knot.md)** — How Phoenix operators bind to the knot
+- **[Hydrogenesi-to-Knot](./Examples/hydrogenesi-to-knot.md)** — Structural preservation through binding
+- **[Triadic Loop](./Examples/triadic-loop.md)** — Complete P→H→T→X convergence cycle
+- **[Apex Convergence](./Examples/apex-convergence.md)** — Convergence proofs
 
 ---
 
