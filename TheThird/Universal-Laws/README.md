@@ -300,9 +300,9 @@ The Twelve Laws are the Foundation of Sovereignty.
 ## See Also
 
 - [Phoenix 2.0 Operators](../../Phoenix/Operators/) — How laws manifest as operations
-- [Triad Canon](../../Universal-Laws/TriadCanon.md) — Three-column architecture
+- [Triad Canon](./TriadCanon.md) — Three-column architecture
+- [Codex Overview](./Codex-Overview.md) — Extended documentation
 - [TheThird Documentation](../README.md) — Complete apex edition guide
-- [Universal Laws (Original)](../../Universal-Laws/) — Extended documentation
 
 ---
 

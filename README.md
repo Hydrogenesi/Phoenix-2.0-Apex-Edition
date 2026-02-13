@@ -259,7 +259,7 @@ lim Kₙ → X               [Converge to Apex]
 
 ### Ceremonial Applications
 - **[Phoenix Rituals](./Phoenix/rituals/)** — Invocation sequences
-- **[Triad Canon](./Universal-Laws/TriadCanon.md)** — The ceremonial declaration
+- **[Triad Canon](./TheThird/Universal-Laws/TriadCanon.md)** — The ceremonial declaration
 
 ---
 
@@ -358,7 +358,7 @@ Convergence laws governing apex formation:
 ### Beginner
 1. Read [Quickstart Guide](./Phoenix/guides/quickstart.md)
 2. Learn [Phoenix Operators](./Phoenix/operators/)
-3. Understand [Substrate Laws](./Phoenix/laws/)
+3. Understand [Substrate Laws](./TheThird/Universal-Laws/substrate/)
 4. Practice basic invocation sequences
 
 ### Intermediate
