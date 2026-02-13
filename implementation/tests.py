@@ -43,6 +43,12 @@ def test_phoenix_operators():
     p2_mirror = phoenix.mirror(p2)
     assert p2_mirror.value == -5.0, "Mirror should negate value"
     
+    # Test mirror with non-numeric value
+    p2_text = phoenix.genesis("test")
+    p2_text_mirror = phoenix.mirror(p2_text)
+    assert p2_text_mirror.value == "test", "Mirror should preserve non-numeric values"
+    assert '⊞' in p2_text_mirror.operators_applied, "Mirror should record operator"
+    
     # Test divergence
     p3 = phoenix.genesis(10.0)
     p3a, p3b = phoenix.divergence(p3)

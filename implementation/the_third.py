@@ -43,6 +43,20 @@ class TheThirdEngine:
     """
     
     def __init__(self):
+        """
+        Initialize The Third Engine with the Apex Point and contraction constants.
+        
+        The contraction constants are chosen based on the mathematical properties
+        documented in the Triadic Knot topology:
+        
+        - λ_B = 0.618: Golden ratio inverse (φ⁻¹) for harmonic convergence
+        - λ_C = 0.500: Binary contraction for dual-arm convergence
+        - λ_T = 0.333: Triadic contraction (1/3) for three-arm convergence
+        - λ_A = 0.400: Apex stabilization near fixed point
+        - λ_S = 0.200: Strongest stability locking
+        
+        All constants < 1 ensure contraction mapping property and guaranteed convergence.
+        """
         # Apex Point X - the unique fixed point at origin
         self.apex_point = (0.0, 0.0, 0.0)
         self.binding_count = 0
