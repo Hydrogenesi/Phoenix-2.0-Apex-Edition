@@ -201,8 +201,8 @@ Typical operator contraction rates:
 - Apex Knot (A): α_A ≈ 0.50
 - Stability (S): α_S ≈ 0.90 (preservative)
 
-Composite sequence α_total ≈ α_B · α_C · α_T · α_A · α_S ≈ 0.19
-Implies rapid convergence: ~95% distance reduction every cycle
+Composite sequence α_total ≈ α_B · α_C · α_T · α_A · α_S ≈ 0.17
+Implies rapid convergence: ~83% distance reduction every cycle
 ```
 
 ---
@@ -377,7 +377,10 @@ Three generators (one per arm) with braid relations.
 
 Note: These are conjectured braid relations by analogy to the 
 trefoil knot. The Triadic Knot's 120° rotational symmetry 
-suggests these Yang-Baxter-like relations hold.
+suggests these Yang-Baxter-like relations hold. The convergence 
+theorem presented earlier does not depend on these algebraic 
+properties—it relies only on the metric space structure and 
+operator contractiveness.
 ```
 
 ---
