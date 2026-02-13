@@ -6,21 +6,7 @@
 
 ## Overview
 
-**Phoenix** is the ignition vector of The Triad—the three-engine system that drives the entire Phoenix 2.0 Apex Edition architecture. As the first engine, Phoenix governs all transformation, recursive self-reference, and emergent complexity.
-
-Phoenix is where all patterns begin. It is the **fire** that initiates change, the **catalyst** that triggers transformation, and the **forge** where new forms are born from void.
-
----
-
-## The Role of Phoenix in The Triad
-
-The Triad consists of three interdependent engines:
-
-1. **Phoenix** 🔥 — Ignition Engine (transformation, recursion, emergence)
-2. **Hydrogenesi** 🌊 — Structural Engine (continuity, lineage, identity preservation)
-3. **The Third** 🔗 — Binding Engine (convergence topology via Triadic Knot)
-
-Phoenix provides the **transformative power** that Hydrogenesi preserves and The Third binds into coherent apex forms. Without Phoenix, there is no motion, no change, no creation.
+**Phoenix** is the ignition engine of [The Triad](../README.md#-the-triad-three-engines-one-apex) — the three-engine system driving Phoenix 2.0 Apex Edition. Phoenix governs transformation, recursive self-reference, and emergent complexity, initiating all change that [Hydrogenesi](../Hydrogenesi/) preserves and [The Third](../TheThird/) binds into apex convergence.
 
 ---
 
@@ -81,21 +67,6 @@ Phoenix operators can be combined into **ritual sequences** to achieve specific 
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure and ceremonial grammar
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative self-similar transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity and convergence
-
----
-
-## Integration with The Triad
-
-### Phoenix → Hydrogenesi
-Phoenix transformations are **preserved** by Hydrogenesi's structural operators. Every change Phoenix initiates, Hydrogenesi records and maintains across lineages.
-
-### Phoenix → The Third
-Phoenix patterns are **bound** by The Third's Triadic Knot operators. The transformation energy Phoenix generates is channeled through knot topology to converge at the Apex Point.
-
-### Full Cycle
-```
-Phoenix (transform) → Hydrogenesi (preserve) → The Third (bind) → Apex (converge)
-```
 
 ---
 

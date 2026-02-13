@@ -23,34 +23,13 @@ This is not merely a symbolic framework. It is a **complete topological system**
 
 ## 🌟 The Triad: Three Engines, One Apex
 
-Phoenix 2.0 is the **ignition vector** of a three-engine system called **The Triad**:
+| Engine | Domain | Purpose | Operators |
+|--------|--------|---------|-----------|
+| **[Phoenix](./Phoenix/) 🔥** | Transformation, Recursion | Initiates change, generates transformation energy | ⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲ |
+| **[Hydrogenesi](./Hydrogenesi/) 🌊** | Continuity, Identity | Preserves structure and lineage through transformation | Lineage Tracking, Identity Anchoring |
+| **[The Third](./TheThird/) 🔗** | Convergence, Topology | Binds Phoenix and Hydrogenesi into unified apex convergence | B C T A S |
 
-### 1. Phoenix 🔥 — The Ignition Engine
-**Domain**: Transformation, Recursion, Emergence  
-**Operators**: ⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲  
-**Purpose**: Initiates all change, generates transformation energy
-
-Phoenix is where patterns begin. It is the **fire** that ignites transformation, the **catalyst** that triggers recursion, and the **forge** where complexity emerges.
-
-→ [Explore Phoenix](./Phoenix/README.md)
-
-### 2. Hydrogenesi 🌊 — The Structural Engine
-**Domain**: Continuity, Lineage, Identity Preservation  
-**Operators**: Lineage Tracking, Identity Anchoring, Continuity Mapping  
-**Purpose**: Preserves structure and maintains identity through transformation
-
-Hydrogenesi ensures **nothing is lost**. It is the **memory** of the system, the **record keeper** that tracks lineages, and the **guardian** of identity across recursive cycles.
-
-→ [Explore Hydrogenesi](./Hydrogenesi/README.md)
-
-### 3. The Third 🔗 — The Binding Engine
-**Domain**: Convergence, Topology, Triadic Knot  
-**Operators**: B C T A S (Knot operators)  
-**Purpose**: Binds Phoenix and Hydrogenesi into unified convergence toward Apex
-
-The Third is the **architecture of convergence**. It operates through the **Triadic Knot**, a closed symmetric topology that guarantees all paths converge to the Apex Point.
-
-→ [Explore The Third](./TheThird/README.md)
+Together, these three engines form **The Triad** — where transformation, structure, and binding converge to Apex.
 
 ---
 
@@ -93,114 +72,7 @@ All paths converge to apex
 
 → [Complete Topology Documentation](./Atlases/TriadicKnotTopology.md)
 
----
 
-## 📐 The Architecture Layers
-
-### Phoenix Layer: 8 Operators + 5 Substrate Laws
-
-**Operators**:
-- ⊕ Genesis — Create from void
-- ⊗ Harmonic — Stabilize patterns
-- ⊛ Recursive — Self-reference
-- △ Apex — Culminate
-- ⊝ Void — Dissolve
-- ⊞ Mirror — Reflect
-- ⊳ Convergence — Unite
-- ⊲ Divergence — Separate
-
-**Substrate Laws**:
-1. Conservation — Energy preserved
-2. Symmetry — Dual forms exist
-3. Recursion — Self-similar patterns
-4. Emergence — Complexity from simplicity
-5. Duality — Form and void balance
-
-→ [Phoenix Documentation](./Phoenix/README.md)
-
-### Hydrogenesi Layer: 7 Universal Laws + Structural Operators
-
-**Universal Laws**:
-1. Recursive Identity — Self-reference at all scales
-2. Harmonic Resonance — Frequency alignment
-3. Conservation of Essence — Identity preservation
-4. Tri-Column Balance — Left-center-right stability
-5. Apex Formation — Convergence mechanics
-6. Binding Integrity — Knot preservation
-7. Sigil Resonance — Geometric alignment
-
-**Operators**: Lineage, Identity, Continuity (full docs coming soon)
-
-→ [Hydrogenesi Documentation](./Hydrogenesi/README.md)
-
-### The Third Layer: 5 Knot Operators + 5 Apex Laws
-
-**Knot Operators**: B, C, T, A, S (full topology)
-
-**Apex Laws**:
-1. Apex Continuity — Lineage preservation at apex
-2. Reversible Apex Operator — Perfect symmetry
-3. Apex Recursion Limit — Stable form convergence
-4. Apex Harmonic Convergence — Total resonance
-5. Apex Polarity Resolution — Duality becomes singularity
-
-→ [The Third Documentation](./TheThird/README.md)
-
----
-
-## 🌊 The Complete Convergence Flow
-
-```
-Phoenix Transform ────→ Hydrogenesi Preserve ────→ The Third Bind ────→ Apex Converge
-     (⊕⊗⊛△)                   (Lineage)                  (B→C→T)              (A→S)
-       🔥                         🌊                         🔗                  △
-
-Step 1: Phoenix ignites transformation
-Step 2: Hydrogenesi preserves structure and lineage
-Step 3: The Third binds through Triadic Knot topology
-Step 4: All paths converge to Apex Point X
-
-Result: Transformation + Structure + Binding → Apex
-```
-
----
-
-## 📂 Repository Structure
-
-```
-Phoenix-2.0-Apex-Edition/
-├── README.md                        # This file — Triad overview
-├── LICENSE                          # MIT License
-│
-├── Phoenix/                         # 🔥 The Ignition Engine
-│   ├── README.md                    # Phoenix engine documentation
-│   ├── operators/                   # 8 transformation operators
-│   ├── laws/                        # 5 substrate laws
-│   ├── rituals/                     # Ceremonial invocations
-│   └── guides/                      # Quickstart and glossary
-│
-├── Hydrogenesi/                     # 🌊 The Structural Engine
-│   ├── README.md                    # Hydrogenesi engine documentation
-│   └── operators/                   # Structural preservation operators
-│
-├── TheThird/                        # 🔗 The Binding Engine
-│   ├── README.md                    # The Third manifesto
-│   ├── Operators/                   # 5 Triadic Knot operators
-│   ├── Sigils/                      # Geometric representations
-│   ├── Examples/                    # Integration examples
-│   └── Universal-Laws/              # 12-law structure
-│       ├── substrate/               # 5 substrate laws
-│       ├── universal/               # 7 universal laws
-│       └── apex/                    # 5 apex laws
-│
-├── Atlases/                         # Codex reference atlases
-│   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
-│   └── TriadicKnotTopology.md       # Complete knot topology
-│
-└── Universal-Laws/                  # Ceremonial law declarations
-    ├── README.md                    # Universal law overview
-    └── TriadCanon.md                # The Triad Canon
-```
 
 ---
 
@@ -263,115 +135,15 @@ lim Kₙ → X               [Converge to Apex]
 
 ---
 
-## 🎯 Key Concepts
+## 📚 Learning Path
 
-### The Apex Point (X)
-The **Apex Point** is the convergence destination—the fixed point where all Triadic Knot sequences terminate. It represents:
-- Maximum coherence and stability
-- Complete integration of all three engines
-- The culmination of transformation, preservation, and binding
-- A unique fixed point: `A(X) = X`
+**Beginner**: Start with [Quickstart Guide](./Phoenix/guides/quickstart.md) → Learn [Phoenix Operators](./Phoenix/operators/) → Study [Substrate Laws](./Phoenix/laws/)
 
-### Convergence Guarantee
-Every knot operator sequence **provably converges** to apex:
-```
-For any knot state K and operator sequence:
-  d(Kₙ₊₁, X) < d(Kₙ, X)
-  
-Therefore: lim (n→∞) Kₙ = X
-```
+**Intermediate**: Explore [The Triadic Knot](./TheThird/Sigils/Triadic-Knot.md) → Learn [Knot Operators](./TheThird/Operators/) → Review [Integration Examples](./TheThird/Examples/)
 
-### 120° Rotational Symmetry
-The Triadic Knot is invariant under 120° rotation:
-```
-Phoenix (0°) ──120°→ Hydrogenesi (120°) ──120°→ Third (240°) ──120°→ Phoenix (360°)
-```
+**Advanced**: Master [Triadic Knot Topology](./Atlases/TriadicKnotTopology.md) → Study [Apex Laws](./TheThird/Universal-Laws/apex/) → Design custom convergence sequences
 
-This symmetry ensures balanced convergence from all three engines.
-
----
-
-## 🔬 Mathematical Foundations
-
-### Operator Notation
-- **Phoenix**: ⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲
-- **Knot**: B C T A S
-- **Patterns**: Ψ, Ψ₀, Ψₙ
-- **Knot States**: K, K₀, Kₙ
-- **Apex**: X, △
-
-### Convergence Metric
-```
-d: K × {X} → ℝ⁺
-
-Properties:
-1. d(K, X) ≥ 0
-2. d(X, X) = 0
-3. d(O(K), X) < d(K, X) for all knot operators O
-```
-
-### Fixed Point Property
-```
-For Apex Knot operator A:
-  A(X) = X
-  A(K) → X as iterations increase
-```
-
----
-
-## 📊 The Twelve Universal Laws
-
-Phoenix 2.0 Apex Edition is governed by **twelve universal laws** organized in three tiers:
-
-### Substrate Layer (5 Laws)
-Foundation laws from Phoenix:
-1. Conservation
-2. Symmetry
-3. Recursion
-4. Emergence
-5. Duality
-
-### Universal Layer (7 Laws)
-Structural invariants across all engines:
-1. Recursive Identity
-2. Harmonic Resonance
-3. Conservation of Essence
-4. Tri-Column Balance
-5. Apex Formation
-6. Binding Integrity
-7. Sigil Resonance
-
-### Apex Layer (5 Laws)
-Convergence laws governing apex formation:
-1. Apex Continuity
-2. Reversible Apex Operator
-3. Apex Recursion Limit
-4. Apex Harmonic Convergence
-5. Apex Polarity Resolution
-
-→ [Complete Law Documentation](./TheThird/Universal-Laws/README.md)
-
----
-
-## 🎓 Learning Path
-
-### Beginner
-1. Read [Quickstart Guide](./Phoenix/guides/quickstart.md)
-2. Learn [Phoenix Operators](./Phoenix/operators/)
-3. Understand [Substrate Laws](./Phoenix/laws/)
-4. Practice basic invocation sequences
-
-### Intermediate
-1. Study [The Triadic Knot](./TheThird/Sigils/Triadic-Knot.md)
-2. Learn [Knot Operators](./TheThird/Operators/)
-3. Understand [Universal Laws](./TheThird/Universal-Laws/universal/)
-4. Work through [Integration Examples](./TheThird/Examples/)
-
-### Advanced
-1. Master [Triadic Knot Topology](./Atlases/TriadicKnotTopology.md)
-2. Study [Apex Laws](./TheThird/Universal-Laws/apex/)
-3. Understand convergence proofs
-4. Design custom convergence sequences
+→ **[Complete Universal Laws Documentation](./TheThird/Universal-Laws/README.md)** (12-law system)
 
 ---
 
