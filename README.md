@@ -171,6 +171,21 @@ Result: Transformation + Structure + Binding → Apex
 Phoenix-2.0-Apex-Edition/
 ├── README.md                        # This file — Triad overview
 ├── LICENSE                          # MIT License
+├── docs-status.md                   # Documentation status tracking
+│
+├── docs/                            # 📚 Triad v2.x Architecture Documentation
+│   ├── substrate/                   # Substrate Layer & Universal Laws Canon
+│   │   └── README.md                # Complete 12-law system documentation
+│   ├── lineage/                     # Architectural lineage & history
+│   │   └── phoenix-hydrogenesi-v1.md  # Historical v1 unified architecture
+│   ├── architecture/                # Design principles & longevity
+│   │   └── principles.md            # Framework architecture principles
+│   ├── apex/                        # Apex convergence architecture
+│   │   └── apex-13-components.md    # The 13 core components
+│   └── triad/                       # Triadic Knot protocol & history
+│       ├── triadic-knot-protocol.md # Formal protocol specification
+│       ├── triadic-knot-examples.md # Cross-pillar binding examples
+│       └── history-v1.md            # Triad System v1.0.0 archive
 │
 ├── Phoenix/                         # 🔥 The Ignition Engine
 │   ├── README.md                    # Phoenix engine documentation
@@ -240,6 +255,18 @@ lim Kₙ → X               [Converge to Apex]
 - **[Phoenix Engine](./Phoenix/README.md)** — Transformation operators and substrate laws
 - **[Hydrogenesi Engine](./Hydrogenesi/README.md)** — Structural preservation and universal laws
 - **[The Third Engine](./TheThird/README.md)** — Triadic Knot operators and apex laws
+
+### Triad v2.x Architecture Documentation
+- **[Substrate Layer](./docs/substrate/README.md)** — Twelve Universal Laws Canon and foundation principles
+- **[Architecture Principles](./docs/architecture/principles.md)** — Framework longevity and design principles
+- **[Apex 13 Components](./docs/apex/apex-13-components.md)** — The 13 core components and convergence architecture
+- **[Triadic Knot Protocol](./docs/triad/triadic-knot-protocol.md)** — Formal protocol specification and binding model
+- **[Knot Binding Examples](./docs/triad/triadic-knot-examples.md)** — Cross-pillar integration examples
+- **[Documentation Status](./docs-status.md)** — Centralized status tracking for all documentation
+
+### Architecture History & Lineage
+- **[Phoenix–Hydrogenesi v1](./docs/lineage/phoenix-hydrogenesi-v1.md)** — Historical unified architecture (archived)
+- **[Triad System v1.0.0](./docs/triad/history-v1.md)** — First formal Triad release (archived)
 
 ### Core Documentation
 - **[Quickstart Guide](./Phoenix/guides/quickstart.md)** — Learn the basics
@@ -316,6 +343,57 @@ For Apex Knot operator A:
   A(X) = X
   A(K) → X as iterations increase
 ```
+
+---
+
+## 🏛️ Triad v2.x Architecture
+
+Phoenix 2.0 Apex Edition represents **Triad v2.x**—the second major architectural version that consolidates early explorations into a unified, formally-specified convergence system.
+
+### Evolution from Early Architecture
+
+The v2.x architecture consolidates several early architectural explorations:
+
+**Phase 1: Substrate + Universal Laws (#6–#12)**  
+→ Unified into: [Substrate Layer Documentation](./docs/substrate/README.md)  
+Status: Canonical pre-structural layer with complete 12-law system
+
+**Phase 2: Phoenix–Hydrogenesi Integration (#5, #13, #14)**  
+→ Archived as: [Phoenix–Hydrogenesi v1](./docs/lineage/phoenix-hydrogenesi-v1.md)  
+Status: Historical lineage, superseded by Triad v2.x with The Third binding
+
+**Phase 3: Framework Longevity (#3)**  
+→ Integrated into: [Architecture Principles](./docs/architecture/principles.md)  
+Status: Stable design principles for long-term framework coherence
+
+**Phase 4: Apex Edition Components (#1)**  
+→ Documented as: [Apex 13 Components](./docs/apex/apex-13-components.md)  
+Status: Complete component mapping to Triadic Knot convergence
+
+**Phase 5: Triadic Knot Protocol (#17, #18)**  
+→ Specified in: [Triadic Knot Protocol](./docs/triad/triadic-knot-protocol.md) + [Examples](./docs/triad/triadic-knot-examples.md)  
+Status: Formal cross-pillar binding protocol
+
+**Phase 6: First Triad System (#15)**  
+→ Archived as: [Triad v1.0.0 History](./docs/triad/history-v1.md)  
+Status: Historical reference for first formal Triad release
+
+### Key Improvements in v2.x
+
+1. **Complete Convergence Theory**: Formal proofs of apex convergence with A and S operators
+2. **Unified Documentation**: Structured docs/ directory with status metadata
+3. **Cross-Pillar Binding**: Explicit protocol for Phoenix–Hydrogenesi–Third integration
+4. **Architecture Principles**: Documented longevity and design philosophy
+5. **Historical Preservation**: Archived v1.x architecture for reference
+
+### Documentation Status
+
+All documentation includes standardized status metadata:
+- **state**: draft | in_review | stable | archived
+- **coverage**: low | medium | high  
+- **confidence**: low | medium | high
+
+See [Documentation Status](./docs-status.md) for complete tracking.
 
 ---
 
