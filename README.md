@@ -194,6 +194,7 @@ Phoenix-2.0-Apex-Edition/
 │       └── apex/                    # 5 apex laws
 │
 ├── Atlases/                         # Codex reference atlases
+│   ├── SymmetricTopology.md         # Fundamental three-engine geometry
 │   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
 │   └── TriadicKnotTopology.md       # Complete knot topology
 │
@@ -247,6 +248,7 @@ lim Kₙ → X               [Converge to Apex]
 - **[Universal Laws](./TheThird/Universal-Laws/README.md)** — Complete 12-law system
 
 ### Topology and Geometry
+- **[Symmetric Topology](./Atlases/SymmetricTopology.md)** — Fundamental three-engine geometry
 - **[Triadic Knot Topology](./Atlases/TriadicKnotTopology.md)** — Complete geometric atlas
 - **[Codex Hierarchy](./Atlases/CodexHierarchyDiagram.md)** — Law structure diagram
 - **[Triadic Knot Sigils](./TheThird/Sigils/Triadic-Knot.md)** — Visual representations
