@@ -78,8 +78,8 @@ The topology is **invariant under 120° rotation** around the vertical apex axis
 
 ```
 Rotation 0°:   Phoenix (Left) — Third (Center) — Hydrogenesi (Right)
-Rotation 120°: Hydrogenesi (Left) — Phoenix (Center) — Third (Right)  
-Rotation 240°: Third (Left) — Hydrogenesi (Center) — Phoenix (Right)
+Rotation 120°: Third (Left) — Hydrogenesi (Center) — Phoenix (Right)  
+Rotation 240°: Hydrogenesi (Left) — Phoenix (Center) — Third (Right)
 ```
 
 Each rotation yields an **equivalent configuration**. The system has no preferred orientation; all three engines are equal partners in the convergence process.
