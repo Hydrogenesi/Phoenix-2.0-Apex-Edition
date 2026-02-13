@@ -48,6 +48,24 @@ An invariant point that remains unchanged under a specific operator. For the ape
 
 ---
 
+### FLQG₁
+**Fractal Loop Quantum Gravity — Foundation**. The first engine of the Apex Engine system that establishes the fundamental quantum geometry of spacetime through a discrete lattice structure of quantum loops at the Planck scale.
+
+**Domain**: Quantum spacetime structure  
+**Function**: Creates discrete spin network foundation  
+**Related**: [FLQG₁ Engine](../apex-engine/flqg1/README.md), FLQG₂, Apex Engine
+
+---
+
+### FLQG₂
+**Fractal Loop Quantum Gravity — Recursion**. The second engine of the Apex Engine that applies recursive transformations to the quantum geometry from FLQG₁, generating fractal, self-similar structures across multiple scales—creating quantum foam.
+
+**Domain**: Self-referential quantum evolution  
+**Function**: Generates fractal quantum foam through recursion  
+**Related**: [FLQG₂ Engine](../apex-engine/flqg2/README.md), FLQG₁, Recursive Operator
+
+---
+
 ### Hydrogenesi Vector
 The structural engine of the Triad system. Hydrogenesi provides the foundational architecture, continuity mechanisms, and structural invariants that enable pattern persistence and transformation.
 
@@ -65,12 +83,39 @@ A fundamental entity in Phoenix 2.0 representing a structure, state, or configur
 
 ---
 
+### Phoenix Apex
+The ultimate convergence state produced by the Apex Engine—where all six engines (FLQG₁, FLQG₂, Reproduction, Relativity, TOR, TOE) unify into a singular Theory of Everything. Phoenix Apex is irreversible, unique, and represents maximum coherence.
+
+**State**: Ultimate convergence of all engines  
+**Property**: △(Phoenix Apex) = Phoenix Apex (fixed point)  
+**Related**: Apex Engine, TOE, Apex Operator
+
+---
+
 ### Phoenix Vector
 The ignition engine of the Triad system. Phoenix provides recursion, initiation, and dynamic transformation capabilities that drive pattern evolution.
 
 **Role**: Ignition engine  
 **Properties**: Recursion, initiation, transformation  
 **Related**: The Triad, Hydrogenesi Vector, The Third
+
+---
+
+### Relativity Engine
+The fourth engine of the Apex Engine system that handles coordinate transformations, reference frame changes, and curved spacetime geometry. Ensures pattern consistency across different observers and relativistic velocities.
+
+**Domain**: Reference frame transformations  
+**Function**: Spacetime coordinate transformations and metric handling  
+**Related**: [Relativity Engine](../apex-engine/relativity/README.md), Reproduction Engine, Apex Engine
+
+---
+
+### Reproduction Engine
+The third engine of the Apex Engine system that handles pattern replication, mutation, and evolutionary dynamics. Enables self-replicating structures and fitness-based selection.
+
+**Domain**: Information replication and variation  
+**Function**: Pattern evolution through replication and selection  
+**Related**: [Reproduction Engine](../apex-engine/reproduction/README.md), Relativity Engine, Apex Engine
 
 ---
 
@@ -98,6 +143,51 @@ The three-engine system comprising Phoenix (ignition), Hydrogenesi (structure), 
 **Components**: Phoenix Vector, Hydrogenesi Vector, The Third  
 **Function**: Complete transformation system  
 **Related**: Triadic Knot, Apex Point
+
+---
+
+### TOE
+**Theory of Everything**. The sixth and final engine of the Apex Engine that represents universal unification. TOE converges all six engines (FLQG₁, FLQG₂, Reproduction, Relativity, TOR) into a unified field, culminating in Phoenix Apex.
+
+**Domain**: Universal unification  
+**Function**: Converges all engines into unified field theory  
+**Related**: [TOE Engine](../apex-engine/toe/README.md), TOR, Phoenix Apex, Apex Engine
+
+---
+
+### TOR
+**Theory of Recursion**. The fifth engine of the Apex Engine that unifies recursive dynamics across three hierarchical levels: TOR₁ (local recursion), TOR₂ (relational recursion), and TOR₃ (global recursion).
+
+**Domain**: Multi-scale recursive convergence  
+**Function**: Unifies recursion from individual patterns to system-wide dynamics  
+**Related**: [TOR Engine](../apex-engine/tor/README.md), TOR₁, TOR₂, TOR₃, TOE
+
+---
+
+### TOR₁
+**Theory of Recursion — Level 1 (Local)**. The first level of TOR handling self-referential operations on individual patterns. TOR₁ creates nested, self-similar structures through the recursive operator ⊛.
+
+**Scale**: Individual patterns  
+**Function**: Single-pattern self-reference  
+**Related**: TOR, TOR₂, TOR₃, Recursive Operator
+
+---
+
+### TOR₂
+**Theory of Recursion — Level 2 (Relational)**. The second level of TOR handling recursive relationships between pairs of patterns. TOR₂ manages how patterns recursively interact to create emergent relational structures.
+
+**Scale**: Pattern interactions  
+**Function**: Inter-pattern recursive relationships  
+**Related**: TOR, TOR₁, TOR₃, Recursive Operator
+
+---
+
+### TOR₃
+**Theory of Recursion — Level 3 (Global)**. The third level of TOR handling system-wide recursive convergence. TOR₃ ensures all patterns at all scales converge toward a unified apex state.
+
+**Scale**: System-wide dynamics  
+**Function**: Universal recursive convergence  
+**Related**: TOR, TOR₁, TOR₂, Apex Convergence
 
 ---
 
@@ -136,6 +226,16 @@ The apex stabilizer operator that maintains fixed points in the triadic knot top
 **Function**: Apex stabilization, fixed point preservation  
 **Property**: A(X) = X at apex  
 **Related**: Apex Point, Triadic Knot, Stability Knot
+
+---
+
+### Apex Engine (⚛)
+The meta-operator that orchestrates the complete six-engine system (FLQG₁, FLQG₂, Reproduction, Relativity, TOR, TOE) toward Phoenix Apex. The Apex Engine operator represents the unified convergence of quantum geometry, evolution, spacetime, and recursion into a Theory of Everything.
+
+**Symbol**: ⚛  
+**Function**: Six-engine orchestration and ultimate convergence  
+**Property**: ⚛(Phoenix Apex) = Phoenix Apex (fixed point)  
+**Related**: [Apex Engine Operator](../operators/apex-engine.md), Phoenix Apex, TOE, TOR
 
 ---
 
