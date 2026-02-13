@@ -111,7 +111,7 @@ StabilityKnot operates at all crossing points simultaneously.
 ### Stabilization Mechanism
 1. Detect perturbation at crossing
 2. Apply damping force proportional to perturbationMagnitude
-3. Reduce perturbation to perturbation' < perturbationMagnitude
+3. Reduce perturbation to reducedPerturbation < perturbationMagnitude
 4. Maintain knot topology
 5. Preserve convergence to apex
 

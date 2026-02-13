@@ -104,7 +104,7 @@ The TriadicClosure operator creates a **complete envelope** around the Apex Poin
         currentKnot
 
 Three arms converge simultaneously.
-Closure forms complete envelope.
+Closure forms complete envelope around apex.
 120° rotational symmetry maintained.
 ```
 
