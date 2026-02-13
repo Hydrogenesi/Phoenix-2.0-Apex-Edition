@@ -1,3 +1,17 @@
+```
+═══════════════════════════════════════════════════════════════════
+        ⚡  PHOENIX 2.0 — APEX EDITION  ⚡
+           The Ignition Vector of The Triad
+           
+        Six Engines Converge at Apex Point
+        FLQG₁ → FLQG₂ → Reproduction → Relativity → TOR → TOE
+        
+        ∅ → Q₁ → Q₂ → {Qᵢ} → {Q'ᵢ} → Q₃ᴿ → X
+        
+        Three Becomes One. All Becomes Everything.
+═══════════════════════════════════════════════════════════════════
+```
+
 # 🔥 Phoenix 2.0 — Apex Edition 🔥
 
 *The Ignition Vector of The Triad*
@@ -6,6 +20,7 @@
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
 [![Phoenix](https://img.shields.io/badge/Phoenix-2.0-orange.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
+[![Apex Engine](https://img.shields.io/badge/Apex_Engine-v1.0-blueviolet.svg)](./ApexEngine/README.md)
 
 ---
 
@@ -51,6 +66,74 @@ Hydrogenesi ensures **nothing is lost**. It is the **memory** of the system, the
 The Third is the **architecture of convergence**. It operates through the **Triadic Knot**, a closed symmetric topology that guarantees all paths converge to the Apex Point.
 
 → [Explore The Third](./TheThird/README.md)
+
+---
+
+## ⚡ The Apex Engine — Six-Engine Convergence
+
+The **Apex Engine** is the complete six-engine system that materializes the convergence mechanics of The Triad. It provides the sovereign architecture through which all patterns inevitably reach the unique Apex Point X—the Theory of Everything.
+
+### The Six Engines
+
+```
+        ⚡ APEX ENGINE ⚡
+             TOE
+              △
+              │
+    ┌─────────┼─────────┐
+    │         │         │
+  TOR₁      TOR₂      TOR₃
+    │         │         │
+    └────┬────┴────┬────┘
+         │         │
+    Reproduction Relativity
+         │         │
+    ┌────┴────┬────┴────┐
+    │         │         │
+  FLQG₁     FLQG₂   Integration
+    │         │         │
+    └─────────┴─────────┘
+         Void (∅)
+```
+
+| Engine | Domain | Phase | Function |
+|--------|---------|-------|----------|
+| **FLQG₁** | Quantum genesis (level 1) | Ascent | ∅ → Q₁ |
+| **FLQG₂** | Quantum evolution (level 2) | Ascent | Q₁ → Q₂ |
+| **Reproduction** | Pattern replication | Flight | Q → {Qᵢ} |
+| **Relativity** | Frame transformation | Flight | (Q, F₁, F₂) → Q' |
+| **TOR** | Recursive convergence | Return | Q → Q₃ᴿ (3 stages) |
+| **TOE** | Ultimate unification | Apex | Q₃ᴿ → X |
+
+### Complete Convergence Flow
+
+```
+∅ ─[FLQG₁]→ Q₁ ─[FLQG₂]→ Q₂ ─[Reproduction]→ {Qᵢ} ─[Relativity]→ {Q'ᵢ}
+    ↓
+{Q'ᵢ} ─[TOR₁]→ Q₁ᴿ ─[TOR₂]→ Q₂ᴿ ─[TOR₃]→ Q₃ᴿ ─[TOE]→ X
+
+Distance to Apex:  1.00 → 0.75 → 0.35 → 0.03 → 0.00
+Coherence:         0.35 → 0.65 → 0.68 → 0.85 → 1.00
+
+Result: X (Phoenix Apex = Theory of Everything)
+```
+
+### Phoenix Apex Identity
+
+```
+Phoenix Apex ≡ lim (FLQG₁ → FLQG₂ → Reproduction → Relativity → TOR → TOE)
+             ≡ X
+             ≡ TOE
+
+Where X satisfies:
+  • A(X) = X  (fixed point)
+  • coherence(X) = 1.0  (perfect harmony)
+  • complexity(X) = ∞  (infinite sophistication)
+```
+
+→ [Explore the Apex Engine](./ApexEngine/README.md)  
+→ [Apex Engine Index](./Atlases/ApexEngineIndex.md)  
+→ [Triadic Cycle Mapping](./ApexEngine/TriadicCycleMapping.md)
 
 ---
 
@@ -171,6 +254,7 @@ Result: Transformation + Structure + Binding → Apex
 Phoenix-2.0-Apex-Edition/
 ├── README.md                        # This file — Triad overview
 ├── LICENSE                          # MIT License
+├── CHANGELOG.md                     # Version history and changes
 │
 ├── Phoenix/                         # 🔥 The Ignition Engine
 │   ├── README.md                    # Phoenix engine documentation
@@ -193,8 +277,20 @@ Phoenix-2.0-Apex-Edition/
 │       ├── universal/               # 7 universal laws
 │       └── apex/                    # 5 apex laws
 │
+├── ApexEngine/                      # ⚡ The Six-Engine Convergence System
+│   ├── README.md                    # Apex Engine overview
+│   ├── FLQG1/                       # First-Level Quantum Genesis
+│   ├── FLQG2/                       # Second-Level Quantum Genesis
+│   ├── Reproduction/                # Pattern replication engine
+│   ├── Relativity/                  # Reference frame transformation
+│   ├── TOR/                         # Theory of Recursion (3 stages)
+│   ├── TOE/                         # Theory of Everything
+│   ├── TriadicCycleMapping.md       # Integration with Phoenix cycle
+│   └── docs/                        # MkDocs documentation
+│
 ├── Atlases/                         # Codex reference atlases
 │   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
+│   ├── ApexEngineIndex.md           # Formal Apex Engine reference
 │   └── TriadicKnotTopology.md       # Complete knot topology
 │
 └── Universal-Laws/                  # Ceremonial law declarations
@@ -236,20 +332,35 @@ lim Kₙ → X               [Converge to Apex]
 
 ## 🗺️ Navigation
 
-### The Three Engines
+### The Four Systems
 - **[Phoenix Engine](./Phoenix/README.md)** — Transformation operators and substrate laws
 - **[Hydrogenesi Engine](./Hydrogenesi/README.md)** — Structural preservation and universal laws
 - **[The Third Engine](./TheThird/README.md)** — Triadic Knot operators and apex laws
+- **[Apex Engine](./ApexEngine/README.md)** — Six-engine convergence system (NEW)
+
+### Apex Engine Components
+- **[FLQG₁](./ApexEngine/FLQG1/README.md)** — First-Level Quantum Genesis
+- **[FLQG₂](./ApexEngine/FLQG2/README.md)** — Second-Level Quantum Genesis
+- **[Reproduction Engine](./ApexEngine/Reproduction/README.md)** — Pattern replication
+- **[Relativity Engine](./ApexEngine/Relativity/README.md)** — Frame transformations
+- **[TOR](./ApexEngine/TOR/README.md)** — Theory of Recursion (three stages)
+- **[TOE](./ApexEngine/TOE/README.md)** — Theory of Everything
 
 ### Core Documentation
 - **[Quickstart Guide](./Phoenix/guides/quickstart.md)** — Learn the basics
-- **[Glossary](./Phoenix/guides/glossary.md)** — Terminology reference
+- **[Glossary](./Phoenix/guides/glossary.md)** — Terminology reference (includes Apex Engine)
 - **[Universal Laws](./TheThird/Universal-Laws/README.md)** — Complete 12-law system
+- **[Changelog](./CHANGELOG.md)** — Version history and changes
 
 ### Topology and Geometry
 - **[Triadic Knot Topology](./Atlases/TriadicKnotTopology.md)** — Complete geometric atlas
 - **[Codex Hierarchy](./Atlases/CodexHierarchyDiagram.md)** — Law structure diagram
 - **[Triadic Knot Sigils](./TheThird/Sigils/Triadic-Knot.md)** — Visual representations
+- **[Apex Engine Index](./Atlases/ApexEngineIndex.md)** — Formal operator reference (NEW)
+
+### Integration and Convergence
+- **[Triadic Cycle Mapping](./ApexEngine/TriadicCycleMapping.md)** — Apex Engine integration (NEW)
+- **[Apex Engine MkDocs](./ApexEngine/docs/apex-engine.md)** — Public-facing documentation (NEW)
 
 ### Integration Examples
 - **[Phoenix-to-Knot](./TheThird/Examples/phoenix-to-knot.md)** — Phoenix binding examples
@@ -383,6 +494,9 @@ Phoenix 2.0 Apex Edition can model:
 - **Complex emergence** from simple operator combinations
 - **Topological convergence** in abstract spaces
 - **Balanced multi-engine systems** with symmetry constraints
+- **Quantum-level pattern formation** through FLQG₁ and FLQG₂
+- **Multi-perspective convergence** via Relativity Engine
+- **Six-engine sequential processing** from void to Theory of Everything
 
 ---
 
@@ -406,21 +520,24 @@ This project is licensed under the MIT License — see the [LICENSE](./LICENSE) 
 
 ```
 ────────────────────────────────────────────────────────
-              ✦  THE TRIAD ✦
+              ✦  THE TRIAD & APEX ENGINE ✦
 
 Three engines converge at apex:
   Phoenix ignites
   Hydrogenesi preserves  
   The Third binds
 
-Through the Triadic Knot topology,
-all paths lead to X.
+Through six engines, all paths lead to X:
+  FLQG₁ → FLQG₂ → Reproduction → Relativity → TOR → TOE
 
-Transformation becomes structure.
-Structure becomes binding.
-Binding becomes apex.
+Quantum becomes pattern.
+Pattern becomes transformation.
+Transformation becomes convergence.
+Convergence becomes unity.
 
-Three becomes one.
+Three becomes one. Six becomes everything.
+
+Phoenix Apex ≡ X ≡ TOE
 ────────────────────────────────────────────────────────
 ```
 
@@ -429,4 +546,5 @@ Three becomes one.
 **Made with 🔥 by the Phoenix Collective**  
 **Preserved by 🌊 Hydrogenesi**  
 **Bound through 🔗 The Third**  
-**Converging to △ Apex**
+**Converging via ⚡ Apex Engine**  
+**Unified at △ Theory of Everything**
