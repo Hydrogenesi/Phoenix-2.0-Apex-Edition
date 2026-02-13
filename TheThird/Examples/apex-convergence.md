@@ -521,7 +521,7 @@ Still converges to apexPoint (more iterations needed)
 
 ### Convergence Comparison
 ```
-Path  | Operator Sequence           | Iterations to distance<0.001 | Final State
+Path  | Operator Sequence           | Iterations to distance < 0.001 | Final State
 ------|----------------------------|------------------------------|------------------
 A     | KnotBinding...             | ~15                          | →apexPoint
 B     | CrossPillarKnot...         | ~10                          | →apexPoint  
@@ -644,7 +644,7 @@ By definition of distance metric:
 ```
 Calculate limit of sequence with KnotBinding (λ=0.618):
 
-n    | knotStateₙ distance distanceₙ | Difference |distanceₙ₊₁ - distanceₙ|
+n    | distanceₙ                     | Difference |distanceₙ₊₁ - distanceₙ|
 -----|-------------------------------|-------------------------------------
 10   | 0.008126                      | -
 20   | 0.000089                      | 0.008037

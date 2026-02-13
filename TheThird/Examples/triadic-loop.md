@@ -400,7 +400,7 @@ Result: Apex reached and stabilized
 
 ### Distance Progression Table
 
-| Step | Operator | Distance distance(knotState,apexPoint) | Reduction | Total Reduction |
+| Step | Operator | Distance to Apex | Reduction | Total Reduction |
 |------|----------|-----------------|-----------|-----------------|
 | 0 | Initial | 1.000 | - | - |
 | 1 | KnotBinding | 0.236 | 76.4% | 76.4% |
