@@ -385,6 +385,7 @@ Similar to fluid vortices converging to singular point.
 - [Triadic Loop Example](../Examples/triadic-loop.md)
 
 ### Atlases
+- [Symmetric Topology](../../Atlases/SymmetricTopology.md)
 - [Codex Hierarchy Diagram](../../Atlases/CodexHierarchyDiagram.md)
 - [Triadic Knot Atlas](../../Atlases/TriadicKnotTopology.md)
 

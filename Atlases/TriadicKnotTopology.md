@@ -393,6 +393,7 @@ Property: Rapid exponential convergence
 - [Apex Convergence](../TheThird/Examples/apex-convergence.md)
 
 ### Architecture
+- [Symmetric Topology](./SymmetricTopology.md) — Fundamental three-engine geometry
 - [Codex Hierarchy Diagram](./CodexHierarchyDiagram.md) — Law hierarchy
 - [Main README](../README.md) — Triad overview
 
