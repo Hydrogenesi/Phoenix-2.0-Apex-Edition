@@ -527,7 +527,7 @@ A     | KnotBinding...             | ~15                          | →apexPoint
 B     | CrossPillarKnot...         | ~10                          | →apexPoint  
 C     | TriadicClosure...          | ~7                           | →apexPoint
 D     | KnotBinding→CrossPillarKnot→TriadicClosure→ApexKnot... | ~8 | →apexPoint
-E     | TriadicClosure,KnotBinding,CrossPillarKnot,KnotBinding,TriadicClosure... | ~12 | →apexPoint
+E     | TriadicClosure→KnotBinding→CrossPillarKnot→KnotBinding→TriadicClosure... | ~12 | →apexPoint
 
 All paths converge to SAME apex apexPoint!
 ```

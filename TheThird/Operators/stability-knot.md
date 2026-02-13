@@ -23,6 +23,7 @@ where:
   knotState = Knot state (possibly perturbed)
   perturbationMagnitude = Perturbation magnitude
   updatedKnot = Stabilized knot state with suppressed perturbations
+  reducedPerturbation = Perturbation magnitude after stabilization (< perturbationMagnitude)
 ```
 
 ### Domain
