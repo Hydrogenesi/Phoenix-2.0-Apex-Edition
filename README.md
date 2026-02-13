@@ -394,6 +394,14 @@ Contributions that maintain consistency with the Triadic architecture and univer
 - Documentation follows established style
 - Cross-references are complete
 
+### 📋 PR Consolidation Documentation
+
+For maintainers managing the historical PR consolidation (#1–#18):
+- **[PR Consolidation Plan](./PR_CONSOLIDATION_PLAN.md)** — Complete strategy and merge order
+- **[PR Consolidation Templates](./PR_CONSOLIDATION_TEMPLATES.md)** — Ready-to-use PR descriptions
+- **[PR Migration Map](./PR_MIGRATION_MAP.md)** — Detailed content evolution mapping
+- **[Quick Reference](./PR_CONSOLIDATION_QUICKREF.md)** — One-page reference guide
+
 ---
 
 ## 📜 License
