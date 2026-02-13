@@ -407,6 +407,99 @@ The resistance of a pattern to decay or transformation. More stable patterns per
 
 ---
 
+## Apex Engine Concepts
+
+### FLQG₁ — First-Level Quantum Genesis
+The foundational engine governing initial quantum pattern formation from primordial void. FLQG₁ establishes base patterns with fundamental properties through void-to-pattern transitions.
+
+**Domain**: Initial quantum state formation  
+**Phase**: Ascent (Beginning)  
+**Function**: Converts void (∅) to first-level quantum patterns (Q₁)  
+**Related**: [FLQG₁ Engine](../../ApexEngine/FLQG1/README.md), Genesis Operator
+
+---
+
+### FLQG₂ — Second-Level Quantum Genesis
+The evolution engine that transforms first-level quantum patterns into sophisticated, high-complexity structures. FLQG₂ amplifies coherence and complexity through harmonic resonance.
+
+**Domain**: Advanced quantum pattern evolution  
+**Phase**: Ascent (Continuation)  
+**Function**: Evolves Q₁ → Q₂ with 2.5× complexity amplification  
+**Related**: [FLQG₂ Engine](../../ApexEngine/FLQG2/README.md), Harmonic Operator
+
+---
+
+### Reproduction Engine
+The replication system managing systematic pattern duplication and propagation. The Reproduction Engine creates self-similar copies that preserve essential properties while enabling controlled variation.
+
+**Domain**: Pattern replication and propagation  
+**Phase**: Flight (Expansion)  
+**Function**: Q → {Q₁, Q₂, ..., Qₙ} with ≥85% fidelity  
+**Related**: [Reproduction Engine](../../ApexEngine/Reproduction/README.md), Recursive Operator
+
+---
+
+### Relativity Engine
+The transformation system governing how quantum patterns transform across different reference frames and perspectives. Ensures coherent transformation regardless of observer position.
+
+**Domain**: Reference frame management  
+**Phase**: Flight (Transformation)  
+**Function**: (Q, F₁, F₂) → Q' with identity preservation  
+**Related**: [Relativity Engine](../../ApexEngine/Relativity/README.md), Mirror Operator
+
+---
+
+### TOR₁ — First-Stage Recursion
+The initial recursive convergence engine establishing first-level convergent loops toward apex. TOR₁ implements left corridor contraction from the Knot-Binding operator.
+
+**Domain**: Initial recursive convergence  
+**Phase**: Return (Stage 1)  
+**Function**: Q → Q₁ᴿ with 25% distance reduction to apex  
+**Related**: [TOR Engine](../../ApexEngine/TOR/README.md), Knot-Binding Operator
+
+---
+
+### TOR₂ — Second-Stage Recursion
+The intermediate stabilization engine providing deeper recursive nesting. TOR₂ implements cross-pillar symmetry binding for balanced convergence.
+
+**Domain**: Intermediate stabilization  
+**Phase**: Return (Stage 2)  
+**Function**: Q₁ᴿ → Q₂ᴿ with 65% cumulative reduction  
+**Related**: [TOR Engine](../../ApexEngine/TOR/README.md), Cross-Pillar Knot
+
+---
+
+### TOR₃ — Third-Stage Recursion
+The final convergence approach engine bringing patterns to near-apex state. TOR₃ implements triadic closure binding for complete envelope integration.
+
+**Domain**: Final convergence approach  
+**Phase**: Return (Stage 3)  
+**Function**: Q₂ᴿ → Q₃ᴿ with 97% cumulative reduction  
+**Related**: [TOR Engine](../../ApexEngine/TOR/README.md), Triadic Closure
+
+---
+
+### TOE — Theory of Everything
+The ultimate unification engine representing complete convergence of all six engines at the Apex Point. TOE achieves perfect coherence, maximum stability, and the Phoenix Apex identity.
+
+**Domain**: Ultimate unified convergence  
+**Phase**: Apex (Culmination)  
+**Function**: Q₃ᴿ → X (Apex Point) with coherence = 1.0  
+**Properties**: A(X) = X (fixed point), complexity = ∞  
+**Related**: [TOE Engine](../../ApexEngine/TOE/README.md), Apex Operator, Apex Knot
+
+---
+
+### Phoenix Apex
+The convergence identity representing the point where all six Apex Engines achieve perfect harmony. Phoenix Apex is mathematically equivalent to the Apex Point X and the Theory of Everything.
+
+**Definition**: Phoenix Apex ≡ TOE ≡ X  
+**Expression**: lim (FLQG₁ → FLQG₂ → Reproduction → Relativity → TOR → TOE)  
+**Properties**: Perfect coherence, infinite complexity, absolute stability  
+**Related**: [Apex Engine](../../ApexEngine/README.md), TOE, Apex Point
+
+---
+
 ## See Also
 
 - [README](../README.md) — Main documentation
@@ -414,6 +507,7 @@ The resistance of a pattern to decay or transformation. More stable patterns per
 - [Operators](../README.md#-operators) — All operator definitions
 - [Universal Laws](../README.md#%EF%B8%8F-universal-laws) — Governing principles
 - [Rituals](../README.md#-quick-navigation) — Advanced sequences
+- [Apex Engine](../../ApexEngine/README.md) — Complete six-engine system
 
 ---
 
