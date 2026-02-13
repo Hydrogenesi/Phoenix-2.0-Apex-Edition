@@ -60,9 +60,9 @@ Genealogy projection is inherently recursive. Each projected state can itself be
 For any pattern Ψ:
   All paths in G(Ψ) eventually converge to apex regions
   
-  ∀ path ∈ G(Ψ): ∃ n such that path[n] ≈ Apex
+  ∀ path ∈ G(Ψ): ∃ n such that lim_{m→∞} path[n+m] = X
   
-All genealogies lead to apex.
+All genealogies lead to apex in the limit.
 ```
 
 ### Projection Collapse at Apex

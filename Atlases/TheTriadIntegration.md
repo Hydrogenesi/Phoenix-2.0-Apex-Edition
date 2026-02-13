@@ -474,7 +474,9 @@ Status: ✓ APEX ACHIEVED
 4. Apex Harmonic Convergence
 5. Apex Polarity Resolution
 
-**Total**: 17 universal laws (note: some laws span multiple engines)
+**Total**: 17 universal laws organized across three layers
+
+Note: The 17 laws are distinct, though some laws (like Conservation, Symmetry) manifest differently at each layer and provide complementary perspectives on the same fundamental principles.
 
 ---
 

@@ -82,10 +82,11 @@ Convergence preserves all invariants from both parents.
 For mirror operator:
   Ψ* = ⊞(Ψ)
   
-Dual invariants:
-  P(Ψ*) = P̅(Ψ)  [complementary but equivalent set]
+Dual invariants (complementary set):
+  P(Ψ*) = P̅(Ψ)  [symmetric/dual invariant set]
   
-Mirror creates symmetric invariant set.
+Mirror creates symmetric invariant set that is structurally equivalent.
+Note: Overbar denotes dual/complementary structure, not set complement.
 ```
 
 ---

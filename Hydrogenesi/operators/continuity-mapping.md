@@ -340,10 +340,10 @@ Combines two continuities into composite continuity.
 
 ### Path Smoothness
 ```
-smooth(Ψ₁, Ψ₂) = ∇²C(Ψ₁, Ψ₂)
+smoothness(Ψ₁, Ψ₂) = measure of transition regularity in C(Ψ₁, Ψ₂)
 
 Measures smoothness of transformation path.
-Zero discontinuities = perfectly smooth.
+Zero discontinuities = perfectly smooth transition.
 ```
 
 ---

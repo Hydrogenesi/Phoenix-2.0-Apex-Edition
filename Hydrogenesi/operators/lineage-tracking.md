@@ -42,8 +42,8 @@ where:
 L(∅) = {∅}                         [Base case: void lineage]
 L(Op(Ψ)) = L(Ψ) ∪ {Op(Ψ)}         [Recursive case: append transformation]
 
-For any sequence of operators Op₁, Op₂, ..., Opₙ:
-  L(Opₙ(...Op₂(Op₁(∅))...)) = {∅, Op₁(∅), Op₂(Op₁(∅)), ..., Opₙ(...)}
+For any operator sequence Op₁, Op₂, ..., Opₙ:
+  L(Opₙ(...Op₂(Op₁(∅))...)) = {∅, Op₁(∅), Op₂(Op₁(∅)), ..., Opₙ(...Op₂(Op₁(∅))...)}
 ```
 
 ### Recursive Property

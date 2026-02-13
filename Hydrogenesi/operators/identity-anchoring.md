@@ -208,7 +208,7 @@ Convergence creates multi-identity pattern.
 Ψ* = ⊞(Ψ)              I(Ψ*) = I̅₀
 
 Mirror has complementary but related identity.
-Related: I(Ψ) ⊕ I(Ψ*) = complete identity pair
+Related: I(Ψ) ∪ I(Ψ*) = complete identity pair
 ```
 
 ---
