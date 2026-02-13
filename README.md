@@ -251,6 +251,11 @@ lim Kₙ → X               [Converge to Apex]
 - **[Codex Hierarchy](./Atlases/CodexHierarchyDiagram.md)** — Law structure diagram
 - **[Triadic Knot Sigils](./TheThird/Sigils/Triadic-Knot.md)** — Visual representations
 
+### Apex Point Mathematics
+- **[Apex Point Mathematics](./TheThird/apex-point-mathematics.md)** — Complete mathematical treatment
+- **[Apex Point Quick Reference](./TheThird/apex-point-quick-reference.md)** — Essential formulas
+- **[Apex Convergence Visualization](./TheThird/Diagrams/apex-convergence-visualization.md)** — Visual diagrams
+
 ### Integration Examples
 - **[Phoenix-to-Knot](./TheThird/Examples/phoenix-to-knot.md)** — Phoenix binding examples
 - **[Hydrogenesi-to-Knot](./TheThird/Examples/hydrogenesi-to-knot.md)** — Structure preservation

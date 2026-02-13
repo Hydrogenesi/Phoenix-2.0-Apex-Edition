@@ -259,6 +259,11 @@ lim Kₙ → X            [Converge to apex]
 - [Examples](./Examples/) — Integration patterns and convergence proofs
 - [Universal Laws](./Universal-Laws/) — The complete 12-law structure
 
+### Apex Point Documentation
+- [Apex Point Mathematics](./apex-point-mathematics.md) — Complete mathematical treatment
+- [Apex Point Quick Reference](./apex-point-quick-reference.md) — Essential formulas at a glance
+- [Apex Convergence Visualization](./Diagrams/apex-convergence-visualization.md) — Visual diagrams
+
 ### The Triad
 - [Back to Main](../README.md) — Triad architecture overview
 - [Phoenix](../Phoenix/README.md) — The ignition engine
