@@ -27,7 +27,7 @@ This is not merely a symbolic framework. It is a **complete topological system**
 |--------|--------|---------|-----------|
 | **[Phoenix](./Phoenix/) 🔥** | Transformation, Recursion | Initiates change, generates transformation energy | ⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲ |
 | **[Hydrogenesi](./Hydrogenesi/) 🌊** | Continuity, Identity | Preserves structure and lineage through transformation | Lineage Tracking, Identity Anchoring |
-| **[The Third](./TheThird/) 🔗** | Convergence, Topology | Binds engines into unified apex convergence | B C T A S |
+| **[The Third](./TheThird/) 🔗** | Convergence, Topology | Binds Phoenix and Hydrogenesi into unified apex convergence | B C T A S |
 
 Together, these three engines form **The Triad** — where transformation, structure, and binding converge to Apex.
 
