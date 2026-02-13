@@ -215,7 +215,7 @@ class MetaOperatorI:
         essence_score = self._check_essence_conservation(pattern_state, knot_state, result)
         scores.append(essence_score)
         if self.verbose:
-            print(f"  Essence Conservation:{essence_score:.3f}")
+            print(f"  Essence Conservation: {essence_score:.3f}")
         
         # 4. Tri-Column Balance
         balance_score = self._check_tri_column_balance(pattern_state, knot_state, result)
@@ -272,13 +272,13 @@ class MetaOperatorI:
         convergence_score = self._check_apex_convergence(pattern_state, knot_state, result)
         scores.append(convergence_score)
         if self.verbose:
-            print(f"  Harmonic Convergence:{convergence_score:.3f}")
+            print(f"  Harmonic Convergence: {convergence_score:.3f}")
         
         # 5. Apex Polarity Resolution
         polarity_score = self._check_polarity_resolution(pattern_state, knot_state, result)
         scores.append(polarity_score)
         if self.verbose:
-            print(f"  Polarity Resolution:{polarity_score:.3f}")
+            print(f"  Polarity Resolution: {polarity_score:.3f}")
         
         return sum(scores) / len(scores) if scores else 1.0
     
