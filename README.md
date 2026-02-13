@@ -118,7 +118,14 @@ All paths converge to apex
 
 → [Phoenix Documentation](./Phoenix/README.md)
 
-### Hydrogenesi Layer: 7 Universal Laws + Structural Operators
+### Hydrogenesi Layer: 5 Structural Operators + 7 Universal Laws
+
+**Operators**:
+- L — Lineage Tracking (history preservation)
+- I — Identity Anchoring (essence preservation)
+- C — Continuity Mapping (transition bridges)
+- P — Invariant Preservation (property protection)
+- G — Genealogy Projection (future pathways)
 
 **Universal Laws**:
 1. Recursive Identity — Self-reference at all scales
@@ -129,7 +136,7 @@ All paths converge to apex
 6. Binding Integrity — Knot preservation
 7. Sigil Resonance — Geometric alignment
 
-**Operators**: Lineage, Identity, Continuity (full docs coming soon)
+**Operators**: L I C P G (Structural preservation)
 
 → [Hydrogenesi Documentation](./Hydrogenesi/README.md)
 
