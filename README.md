@@ -172,6 +172,14 @@ Phoenix-2.0-Apex-Edition/
 ├── README.md                        # This file — Triad overview
 ├── LICENSE                          # MIT License
 │
+├── docs/                            # 📚 Canonical Documentation (v2.x)
+│   ├── STATUS.md                    # Documentation status metadata
+│   ├── substrate/                   # Unified 12-law canon
+│   ├── lineage/                     # Historical evolution
+│   ├── architecture/                # Framework longevity principles
+│   ├── apex/                        # 13 core components
+│   └── triad/                       # Triadic Knot protocol & history
+│
 ├── Phoenix/                         # 🔥 The Ignition Engine
 │   ├── README.md                    # Phoenix engine documentation
 │   ├── operators/                   # 8 transformation operators
@@ -235,6 +243,16 @@ lim Kₙ → X               [Converge to Apex]
 ---
 
 ## 🗺️ Navigation
+
+### 📚 Canonical Documentation (v2.x)
+- **[Documentation Status](./docs/STATUS.md)** — Complete status tracking for all docs
+- **[Substrate & 12-Law Canon](./docs/substrate/README.md)** — Unified foundational architecture
+- **[Phoenix-Hydrogenesi Lineage](./docs/lineage/phoenix-hydrogenesi-v1.md)** — Historical evolution
+- **[Architecture Principles](./docs/architecture/principles.md)** — Framework longevity guidelines
+- **[Apex 13 Components](./docs/apex/apex-13-components.md)** — Complete component architecture
+- **[Triadic Knot Protocol](./docs/triad/triadic-knot-protocol.md)** — Formal binding specification
+- **[Triadic Knot Examples](./docs/triad/triadic-knot-examples.md)** — Cross-pillar binding examples
+- **[Triad System v1.0.0 History](./docs/triad/history-v1.md)** — Archived release history
 
 ### The Three Engines
 - **[Phoenix Engine](./Phoenix/README.md)** — Transformation operators and substrate laws
