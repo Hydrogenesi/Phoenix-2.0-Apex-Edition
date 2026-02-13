@@ -193,6 +193,9 @@ Phoenix-2.0-Apex-Edition/
 │       ├── universal/               # 7 universal laws
 │       └── apex/                    # 5 apex laws
 │
+├── Ceremonies/                      # 🔮 Triad Ceremonial Practices
+│   └── README.md                    # Complete ceremonial guide
+│
 ├── Atlases/                         # Codex reference atlases
 │   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
 │   └── TriadicKnotTopology.md       # Complete knot topology
@@ -258,6 +261,7 @@ lim Kₙ → X               [Converge to Apex]
 - **[Apex Convergence](./TheThird/Examples/apex-convergence.md)** — Convergence proofs
 
 ### Ceremonial Applications
+- **[Ceremonies](./Ceremonies/README.md)** — Complete ceremonial practice guide
 - **[Phoenix Rituals](./Phoenix/rituals/)** — Invocation sequences
 - **[Triad Canon](./Universal-Laws/TriadCanon.md)** — The ceremonial declaration
 
