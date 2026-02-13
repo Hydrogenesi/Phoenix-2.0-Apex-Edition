@@ -19,7 +19,8 @@ The convergence destination and fixed point of the triadic knot topology. A poin
 
 **Symbol**: X  
 **Property**: A(X) = X (fixed point)  
-**Related**: Triadic Knot, Apex Knot
+**Related**: Triadic Knot, Apex Knot  
+**Documentation**: [Apex Point Mathematics](../../TheThird/apex-point-mathematics.md), [Quick Reference](../../TheThird/apex-point-quick-reference.md)
 
 ---
 
@@ -27,7 +28,19 @@ The convergence destination and fixed point of the triadic knot topology. A poin
 A monotonic approach to the apex point. A system exhibits convergence when all trajectories move continuously toward a fixed destination without oscillation or divergence.
 
 **Property**: Monotonic approach to X  
-**Related**: Apex Point, Fixed Point, Triadic Knot
+**Formula**: lim (n→∞) Kₙ = X  
+**Related**: Apex Point, Fixed Point, Triadic Knot  
+**Documentation**: [Apex Convergence Example](../../TheThird/Examples/apex-convergence.md), [Convergence Visualization](../../TheThird/Diagrams/apex-convergence-visualization.md)
+
+---
+
+### Convergence Metric
+The distance function d: K × {X} → ℝ⁺ that measures topological distance from any knot state to the apex point. The metric satisfies non-negativity (d(K, X) ≥ 0), identity (d(X, X) = 0), and contraction under operators (d(O(K), X) < d(K, X)).
+
+**Notation**: d(K, X)  
+**Properties**: Non-negative, zero at apex, contractive  
+**Related**: Apex Point, Convergence, Knot Operators  
+**Documentation**: [Apex Point Mathematics](../../TheThird/apex-point-mathematics.md)
 
 ---
 
@@ -270,9 +283,11 @@ The law governing self-referential patterns and nested structures. Recursion ena
 ### Symmetry
 *For every operator, there exists a mirror; every action has an equal and opposite resonance.*
 
-The law establishing that every operation has a complementary dual. Symmetry enables reversibility and maintains harmonic balance.
+The law establishing that every operation has a complementary dual. Symmetry enables reversibility and maintains harmonic balance. In the Triadic Knot, 120° rotational symmetry ensures balanced convergence from all three engines.
 
-**Related**: [Law of Symmetry](../laws/symmetry.md)
+**Types**: Dual symmetry, rotational symmetry (120°)  
+**Related**: [Law of Symmetry](../laws/symmetry.md)  
+**Documentation**: [Apex Point Mathematics](../../TheThird/apex-point-mathematics.md)
 
 ---
 
