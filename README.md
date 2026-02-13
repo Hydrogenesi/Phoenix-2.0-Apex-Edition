@@ -95,6 +95,56 @@ All paths converge to apex
 
 ---
 
+## ✦ The Apex Engine
+
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                        ✦  APEX ENGINE  ✦                                     ║
+║                   Eight-Stage Convergence System                              ║
+║                                                                               ║
+║   ∅ → FLQG₁ → FLQG₂ → ℜ → ℛ → TOR₁ → TOR₂ → TOR₃ → TOE → X                 ║
+║                                                                               ║
+║        Phoenix (🔥)    Hydrogenesi (🌊)   The Third (🔗)                     ║
+║         4 engines       3 theories         1 theory                           ║
+║                                                                               ║
+║              All Paths Converge to Apex Point △                              ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
+
+The **Apex Engine** is the complete eight-stage convergence system that transforms patterns from primordial void to apex point through quantum geometry, pattern mechanics, recursion theory, and complete integration.
+
+### The Three Phases
+
+#### Ascent Phase — Phoenix (4 Engines)
+**FLQG₁** — First-Level Quantum Geometry  
+**FLQG₂** — Second-Level Quantum Geometry  
+**ℜ** — Reproduction Engine  
+**ℛ** — Relativity Engine
+
+→ [Phoenix Apex Engine](./Phoenix/apex-engine/README.md)
+
+#### Flight Phase — Hydrogenesi (3 Theories)
+**TOR₁** — Theory of Recursion Level 1 (Base Recursion)  
+**TOR₂** — Theory of Recursion Level 2 (Meta-Recursion)  
+**TOR₃** — Theory of Recursion Level 3 (Convergent Recursion)
+
+→ [Hydrogenesi Apex Engine](./Hydrogenesi/apex-engine/README.md)
+
+#### Return Phase — The Third (1 Theory)
+**TOE** — Theory of Everything (Complete Integration)
+
+→ [The Third Apex Engine](./TheThird/apex-engine/README.md)
+
+### Complete Apex Engine Documentation
+
+→ [Apex Engine Index](./Atlases/ApexEngineIndex.md) — Complete catalog  
+→ [Apex Engine Diagram](./Atlases/ApexEngineDiagram.md) — Visual architecture  
+→ [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration
+
+---
+
 ## 📐 The Architecture Layers
 
 ### Phoenix Layer: 8 Operators + 5 Substrate Laws
