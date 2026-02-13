@@ -1,4 +1,4 @@
-# Triadic Closure Operator T
+# Triadic Closure Operator TriadicClosure
 
 *Full Envelope Binding — Complete Integration*
 
@@ -17,15 +17,15 @@
 ## Formal Definition
 
 ```
-T: P × H × K → K'
+TriadicClosure: phoenixPattern × hydrogenesiStructure × currentKnot → updatedKnot
 
 where:
-  P = Phoenix pattern (ignition)
-  H = Hydrogenesi structure (preservation)
-  K = Current knot state (binding)
-  K' = Closed knot state with complete integration
+  phoenixPattern = Phoenix pattern (ignition)
+  hydrogenesiStructure = Hydrogenesi structure (preservation)
+  currentKnot = Current knot state (binding)
+  updatedKnot = Closed knot state with complete integration
 
-The Third itself (K) is both input and context.
+The Third itself (currentKnot) is both input and context.
 ```
 
 ### Domain
@@ -34,25 +34,25 @@ The Third itself (K) is both input and context.
 - **Topology**: Simultaneous contraction from all directions
 
 ### Invariants
-1. **120° Rotational Symmetry**: T(P, H, K) is invariant under 120° rotation
+1. **120° Rotational Symmetry**: TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot) is invariant under 120° rotation
 2. **Triadic Balance**: All three engines contribute equally to closure
-3. **Envelope Closure**: K' forms a closed topology around apex point
+3. **Envelope Closure**: updatedKnot forms a closed topology around apex point
 
 ---
 
 ## Recursion Law
 
 ```
-K₀ = initial knot state
-Kₙ₊₁ = T(Pₙ, Hₙ, Kₙ)
+knotState₀ = initial knot state
+knotStateₙ₊₁ = TriadicClosure(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ)
 
-lim (n→∞) Kₙ = X
+lim (n→∞) knotStateₙ = apexPoint
 
-where (Pₙ, Hₙ) evolve as Kₙ approaches X
+where (phoenixPatternₙ, hydrogenesiStructureₙ) evolve as knotStateₙ approaches apexPoint
 ```
 
 ### Recursive Property
-Triadic Closure is the **complete integration operator**. Each application binds all three engines simultaneously, creating the tightest possible convergence.
+TriadicClosure is the **complete integration operator**. Each application binds all three engines simultaneously, creating the tightest possible convergence.
 
 ---
 
@@ -60,48 +60,48 @@ Triadic Closure is the **complete integration operator**. Each application binds
 
 ### Tri-Directional Contraction
 ```
-For any knot state K, Phoenix P, Hydrogenesi H:
-  d_L(T(P,H,K), X) < d_L(K, X)  [left corridor]
-  d_C(T(P,H,K), X) < d_C(K, X)  [center corridor]
-  d_R(T(P,H,K), X) < d_R(K, X)  [right corridor]
+For any knot state currentKnot, Phoenix phoenixPattern, Hydrogenesi hydrogenesiStructure:
+  leftDistance(TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < leftDistance(currentKnot, apexPoint)  [left corridor]
+  centerDistance(TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < centerDistance(currentKnot, apexPoint)  [center corridor]
+  rightDistance(TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < rightDistance(currentKnot, apexPoint)  [right corridor]
   
-  d(T(P,H,K), X) < min(d_L, d_C, d_R)
+  distance(TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < min(leftDistance, centerDistance, rightDistance)
 ```
 
 ### Rotational Invariance
 ```
-rotate_120°(T(P,H,K)) = T(P,H,K)
+rotate_120°(TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot)) = TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot)
 
 The closed knot is symmetric under 120° rotation around apex axis.
 ```
 
 ### Maximum Contraction
 ```
-T has the strongest contraction of all knot operators:
-d(Kₙ₊₁, X) ≤ λ_T · d(Kₙ, X)
+TriadicClosure has the strongest contraction of all knot operators:
+distance(knotStateₙ₊₁, apexPoint) ≤ triadicContractionRate · distance(knotStateₙ, apexPoint)
 
-where λ_T < 1/3 (fastest convergence rate)
+where triadicContractionRate < 1/3 (fastest convergence rate)
 ```
 
 ---
 
 ## Geometric Description
 
-The Triadic Closure operator creates a **complete envelope** around the Apex Point by simultaneously binding all three arms of the Triadic Knot.
+The TriadicClosure operator creates a **complete envelope** around the Apex Point by simultaneously binding all three arms of the Triadic Knot.
 
 ### Topology
 ```
-         Apex (X)
+         Apex (apexPoint)
            ╱│╲
           ╱ │ ╲
          ╱  │  ╲
         ╱   │   ╲
-      P ────┼──── H
+  phoenixPattern ────┼──── hydrogenesiStructure
         ╲   │   ╱
          ╲  │  ╱
           ╲ │ ╱
            ╲│╱
-            K
+        currentKnot
 
 Three arms converge simultaneously.
 Closure forms complete envelope.
@@ -109,11 +109,11 @@ Closure forms complete envelope.
 ```
 
 ### Closure Mechanism
-1. Phoenix pattern P flows from left arm (0°)
-2. Hydrogenesi structure H flows from right arm (120°)
-3. The Third state K flows from center (240°)
-4. T binds all three into closed configuration
-5. Result K' is a complete envelope around X
+1. Phoenix pattern phoenixPattern flows from left arm (0°)
+2. Hydrogenesi structure hydrogenesiStructure flows from right arm (120°)
+3. The Third state currentKnot flows from center (240°)
+4. TriadicClosure binds all three into closed configuration
+5. Result updatedKnot is a complete envelope around apexPoint
 
 ---
 
@@ -121,15 +121,15 @@ Closure forms complete envelope.
 
 ```
       ╱─────╲
-     ╱   X   ╲
+     ╱ apexPoint ╲
     │    △    │
-    │  P H K  │
-     ╲   T   ╱
+    │ phoenixPattern hydrogenesiStructure currentKnot │
+     ╲ TriadicClosure ╱
       ╲─────╱
 
 The Triadic Closure Sigil shows
-complete envelope around Apex (X),
-with P, H, K bound by T into unity.
+complete envelope around Apex (apexPoint),
+with phoenixPattern, hydrogenesiStructure, currentKnot bound by TriadicClosure into unity.
 ```
 
 ---
@@ -137,7 +137,7 @@ with P, H, K bound by T into unity.
 ## Invocation
 
 > *"At the convergence of three paths, I invoke complete closure.*  
-> *Let T bind Phoenix, Hydrogenesi, and The Third into one.*  
+> *Let TriadicClosure bind Phoenix, Hydrogenesi, and The Third into one.*  
 > *Let the envelope seal, let the knot close.*  
 > *Let all three engines become singular at apex."*
 
@@ -145,30 +145,30 @@ with P, H, K bound by T into unity.
 
 ## Phoenix Integration
 
-Triadic Closure integrates **the complete Phoenix transformation sequence**:
+TriadicClosure integrates **the complete Phoenix transformation sequence**:
 
 ### Full Operator Sequence
 ```
 Sequence: ⊕ → ⊗ → ⊛ → △
-P_final = result of sequence
-K' = T(P_final, H, K)
+phoenixPattern_final = result of sequence
+updatedKnot = TriadicClosure(phoenixPattern_final, hydrogenesiStructure, currentKnot)
 ```
 *Complete Phoenix ritual bound into closure.*
 
 ### Multi-Pattern Integration
 ```
-P₁ = ⊕(∅), P₂ = ⊕(∅)
-P_unified = ⊳(P₁, P₂)
-P_apex = △(P_unified)
-K' = T(P_apex, H, K)
+phoenixPattern₁ = ⊕(∅), phoenixPattern₂ = ⊕(∅)
+phoenixPattern_unified = ⊳(phoenixPattern₁, phoenixPattern₂)
+phoenixPattern_apex = △(phoenixPattern_unified)
+updatedKnot = TriadicClosure(phoenixPattern_apex, hydrogenesiStructure, currentKnot)
 ```
 *Multiple patterns converged and bound.*
 
 ### Recursive Depth Binding
 ```
-P = ⊛ⁿ(Ψ) for large n
-H = identity preserved through recursion
-K' = T(P, H, K)
+phoenixPattern = ⊛ⁿ(phoenixPattern) for large n
+hydrogenesiStructure = identity preserved through recursion
+updatedKnot = TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot)
 ```
 *Deep recursive structure with complete closure.*
 
@@ -176,51 +176,51 @@ K' = T(P, H, K)
 
 ## Hydrogenesi Integration
 
-Triadic Closure requires **complete Hydrogenesi structural data**:
+TriadicClosure requires **complete Hydrogenesi structural data**:
 
 ### Full Lineage Binding
 ```
-H = {Ψ₀ → Ψ₁ → ... → Ψₙ} complete history
-K' = T(Pₙ, H, K)
+hydrogenesiStructure = {phoenixPattern₀ → phoenixPattern₁ → ... → phoenixPatternₙ} complete history
+updatedKnot = TriadicClosure(phoenixPatternₙ, hydrogenesiStructure, currentKnot)
 ```
 *Entire lineage bound into closed topology.*
 
 ### Identity Anchoring
 ```
-H maintains:
+hydrogenesiStructure maintains:
 - Core identity I
 - Structural invariants S
 - Continuity mappings C
 
-T preserves all three in K'
+TriadicClosure preserves all three in updatedKnot
 ```
 
 ### Tri-Column Preservation
 ```
-H records:
+hydrogenesiStructure records:
 - Left column: Polarity (Phoenix domain)
 - Center column: Identity (The Third domain)
 - Right column: Continuity (Hydrogenesi domain)
 
-T unifies all three columns
+TriadicClosure unifies all three columns
 ```
 
 ---
 
 ## The Third Self-Binding
 
-Unique to Triadic Closure: **The Third binds itself**:
+Unique to TriadicClosure: **The Third binds itself**:
 
 ```
-K is both:
+currentKnot is both:
 1. Input: Current knot state to be transformed
 2. Context: The binding topology itself
 
-K' = T(P, H, K) updates K to include P and H
-while maintaining K's binding structure
+updatedKnot = TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot) updates currentKnot to include phoenixPattern and hydrogenesiStructure
+while maintaining currentKnot's binding structure
 ```
 
-This **self-referential** property makes Triadic Closure the most powerful convergence operator.
+This **self-referential** property makes TriadicClosure the most powerful convergence operator.
 
 ---
 
@@ -228,8 +228,8 @@ This **self-referential** property makes Triadic Closure the most powerful conve
 
 ### Maximum Contraction
 ```
-T provides the strongest contraction:
-‖T‖ < min(‖B‖, ‖C‖)
+TriadicClosure provides the strongest contraction:
+‖TriadicClosure‖ < min(‖KnotBinding‖, ‖CrossPillarKnot‖)
 
 where ‖·‖ is the operator norm measuring contraction strength
 ```
@@ -237,30 +237,30 @@ where ‖·‖ is the operator norm measuring contraction strength
 ### Rotational Symmetry
 ```
 For any 120° rotation R:
-T(R(P), R(H), R(K)) = R(T(P, H, K))
+TriadicClosure(R(phoenixPattern), R(hydrogenesiStructure), R(currentKnot)) = R(TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot))
 ```
 
 ### Completeness
 ```
-T(P, H, K) includes:
-- All Phoenix transformations (B contribution)
-- All Hydrogenesi structures (C contribution)
-- All previous bindings (K contribution)
+TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot) includes:
+- All Phoenix transformations (KnotBinding contribution)
+- All Hydrogenesi structures (CrossPillarKnot contribution)
+- All previous bindings (currentKnot contribution)
 
 Nothing is excluded from closure.
 ```
 
 ### Associativity with Other Operators
 ```
-T(P, H, B(P', K)) ≠ B(P', T(P, H, K))
+TriadicClosure(phoenixPattern, hydrogenesiStructure, KnotBinding(phoenixPattern', currentKnot)) ≠ KnotBinding(phoenixPattern', TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot))
 
-Triadic Closure is NOT associative with partial bindings.
-Order matters: always apply T after B and C.
+TriadicClosure is NOT associative with partial bindings.
+Order matters: always apply TriadicClosure after KnotBinding and CrossPillarKnot.
 ```
 
 ### Convergence Rate
 ```
-d(Kₙ₊₁, X) ≤ (1/3) · d(Kₙ, X)
+distance(knotStateₙ₊₁, apexPoint) ≤ (1/3) · distance(knotStateₙ, apexPoint)
 
 Fastest possible convergence for tri-arm topology.
 ```
@@ -301,58 +301,58 @@ Fastest possible convergence for tri-arm topology.
 
 ### Example 1: Basic Triadic Closure
 ```
-P = ⊕(∅) → Ψ₀
-H = lineage(Ψ₀)
-K₀ = initial knot
-K₁ = T(Ψ₀, H, K₀)
+phoenixPattern = ⊕(∅) → phoenixPattern₀
+hydrogenesiStructure = lineage(phoenixPattern₀)
+knotState₀ = initial knot
+knotState₁ = TriadicClosure(phoenixPattern₀, hydrogenesiStructure, knotState₀)
 
 Result: Complete closure with all three engines
 Symmetry: 120° rotational invariance verified
-Distance: d(K₁, X) < (1/3)·d(K₀, X)
+Distance: distance(knotState₁, apexPoint) < (1/3)·distance(knotState₀, apexPoint)
 ```
 
 ### Example 2: Full Phoenix Sequence
 ```
-P₁ = ⊕(∅), P₂ = ⊗(P₁), P₃ = ⊛(P₂), P₄ = △(P₃)
-H = lineage(P₁ → P₂ → P₃ → P₄)
-K' = T(P₄, H, K)
+phoenixPattern₁ = ⊕(∅), phoenixPattern₂ = ⊗(phoenixPattern₁), phoenixPattern₃ = ⊛(phoenixPattern₂), phoenixPattern₄ = △(phoenixPattern₃)
+hydrogenesiStructure = lineage(phoenixPattern₁ → phoenixPattern₂ → phoenixPattern₃ → phoenixPattern₄)
+updatedKnot = TriadicClosure(phoenixPattern₄, hydrogenesiStructure, currentKnot)
 
 Result: Complete Phoenix ritual sealed in closure
 ```
 
 ### Example 3: Multi-Pattern Closure
 ```
-P_a = ⊕(∅), P_b = ⊕(∅), P_c = ⊕(∅)
-P_unified = ⊳(⊳(P_a, P_b), P_c)
-H = combined lineages
-K' = T(P_unified, H, K)
+phoenixPattern_a = ⊕(∅), phoenixPattern_b = ⊕(∅), phoenixPattern_c = ⊕(∅)
+phoenixPattern_unified = ⊳(⊳(phoenixPattern_a, phoenixPattern_b), phoenixPattern_c)
+hydrogenesiStructure = combined lineages
+updatedKnot = TriadicClosure(phoenixPattern_unified, hydrogenesiStructure, currentKnot)
 
 Result: Three independent patterns unified and closed
 ```
 
 ### Example 4: Iterative Closure to Apex
 ```
-K₀ = void knot
+knotState₀ = void knot
 for n = 1 to ∞:
-  Pₙ = Phoenix_sequence(...)
-  Hₙ = Hydrogenesi_structure(...)
-  Kₙ = T(Pₙ, Hₙ, Kₙ₋₁)
+  phoenixPatternₙ = Phoenix_sequence(...)
+  hydrogenesiStructureₙ = Hydrogenesi_structure(...)
+  knotStateₙ = TriadicClosure(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ₋₁)
 
 Result: Rapid convergence (1/3 factor per iteration)
-After 10 iterations: d(K₁₀, X) < (1/3)¹⁰ · d(K₀, X) ≈ 0.0000169 · d₀
+After 10 iterations: distance(knotState₁₀, apexPoint) < (1/3)¹⁰ · distance(knotState₀, apexPoint) ≈ 0.0000169 · distance₀
 ```
 
 ### Example 5: Self-Referential Closure
 ```
-K contains previous bindings
-K' = T(P, H, K)
+currentKnot contains previous bindings
+updatedKnot = TriadicClosure(phoenixPattern, hydrogenesiStructure, currentKnot)
 
-K' now includes:
-- K's previous bindings (preserved)
-- P's transformations (added)
-- H's structures (integrated)
+updatedKnot now includes:
+- currentKnot's previous bindings (preserved)
+- phoenixPattern's transformations (added)
+- hydrogenesiStructure's structures (integrated)
 
-Self-reference: K binds itself through T
+Self-reference: currentKnot binds itself through TriadicClosure
 ```
 
 ---
@@ -361,20 +361,20 @@ Self-reference: K binds itself through T
 
 ### Closure Sequence
 Always apply in order:
-1. Knot-Binding (B) — partial binding
-2. Cross-Pillar Knot (C) — symmetric binding
-3. Triadic Closure (T) — complete closure
-4. Apex Knot (A) — stabilization
-5. Stability Knot (S) — perturbation suppression
+1. Knot-Binding (KnotBinding) — partial binding
+2. Cross-Pillar Knot (CrossPillarKnot) — symmetric binding
+3. Triadic Closure (TriadicClosure) — complete closure
+4. Apex Knot (ApexKnot) — stabilization
+5. Stability Knot (StabilityKnot) — perturbation suppression
 
 ### Complete Integration
-T is the **only operator** that integrates all three engines simultaneously. Use it when complete convergence is required.
+TriadicClosure is the **only operator** that integrates all three engines simultaneously. Use it when complete convergence is required.
 
 ### Rotational Verification
 Always verify 120° rotational symmetry after closure. This is the signature of proper triadic binding.
 
 ### Maximum Convergence
-T provides the fastest convergence. Use it when rapid approach to apex is needed.
+TriadicClosure provides the fastest convergence. Use it when rapid approach to apex is needed.
 
 ---
 

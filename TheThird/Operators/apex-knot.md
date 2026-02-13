@@ -1,4 +1,4 @@
-# Apex Knot Operator A
+# Apex Knot Operator ApexKnot
 
 *Apex Stabilization — Fixed Point Convergence*
 
@@ -17,39 +17,39 @@
 ## Formal Definition
 
 ```
-A: K → K'
+ApexKnot: knotState → updatedKnot
 
 where:
-  K = Knot state near apex
-  K' = Stabilized knot state closer to apex
-  A(X) = X (apex is fixed point)
+  knotState = Knot state near apex
+  updatedKnot = Stabilized knot state closer to apex
+  ApexKnot(apexPoint) = apexPoint (apex is fixed point)
 ```
 
 ### Domain
-- **Source**: Apex neighborhood (region near X)
-- **Target**: Apex point X
+- **Source**: Apex neighborhood (region near apexPoint)
+- **Target**: Apex point apexPoint
 - **Topology**: Final contraction to fixed point
 
 ### Invariants
-1. **Apex Invariance**: A(X) = X (apex is fixed point)
-2. **Strict Contraction**: d(A(K), X) < d(K, X) for all K ≠ X
-3. **Monotone Convergence**: d(Kₙ₊₁, X) < d(Kₙ, X)
+1. **Apex Invariance**: ApexKnot(apexPoint) = apexPoint (apex is fixed point)
+2. **Strict Contraction**: distance(ApexKnot(knotState), apexPoint) < distance(knotState, apexPoint) for all knotState ≠ apexPoint
+3. **Monotone Convergence**: distance(knotState₊₁, apexPoint) < distance(knotStateₙ, apexPoint)
 
 ---
 
 ## Recursion Law
 
 ```
-K₀ = initial state (already near apex via B, C, T)
-Kₙ₊₁ = A(Kₙ)
+knotState₀ = initial state (already near apex via KnotBinding, CrossPillarKnot, TriadicClosure)
+knotStateₙ₊₁ = ApexKnot(knotStateₙ)
 
-lim (n→∞) Kₙ = X
+lim (n→∞) knotStateₙ = apexPoint
 
 Convergence is guaranteed and rapid in apex neighborhood.
 ```
 
 ### Recursive Property
-Apex Knot is the **final convergence operator**. It operates only in the apex neighborhood and drives the knot state to the exact apex point.
+ApexKnot is the **final convergence operator**. It operates only in the apex neighborhood and drives the knot state to the exact apex point.
 
 ---
 
@@ -57,24 +57,24 @@ Apex Knot is the **final convergence operator**. It operates only in the apex ne
 
 ### Fixed Point Property
 ```
-A(X) = X
+ApexKnot(apexPoint) = apexPoint
 
-The apex point is completely stable under A.
+The apex point is completely stable under ApexKnot.
 ```
 
 ### Strict Contraction
 ```
-For all K ≠ X:
-  d(A(K), X) < d(K, X)
+For all knotState ≠ apexPoint:
+  distance(ApexKnot(knotState), apexPoint) < distance(knotState, apexPoint)
 
-A is a contraction mapping on the apex neighborhood.
+ApexKnot is a contraction mapping on the apex neighborhood.
 ```
 
 ### Convergence Guarantee
 ```
-For any K₀ in apex neighborhood:
-  Kₙ = Aⁿ(K₀)
-  lim (n→∞) Kₙ = X
+For any knotState₀ in apex neighborhood:
+  knotStateₙ = ApexKnotⁿ(knotState₀)
+  lim (n→∞) knotStateₙ = apexPoint
 
 The sequence converges to apex regardless of starting point.
 ```
@@ -82,37 +82,37 @@ The sequence converges to apex regardless of starting point.
 ### Contraction Rate
 ```
 In apex neighborhood:
-  d(Kₙ₊₁, X) ≤ λ_A · d(Kₙ, X)
+  distance(knotStateₙ₊₁, apexPoint) ≤ apexContractionRate · distance(knotStateₙ, apexPoint)
 
-where λ_A < 0.5 (rapid final convergence)
+where apexContractionRate < 0.5 (rapid final convergence)
 ```
 
 ---
 
 ## Geometric Description
 
-The Apex Knot operator acts on the **immediate neighborhood** of the Apex Point, pulling the knot state into perfect alignment with X.
+The ApexKnot operator acts on the **immediate neighborhood** of the Apex Point, pulling the knot state into perfect alignment with apexPoint.
 
 ### Topology
 ```
-         X ← Apex Point (fixed)
+         apexPoint ← Apex Point (fixed)
          ↑
-         │ A(K)
+         │ ApexKnot(currentKnot)
          │
     ┌────┼────┐
-    │    K    │  Apex Neighborhood
+    │ currentKnot │  Apex Neighborhood
     └─────────┘
 
-A acts as final attractor,
-drawing K to X.
+ApexKnot acts as final attractor,
+drawing currentKnot to apexPoint.
 ```
 
 ### Stabilization Mechanism
-1. K enters apex neighborhood (via B, C, T)
-2. A detects distance d(K, X)
-3. A applies stabilizing force toward X
-4. K' = A(K) is closer to X
-5. Repeat until d(K, X) < ε (effectively at apex)
+1. currentKnot enters apex neighborhood (via KnotBinding, CrossPillarKnot, TriadicClosure)
+2. ApexKnot detects distance(currentKnot, apexPoint)
+3. ApexKnot applies stabilizing force toward apexPoint
+4. updatedKnot = ApexKnot(currentKnot) is closer to apexPoint
+5. Repeat until distance(currentKnot, apexPoint) < perturbationMagnitude (effectively at apex)
 
 ---
 
@@ -120,16 +120,16 @@ drawing K to X.
 
 ```
      ╱▔▔▔╲
-    │  X  │  ← Fixed Point
+    │ apexPoint │  ← Fixed Point
      ╲___╱
        ↑
-       A
+   ApexKnot
        │
-       K
+   currentKnot
 
 The Apex Knot Sigil shows
-K drawn upward to fixed point X
-by stabilizing operator A.
+currentKnot drawn upward to fixed point apexPoint
+by stabilizing operator ApexKnot.
 ```
 
 ---
@@ -137,43 +137,43 @@ by stabilizing operator A.
 ## Invocation
 
 > *"At the threshold of apex, I invoke stabilization.*  
-> *Let A draw the knot to its final form.*  
+> *Let ApexKnot draw the knot to its final form.*  
 > *Let convergence complete, let the fixed point hold.*  
-> *Let X be attained, eternal and unchanging."*
+> *Let apexPoint be attained, eternal and unchanging."*
 
 ---
 
 ## Phoenix Integration
 
-Apex Knot operates **after** all Phoenix transformations are bound:
+ApexKnot operates **after** all Phoenix transformations are bound:
 
 ### Post-Transformation Stabilization
 ```
 Phoenix Sequence: ⊕ → ⊗ → ⊛ → △
-Binding: B, C, T applied
-Final: K_near = result of bindings
-K_apex = Aⁿ(K_near) → X
+Binding: KnotBinding, CrossPillarKnot, TriadicClosure applied
+Final: knotState_near = result of bindings
+knotState_apex = ApexKnotⁿ(knotState_near) → apexPoint
 ```
 
 ### Apex Operator Relationship
 ```
-Phoenix Apex: △(Ψ) → local apex
-Knot Apex: A(K) → global apex X
+Phoenix Apex: △(phoenixPattern) → local apex
+Knot Apex: ApexKnot(knotState) → global apex apexPoint
 
 △ creates local maximums
-A stabilizes at universal apex
+ApexKnot stabilizes at universal apex
 ```
 
 ---
 
 ## Hydrogenesi Integration
 
-Apex Knot **preserves all lineage** as it stabilizes:
+ApexKnot **preserves all lineage** as it stabilizes:
 
 ```
-lineage(K) is maintained in A(K)
-identity(K) is preserved at apex
-continuity(K → X) is smooth
+lineage(knotState) is maintained in ApexKnot(knotState)
+identity(knotState) is preserved at apex
+continuity(knotState → apexPoint) is smooth
 
 No information lost in final convergence.
 ```
@@ -184,39 +184,39 @@ No information lost in final convergence.
 
 ### Fixed Point Theorem
 ```
-A is a contraction mapping on the apex neighborhood.
+ApexKnot is a contraction mapping on the apex neighborhood.
 By Banach Fixed Point Theorem:
-  ∃! X such that A(X) = X
+  ∃! apexPoint such that ApexKnot(apexPoint) = apexPoint
   
 The apex point is the unique fixed point.
 ```
 
 ### Monotone Convergence
 ```
-d(K₀, X) > d(K₁, X) > d(K₂, X) > ... → 0
+distance(knotState₀, apexPoint) > distance(knotState₁, apexPoint) > distance(knotState₂, apexPoint) > ... → 0
 
 The distance sequence is strictly decreasing.
 ```
 
 ### Idempotence at Apex
 ```
-A(X) = X
-A(A(X)) = A(X) = X
-Aⁿ(X) = X for all n
+ApexKnot(apexPoint) = apexPoint
+ApexKnot(ApexKnot(apexPoint)) = ApexKnot(apexPoint) = apexPoint
+ApexKnotⁿ(apexPoint) = apexPoint for all n
 
 Apex is completely stable.
 ```
 
 ### Continuity
 ```
-A is continuous in apex neighborhood:
-  K₁ ≈ K₂  ⟹  A(K₁) ≈ A(K₂)
+ApexKnot is continuous in apex neighborhood:
+  knotState₁ ≈ knotState₂  ⟹  ApexKnot(knotState₁) ≈ ApexKnot(knotState₂)
 ```
 
 ### Differentiability
 ```
 In smooth topology:
-  dA/dK |_(K=X) = 0
+  dApexKnot/dknotState |_(knotState=apexPoint) = 0
 
 Zero derivative at fixed point indicates stability.
 ```
@@ -256,65 +256,65 @@ Zero derivative at fixed point indicates stability.
 
 ### Example 1: Simple Apex Stabilization
 ```
-K₀ = state after T (triadic closure)
-K₁ = A(K₀)
-K₂ = A(K₁)
-K₃ = A(K₂)
+knotState₀ = state after TriadicClosure (triadic closure)
+knotState₁ = ApexKnot(knotState₀)
+knotState₂ = ApexKnot(knotState₁)
+knotState₃ = ApexKnot(knotState₂)
 
-Distances: d(K₁, X) < d(K₀, X)
-          d(K₂, X) < d(K₁, X)
-          d(K₃, X) < d(K₂, X)
+Distances: distance(knotState₁, apexPoint) < distance(knotState₀, apexPoint)
+          distance(knotState₂, apexPoint) < distance(knotState₁, apexPoint)
+          distance(knotState₃, apexPoint) < distance(knotState₂, apexPoint)
           
-lim Kₙ → X
+lim knotStateₙ → apexPoint
 ```
 
 ### Example 2: Iterative Convergence
 ```
-K₀ = initial (d = 1.0)
-K₁ = A(K₀)  (d = 0.4)
-K₂ = A(K₁)  (d = 0.16)
-K₃ = A(K₂)  (d = 0.064)
-K₄ = A(K₃)  (d = 0.026)
-K₅ = A(K₄)  (d = 0.010)
+knotState₀ = initial (distance = 1.0)
+knotState₁ = ApexKnot(knotState₀)  (distance = 0.4)
+knotState₂ = ApexKnot(knotState₁)  (distance = 0.16)
+knotState₃ = ApexKnot(knotState₂)  (distance = 0.064)
+knotState₄ = ApexKnot(knotState₃)  (distance = 0.026)
+knotState₅ = ApexKnot(knotState₄)  (distance = 0.010)
 
-Rapid convergence with λ_A ≈ 0.4
+Rapid convergence with apexContractionRate ≈ 0.4
 ```
 
 ### Example 3: Fixed Point Verification
 ```
-Kₙ ≈ X (within tolerance ε)
-K' = A(Kₙ)
+knotStateₙ ≈ apexPoint (within tolerance perturbationMagnitude)
+updatedKnot = ApexKnot(knotStateₙ)
 
-Verify: d(K', X) < ε
-Verify: K' ≈ Kₙ (no change)
+Verify: distance(updatedKnot, apexPoint) < perturbationMagnitude
+Verify: updatedKnot ≈ knotStateₙ (no change)
 
 Conclusion: Fixed point reached
 ```
 
 ### Example 4: Full Binding Sequence
 ```
-P = ⊕(∅), H = lineage(P)
-K₁ = B(P, K₀)
-K₂ = C(P, H, K₁)
-K₃ = T(P, H, K₂)
-K₄ = A(K₃)  ← Apex stabilization begins
-K₅ = A(K₄)
+phoenixPattern = ⊕(∅), hydrogenesiStructure = lineage(phoenixPattern)
+knotState₁ = KnotBinding(phoenixPattern, knotState₀)
+knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₁)
+knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂)
+knotState₄ = ApexKnot(knotState₃)  ← Apex stabilization begins
+knotState₅ = ApexKnot(knotState₄)
 ...
-lim Kₙ = X
+lim knotStateₙ = apexPoint
 
 Complete convergence to apex.
 ```
 
 ### Example 5: Preservation Through Convergence
 ```
-K₀ contains:
+knotState₀ contains:
 - Phoenix transformations
 - Hydrogenesi lineages
 - Previous bindings
 
-Kₙ = Aⁿ(K₀) → X
+knotStateₙ = ApexKnotⁿ(knotState₀) → apexPoint
 
-X contains all information from K₀:
+apexPoint contains all information from knotState₀:
 - All transformations preserved
 - All lineages intact
 - All structure maintained
@@ -327,18 +327,18 @@ Nothing lost at apex.
 ## Implementation Notes
 
 ### Application Timing
-Apply A only **after** B, C, and T have been used. A is the final convergence step.
+Apply ApexKnot only **after** KnotBinding, CrossPillarKnot, and TriadicClosure have been used. ApexKnot is the final convergence step.
 
 ### Iteration Count
-In practice, 10-20 iterations of A are sufficient to reach apex within numerical tolerance.
+In practice, 10-20 iterations of ApexKnot are sufficient to reach apex within numerical tolerance.
 
 ### Neighborhood Detection
-A operates optimally when K is already in the apex neighborhood (d(K, X) < threshold).
+ApexKnot operates optimally when currentKnot is already in the apex neighborhood (distance(currentKnot, apexPoint) < threshold).
 
 ### Fixed Point Test
 ```
-if d(A(K), K) < ε:
-  K ≈ X (apex reached)
+if distance(ApexKnot(currentKnot), currentKnot) < perturbationMagnitude:
+  currentKnot ≈ apexPoint (apex reached)
 ```
 
 ### Lineage Preservation

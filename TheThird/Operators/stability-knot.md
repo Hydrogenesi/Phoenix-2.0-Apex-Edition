@@ -1,4 +1,4 @@
-# Stability Knot Operator S
+# Stability Knot Operator StabilityKnot
 
 *Perturbation Suppression — Divergence Control*
 
@@ -17,12 +17,12 @@
 ## Formal Definition
 
 ```
-S: K × ε → K'
+StabilityKnot: knotState × perturbationMagnitude → updatedKnot
 
 where:
-  K = Knot state (possibly perturbed)
-  ε = Perturbation magnitude
-  K' = Stabilized knot state with suppressed perturbations
+  knotState = Knot state (possibly perturbed)
+  perturbationMagnitude = Perturbation magnitude
+  updatedKnot = Stabilized knot state with suppressed perturbations
 ```
 
 ### Domain
@@ -32,26 +32,26 @@ where:
 
 ### Invariants
 1. **Divergence Suppression**: Perturbations decay toward zero
-2. **Perturbation Decay**: ε_n → 0 as n → ∞
-3. **Non-Increasing Distance**: d(S(K,ε), X) ≤ d(K, X)
+2. **Perturbation Decay**: perturbationMagnitudeₙ → 0 as n → ∞
+3. **Non-Increasing Distance**: distance(StabilityKnot(knotState, perturbationMagnitude), apexPoint) ≤ distance(knotState, apexPoint)
 
 ---
 
 ## Recursion Law
 
 ```
-K₀ = initial state with perturbation ε₀
-Kₙ₊₁ = S(Kₙ, εₙ)
-εₙ₊₁ = λ_ε · εₙ  where λ_ε < 1
+knotState₀ = initial state with perturbation perturbationMagnitude₀
+knotStateₙ₊₁ = StabilityKnot(knotStateₙ, perturbationMagnitudeₙ)
+perturbationMagnitudeₙ₊₁ = perturbationDecayRate · perturbationMagnitudeₙ  where perturbationDecayRate < 1
 
-lim (n→∞) εₙ = 0
-lim (n→∞) Kₙ = X
+lim (n→∞) perturbationMagnitudeₙ = 0
+lim (n→∞) knotStateₙ = apexPoint
 
 Both perturbations and knot state converge.
 ```
 
 ### Recursive Property
-Stability Knot **actively suppresses** perturbations while maintaining convergence toward apex. It is the **error correction operator** of the Triadic Knot.
+StabilityKnot **actively suppresses** perturbations while maintaining convergence toward apex. It is the **error correction operator** of the Triadic Knot.
 
 ---
 
@@ -60,26 +60,26 @@ Stability Knot **actively suppresses** perturbations while maintaining convergen
 ### Perturbation Decay
 ```
 For all n:
-  εₙ₊₁ < εₙ
-  lim (n→∞) εₙ = 0
+  perturbationMagnitudeₙ₊₁ < perturbationMagnitudeₙ
+  lim (n→∞) perturbationMagnitudeₙ = 0
 
 Perturbations monotonically decay to zero.
 ```
 
 ### Distance Non-Increase
 ```
-For all K, ε:
-  d(S(K,ε), X) ≤ d(K, X)
+For all knotState, perturbationMagnitude:
+  distance(StabilityKnot(knotState, perturbationMagnitude), apexPoint) ≤ distance(knotState, apexPoint)
 
-Stability never increases distance to apex.
+StabilityKnot never increases distance to apex.
 Often decreases it (weak contraction).
 ```
 
 ### Convergence Under Perturbation
 ```
 Even with perturbations:
-  Kₙ = S(Kₙ₋₁, εₙ₋₁)
-  lim Kₙ → X
+  knotStateₙ = StabilityKnot(knotStateₙ₋₁, perturbationMagnitudeₙ₋₁)
+  lim knotStateₙ → apexPoint
 
 Convergence guaranteed despite perturbations.
 ```
@@ -88,12 +88,12 @@ Convergence guaranteed despite perturbations.
 
 ## Geometric Description
 
-The Stability Knot operator acts at **crossing regions** where the knot strands intersect. These are points of potential instability where perturbations can accumulate.
+The StabilityKnot operator acts at **crossing regions** where the knot strands intersect. These are points of potential instability where perturbations can accumulate.
 
 ### Topology
 ```
 Strand 1  ╱──┼──╲  Strand 2
-         ╱   S   ╲
+         ╱ StabilityKnot ╲
         ╱    │    ╲
     Crossing Point (perturbation risk)
          ↓
@@ -106,12 +106,12 @@ The Triadic Knot has multiple crossing regions where:
 - Right arm crosses center
 - Left arm crosses right arm
 
-S operates at all crossing points simultaneously.
+StabilityKnot operates at all crossing points simultaneously.
 
 ### Stabilization Mechanism
-1. Detect perturbation ε at crossing
-2. Apply damping force proportional to ε
-3. Reduce perturbation to ε' < ε
+1. Detect perturbation at crossing
+2. Apply damping force proportional to perturbationMagnitude
+3. Reduce perturbation to perturbation' < perturbationMagnitude
 4. Maintain knot topology
 5. Preserve convergence to apex
 
@@ -121,16 +121,16 @@ S operates at all crossing points simultaneously.
 
 ```
     ╱───╲
-   ╱  ε  ╲ ← Perturbation
+   ╱ perturbation ╲ ← Perturbation
   │   ↓   │
-  │   S   │ ← Suppression
+  │ StabilityKnot │ ← Suppression
   │   ↓   │
    ╲  0  ╱  ← Decay
     ╲───╱
 
 The Stability Knot Sigil shows
-perturbation ε entering from above,
-passing through S, and decaying to 0.
+perturbation entering from above,
+passing through StabilityKnot, and decaying to 0.
 ```
 
 ---
@@ -138,7 +138,7 @@ passing through S, and decaying to 0.
 ## Invocation
 
 > *"At the crossings where strands meet, I invoke stability.*  
-> *Let S suppress perturbations, let divergence decay.*  
+> *Let StabilityKnot suppress perturbations, let divergence decay.*  
 > *Let the knot remain true, let convergence hold.*  
 > *Let all disturbances fade, let apex be reached."*
 
@@ -146,7 +146,7 @@ passing through S, and decaying to 0.
 
 ## Phoenix Integration
 
-Stability Knot handles **perturbations from Phoenix operations**:
+StabilityKnot handles **perturbations from Phoenix operations**:
 
 ### Transformation Instability
 ```
@@ -168,7 +168,7 @@ K' = S(K, ε_osc)
 
 ## Hydrogenesi Integration
 
-Stability Knot **preserves continuity** during perturbation suppression:
+StabilityKnot **preserves continuity** during perturbation suppression:
 
 ```
 continuity(K) maintained through S(K, ε)
@@ -184,37 +184,37 @@ S does not disrupt Hydrogenesi structures.
 
 ### Damping Property
 ```
-ε_n+1 = λ_ε · ε_n  where λ_ε < 1
+perturbationMagnitudeₙ₊₁ = perturbationDecayRate · perturbationMagnitudeₙ  where perturbationDecayRate < 1
 
 Exponential decay of perturbations.
 ```
 
 ### Non-Expansion
 ```
-d(S(K,ε), X) ≤ d(K, X)
+distance(StabilityKnot(knotState, perturbationMagnitude), apexPoint) ≤ distance(knotState, apexPoint)
 
-S never moves away from apex.
+StabilityKnot never moves away from apex.
 ```
 
 ### Continuity
 ```
-S is continuous in both K and ε:
-  K₁ ≈ K₂, ε₁ ≈ ε₂  ⟹  S(K₁,ε₁) ≈ S(K₂,ε₂)
+StabilityKnot is continuous in both knotState and perturbationMagnitude:
+  knotState₁ ≈ knotState₂, perturbationMagnitude₁ ≈ perturbationMagnitude₂  ⟹  StabilityKnot(knotState₁, perturbationMagnitude₁) ≈ StabilityKnot(knotState₂, perturbationMagnitude₂)
 ```
 
-### Commutativity with A
+### Commutativity with ApexKnot
 ```
-S(A(K), ε) ≈ A(S(K, ε))
+StabilityKnot(ApexKnot(knotState), perturbationMagnitude) ≈ ApexKnot(StabilityKnot(knotState, perturbationMagnitude))
 
-Stability and apex operators commute approximately.
+StabilityKnot and ApexKnot operators commute approximately.
 ```
 
 ### Robustness
 ```
-For small ε:
-  S(K, ε) ≈ K
+For small perturbationMagnitude:
+  StabilityKnot(knotState, perturbationMagnitude) ≈ knotState
 
-Stability has minimal effect on well-behaved states.
+StabilityKnot has minimal effect on well-behaved states.
 ```
 
 ---
@@ -252,42 +252,42 @@ Stability has minimal effect on well-behaved states.
 
 ### Example 1: Simple Perturbation Suppression
 ```
-K = knot state with perturbation ε = 0.1
-K' = S(K, 0.1)
+knotState = knot state with perturbation perturbationMagnitude = 0.1
+updatedKnot = StabilityKnot(knotState, 0.1)
 
-Result: ε' < 0.1 (perturbation reduced)
-Distance: d(K', X) ≤ d(K, X)
+Result: perturbation' < 0.1 (perturbation reduced)
+Distance: distance(updatedKnot, apexPoint) ≤ distance(knotState, apexPoint)
 ```
 
 ### Example 2: Iterative Damping
 ```
-K₀ = state with ε₀ = 1.0
-K₁ = S(K₀, 1.0)   ε₁ = 0.5
-K₂ = S(K₁, 0.5)   ε₂ = 0.25
-K₃ = S(K₂, 0.25)  ε₃ = 0.125
-K₄ = S(K₃, 0.125) ε₄ = 0.0625
+knotState₀ = state with perturbationMagnitude₀ = 1.0
+knotState₁ = StabilityKnot(knotState₀, 1.0)   perturbationMagnitude₁ = 0.5
+knotState₂ = StabilityKnot(knotState₁, 0.5)   perturbationMagnitude₂ = 0.25
+knotState₃ = StabilityKnot(knotState₂, 0.25)  perturbationMagnitude₃ = 0.125
+knotState₄ = StabilityKnot(knotState₃, 0.125) perturbationMagnitude₄ = 0.0625
 
-Exponential decay: εₙ = ε₀ · (0.5)ⁿ
+Exponential decay: perturbationMagnitudeₙ = perturbationMagnitude₀ · (0.5)ⁿ
 ```
 
 ### Example 3: Stability After Binding
 ```
-P = ⊛¹⁰(Ψ)  (deep recursion)
-K₁ = B(P, K₀)  (binding with accumulated errors)
-K₂ = S(K₁, ε_accum)  (suppress errors)
-K₃ = A(K₂)  (stabilize at apex)
+phoenixPattern = ⊛¹⁰(phoenixPattern)  (deep recursion)
+knotState₁ = KnotBinding(phoenixPattern, knotState₀)  (binding with accumulated errors)
+knotState₂ = StabilityKnot(knotState₁, perturbation_accum)  (suppress errors)
+knotState₃ = ApexKnot(knotState₂)  (stabilize at apex)
 
 Result: Clean convergence despite deep recursion
 ```
 
 ### Example 4: Crossing Point Stabilization
 ```
-K has three crossing regions:
-- Left-Center: ε_LC = 0.1
-- Right-Center: ε_RC = 0.08
-- Left-Right: ε_LR = 0.05
+knotState has three crossing regions:
+- Left-Center: perturbation_LC = 0.1
+- Right-Center: perturbation_RC = 0.08
+- Left-Right: perturbation_LR = 0.05
 
-K' = S(K, ε_total)
+updatedKnot = StabilityKnot(knotState, perturbation_total)
 
 All crossings stabilized simultaneously.
 ```
@@ -295,16 +295,16 @@ All crossings stabilized simultaneously.
 ### Example 5: Full Operator Sequence with Stability
 ```
 Complete sequence:
-K₁ = B(P, K₀)
-K₂ = C(P, H, K₁)
-K₃ = T(P, H, K₂)
-K₄ = S(K₃, ε₁)  ← Suppress accumulated perturbations
-K₅ = A(K₄)
-K₆ = S(K₅, ε₂)  ← Final stability check
+knotState₁ = KnotBinding(phoenixPattern, knotState₀)
+knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₁)
+knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂)
+knotState₄ = StabilityKnot(knotState₃, perturbationMagnitude₁)  ← Suppress accumulated perturbations
+knotState₅ = ApexKnot(knotState₄)
+knotState₆ = StabilityKnot(knotState₅, perturbationMagnitude₂)  ← Final stability check
 ...
-lim Kₙ = X
+lim knotStateₙ = apexPoint
 
-Stability interspersed ensures clean convergence.
+StabilityKnot interspersed ensures clean convergence.
 ```
 
 ---
@@ -312,37 +312,37 @@ Stability interspersed ensures clean convergence.
 ## Implementation Notes
 
 ### Application Pattern
-Apply S:
-1. After complex bindings (B, C, T) to suppress accumulated errors
+Apply StabilityKnot:
+1. After complex bindings (KnotBinding, CrossPillarKnot, TriadicClosure) to suppress accumulated errors
 2. During iterative sequences to maintain stability
-3. Before final apex convergence (A) to ensure clean approach
+3. Before final apex convergence (ApexKnot) to ensure clean approach
 4. When perturbations are detected
 
 ### Perturbation Detection
 ```
 Monitor:
-- Oscillations in d(Kₙ, X)
+- Oscillations in distance(knotStateₙ, apexPoint)
 - Sudden increases in distance
 - Numerical instabilities
 - Crossing point stress
 
-If detected: apply S
+If detected: apply StabilityKnot
 ```
 
 ### Damping Rate
-Choose λ_ε appropriately:
-- λ_ε = 0.5: Fast damping, may overshoot
-- λ_ε = 0.8: Moderate damping, balanced
-- λ_ε = 0.9: Slow damping, very stable
+Choose perturbationDecayRate appropriately:
+- perturbationDecayRate = 0.5: Fast damping, may overshoot
+- perturbationDecayRate = 0.8: Moderate damping, balanced
+- perturbationDecayRate = 0.9: Slow damping, very stable
 
 ### Interaction with Other Operators
-S can be applied:
+StabilityKnot can be applied:
 - Between any two knot operators
 - Multiple times in sequence
-- Simultaneously with A (they commute approximately)
+- Simultaneously with ApexKnot (they commute approximately)
 
 ### Error Correction
-S is the **error correction mechanism** of the Triadic Knot. Use it generously to maintain convergence quality.
+StabilityKnot is the **error correction mechanism** of the Triadic Knot. Use it generously to maintain convergence quality.
 
 ---
 
