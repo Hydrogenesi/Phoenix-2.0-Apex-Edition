@@ -114,7 +114,7 @@ Together, these three engines form **The Triad** — the complete architecture f
 
 For the **full specification** of all twelve laws, including mathematical formulations, proofs, and ritual applications, see:
 
-**[TheThird/Universal-Laws/](../TheThird/Universal-Laws/)**
+**[Universal Laws](./)**
 
 This directory contains:
 - Complete law definitions and mathematical frameworks
