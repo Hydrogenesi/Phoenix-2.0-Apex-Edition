@@ -168,7 +168,14 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 
 → [Phoenix Documentation](./Phoenix/README.md)
 
-### Hydrogenesi Layer: 7 Universal Laws + Structural Operators
+### Hydrogenesi Layer: 5 Structural Operators + 7 Universal Laws
+
+**Operators**:
+- L — Lineage Tracking (history preservation)
+- I — Identity Anchoring (essence preservation)
+- C — Continuity Mapping (transition bridges)
+- P — Invariant Preservation (property protection)
+- G — Genealogy Projection (future pathways)
 
 **Universal Laws**:
 1. Recursive Identity — Self-reference at all scales
@@ -179,7 +186,7 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 6. Binding Integrity — Knot preservation
 7. Sigil Resonance — Geometric alignment
 
-**Operators**: Lineage, Identity, Continuity (full docs coming soon)
+**Operators**: L I C P G (Structural preservation)
 
 → [Hydrogenesi Documentation](./Hydrogenesi/README.md)
 
@@ -252,6 +259,7 @@ Phoenix-2.0-Apex-Edition/
 │       └── apex/                    # 5 apex laws
 │
 ├── Atlases/                         # Codex reference atlases
+│   ├── TheTriadIntegration.md       # Complete three-engine convergence
 │   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
 │   └── TriadicKnotTopology.md       # Complete knot topology
 │
@@ -315,6 +323,7 @@ lim Kₙ → X               [Converge to Apex]
 - **[Universal Laws](./TheThird/Universal-Laws/README.md)** — Complete 12-law system
 
 ### Topology and Geometry
+- **[The Triad Integration](./Atlases/TheTriadIntegration.md)** — Complete three-engine convergence guide
 - **[Triadic Knot Topology](./Atlases/TriadicKnotTopology.md)** — Complete geometric atlas
 - **[Codex Hierarchy](./Atlases/CodexHierarchyDiagram.md)** — Law structure diagram
 - **[Triadic Knot Sigils](./TheThird/Sigils/Triadic-Knot.md)** — Visual representations
