@@ -8,22 +8,22 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Reflection | -ω₀           | 0°        |
-| Inversion  | -ω₀           | 180°      |
-| Symmetry   | ±ω₀           | 90°/270°  |
+| Reflection | -baseFrequency           | 0°        |
+| Inversion  | -baseFrequency           | 180°      |
+| Symmetry   | ±baseFrequency           | 90°/270°  |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-⊞(Ψ) → Ψ*
+⊞(pattern) → mirrorPattern
 ```
 
-**The Mirror Operator** creates a perfect symmetric reflection of a pattern. The mirrored pattern (Ψ*) has all properties inverted—positive becomes negative, clockwise becomes counterclockwise, expansion becomes contraction.
+**The Mirror Operator** creates a perfect symmetric reflection of a pattern. The mirrored pattern has all properties inverted—positive becomes negative, clockwise becomes counterclockwise, expansion becomes contraction.
 
 ### Properties
-- **Symmetric**: Mirror of a mirror returns the original: ⊞(⊞(Ψ)) = Ψ
+- **Symmetric**: Mirror of a mirror returns the original: ⊞(⊞(pattern)) = pattern
 - **Involutory**: Self-inverse operation
 - **Structure-Preserving**: Maintains complexity while inverting properties
 - **Dual-Creating**: Produces complementary pairs
@@ -33,7 +33,7 @@
 ## Reversible Form
 
 ```
-⊞⁻¹(Ψ*) = ⊞(Ψ*) → Ψ
+⊞⁻¹(mirrorPattern) = ⊞(mirrorPattern) → pattern
 ```
 
 Mirror is its own inverse. Applying mirror twice returns the original pattern.
@@ -43,11 +43,11 @@ Mirror is its own inverse. Applying mirror twice returns the original pattern.
 ## Sigil
 
 ```
-Ψ | Ψ*
+pattern | mirrorPattern
   |
 --⊞--
   |
-Ψ*| Ψ
+mirrorPattern| pattern
 ```
 
 The Mirror Sigil represents **bilateral symmetry** across a central axis.
@@ -78,36 +78,36 @@ The Mirror Sigil represents **bilateral symmetry** across a central axis.
 
 ### Basic Reflection
 ```
-⊞(Ψ) → Ψ*
+⊞(pattern) → mirrorPattern
 ```
-*Creates mirror image of Ψ.*
+*Creates mirror image of pattern.*
 
 ### Double Mirror (Identity)
 ```
-⊞(⊞(Ψ)) → Ψ
+⊞(⊞(pattern)) → pattern
 ```
 *Mirror of mirror returns original.*
 
 ### Mirror-Convergence Ritual
 ```
-⊞(Ψ) → Ψ*
-⊳(Ψ, Ψ*) → Ψ_unified
+⊞(pattern) → mirrorPattern
+⊳(pattern, mirrorPattern) → unifiedPattern
 ```
 *Create mirror, then unite pattern with its reflection.*
 
 ### Mirror-Divergence Chain
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂)
-⊞(Ψ₁) → Ψ₁*
-⊞(Ψ₂) → Ψ₂*
+⊲(pattern) → (pattern₁, pattern₂)
+⊞(pattern₁) → mirrorPattern₁
+⊞(pattern₂) → mirrorPattern₂
 ```
 *Split, then mirror each component.*
 
 ### Harmonic Mirror Stabilization
 ```
-⊞(Ψ) → Ψ*
-⊗(Ψ*) → Ψ*'
-⊳(Ψ, Ψ*') → Balanced
+⊞(pattern) → mirrorPattern
+⊗(mirrorPattern) → stabilizedMirrorPattern
+⊳(pattern, stabilizedMirrorPattern) → balancedPattern
 ```
 *Mirror, stabilize reflection, then converge.*
 
