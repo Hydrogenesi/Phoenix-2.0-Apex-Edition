@@ -9,6 +9,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — v2.3 Ceremonial Artifacts (2026-02-14)
+
+The **v2.3 ceremonial artifacts** have been integrated into the codex—three foundational documents that formalize operator expansion, meta-operator relationships, and stratified governance.
+
+#### Three Ceremonial Documents
+
+**Phoenix Ritual (🔥 Transformation)**
+- **Operator Expansion Rite v2.3** — Five-phase ceremonial protocol for expanding the operator set through Genesis, Harmonic, Recursive, Convergence, and Apex phases. Defines stratum assignment guidelines and integration validation for new operators.
+
+**Hydrogenesi Structure (🌊 Architecture)**
+- **Meta-Operator Binding Wheel v2.3** — Comprehensive topology map of operator relationships, harmonic frequencies, phase alignments, and binding protocols. Includes binding strength metrics and convergence path analysis across all three engines.
+
+**The Third Governance (🔗 Authority)**
+- **Stratum-Level Governance Map v2.3** — Four-tier hierarchical authority structure defining scope, decision rights, and escalation protocols from Foundation (I) through Operational (II) and Authority (III) to Crown (IV) levels.
+
+#### Integration Points
+
+- **Cross-Referenced**: All three documents interconnect with existing meta-operators, ceremonies, and protocols
+- **Version Aligned**: Marked as v2.3 to indicate ceremonial/governance enhancement release
+- **Triadic Structure**: Follows Phoenix → Hydrogenesi → The Third pattern
+- **Codex-Grade**: Maintains architectural precision and ceremonial consistency
+
+**Locations**:
+```
+Phoenix/rituals/operator-expansion-rite-v2.3.md
+codex/operators/meta-operator-binding-wheel-v2.3.md
+codex/protocols/stratum-governance-map-v2.3.md
+```
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
