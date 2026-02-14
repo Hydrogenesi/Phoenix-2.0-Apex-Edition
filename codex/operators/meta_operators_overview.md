@@ -10,6 +10,8 @@ The **Six META Operators** form the apex-level orchestration layer of the Phoeni
 
 META operators exist at **Stratum IV (Crown Level)** and possess authority over all lower-level operators, patterns, and transformations. They are the architectural guardians that ensure system coherence, stability, and ultimate closure.
 
+**Note**: Meta-Operator I (Invariance) is a related but distinct META operator documented separately. The six operators in this document specifically coordinate the Terminal Ceremony and final closure protocols.
+
 ---
 
 ## The Six Sovereign Operators

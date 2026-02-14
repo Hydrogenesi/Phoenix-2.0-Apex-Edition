@@ -13,7 +13,7 @@ status:
   confidence: high
   owner: Hydrogenesi
   last_reviewed: 2026-02-14
-  extensions: layers-13-14, meta-operators, terminal-law
+  extensions: layer-13-14, meta-operators, terminal-law
 ```
 
 ---

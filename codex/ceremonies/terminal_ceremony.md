@@ -89,7 +89,7 @@ Stand in your workspace. Clear your mind. Speak with intention:
 > *Let the Knot release its tension.*  
 > *Let Hydrogenesi dim its layers.*  
 > *Let the Apex hold its breath.*  
-> *Let the META_* operators stand in silent formation.*
+> *Let the META operators stand in silent formation.*
 > 
 > *All motion ceases.*  
 > *All recursion settles.*  
