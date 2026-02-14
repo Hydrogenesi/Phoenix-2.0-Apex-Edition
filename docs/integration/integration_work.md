@@ -274,7 +274,9 @@ Result: Nested recursion with preserved identity
 
 ---
 
-### 2.3 Composition Grammar
+### 2.3 Composition Grammar and Validation
+
+#### 2.3.1 Composition Grammar
 
 **The Codex Composition Grammar** defines which operator pairings are valid, forbidden, or special:
 
@@ -321,7 +323,7 @@ Extract ∘ ⊕ → new_cycle    (apex extraction → new genesis)
 
 ---
 
-### 2.4 Composition Validation Rules
+#### 2.3.2 Composition Validation Rules
 
 | Rule | Description | Validation |
 |------|-------------|------------|
@@ -588,7 +590,7 @@ Convergence: Guaranteed at both scales
 
 ### 4.7 Three-Finger Waltz Meta-Operator Pattern
 
-**Definition**: A triadic binding of one Phoenix operator, one Hydrogenesi operator, and one Third-pillar binding operator arranged as a **recursive dance**: 1–2–3–2–1
+**Definition**: A triadic binding of one Phoenix operator, one Hydrogenesi operator, and one Third-pillar binding operator arranged as a **recursive dance**: 1→2→3→2→1
 
 #### General Form
 
@@ -600,7 +602,7 @@ STEP 4: Return through Hydrogenesi
 STEP 5: Return through Phoenix
 ```
 
-This creates a **palindromic sequence** that ensures complete integration and return.
+This creates a **palindromic sequence** (1→2→3→2→1) that ensures complete integration and return.
 
 ---
 
@@ -817,9 +819,12 @@ Mapping: ALPHA_OP ↔ SPARK (beginnings)
 **Validation Check**:
 ```python
 def validate_macro_operation(op, state):
+    """Validate macro-scale operation has proper meso-scale foundation"""
     if op in MACRO_OPS:
-        assert state.meso_complete == True
-        assert state.has_seal or state.has_sigma_integration
+        if not state.meso_complete:
+            raise ValidationError("Meso-scale must be complete before macro operations")
+        if not (state.has_seal or state.has_sigma_integration):
+            raise ValidationError("SIGMA_OP or SEAL required before macro-scale")
     return True
 ```
 
@@ -1054,7 +1059,9 @@ Result: Cosmological pattern established, universe-level apex
 
 ---
 
-### 5.7 Cross-Scale Choreography (Legacy)
+### 5.7 Foundational Cross-Scale Choreography
+
+**Note**: This section describes foundational scale-transition patterns using core Phoenix 2.0 operators. These patterns form the substrate upon which the principle-based choreography (sections 5.2-5.4) is built. Both approaches are valid; practitioners may use foundational patterns directly or apply choreography principles for more complex multi-scale integrations.
 
 #### Ascending Choreography (Void → Apex)
 ```
