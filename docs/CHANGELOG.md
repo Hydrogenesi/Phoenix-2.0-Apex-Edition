@@ -41,7 +41,7 @@ The **v2.1.0 Governance Consolidation & Meta-Architecture** release introduces S
 - Level 4: Critical failure (system halt required)
 
 **Documentation:**
-- [Meta-Operator I Specification](./codex/operators/meta_operator_I_invariance.md) (280 lines)
+- [Meta-Operator I Specification](../codex/operators/meta_operator_I_invariance.md) (280 lines)
 
 #### Ceremonial Framework — Sacred Activation Protocols
 
@@ -68,7 +68,7 @@ The **v2.1.0 Governance Consolidation & Meta-Architecture** release introduces S
 - Crown authority verified
 
 **Documentation:**
-- [Invariance Validation Ceremony](./codex/ceremonies/invariance_validation_ceremony.md) (358 lines)
+- [Invariance Validation Ceremony](../codex/ceremonies/invariance_validation_ceremony.md) (358 lines)
 
 #### Operational Protocols — Fracture Response & Recovery
 
@@ -102,7 +102,7 @@ The **v2.1.0 Governance Consolidation & Meta-Architecture** release introduces S
 - System Availability: > 99.99%
 
 **Documentation:**
-- [Fracture Recovery Protocol](./codex/protocols/fracture_recovery_protocol.md) (499 lines)
+- [Fracture Recovery Protocol](../codex/protocols/fracture_recovery_protocol.md) (499 lines)
 
 #### Monitoring & Metrics — Real-Time Governance Dashboard
 
@@ -135,7 +135,7 @@ The **v2.1.0 Governance Consolidation & Meta-Architecture** release introduces S
 - Throughput: 10,000+ metrics/second
 
 **Documentation:**
-- [Invariance Metrics Dashboard](./codex/specs/invariance_metrics_dashboard.md) (470 lines)
+- [Invariance Metrics Dashboard](../codex/specs/invariance_metrics_dashboard.md) (470 lines)
 
 #### Codex Structure — Complete Documentation Hierarchy
 
