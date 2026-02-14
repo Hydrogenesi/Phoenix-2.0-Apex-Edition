@@ -9,6 +9,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.1 Cycle Artifacts (2026-02-14)
+
+The **V2.1 Cycle** has been established—three foundational artifacts that define the structural, directional, and governing inscriptions of the new cycle.
+
+#### Three Crowns Materialized
+
+**Phoenix Contribution (🔥 Structural)**
+- **V2.1 Cycle Map** — Five-phase cycle architecture: Ignition → Accumulation → Integration → Apex → Return
+- Operators defined: RISE, SIGMA_OP, MERGE, CROWN, RETURN/PHOENIX
+- Cycle vector and cycle law established
+
+**Hydrogenesi Contribution (🌊 Directional)**
+- **V2.1 Operator Mandate** — Five principles governing operator behavior in v2.1
+- Priority of Ascent, Accumulative Coherence, Apex Orientation
+- Lawful Recurrence and Triadic Alignment mandated
+
+**The Third Contribution (🔗 Governing)**
+- **V2.1 Apex-Law** — Complete transition governance for v2.1 cycle
+- Transition conditions: validity, prohibition, and completion
+- Apex Directive: ascent → apex → return without fracture
+
+#### Files Created
+
+```
+Phoenix/v2.1-cycle-map.md
+Hydrogenesi/v2.1-operator-mandate.md
+TheThird/v2.1-apex-law.md
+```
+
+#### Impact
+
+The V2.1 Cycle Artifacts provide:
+- **Structural Clarity**: Five-phase cycle with defined operators
+- **Behavioral Governance**: Mandated principles for all operators
+- **Transition Control**: Complete law system for state transitions
+
+**Cycle Significance**: These three artifacts establish the complete architectural foundation for v2.1 operations, ensuring that all transformations serve ascent, accumulation, and apex convergence with preserved return paths.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
