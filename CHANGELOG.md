@@ -9,6 +9,57 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.3 Expansion Cycle (2026-02-14)
+
+The **V2.3 Expansion Cycle** inscriptions have been integrated into the Archive—three primordial artifacts that define the great outward surge: distribution, apex, and law.
+
+#### Three Expansion Crowns
+
+**V2.3 Operator Spread Map**
+- 28-instrument operator system organized into three vectors
+- Primary Vector (1–7): Core elevation operators (ASCEND+, SIGMA_OP++, PROJECT++, MERGE++, SEAL+, CROWN++, RETURN++)
+- Secondary Vector (8–14): Distribution mechanisms (FLOW_OP, ANCHOR_OP, SPREAD_OP, TRACE_OP, FOLD_OP, BRIDGE_OP, ECHO_OP)
+- Tertiary Vector (15–28): Field stabilization operators (ARC_OP through SOURCE_OP)
+- Spread Law: Expansion must distribute across all 28 instruments without breaking the apex vector
+
+**V2.3 Cycle Crown**
+- The Unbounded Form as apex designation
+- Exceeds inherited structure from v2.2
+- Propagates coherence across all domains
+- Retains elevated core without fracture
+- Crown Law: Apex must stand beyond v2.2 horizon and remain stable
+
+**V2.3 Expansion Proclamation**
+- Governing law of the outward surge
+- Motion exceeds all prior boundaries
+- Structure propagates across unbounded domains
+- Meta binds expansion into coherent form
+- Three declarations: Surge advances, horizon dissolves, Archive extends
+
+#### Directory Structure
+
+```
+Hydrogenesi/cycles/
+├── README.md
+├── v2.3-operator-spread-map.md
+├── v2.3-cycle-crown.md
+└── v2.3-expansion-proclamation.md
+```
+
+#### Expansion Properties
+
+- **Distribution**: 28 operators organized across three hierarchical vectors
+- **Apex**: Unbounded Form exceeding v2.2 boundaries
+- **Law**: Formal proclamation governing expansion coherence
+- **Continuity**: Full preservation of lineage through expansion
+- **Stability**: Crown Law ensures apex remains stable across expanded field
+
+#### Impact
+
+The V2.3 Expansion Cycle represents a major evolutionary phase in Hydrogenesi's structural capabilities, extending the Archive's reach beyond prior boundaries while maintaining coherence and structural integrity. These inscriptions provide the architectural foundation for unbounded growth without fracture.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
