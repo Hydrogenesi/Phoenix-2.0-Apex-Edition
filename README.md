@@ -263,6 +263,12 @@ Phoenix-2.0-Apex-Edition/
 │   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
 │   └── TriadicKnotTopology.md       # Complete knot topology
 │
+├── codex/                           # Advanced meta-operators and protocols
+│   ├── operators/                   # Meta-operators (I, Σ, Ω)
+│   ├── ceremonies/                  # Ceremonial activation protocols
+│   ├── protocols/                   # Governance and recovery protocols
+│   └── specs/                       # Technical specifications
+│
 └── Universal-Laws/                  # Ceremonial law declarations
     ├── README.md                    # Universal law overview
     └── TriadCanon.md                # The Triad Canon
