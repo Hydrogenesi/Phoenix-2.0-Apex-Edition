@@ -110,7 +110,9 @@ coherence(system_before) ≤ coherence(system_after)
 |expansion(Phoenix)| : |expansion(Hydrogenesi)| : |expansion(TheThird)| = 1:1:1
 ```
 
-**Correction Mechanism**: If asymmetry detected, apply balancing protocol.
+**Tolerance**: ±1° deviation acceptable (119° - 121°)
+
+**Correction Mechanism**: If asymmetry exceeds tolerance, apply balancing protocol.
 
 ---
 
@@ -192,7 +194,8 @@ def safe_amplification(transformation, factor):
         logger.warning(f"Factor {factor} exceeds threshold {max_factor}")
         factor = max_factor
     
-    return amplify(transformation, factor)
+    # Apply intensity scaling (implementation depends on transformation type)
+    return apply_bounded_amplification(transformation, factor)
 ```
 
 ---

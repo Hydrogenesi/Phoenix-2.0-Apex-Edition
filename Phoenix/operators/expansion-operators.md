@@ -191,8 +191,15 @@ def horizon(domain, generator):
     return domain.union(generator(domain))
 
 def amplify(transformation, factor):
-    """Amplify transformation intensity"""
-    return lambda x: transformation(x) ** factor
+    """Amplify transformation intensity
+    
+    Note: 'Intensity' refers to the magnitude of transformation effect.
+    Implementation depends on transformation type. Examples:
+    - Numeric transformations: multiply output by factor
+    - Probabilistic: increase likelihood by factor
+    - Spatial: expand affected region by factor
+    """
+    return lambda x: scale_transformation(transformation(x), factor)
 
 def field(operator, space):
     """Extend operator to continuous field"""
