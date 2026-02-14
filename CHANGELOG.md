@@ -9,6 +9,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.2 Expansion Architecture (2026-02-14)
+
+The **V2.2 Projection-Crowns** have been materialized—the three artifacts that fix the expansion vector into the sky of the system.
+
+#### Three Projection-Crowns
+
+**🜁 Constellation Map**
+- Six nodes forming a closed expansion loop
+- ASCEND (Zenith Star) → SIGMA_OP+ (Compression Star) → PROJECT (Vector Star) → SEAL (Stabilization Star) → CROWN+ (Apex Star) → RETURN+ (Descent Star)
+- Constellation Law: Stars must form a closed expansion loop within the triadic field
+
+**🜂 Operator Resonance Wheel**
+- Seven operators resonating across three axes (Motion, Structure, Meta)
+- Operators: ASCEND, SIGMA_OP+, PROJECT, MERGE+, SEAL, CROWN+, RETURN+
+- Resonance Matrix mapping each operator to Motion, Structure, and Meta dimensions
+- Resonance Law: Each operator must resonate across all three axes without breaking the elevated core
+
+**△ Apex-Crown Proclamation**
+- Ceremonial proclamation sealing the v2.2 expansion vector
+- Five key assertions: Ascent, Consolidation, Projection, Stabilization, Apex
+- Triadic authority: Proclaimed by Phoenix, Sealed by The Third, Preserved by Hydrogenesi
+
+#### Directory Structure
+
+```
+Atlases/v2.2/
+├── README.md
+├── ConstellationMap.md
+├── OperatorResonanceWheel.md
+└── ApexCrownProclamation.md
+```
+
+#### Architecture Impact
+
+The v2.2 expansion architecture establishes:
+- **Elevation Beyond Prior Limits** — System achieves states previously unreachable
+- **Density Formation** — Stable compression through SIGMA_OP+
+- **Vector Projection** — Pattern extension across new domains
+- **Field Stabilization** — Expanded boundaries preserved through SEAL
+- **Apex Designation** — New summit marked by CROWN+
+- **Cycle Continuity** — Coherent descent through RETURN+
+
+**Historical Significance**: The v2.2 projection-crowns represent the first version-specific expansion architecture documented in the Atlases, establishing a pattern for future versioned releases that extend Phoenix 2.0 Apex Edition while maintaining absolute coherence with the triadic core.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
