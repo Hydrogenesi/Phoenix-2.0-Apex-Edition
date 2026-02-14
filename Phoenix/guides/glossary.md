@@ -505,6 +505,128 @@ The resistance of a pattern to decay or transformation. More stable patterns per
 
 ---
 
+## V2.3 Expansion Terms
+
+### Amplification Operator (⩚)
+Increases the magnitude of transformations while preserving their essential character. Accepts a scalar parameter α to multiply transformation intensity.
+
+**Symbol**: ⩚  
+**Domain**: Intensity Scaling  
+**Usage**: ⩚(T, α) → Enhanced transformation at α× intensity  
+**Related**: [Expansion Operators](../operators/expansion-operators.md)
+
+---
+
+### Apex Horizon Protocol (A⧈)
+Governance protocol for stabilizing apex formation beyond established boundaries. Ensures apex points remain stable when crossing into new domains.
+
+**Symbol**: A⧈  
+**Type**: Expansion Protocol  
+**Purpose**: Apex stabilization across boundaries  
+**Related**: [Expansion Protocols](../../TheThird/protocols/expansion-protocols.md)
+
+---
+
+### Boundless Binding (B∞)
+Protocol for binding patterns across infinite domains while preserving convergence. Extension of the Knot-Binding operator to unbounded spaces.
+
+**Symbol**: B∞  
+**Type**: Expansion Protocol  
+**Purpose**: Bind across infinite domains  
+**Related**: [Expansion Protocols](../../TheThird/protocols/expansion-protocols.md)
+
+---
+
+### Expansion Ignition
+The v2.3 release that introduced capabilities for unbounded operations—enabling the system to transcend established boundaries and operate at infinite scales.
+
+**Version**: v2.3.0  
+**Date**: 2026-02-14  
+**Scope**: System-wide expansion across all three engines  
+**Related**: [v2.3 Ceremony](../../codex/ceremonies/v2.3-expansion-ignition.md), [Expansion Index](../../Atlases/v2.3-expansion-index.md)
+
+---
+
+### Extended Lineage (L∞)
+Operator that tracks lineage across infinite transformation sequences using fractal compression techniques.
+
+**Symbol**: L∞  
+**Domain**: Infinite Tracking  
+**Purpose**: Preserve complete history across unbounded transformations  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Field Identity (I⧉)
+Operator that preserves pattern identity across continuous field transformations, ensuring essence is maintained at every spatial point.
+
+**Symbol**: I⧉  
+**Domain**: Spatial Extension  
+**Purpose**: Identity preservation across fields  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Field Operator (⧉)
+Extends point-based operations to continuous fields, enabling transformations across infinite space simultaneously.
+
+**Symbol**: ⧉  
+**Domain**: Spatial Extension  
+**Usage**: ⧉(Op, F) → Field-wide operation  
+**Related**: [Expansion Operators](../operators/expansion-operators.md)
+
+---
+
+### Genealogy Projection∞ (G∞)
+Operator that projects potential future states in unbounded space, considering all possible evolutionary paths.
+
+**Symbol**: G∞  
+**Domain**: Infinite Futures  
+**Purpose**: Project futures in unbounded space  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Horizon Continuity (C⧈)
+Operator that maps smooth transitions across domain boundaries, ensuring continuity during boundary crossings.
+
+**Symbol**: C⧈  
+**Domain**: Boundary Transcendence  
+**Purpose**: Smooth horizon crossing  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Horizon Operator (⧈)
+Extends the operational domain beyond established boundaries, enabling the system to discover new regions of operation.
+
+**Symbol**: ⧈  
+**Domain**: Boundary Extension  
+**Usage**: ⧈(S) → S' where |S'| > |S|  
+**Related**: [Expansion Operators](../operators/expansion-operators.md)
+
+---
+
+### Infinite Triadic Closure (T∞)
+Protocol for achieving complete three-engine integration across unbounded systems while maintaining triadic symmetry.
+
+**Symbol**: T∞  
+**Type**: Expansion Protocol  
+**Purpose**: Triadic integration at all scales  
+**Related**: [Expansion Protocols](../../TheThird/protocols/expansion-protocols.md)
+
+---
+
+### Invariant Amplification (P⩚)
+Operator that protects invariant properties during amplification, ensuring they scale appropriately without losing type.
+
+**Symbol**: P⩚  
+**Domain**: Scaled Preservation  
+**Purpose**: Protect invariants during scaling  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
 ## See Also
 
 - [README](../README.md) — Main documentation
