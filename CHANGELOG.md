@@ -9,6 +9,54 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.1 Integration Artifacts (2026-02-14)
+
+Three canonical artifacts defining the **v2.1 cycle** have been integrated into the Codex:
+
+#### V2.1 Integration Commentary (`docs/integration/v2-1-integration-commentary.md`)
+The interpretive layer explaining how v2.1 coheres. Describes the cycle's five phases (IGNITION → ACCUMULATION → INTEGRATION → APEX → RETURN) and their triadic alignment across Phoenix, Hydrogenesi, and The Third.
+
+**Key Characteristics**:
+- **Motion**: Upward ascent toward apex
+- **Structure**: Integrative across pillars
+- **Stability**: Stable apex with coherent return
+- **Philosophy**: Elevation without fracture
+
+#### V2.1 Threshold Table (`docs/integration/v2-1-threshold-table.md`)
+The conditions governing phase transitions. Defines threshold requirements, failure modes, and validation protocols for each phase boundary.
+
+**Five Thresholds**:
+1. IGNITION → ACCUMULATION: Pattern stability requirement
+2. ACCUMULATION → INTEGRATION: Structural density requirement
+3. INTEGRATION → APEX: Complete merge without remainder
+4. APEX → RETURN: Stable crown with triadic alignment
+5. RETURN → IGNITION: Coherence retention through descent
+
+#### V2.1 Triadic Knot Diagram (`docs/integration/v2-1-triadic-knot-diagram.md`)
+The binding diagram sealing the cycle. Presents the geometric representation of v2.1's convergence topology with apex above, structure mirrored, and recursion below.
+
+**Geometric Elements**:
+- △ Apex Point: Convergence target
+- ↗ ↘ Ascending/Descending Paths: Ascent and return flows
+- ⟡ Structure Points: Integration nodes
+- ○ Base Point: Substrate foundation
+
+#### Integration
+- Updated `docs/integration/integration_work.md` with references to all three artifacts
+- Maintained triadic order (Phoenix → Hydrogenesi → The Third)
+- Preserved Codex-grade formatting and documentation standards
+- Ensured consistency with existing integration patterns
+
+#### Impact
+The v2.1 artifacts provide **operational clarity** for cycle execution:
+- **Commentary** explains the "what" and "why"
+- **Threshold Table** defines the "when"
+- **Triadic Knot Diagram** shows the "how"
+
+Together they form a complete reference for v2.1 cycle implementation, maintaining the architectural sovereignty of Phoenix 2.0 Apex Edition.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
