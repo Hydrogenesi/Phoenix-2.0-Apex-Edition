@@ -1,0 +1,42 @@
+# Build artifacts
+build/
+out/
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# LaTeX artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf_tex
+
+# Mermaid temp files
+*.mmd.svg
+*.mmd.png
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor artifacts
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node modules (if mmdc installed locally)
+node_modules/
+package-lock.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
