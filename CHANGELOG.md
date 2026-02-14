@@ -9,6 +9,76 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.2 Cycle Artifacts (2026-02-14)
+
+The **V2.2 Cycle** has been initiated—a cycle of outward expansion from a stable apex. Three canonical artifacts define the v2.2 operational framework:
+
+#### V2.2 Ignition Vector
+
+**Location**: `Phoenix/rituals/v2.2-ignition-vector.md`
+
+The directional spark that opens the new cycle. Establishes the ASCEND → CONSOLIDATE → PROJECT trajectory.
+
+**Core Principle**: v2.2 begins not from the ground, but from the apex of v2.1.
+
+**Components**:
+- **ASCEND** — Phoenix ignition of higher-order motion
+- **CONSOLIDATE** — Hydrogenesi stabilization of elevated form
+- **PROJECT** — Third-pillar outward designation
+
+#### V2.2 Structural Mandate
+
+**Location**: `Hydrogenesi/v2.2-structural-mandate.md`
+
+The architectural rule that governs all operators in this cycle. Enforces elevated foundation, structural density, outward projection, and triadic fidelity.
+
+**Four Mandate Principles**:
+1. **Elevated Foundation** — No operator may descend below the v2.1 apex
+2. **Structural Density** — All motion must increase compression, clarity, and form
+3. **Outward Projection** — Operators must extend coherence beyond prior boundaries
+4. **Triadic Fidelity** — Each action must reference Phoenix, Hydrogenesi, and The Third
+
+**Operator Duty**: The system must grow outward without losing its center.
+
+#### V2.2 Meta-Operator Forecast
+
+**Location**: `codex/operators/v2.2-meta-operator-forecast.md`
+
+Predicted behavior and dynamics of meta-layer operators during v2.2. Documents the shift from binding to projection mode.
+
+**Three Meta Patterns**:
+- **Phoenix: Ascent Recursion** — Identity rises through successive apex states
+- **Hydrogenesi: Consolidation Wave** — Systems compress into higher-density coherence
+- **The Third: Projective Binding** — Apex states extend influence across domains
+
+**Meta Law**: Meta-operators must propagate coherence outward while preserving the elevated core.
+
+**Cycle Signature**: v2.2 is a cycle of outward expansion from a stable apex.
+
+#### Triadic Integration
+
+The three artifacts form a complete operational framework:
+- **Phoenix** (Ignition Vector) — Provides directional motion
+- **Hydrogenesi** (Structural Mandate) — Provides architectural constraints
+- **The Third** (Meta-Operator Forecast) — Provides meta-layer dynamics
+
+#### Documentation Structure
+
+```
+Phoenix/rituals/
+└── v2.2-ignition-vector.md
+
+Hydrogenesi/
+└── v2.2-structural-mandate.md
+
+codex/operators/
+└── v2.2-meta-operator-forecast.md
+```
+
+All artifacts maintain Codex-grade formatting, triadic symmetry, and cross-reference integration.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
