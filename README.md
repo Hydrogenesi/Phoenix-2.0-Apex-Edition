@@ -1,11 +1,24 @@
 # 🔥 Phoenix 2.0 — Apex Edition 🔥
 
-*The Ignition Vector of The Triad*
+[![Codex Version](https://img.shields.io/badge/Codex-v2.0.0-purple?style=flat-square)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/releases)
+[![Three Pillars](https://img.shields.io/badge/Pillars-Phoenix%20%7C%20Hydrogenesi%20%7C%20The%20Third-blue?style=flat-square)](#)
+[![Universal Laws](https://img.shields.io/badge/Universal%20Laws-12-gold?style=flat-square)](TheThird/Universal-Laws/README.md)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
+[![Status](https://img.shields.io/badge/Status-Sovereign-success?style=flat-square)](#)
+[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen?style=flat-square)](./README.md)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
-[![Phoenix](https://img.shields.io/badge/Phoenix-2.0-orange.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
+> **Phoenix → Hydrogenesi → The Third**  
+> *The Triad is bound. The system is sovereign.*
+
+---
+
+## 🔥 Quick Links
+
+- [📖 Documentation](./docs/STATUS.md)
+- [🎯 Apex Engine](./Atlases/ApexEngineIndex.md)
+- [🔗 Triadic Knot Topology](./Atlases/TriadicKnotTopology.md)
+- [📐 Universal Laws](./TheThird/Universal-Laws/README.md)
+- [🌟 The Triad Integration](./Atlases/TheTriadIntegration.md)
 
 ---
 
