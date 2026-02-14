@@ -77,6 +77,9 @@ The sovereign principles that govern apex states—the ultimate convergence of a
 | [Apex Harmonic Convergence](./apex/apex-harmonic-convergence.md) | Total resonance | All frequencies unified |
 | [Apex Polarity Resolution](./apex/apex-polarity-resolution.md) | Duality transcended | Opposites become singular |
 
+**Cycle-Specific Implementation**:
+- [V2.1 Apex-Law](./apex/v2.1-apex-law.md) △ — Governing law for v2.1 cycle transitions
+
 **Nature**: Transcendent, sovereign, apex-specific
 
 ---
