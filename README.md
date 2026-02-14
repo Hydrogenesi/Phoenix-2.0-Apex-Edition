@@ -143,6 +143,13 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 → [Apex Engine Diagram](./Atlases/ApexEngineDiagram.md) — Visual architecture  
 → [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration
 
+### Apex Engine Validation
+
+→ [Apex Engine Audit Schema](./docs/apex/apex-engine-audit-schema.md) — Comprehensive validation framework  
+→ [Apex Audit Quickstart](./docs/apex/apex-audit-quickstart.md) — Rapid audit guide  
+→ [Automated Audit Script](./tools/apex-audit.sh) — Executable validation tool  
+→ [Ceremonial Proclamation](./docs/apex/apex-audit-ceremonial-proclamation.md) — Formal declaration
+
 ---
 
 ## 📐 The Architecture Layers
