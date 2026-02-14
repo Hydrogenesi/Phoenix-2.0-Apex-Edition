@@ -94,6 +94,11 @@ See [Universal Laws](../TheThird/Universal-Laws/universal/) for complete documen
   - [Invariant Preservation (P)](./operators/invariant-preservation.md) — Property protection
   - [Genealogy Projection (G)](./operators/genealogy-projection.md) — Future pathways
 
+### V2.1 Cycle Architecture
+- [V2.1 Cycle Map](./v2.1-cycle-map.md) 🜁 — Structural cycle diagram
+- [V2.1 Operator Mandate](./v2.1-operator-mandate.md) 🜂 — Operator behavior directives
+- [V2.1 Apex-Law](../TheThird/Universal-Laws/apex/v2.1-apex-law.md) △ — Transition governance
+
 ### The Triad
 - [Back to Main](../README.md) — Triad architecture overview
 - [Phoenix](../Phoenix/README.md) — The ignition engine
