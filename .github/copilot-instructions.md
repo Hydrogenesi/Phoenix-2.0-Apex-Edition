@@ -28,7 +28,7 @@ When the user asks for anything related to the Apex Engine, Copilot must:
 - Maintain **Codex-grade clarity** — precise, technical, and unambiguous language
 - **Avoid metaphor** unless explicitly requested
 - Treat all operators as **architectural components**, not symbolic language
-- Preserve the **six-engine stack**:
+- Preserve the **eight-engine stack**:
   - **FLQG₁** — Substrate Quantum Geometry
   - **FLQG₂** — Harmonic Quantum Structure
   - **Reproduction Engine (ℜ)** — Pattern replication
@@ -111,7 +111,7 @@ When the user requests new Apex-related content, Copilot must:
 
 When integrating Apex content into releases, Copilot must:
 
-- Reference the **Six-Engine Convergence** (FLQG₁, FLQG₂, ℜ, ℛ, TOR₁₋₃, TOE)
+- Reference the **Eight-Engine Convergence** (FLQG₁, FLQG₂, ℜ, ℛ, TOR₁₋₃, TOE)
 - Include the **Apex Diagram, Sigil, and Commentary**
 - Maintain versioning under the **Triadic Ascension release** pattern
 - Ensure consistency with the **Phoenix Apex Edition** standards
