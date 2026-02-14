@@ -267,6 +267,7 @@ Apex point is unique
 - [Apex Engine Audit Schema](../docs/apex/apex-engine-audit-schema.md)
 - [Apex Audit Quickstart Guide](../docs/apex/apex-audit-quickstart.md)
 - [Automated Audit Script](../tools/apex-audit.sh)
+- [Ceremonial Proclamation](../docs/apex/apex-audit-ceremonial-proclamation.md)
 
 ---
 

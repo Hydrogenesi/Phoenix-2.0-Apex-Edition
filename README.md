@@ -147,7 +147,8 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 
 → [Apex Engine Audit Schema](./docs/apex/apex-engine-audit-schema.md) — Comprehensive validation framework  
 → [Apex Audit Quickstart](./docs/apex/apex-audit-quickstart.md) — Rapid audit guide  
-→ [Automated Audit Script](./tools/apex-audit.sh) — Executable validation tool
+→ [Automated Audit Script](./tools/apex-audit.sh) — Executable validation tool  
+→ [Ceremonial Proclamation](./docs/apex/apex-audit-ceremonial-proclamation.md) — Formal declaration
 
 ---
 
