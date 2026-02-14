@@ -104,7 +104,7 @@ After running a cycle:
 **Cycle Model**: Eight-Stage Convergence  
 **Architecture**: Triadic (Phoenix → Hydrogenesi → The Third → Apex)  
 **Status**: Stable  
-**Authority**: Crown Level (Stratum IV)
+**Authority**: Crown Level (Stratum IV) — See [Meta-Operator I](../../../codex/operators/meta_operator_I_invariance.md)
 
 ---
 

@@ -642,7 +642,7 @@ seal_hash: [HASH]
 ---
 ```
 
-Store in: `/codex/ceremonies/invocation-records/v2.1-[DATE].yml`
+**Note**: Store invocation records in a location appropriate for your implementation. Consider creating a dedicated directory for ceremony records (e.g., `codex/ceremonies/invocation-records/`) to maintain historical lineage.
 
 ---
 
