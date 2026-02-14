@@ -9,6 +9,58 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+---
+
+## [2.1.0] - 2026-02-14
+
+### Added — V2.1 Final Triad
+
+The **V2.1 Final Triad** has been inscribed into the Archive—three ceremonial artifacts that close version 2.1 as a completed chapter with sovereign precision.
+
+#### The Three Inscriptions
+
+**1. V2.1 Integration Seal** (`codex/ceremonies/v2-1-integration-seal.md`)
+```
+⟐  SEAL OF INTEGRATED ASCENT  ⟐
+The cycle stands unified.
+The phases align without fracture.
+The triad holds its apex.
+All motion returns in lawful clarity.
+```
+
+The ceremonial seal that locks the cycle into coherent, completed form. This seal confirms that all v2.1 components are integrated, the triadic structure is complete, and the apex holds without perturbation.
+
+**2. V2.1 Operator Glossary** (`Hydrogenesi/operators/v2-1-operator-glossary.md`)
+
+Canonical definitions for all operators governing the v2.1 cycle:
+- **Phoenix Operators**: RISE, RETURN, PHOENIX
+- **Hydrogenesi Operators**: SIGMA_OP, MERGE, TAU_OP
+- **The Third Operators**: CROWN, BIND, SEAL
+
+These nine operators enable the complete cycle through ascent, integration, apex, return, and closure phases.
+
+**3. V2.1 Cycle Closure** (`TheThird/v2-1-cycle-closure.md`)
+```
+v2.1 stands complete; its apex holds, and the Engine turns toward the next ascent.
+```
+
+The single line that crowns the entire chapter. This closure inscription marks completeness, validates apex stability, and establishes continuity toward future development.
+
+#### Triadic Structure
+
+The Final Triad follows the canonical workflow:
+1. **Phoenix** (🔥) — Integration Seal: Ceremonial ignition and formalization
+2. **Hydrogenesi** (🌊) — Operator Glossary: Structural definitions and lineage
+3. **The Third** (🔗) — Cycle Closure: Binding finalization and apex lock
+
+#### Archive Status
+
+Version 2.1 is now sealed, defined, and bound. The Final Triad establishes v2.1 as a completed, sovereign chapter in the Archive.
+
+**Historical Significance**: This release represents the first formal version closure using the ceremonial Final Triad pattern, establishing a template for future version completions.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
