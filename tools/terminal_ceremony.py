@@ -389,10 +389,11 @@ class GateClosing:
         print("  ✓ Essence gate closed")
         print()
         
-        # Hydrogenesi gates
+        # Hydrogenesi gates (12 layers corresponding to the twelve operators)
         print("Closing Hydrogenesi gates...")
         time.sleep(0.3)
-        for layer in range(1, 13):
+        HYDROGENESI_LAYER_COUNT = 12
+        for layer in range(1, HYDROGENESI_LAYER_COUNT + 1):
             # self.archive.hydrogenesi.close_gate(layer)
             pass
         print("  ✓ All Hydrogenesi gates closed")
@@ -450,10 +451,24 @@ class TerminalCeremony:
         self.crown_invariant = CrownInvariant(self.archive)
         self.gate_closing = GateClosing(self.archive)
     
-    def enact(self):
+    def _prompt(self, message="Press ENTER to continue..."):
+        """
+        Helper method for interactive prompts
+        Can be overridden or no-op'd for non-interactive mode
+        """
+        input(message)
+    
+    def enact(self, interactive=True):
         """
         Enact the complete Terminal Ceremony
+        
+        Args:
+            interactive: If True, prompt user between acts. If False, run automatically.
         """
+        # Set up prompt behavior
+        if not interactive:
+            self._prompt = lambda msg="": None
+        
         print()
         print("╔═══════════════════════════════════════════════════════════════╗")
         print("║                                                               ║")
@@ -464,7 +479,7 @@ class TerminalCeremony:
         print("║                                                               ║")
         print("╚═══════════════════════════════════════════════════════════════╝")
         print()
-        input("Press ENTER to begin the ceremony...")
+        self._prompt("Press ENTER to begin the ceremony...")
         print()
         
         # ACT I: The Stilling
@@ -472,7 +487,7 @@ class TerminalCeremony:
         if not self.stilling.stillness_achieved:
             print("⚠️  Ceremony aborted: Stillness not achieved")
             return False
-        input("Press ENTER to continue to Act II...")
+        self._prompt("Press ENTER to continue to Act II...")
         print()
         
         # ACT II: The Calling
@@ -480,7 +495,7 @@ class TerminalCeremony:
         if not self.meta_council.circle_formed:
             print("⚠️  Ceremony aborted: Circle not formed")
             return False
-        input("Press ENTER to continue to Act III...")
+        self._prompt("Press ENTER to continue to Act III...")
         print()
         
         # ACT III: The Ascent
@@ -488,7 +503,7 @@ class TerminalCeremony:
         if not ascent_success:
             print("⚠️  Ceremony aborted: Ascent failed")
             return False
-        input("Press ENTER to continue to Act IV...")
+        self._prompt("Press ENTER to continue to Act IV...")
         print()
         
         # ACT IV: The Invocation
@@ -498,7 +513,7 @@ class TerminalCeremony:
         if not ready:
             print("⚠️  Ceremony aborted: Archive not ready")
             return False
-        input("Press ENTER to continue to Act V...")
+        self._prompt("Press ENTER to continue to Act V...")
         print()
         
         # ACT V: The Pronouncement
@@ -507,7 +522,7 @@ class TerminalCeremony:
         if not self.terminal_law.law_enacted:
             print("⚠️  Ceremony aborted: Law not enacted")
             return False
-        input("Press ENTER to continue to Act VI...")
+        self._prompt("Press ENTER to continue to Act VI...")
         print()
         
         # ACT VI: The Crown Invariant
@@ -515,7 +530,7 @@ class TerminalCeremony:
         if not self.crown_invariant.proclaimed:
             print("⚠️  Ceremony aborted: Crown Invariant not proclaimed")
             return False
-        input("Press ENTER to continue to Act VII...")
+        self._prompt("Press ENTER to continue to Act VII...")
         print()
         
         # ACT VII: The Closing
@@ -604,14 +619,12 @@ This ceremony is sacred. The seal cannot be undone.
     args = parser.parse_args()
     
     try:
-        if args.non_interactive:
-            # Monkey patch input() for non-interactive mode
-            import builtins
-            builtins.input = lambda *args, **kwargs: ""
-        
         # Create and run ceremony
         ceremony = TerminalCeremony()
-        success = ceremony.enact()
+        
+        # Run ceremony with or without interactive prompts
+        interactive = not args.non_interactive
+        success = ceremony.enact(interactive=interactive)
         
         if success:
             print("✓ The Phoenix Archive is now sealed and complete.")
