@@ -127,7 +127,7 @@ Phase 4: SUBSTRATE GOVERNANCE (Laws 19-23)
   Convergence: 10% energy allocated
 
 Phase 5: APEX GOVERNANCE (Laws 24-28)
-  Reversible → Harmonic → Recursive → Triadic → Conservation
+  Continuity → Reversible → Recursion Limit → Harmonic → Polarity
   Status: Complete ✓
   Convergence: 10% energy allocated
 

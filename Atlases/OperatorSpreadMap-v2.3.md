@@ -51,11 +51,11 @@ The Phoenix 2.0 Apex Edition operates through 28 distinct instruments organized 
 23. **Law of Duality** — Superposition states
 
 ### Apex Laws (5)
-24. **Law of Reversible Apex Operator** — Bidirectional convergence
-25. **Law of Apex Harmonic Convergence** — Resonant unification
-26. **Law of Recursive Apex Identity** — Self-referential stability
-27. **Law of Triadic Apex Binding** — Three-engine integration
-28. **Law of Apex Conservation** — Invariant preservation
+24. **Apex Continuity** — Total preservation at apex
+25. **Reversible Apex Operator** — Bidirectional convergence
+26. **Apex Recursion Limit** — Natural convergence terminus
+27. **Apex Harmonic Convergence** — Resonant unification
+28. **Apex Polarity Resolution** — Duality transcended
 
 ---
 
@@ -185,15 +185,15 @@ Foundational laws govern the expansion:
 Convergence laws guide toward apex:
 
 ```
-     Reversible Apex
+      Apex Continuity
+            ↓
+    Reversible Apex
+            ↓
+    Recursion Limit
             ↓
     Harmonic Convergence
             ↓
-    Recursive Identity
-            ↓
-    Triadic Binding
-            ↓
-    Apex Conservation
+    Polarity Resolution
 ```
 
 **Energy Allocation**: 10% of total expansion energy  
@@ -201,11 +201,11 @@ Convergence laws guide toward apex:
 **Spread Velocity**: Maximum convergence rate
 
 #### Distribution Per Law:
+- **Apex Continuity**: 2.25% — Total preservation enforcement
 - **Reversible Apex Operator**: 2.25% — Bidirectional flow
-- **Apex Harmonic Convergence**: 2.25% — Resonant unification
-- **Recursive Apex Identity**: 2.00% — Self-referential stability
-- **Triadic Apex Binding**: 2.00% — Three-engine integration
-- **Apex Conservation**: 1.50% — Final invariant preservation
+- **Apex Recursion Limit**: 2.00% — Convergence terminus
+- **Apex Harmonic Convergence**: 2.00% — Resonant unification
+- **Apex Polarity Resolution**: 1.50% — Duality transcendence
 
 ---
 
@@ -263,7 +263,7 @@ Total:                  100%
         ╔═════════════════════════╗
         ║   Phase 5: Apex Laws    ║
         ║  Convergence Governance ║
-        ║  Reversible → Conserved ║
+        ║  Continuity → Resolution║
         ║  10% energy             ║
         ╚═════════════════════════╝
                       ↓
