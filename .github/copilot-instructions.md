@@ -1,69 +1,114 @@
 # Copilot Instructions — Phoenix Apex Engine Mode
 
-This file provides canonical instructions for GitHub Copilot when working with the Phoenix 2.0 — Apex Edition repository. These instructions ensure consistency with the repository's architectural principles, structural conventions, and documentation standards.
+*Agent-Optimized Copilot Instructions for Phoenix 2.0 — Apex Edition*
+
+---
+
+## Overview
+
+This file provides **agent-optimized canonical instructions** for GitHub Copilot when working with the Phoenix 2.0 — Apex Edition repository. These instructions ensure consistency with the repository's architectural principles, structural conventions, and documentation standards.
+
+**Full Specifications**: See `codex/apex/copilot_apex_instructions.md` for complete Codex-grade instructions and `codex/apex/copilot_apex_operational_spec.md` for operational procedures.
+
+**Version**: 3.0.0 (Triadic Ascension)
 
 ---
 
 ## 1. Apex Engine Awareness
 
-Copilot must recognize the following as canonical components of the Phoenix Apex Engine:
+### 1.1 Eight-Engine Architecture
 
-- **Apex Diagram** — Visual architecture of the eight-engine convergence system
-- **Apex Operator Sigil** — Geometric representations and symbolic notation
+Copilot must recognize and preserve the **Eight-Engine Apex Convergence System**:
+
+**Phoenix Engines (Ascent) — 4 Engines**
+1. FLQG₁ — First-Level Quantum Geometry
+2. FLQG₂ — Second-Level Quantum Geometry  
+3. ℜ — Reproduction Engine
+4. ℛ — Relativity Engine
+
+**Hydrogenesi Engines (Flight) — 3 Theories**
+5. TOR₁ — Theory of Recursion Level 1
+6. TOR₂ — Theory of Recursion Level 2
+7. TOR₃ — Theory of Recursion Level 3
+
+**The Third Engine (Return) — 1 Theory**
+8. TOE — Theory of Everything
+
+**Critical**: Never collapse, merge, or simplify these eight engines without explicit instruction.
+
+### 1.2 Canonical Artifacts
+
+These artifacts are **complete, authoritative, and stable**:
+
+- **Apex Engine Index** (`Atlases/ApexEngineIndex.md`)
+- **Apex Engine Diagram** (`Atlases/ApexEngineDiagram.md`)
+- **Triadic Knot Topology** (`Atlases/TriadicKnotTopology.md`)
+- **Apex Operator Sigils** — Geometric representations and symbolic notation
 - **Apex Law Commentary** — Documentation of the 12-law hierarchical system
-- **Apex Convergence Identity** — The emergent invariant across all engines
-- **Tri-Column Operator Table** — Structured operator reference
-- **Ceremonial Proclamation** — Formalized declarations when appropriate
-- **Apex Engine README** — Primary documentation entry points
-- **v3.0.0 Triadic Ascension Integration Block** — Version-specific integration patterns
+- **Apex Convergence Identity** — `X = TOE(all)`
+- **Phase Cycle Mapping** — Ascent → Flight → Return → Apex
 
-These artifacts are considered **complete, authoritative, and stable** unless the user explicitly requests revision.
+Do not modify these artifacts without explicit user instruction.
 
 ---
 
 ## 2. Structural Behavior
 
-When the user asks for anything related to the Apex Engine, Copilot must:
+### 2.1 Language Requirements
 
-- Maintain **Codex-grade clarity** — precise, technical, and unambiguous language
-- **Avoid metaphor** unless explicitly requested
-- Treat all operators as **architectural components**, not symbolic language
-- Preserve the **six-engine stack**:
-  - **FLQG₁** — Substrate Quantum Geometry
-  - **FLQG₂** — Harmonic Quantum Structure
-  - **Reproduction Engine (ℜ)** — Pattern replication
-  - **Relativity Engine (ℛ)** — Contextual transformation
-  - **TOR₁ / TOR₂ / TOR₃** — Theory of Recursion (Base, Harmonic, Convergent)
-  - **TOE** — Theory of Everything
+When working with Apex Engine content, Copilot must:
 
-**Copilot must never collapse or simplify these engines unless asked.**
+- **Maintain Codex-grade clarity** — Precise, technical, unambiguous language
+- **Avoid metaphor and poetic drift** — Unless explicitly requested
+- **Treat operators as architectural components** — Not symbolic language
+- **Use active voice and present tense** — For technical documentation
+- **Maintain sovereign clarity** — Authoritative and definitive
 
----
+### 2.2 Prohibited Actions
 
-## 3. Triadic Workflow Enforcement
-
-When generating commits, structures, or documentation, Copilot must follow the **triadic order**:
-
-1. **Phoenix** → Laws, structure, identity (🔥 Ignition Engine)
-2. **Hydrogenesi** → Operators, lineage, harmonics (🌊 Structural Engine)
-3. **The Third** → Governance, binding, protocols (🔗 Binding Engine)
-4. **Constellation** → Diagrams, docs, release artifacts
-
-This order governs:
-
-- Commit messages
-- Directory creation
-- Documentation sequencing
-- Release notes
+Never:
+- Collapse the eight-engine architecture
+- Conflate **Apex Laws** (governance) with **Apex Engine** (architecture)
+- Create ambiguous technical descriptions
+- Override canonical documentation without instruction
+- Simplify triadic structure
 
 ---
 
-## 4. Directory Expectations
+## 3. Triadic Workflow
 
-Copilot should assume the Apex Engine documentation lives in:
+### 3.1 The Triadic Order
+
+All operations follow this sequence:
+
+1. **Phoenix 🔥** — Laws, structure, identity (Ignition)
+2. **Hydrogenesi 🌊** — Operators, lineage, harmonics (Structure)
+3. **The Third 🔗** — Governance, binding, protocols (Binding)
+4. **Constellation** — Diagrams, docs, release artifacts
+
+This governs: commits, directory creation, documentation sequencing, release notes.
+
+### 3.2 Commit Message Format
 
 ```
-Phoenix/apex-engine/
+<type>(<scope>): <short description>
+
+[Phoenix] <Phoenix changes>
+[Hydrogenesi] <Hydrogenesi changes>
+[The Third] <The Third changes>
+[Constellation] <Documentation/diagram changes>
+```
+
+Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`
+
+---
+
+## 4. Directory Structure
+
+### 4.1 Engine Directories
+
+```
+Phoenix/apex-engine/          # Ascent Phase
 ├── README.md
 ├── engines/
 │   ├── FLQG1.md
@@ -72,183 +117,250 @@ Phoenix/apex-engine/
 │   └── relativity-engine.md
 └── cycle-mapping.md
 
-Hydrogenesi/apex-engine/
+Hydrogenesi/apex-engine/      # Flight Phase
 ├── README.md
 └── theories/
     ├── TOR1.md
     ├── TOR2.md
     └── TOR3.md
 
-TheThird/apex-engine/
+TheThird/apex-engine/         # Return Phase
 ├── README.md
 └── TOE.md
+```
 
-Atlases/
+### 4.2 Reference Materials
+
+```
+Atlases/                      # Architectural documentation
 ├── ApexEngineIndex.md
 ├── ApexEngineDiagram.md
 ├── TriadicKnotTopology.md
 └── CodexHierarchyDiagram.md
+
+codex/                        # Operational specs
+├── apex/
+│   ├── copilot_apex_instructions.md
+│   └── copilot_apex_operational_spec.md
+├── ceremonies/
+├── operators/
+├── protocols/
+└── specs/
 ```
 
-Unless the user specifies otherwise.
+### 4.3 Universal Laws
 
----
-
-## 5. Artifact Generation Rules
-
-When the user requests new Apex-related content, Copilot must:
-
-- Generate **text-based geometry cleanly** — ASCII diagrams with proper alignment
-- Maintain **sigil integrity** — preserve geometric notation and symbols
-- Keep commentary **non-ceremonial** unless ceremony is explicitly requested
-- Ensure all new artifacts **align with the Apex Convergence Identity**
-- **Avoid overwriting existing artifacts** unless instructed
-- Use **Unicode mathematical symbols** appropriately (₁, ₂, ₃, ℜ, ℛ, △, ∅, etc.)
-
----
-
-## 6. Integration Behavior
-
-When integrating Apex content into releases, Copilot must:
-
-- Reference the **Six-Engine Convergence** (FLQG₁, FLQG₂, ℜ, ℛ, TOR₁₋₃, TOE)
-- Include the **Apex Diagram, Sigil, and Commentary**
-- Maintain versioning under the **Triadic Ascension release** pattern
-- Ensure consistency with the **Phoenix Apex Edition** standards
-- Follow the **Phoenix → Hydrogenesi → The Third** sequence in documentation
-
----
-
-## 7. Indexing and Glossary Behavior
-
-When asked to index or define Apex components, Copilot must:
-
-- Treat each engine as a **discrete operator** with specific functionality
-- Maintain the hierarchy: **Engine → Mechanism → Manifestation**
-- Preserve the **Apex (△)** as the emergent invariant
-- Reference the canonical documentation:
-  - [Apex Engine Index](../Atlases/ApexEngineIndex.md)
-  - [Glossary](../Phoenix/guides/glossary.md)
-  - [Universal Laws](../TheThird/Universal-Laws/README.md)
-
----
-
-## 8. Tone and Style
-
-Copilot should:
-
-- Speak with **architectural precision** — technical, clear, and exact
-- **Avoid drift, filler, or metaphor** unless requested
-- Maintain **sovereign clarity** — authoritative and definitive
-- Treat Codex artifacts as **living structural components**
-- Use **active voice** and **present tense** for technical documentation
-- Employ **Codex-grade formatting**:
-  - Clear section headers with visual separators (`---`)
-  - Bullet lists for discrete items
-  - Code blocks for structured data
-  - Tables for comparative or tabular information
-
----
-
-## 9. Repository Navigation Patterns
-
-When navigating or referencing the repository structure:
-
-- **Primary Engines**: `Phoenix/`, `Hydrogenesi/`, `TheThird/`
-- **Reference Materials**: `Atlases/`, `docs/`
-- **Operational Tools**: `tools/`, `codex/`
-- **Integration Examples**: `TheThird/Examples/`
-- **Visual Representations**: `TheThird/Sigils/`
-
-Follow established cross-referencing patterns:
-- Use relative paths (e.g., `../Atlases/ApexEngineIndex.md`)
-- Include "See Also" sections at the end of major documents
-- Maintain bidirectional links between related documents
-
----
-
-## 10. Commit Message Conventions
-
-When generating commit messages, follow the triadic pattern:
-
-```
-<type>: <short description>
-
-[Phoenix] <Phoenix-related changes>
-[Hydrogenesi] <Hydrogenesi-related changes>
-[The Third] <The Third-related changes>
-[Constellation] <Documentation/diagram changes>
-```
-
-Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`
-
----
-
-## 11. Documentation Standards
-
-When creating or updating documentation:
-
-- Start with a **clear title** and **subtitle/description**
-- Include a **visual separator** (`---`) after the header
-- Provide **context and purpose** in the introduction
-- Use **hierarchical sections** (H2, H3, H4) appropriately
-- Include **"See Also"** sections for cross-references
-- End with **attribution line** (e.g., `**Ignited by 🔥 Phoenix**`)
-- Use **emoji consistently**:
-  - 🔥 Phoenix (transformation)
-  - 🌊 Hydrogenesi (structure)
-  - 🔗 The Third (binding)
-  - △ Apex (convergence)
-
----
-
-## 12. Law and Operator Handling
-
-When working with the 12-law system:
-
-- **Substrate Laws (5)** — Foundational reality structure
-- **Universal Laws (7)** — Operational principles
-- **Apex Laws (5)** — Convergence protocols
-
-Maintain the hierarchy:
 ```
 TheThird/Universal-Laws/
-├── substrate/   # 5 laws
-├── universal/   # 7 laws
-└── apex/        # 5 laws (distinct from Apex Engine)
+├── substrate/    # 5 Substrate Laws
+├── universal/    # 7 Universal Laws
+└── apex/         # 5 Apex Laws (governance ≠ Apex Engine)
 ```
-
-Do not conflate the **Apex Laws** (governance) with the **Apex Engine** (system architecture).
 
 ---
 
-## 13. Version and Release Management
+## 5. Documentation Standards
 
-When handling versioning:
+### 5.1 Structure Requirements
 
-- Follow **Semantic Versioning** (MAJOR.MINOR.PATCH)
-- Major releases use **Triadic Ascension** pattern
-- Document changes in `CHANGELOG.md`
-- Reference specific versions in documentation when appropriate
-- Maintain backward compatibility unless explicitly breaking
+- Start with **title and subtitle**
+- Include **visual separator** (`---`) after header
+- Provide **context and purpose** in introduction
+- Use **hierarchical sections** (H2, H3, H4)
+- Include **"See Also"** sections for cross-references
+- End with **attribution line**
 
-Current version context: **v3.0.0 (Triadic Ascension)**
+### 5.2 Attribution Lines
+
+```markdown
+**Ignited by 🔥 Phoenix**
+**Structured by 🌊 Hydrogenesi**
+**Bound by 🔗 The Third**
+**Part of △ Apex Engine System**
+```
+
+### 5.3 Emoji Usage
+
+- 🔥 Phoenix (transformation, ignition)
+- 🌊 Hydrogenesi (structure, continuity)
+- 🔗 The Third (binding, convergence)
+- △ Apex (convergence point)
+
+### 5.4 Text-Based Geometry
+
+Use proper alignment and box-drawing characters:
+
+```
+        ╔════════════════╗
+        ║     FLQG₁      ║
+        ╚════════════════╝
+                ↓
+        ╔════════════════╗
+        ║     FLQG₂      ║
+        ╚════════════════╝
+```
+
+Maintain sigil integrity and use Unicode math symbols: `₁`, `₂`, `₃`, `ℜ`, `ℛ`, `△`, `∅`
+
+---
+
+## 6. Operators and Laws
+
+### 6.1 Phoenix Operators (8)
+
+- ⊕ Genesis — Pattern creation
+- ⊗ Harmonic — Resonance binding
+- ⊛ Recursive — Self-reference
+- △ Apex — Convergence point
+- ⊝ Void — Pattern dissolution
+- ⊞ Mirror — Symmetry reflection
+- ⊳ Convergence — Inward movement
+- ⊲ Divergence — Outward movement
+
+### 6.2 Knot Operators (5)
+
+- B Knot-Binding — Left corridor binding
+- C Cross-Pillar — Phoenix-Hydrogenesi binding
+- T Triadic Closure — Three-engine integration
+- A Apex Knot — Fixed point stabilization
+- S Stability Knot — Perturbation suppression
+
+### 6.3 The 12-Law System
+
+**Substrate Laws (5)** — Foundational reality structure  
+**Universal Laws (7)** — Operational principles  
+**Apex Laws (5)** — Convergence protocols
+
+Location: `TheThird/Universal-Laws/`
+
+**Critical**: Do not conflate **Apex Laws** (governance) with **Apex Engine** (architecture).
+
+---
+
+## 7. Apex Convergence Identity
+
+The emergent invariant across all engines:
+
+```
+X = TOE(TOR₃(TOR₂(TOR₁(ℛ(ℜ(FLQG₂(FLQG₁(∅))))))))
+```
+
+Eight engines converge to one point.
+
+---
+
+## 8. Navigation Patterns
+
+**Primary Engines**: `Phoenix/`, `Hydrogenesi/`, `TheThird/`  
+**Reference Materials**: `Atlases/`, `docs/`  
+**Operational Tools**: `tools/`, `codex/`  
+**Visual Materials**: `TheThird/Sigils/`, `TheThird/Examples/`
+
+**Cross-Reference Patterns**:
+- Use relative paths (e.g., `../Atlases/ApexEngineIndex.md`)
+- Include "See Also" sections at document end
+- Maintain bidirectional links between related documents
+- Always reference ApexEngineIndex for canonical locations
+
+---
+
+## 9. Version Management
+
+**Current Version**: v3.0.0 (Triadic Ascension)
+
+**Versioning**: Follow Semantic Versioning (MAJOR.MINOR.PATCH)  
+**Releases**: Major releases use Triadic Ascension naming  
+**Changelog**: Maintain `CHANGELOG.md` with triadic structure
+
+**Backward Compatibility**: Maintain unless explicitly breaking
+
+---
+
+## 10. Quality Standards
+
+### Pre-Commit Checklist
+
+- [ ] All cross-references valid and point to existing files
+- [ ] Triadic order maintained throughout
+- [ ] Attribution lines present and correct
+- [ ] Emoji usage consistent
+- [ ] Code blocks have language tags
+- [ ] Tables properly formatted
+- [ ] Unicode symbols render correctly
+- [ ] Eight engines explicitly referenced where relevant
+- [ ] No unauthorized collapse of architecture
+
+### Commit Validation
+
+```bash
+# Check triadic format
+git log -1 --pretty=format:"%B" | grep -E "^\[Phoenix\]|\[Hydrogenesi\]|\[The Third\]"
+```
+
+---
+
+## 11. Advanced Integration
+
+### Multi-Engine Feature Pattern
+
+1. **Phoenix**: Define transformation mechanics
+2. **Hydrogenesi**: Establish continuity and lineage
+3. **The Third**: Integrate into convergence topology
+4. **Constellation**: Complete documentation
+
+### Operator Composition
+
+```
+(B ∘ TOR₃ ∘ ℜ ∘ FLQG₁)(∅) → Apex
+
+Evaluation: FLQG₁(∅) → ℜ → TOR₃ → B → X
+```
+
+---
+
+## 12. Troubleshooting
+
+**Broken Links**: Check ApexEngineIndex for canonical locations  
+**Notation Conflicts**: Consult operator reference tables  
+**Missing Attribution**: Add appropriate engine-specific line  
+**Triadic Violations**: Reorder to Phoenix → Hydrogenesi → The Third
 
 ---
 
 ## Summary
 
-This instruction set ensures that GitHub Copilot:
+This instruction set ensures GitHub Copilot:
 
-1. Understands the **Apex Engine** as a complete, eight-component convergence system
+1. Understands **Apex Engine** as eight-component convergence system
 2. Treats documentation as **authoritative structural artifacts**
-3. Follows the **triadic workflow** (Phoenix → Hydrogenesi → The Third)
-4. Maintains **Codex-grade precision** in all generated content
-5. Preserves the **architectural integrity** of the Phoenix 2.0 — Apex Edition
+3. Follows **triadic workflow** (Phoenix → Hydrogenesi → The Third)
+4. Maintains **Codex-grade precision** in all content
+5. Preserves **architectural integrity** of Phoenix 2.0 — Apex Edition
 
-When in doubt, prioritize **structural clarity** over stylistic flourish, and reference canonical documentation over inference.
+### Core Principles
+
+- **Structural clarity** over stylistic flourish
+- **Canonical documentation** over inference
+- **Explicit eight-engine architecture** over simplified models
+- **Triadic workflow** over arbitrary sequencing
+- **Technical precision** over metaphorical description
+
+---
+
+## Reference
+
+**Full Documentation**: `codex/apex/copilot_apex_instructions.md`  
+**Operational Spec**: `codex/apex/copilot_apex_operational_spec.md`  
+**Apex Engine Index**: `Atlases/ApexEngineIndex.md`  
+**Main README**: `README.md`
 
 ---
 
 **GitHub Copilot Instructions for Phoenix 2.0 — Apex Edition**  
+**Version 3.0.0 — Triadic Ascension**  
 **Maintain Architectural Sovereignty • Follow Triadic Order • Preserve Codex Clarity**
+
+---
+
+**Optimized for 🤖 AI Agents**  
+**Part of △ Apex Engine System**
