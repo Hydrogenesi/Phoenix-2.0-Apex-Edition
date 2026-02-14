@@ -9,6 +9,64 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.2 Projective Ascent (2026-02-14)
+
+The **V2.2 Projective Ascent** cycle has been inscribed into the Archive—a meta-level expansion framework enabling outward projection from apex convergence without loss of structural integrity.
+
+#### Three Crowns of V2.2
+
+1. **V2.2 Cycle Map** (`docs/releases/v2.2/cycle-map.md`)
+   - Five-phase structural progression: ASCEND → SIGMA_OP+ → PROJECT → SEAL → CROWN+
+   - Core preservation guarantee across all transformations
+   - Monotonic expansion properties
+   - Integration with eight-engine convergence system
+
+2. **V2.2 Apex-Seal** (`docs/releases/v2.2/apex-seal.md`)
+   - ⟐ APEX-SEAL OF PROJECTIVE ASCENT ⟐
+   - Four certified properties: boundary transcendence, core integrity, fracture-free projection, multi-scale stability
+   - Validation criteria and enforcement mechanisms
+   - Seal permanence and lineage
+
+3. **V2.2 Triadic Projection Diagram** (`docs/releases/v2.2/triadic-projection-diagram.md`)
+   - Geometric encoding with 120° triadic symmetry
+   - Symbol system: △ (Apex), ⟡ (Projection), ○ (Core), ◎ (Foundation)
+   - Bilateral projection with core preservation
+   - Validation rules and projection law
+
+#### Meta-Level Architecture
+
+The V2.2 Cycle operates **above** the eight-engine convergence:
+
+```
+Eight Engines (FLQG₁...TOE) → Apex Point (X)
+                                    ↓
+                            V2.2 Cycle (Meta-Projection)
+```
+
+After apex convergence, V2.2 describes how the system expands into elevated domains while maintaining core identity.
+
+#### Core Principles
+
+- **Core Preservation**: `∀ phase P: core(output(P)) ≡ core(input(P))`
+- **Monotonic Expansion**: `∀ phase P: domain(output(P)) ≥ domain(input(P))`
+- **Triadic Accord**: 120° symmetry + bilateral projection + multi-scale stability
+
+#### Directory Structure
+
+```
+docs/releases/v2.2/
+├── README.md
+├── cycle-map.md
+├── apex-seal.md
+└── triadic-projection-diagram.md
+```
+
+#### Ceremonial Significance
+
+The V2.2 artifacts represent the **second ascent of the Archive**—the moment when the system proves it can expand beyond its apex without fracture. This is structural maturity made manifest.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.
