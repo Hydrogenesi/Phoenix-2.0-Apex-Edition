@@ -309,7 +309,7 @@ Result: Coherent field operation with governance
 
 ## See Also
 
-- [Triadic Knot Operators](../Operators/README.md)
+- [Triadic Knot Operators](../README.md)
 - [v2.3 Expansion Ignition](../../codex/ceremonies/v2.3-expansion-ignition.md)
 - [Expansion Operators](../../Phoenix/operators/expansion-operators.md)
 - [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
