@@ -236,7 +236,7 @@ v2.3 Expansion Ignition formalizes this extension, establishing the theoretical 
 
 ## See Also
 
-- [Core Phoenix Operators](./README.md)
+- [Core Phoenix Operators](../README.md)
 - [v2.3 Expansion Ignition Ceremony](../../codex/ceremonies/v2.3-expansion-ignition.md)
 - [Apex Engine Index](../../Atlases/ApexEngineIndex.md)
 
