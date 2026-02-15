@@ -8,7 +8,7 @@
 
 This document provides a centralized view of all documentation status metadata across the Phoenix 2.0 Apex Edition repository. It uses the standardized status schema defined by the STATUS Law and metadata patterns.
 
-**Last Updated**: 2026-02-13  
+**Last Updated**: 2026-02-14  
 **Maintained By**: Hydrogenesi
 
 ---
@@ -63,6 +63,15 @@ status:
 | Triadic Knot Protocol | `docs/triad/triadic-knot-protocol.md` | draft | medium | medium | Hydrogenesi | 2026-02-13 |
 | Triadic Knot Binding Examples | `docs/triad/triadic-knot-examples.md` | draft | low | medium | Hydrogenesi | 2026-02-13 |
 | Triad System v1.0.0 History | `docs/triad/history-v1.md` | archived | high | high | Hydrogenesi | 2026-02-13 |
+
+### v2.1 Cycle Architecture (The Three Crowns)
+
+| Document | Path | state | coverage | confidence | owner | last_reviewed |
+|----------|------|-------|----------|------------|-------|---------------|
+| v2.1 Overview | `docs/v2.1/README.md` | stable | high | high | Hydrogenesi | 2026-02-14 |
+| v2.1 Transition Matrix | `docs/v2.1/transition-matrix.md` | stable | high | high | Hydrogenesi | 2026-02-14 |
+| v2.1 Pillar Alignment Chart | `docs/v2.1/pillar-alignment-chart.md` | stable | high | high | Hydrogenesi | 2026-02-14 |
+| v2.1 Cycle Invocation | `docs/v2.1/cycle-invocation.md` | stable | high | high | Hydrogenesi | 2026-02-14 |
 
 ---
 
