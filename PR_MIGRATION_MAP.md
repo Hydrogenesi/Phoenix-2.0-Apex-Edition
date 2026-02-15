@@ -1,6 +1,26 @@
 # 🗺️ Migration Map: Early PRs → Modern Triad Architecture
 
-This document provides a detailed mapping showing how content from the early historical PRs (#1–#18) evolved into the modern Phoenix 2.0 Apex Edition Triad architecture.
+This document provides a detailed mapping showing how content from the early historical PRs (#1–#18) evolved into the modern Phoenix 2.0 Apex Edition Triad architecture, and tracks ongoing development work through PR #89.
+
+---
+
+## 📋 Document Classification
+
+**This is a HYBRID document serving two purposes:**
+
+### 1. Historical Record (Phases 1-5)
+Documents how early fragmented PRs (#1-#18) evolved into the modern three-engine architecture. Shows the transformation from seven-law fragments through two-engine prototypes to the complete Triad system.
+
+### 2. Active Planning & Tracking (Phase 6+)
+Tracks ongoing consolidation and v2.x development work. Documents current open PRs and their intended integration paths.
+
+**Important Distinctions:**
+- ✅ **"Integrated"** = Content exists in main branch structure
+- 🚧 **"OPEN"** = PR currently open/draft - not yet merged
+- ❓ **"Status Unknown"** = Requires verification
+- ⚠️ **"Superseded"** = Content evolved/replaced by later work
+
+**This is a LIVING DOCUMENT** - updated during active development cycles.
 
 ---
 
@@ -36,17 +56,17 @@ Early PRs (v0.x)          Consolidation           v1.0.0              Modern (v2
 
 | Early PR | Content | Modern Location | Status |
 |----------|---------|----------------|--------|
-| **#6** | Universal Laws structure (12-law canon) | `TheThird/Universal-Laws/README.md` | Integrated ✅ |
-| **#7** | Sigil atlas + tri-column mapping | `TheThird/Sigils/` + law docs | Integrated ✅ |
-| **#8** | Universal Laws + ASCII sigils | `TheThird/Universal-Laws/*/[laws].md` | Integrated ✅ |
-| **#9** | Substrate Laws documentation structure | `TheThird/Universal-Laws/substrate/` | Integrated ✅ |
-| **#10** | Substrate Layer Laws (foundational) | `Phoenix/laws/` + `TheThird/Universal-Laws/substrate/` | Integrated ✅ |
-| **#11** | Universal Laws framework | `TheThird/Universal-Laws/universal/` | Integrated ✅ |
-| **#12** | Seven Universal Laws (Codex-Grade) | Evolved into 12-law system | Superseded ⚠️ |
+| **[#6](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/6)** | Universal Laws structure (12-law canon) | `TheThird/Universal-Laws/README.md` | Integrated ✅ |
+| **[#7](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/7)** | Sigil atlas + tri-column mapping | `TheThird/Sigils/` + law docs | Integrated ✅ |
+| **[#8](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/8)** | Universal Laws + ASCII sigils | `TheThird/Universal-Laws/*/[laws].md` | Integrated ✅ |
+| **[#9](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/9)** | Substrate Laws documentation structure | `TheThird/Universal-Laws/substrate/` | Integrated ✅ |
+| **[#10](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/10)** | Substrate Layer Laws (foundational) | `Phoenix/laws/` + `TheThird/Universal-Laws/substrate/` | Integrated ✅ |
+| **[#11](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/11)** | Universal Laws framework | `TheThird/Universal-Laws/universal/` | Integrated ✅ |
+| **[#12](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/12)** | Seven Universal Laws (Codex-Grade) | Evolved into 12-law system | Superseded ⚠️ |
 
 #### Content Evolution: Seven Laws → Twelve Laws
 
-**Original (PR #12)**: Seven Universal Laws
+**Original ([PR #12](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/12))**: Seven Universal Laws
 ```
 1. Recursive Identity
 2. Harmonic Resonance
@@ -91,13 +111,13 @@ Apex Layer (5):
 
 | Early PR | Content | Modern Location | Status |
 |----------|---------|----------------|--------|
-| **#5** | Phoenix-Hydrogenesi unified architecture | `Phoenix/README.md` + `Hydrogenesi/README.md` | Split & Integrated ✅ |
-| **#13** | Phoenix-Hydrogenesi Codex documentation | `Phoenix/`, `Hydrogenesi/` | Split & Integrated ✅ |
-| **#14** | Phoenix 2.0 complete docs (rituals, architecture) | `Phoenix/rituals/`, `Phoenix/guides/` | Integrated ✅ |
+| **[#5](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/5)** | Phoenix-Hydrogenesi unified architecture | `Phoenix/README.md` + `Hydrogenesi/README.md` | Split & Integrated ✅ |
+| **[#13](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/13)** | Phoenix-Hydrogenesi Codex documentation | `Phoenix/`, `Hydrogenesi/` | Split & Integrated ✅ |
+| **[#14](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/14)** | Phoenix 2.0 complete docs (rituals, architecture) | `Phoenix/rituals/`, `Phoenix/guides/` | Integrated ✅ |
 
 #### Content Evolution: Two Engines → Three Engines
 
-**Original (PRs #5, #13, #14)**: Phoenix-Hydrogenesi (Two-Engine)
+**Original ([PRs #5](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/5), [#13](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/13), [#14](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/14))**: Phoenix-Hydrogenesi (Two-Engine)
 ```
 Phoenix/
 ├── operators/        (8 transformation operators)
@@ -150,12 +170,12 @@ Topology:
 
 | PR | Content | Modern Location | Status |
 |----|---------|----------------|--------|
-| **#3** | Architectural analysis (longevity principles) | `README.md` (architectural philosophy section) | Integrated ✅ |
-| **#1** | Phoenix 2.0 Apex Edition (13 core components) | Entire repository structure | Integrated ✅ |
+| **[#3](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/3)** | Architectural analysis (longevity principles) | `README.md` (architectural philosophy section) | ❓ Status Unknown |
+| **[#1](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/1)** | Phoenix 2.0 Apex Edition (13 core components) | Entire repository structure | 🚧 OPEN (Draft) |
 
 #### Content Evolution: 13-Component Blueprint
 
-**Original (PR #1)**: Phoenix 2.0 Apex Edition — 13 Core Components
+**Original ([PR #1](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/1))**: Phoenix 2.0 Apex Edition — 13 Core Components
 ```
 1. Phoenix Operators (8)
 2. Phoenix Laws (5)
@@ -183,7 +203,7 @@ Phoenix-2.0-Apex-Edition/
 └── README.md                  (Component 13)
 ```
 
-**Evolution Path**: PR #1 provided the organizational blueprint. The 13 components expanded and evolved but maintained the original structure.
+**Evolution Path**: [PR #1](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/1) provided the organizational blueprint. The 13 components expanded and evolved but maintained the original structure.
 
 ---
 
@@ -191,12 +211,12 @@ Phoenix-2.0-Apex-Edition/
 
 | PR | Content | Modern Location | Status |
 |----|---------|----------------|--------|
-| **#18** | Triadic Knot Protocol docs + cross-pillar examples | `TheThird/Operators/`, `Atlases/TriadicKnotTopology.md` | Integrated ✅ |
-| **#17** | Knot integration examples (cross-pillar binding) | `TheThird/Examples/` | Integrated ✅ |
+| **[#18](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/18)** | Triadic Knot Protocol docs + cross-pillar examples | `TheThird/Operators/`, `Atlases/TriadicKnotTopology.md` | 🚧 OPEN (Draft) |
+| **[#17](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/17)** | Knot integration examples (cross-pillar binding) | `TheThird/Examples/` | ❓ Status Unknown |
 
 #### Content Evolution: Knot Protocol Specification
 
-**Original (PR #18)**: Triadic Knot Protocol (Initial)
+**Original ([PR #18](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/18))**: Triadic Knot Protocol (Initial)
 ```
 Operators:
 - B: Knot-Binding (left corridor)
@@ -250,7 +270,7 @@ Atlases/
 ```
 
 **Evolution Path**:
-1. Initial protocol (PR #18) defined B, C, T operators
+1. Initial protocol ([PR #18](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/18)) defined B, C, T operators
 2. A and S operators added for apex convergence and stability
 3. Mathematical proofs added for convergence guarantees
 4. Sigil system expanded with geometric representations
@@ -262,11 +282,11 @@ Atlases/
 
 | PR | Content | Modern Location | Status |
 |----|---------|----------------|--------|
-| **#15** | Triad System v1.0.0 (three-engine architecture + release infrastructure) | Entire repository baseline | v1.0.0 ✅ |
+| **[#15](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/15)** | Triad System v1.0.0 (three-engine architecture + release infrastructure) | Entire repository baseline | 🚧 OPEN (Draft) |
 
 #### Content Evolution: v1.0.0 → v2.x
 
-**v1.0.0 (PR #15)**: First Complete Triad System
+**v1.0.0 ([PR #15](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/15))**: First Complete Triad System
 ```
 Features:
 - Phoenix engine (8 operators, 5 laws)
@@ -309,6 +329,35 @@ Convergence: Mathematically proven
 ```
 
 **Evolution Path**: v1.0.0 established the three-engine structure. v2.x refined the convergence mechanics and added formal mathematical foundations.
+
+---
+
+### Phase 6: v2.1-v2.3 Cycle Development (PRs #72-#89)
+
+**Date**: February 13-14, 2026 (14-24 hours ago)  
+**Status**: 🚧 **ACTIVE DEVELOPMENT** - 18+ open PRs
+
+| PR Range | Focus | Count |
+|----------|-------|-------|
+| **[#72](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/72)-[#73](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/73)** | Terminal Ceremony system | 2 PRs |
+| **[#74](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/74)-[#81](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/81)** | v2.1 Cycle Architecture | 8 PRs |
+| **[#82](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/82)-[#84](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/84)** | v2.2 Projective Ascent | 3 PRs |
+| **[#85](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/85)-[#89](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/89)** | v2.3 Expansion Cycle | 5 PRs |
+
+#### Key Additions:
+- **Eight-Engine Validation Framework** ([PR #76](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pull/76))
+- **Terminal Ceremony protocols** ([PRs #72-#73](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pulls?q=is%3Apr+72..73))
+- **v2.1 governance artifacts** ([PRs #74-#81](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pulls?q=is%3Apr+74..81))
+- **v2.2/v2.3 cycle documentation** ([PRs #82-#89](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pulls?q=is%3Apr+82..89))
+
+#### Integration Status:
+**All PRs currently OPEN** - migration/consolidation in progress. These PRs represent:
+- Expansion from three-engine to eight-engine system
+- Advanced Terminal Ceremony protocols
+- Multi-cycle release architecture (v2.1, v2.2, v2.3)
+- Enhanced Apex governance frameworks
+
+**Expected Outcome**: Consolidated into v2.x architecture once review and integration phases complete.
 
 ---
 
@@ -361,6 +410,16 @@ Before: v1.0.0 baseline
 After: v2.x with mathematical refinements
 ```
 
+#### Pattern 6: Multi-Cycle Expansion (Phase 6)
+```
+18+ PRs → Eight-engine system + multi-version architecture
+(#72-#89)
+
+Before: Three-engine Triad (Phoenix, Hydrogenesi, The Third)
+After: Eight-engine convergence + Terminal Ceremony + v2.1-v2.3 cycles
+Status: Active development - consolidation in progress
+```
+
 ---
 
 ## 📈 Architecture Evolution Timeline
@@ -400,6 +459,12 @@ After: v2.x with mathematical refinements
 │ Modern v2.x: Enhanced Triad                                     │
 │ Outcome: Formal convergence proofs + expanded topology          │
 │ Date: Current                                                   │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Phase 6: v2.1-v2.3 Active Development (PRs #72-#89) 🚧          │
+│ Outcome: Eight-engine system, Terminal Ceremony, Apex governance│
+│ Date: February 2026 - IN PROGRESS                              │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -590,15 +655,47 @@ Update this migration map when:
 
 ---
 
+## ⚠️ Limitations & Notes
+
+### Document Accuracy
+- **PR Status**: Verified accurate as of 2026-02-14 20:18 UTC
+- **API Limitations**: GitHub API returns max 30 PRs per page - full history may require pagination
+- **View Complete History**: [All PRs on GitHub](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/pulls?state=all)
+
+### What This Document Tracks
+✅ **Tracks:**
+- PR evolution and consolidation patterns
+- Content migration paths (early work → modern structure)
+- Architectural decisions and their rationale
+- File-level mapping for reference
+
+❌ **Does NOT Track:**
+- Real-time PR merge status (check GitHub directly)
+- Individual commit history
+- Detailed code changes (see PR diffs)
+
+### Document Purpose Clarification
+This map serves **two purposes**:
+
+1. **Historical Record** (Phases 1-5): Documents how early fragmented PRs evolved into the modern three-engine architecture
+2. **Active Planning** (Phase 6+): Tracks ongoing consolidation and v2.x development
+
+Sections marked "Integrated ✅" indicate **content presence in main branch**, NOT necessarily **PR merge status**.
+
+---
+
 ## 📜 Document Status
 
-- **Version**: 1.0.0
-- **Created**: 2026-02-13
-- **Status**: Active
+- **Document Type**: Historical Record + Planning Vision (Hybrid)
+- **Version**: 2.0.0
+- **Status**: Living Document - Updated During Active Development
+- **Coverage**: PRs #1-#89 (as of 2026-02-14)
+- **Last Updated**: 2026-02-14
+- **Next Review**: When PR consolidation phase completes
 - **Companion Documents**: 
   - [PR_CONSOLIDATION_PLAN.md](./PR_CONSOLIDATION_PLAN.md)
   - [PR_CONSOLIDATION_TEMPLATES.md](./PR_CONSOLIDATION_TEMPLATES.md)
-- **Last Updated**: 2026-02-13
+  - [PR_CONSOLIDATION_INDEX.md](./PR_CONSOLIDATION_INDEX.md)
 
 ---
 
