@@ -23,6 +23,12 @@ The **Integration Engine v2.0.0** has been documented as a production-ready fram
 - Troubleshooting guide for common issues
 - Three Mermaid diagrams: architecture flowchart, class hierarchy, cached vs uncached sequence
 
+**Implementation Module** (`code/integration/integration_engine.py`)
+- `ThreeFingerWaltz` — Base waltz class for direct pattern integration
+- `CachedThreeFingerWaltz` — Adds LRU caching layer (configurable cache size)
+- `InstrumentedThreeFingerWaltz` — Full instrumentation with logging, metrics, and cache visibility
+- `IntegrationEngine` — High-level orchestrator with strategy pattern for selecting optimal waltz implementation
+
 **Example Scripts** (`code/integration/examples/`)
 - `before_after_migration.py` — Demonstrates migration from v1.x to v2.0.0 with side-by-side comparisons
 - `common_patterns.py` — Shows batch processing, repeated integration, progressive complexity, and error handling
