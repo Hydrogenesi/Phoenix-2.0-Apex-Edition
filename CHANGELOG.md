@@ -11,32 +11,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added — v2.3 Ceremonial Artifacts (2026-02-14)
 
-The **v2.3 ceremonial artifacts** have been integrated into the codex—three foundational documents that formalize operator expansion, meta-operator relationships, and stratified governance.
+The **v2.3 ceremonial artifacts** have been integrated into the codex—three foundational documents plus a comprehensive atlas that formalize operator expansion, meta-operator relationships, and stratified governance.
 
-#### Three Ceremonial Documents
+#### Four Core Documents
 
 **Phoenix Ritual (🔥 Transformation)**
-- **Operator Expansion Rite v2.3** — Five-phase ceremonial protocol for expanding the operator set through Genesis, Harmonic, Recursive, Convergence, and Apex phases. Defines stratum assignment guidelines and integration validation for new operators.
+- **Operator Expansion Rite v2.3** — Five-phase ceremonial protocol for expanding the operator set through Genesis, Harmonic, Recursive, Convergence, and Apex phases. Defines stratum assignment guidelines and integration validation for new operators. Includes detailed descriptions of The Third's five knot operators (B, C, T, A, S) with their roles in the triadic convergence system.
 
 **Hydrogenesi Structure (🌊 Architecture)**
-- **Meta-Operator Binding Wheel v2.3** — Comprehensive topology map of operator relationships, harmonic frequencies, phase alignments, and binding protocols. Includes binding strength metrics and convergence path analysis across all three engines.
+- **Meta-Operator Binding Wheel v2.3** — Comprehensive topology map of operator relationships, harmonic frequencies, phase alignments, and binding protocols. Includes binding strength metrics and convergence path analysis across all three engines. Features Triadic Knot convergence properties with contraction rates (B≈0.85, C≈0.75, T≈0.60, A≈0.50, S≈0.90) and composite convergence of ~82.8% distance reduction per cycle.
 
 **The Third Governance (🔗 Authority)**
-- **Stratum-Level Governance Map v2.3** — Four-tier hierarchical authority structure defining scope, decision rights, and escalation protocols from Foundation (I) through Operational (II) and Authority (III) to Crown (IV) levels.
+- **Stratum-Level Governance Map v2.3** — Four-tier hierarchical authority structure defining scope, decision rights, and escalation protocols from Foundation (I) through Operational (II) and Authority (III) to Crown (IV) levels. Includes energy budgets, recursion limits, emergency override procedures, and invariant enforcement policies.
+
+**Constellation Atlas (△ Navigation)**
+- **v2.3 Ceremonial Artifacts Index** — Comprehensive atlas providing complete navigation for all v2.3 components. Features integration architecture diagram showing triadic pattern flow, quick reference table, visual architecture, usage guides for system architects/practitioners/governance, ceremonial invocation, and extensive cross-references to related documentation.
 
 #### Integration Points
 
-- **Cross-Referenced**: All three documents interconnect with existing meta-operators, ceremonies, and protocols
+- **Cross-Referenced**: All four documents interconnect with existing meta-operators, ceremonies, and protocols
+- **Triadic Knot Integration**: Complete integration with The Third's convergence topology, including operator descriptions, convergence properties, and cross-references to `TheThird/Sigils/Triadic-Knot.md`
 - **Version Aligned**: Marked as v2.3 to indicate ceremonial/governance enhancement release
-- **Triadic Structure**: Follows Phoenix → Hydrogenesi → The Third pattern
+- **Triadic Structure**: Follows Phoenix → Hydrogenesi → The Third → Constellation pattern
 - **Codex-Grade**: Maintains architectural precision and ceremonial consistency
+
+#### Enhancements and Fixes
+
+- **Notation Clarity**: Fixed summation notation (Σ → ∑) in energy conservation formulas to avoid ambiguity with Symmetry meta-operator (Σ)
+- **Convergence Mathematics**: Clarified parameter definitions (K=knot state, X=apex point, O=operator) and explicit relationship between retention factor (0.172) and distance reduction (82.8%)
+- **Knot Operator Details**: Expanded descriptions of B (Knot-Binding), C (Cross-Pillar Knot), T (Triadic Closure), A (Apex Knot), and S (Stability Knot) with their roles in left corridor, symmetry axis, envelope closure, apex neighborhood, and crossing regions respectively
 
 **Locations**:
 ```
 Phoenix/rituals/operator-expansion-rite-v2.3.md
 codex/operators/meta-operator-binding-wheel-v2.3.md
 codex/protocols/stratum-governance-map-v2.3.md
+Atlases/v2.3-expansion-index.md
 ```
+
+**Documentation Updates**:
+- Updated `Phoenix/README.md` with new ritual reference
+- Updated main `README.md` with codex directory structure
+- Created comprehensive atlas index in `Atlases/v2.3-expansion-index.md`
 
 ---
 
