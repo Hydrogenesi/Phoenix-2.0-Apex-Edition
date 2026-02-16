@@ -457,8 +457,8 @@ Total:                 1000 units ✓
 
 ## See Also
 
-- [Cycle Crown v2.3](../../docs/triad/CycleCrown-v2.3.md) — Complete expansion cycle designation
-- [Expansion Proclamation v2.3](../../TheThird/Universal-Laws/apex/expansion-proclamation.md) — Governing law
+- [Cycle Crown v2.3](../docs/triad/CycleCrown-v2.3.md) — Complete expansion cycle designation
+- [Expansion Proclamation v2.3](../TheThird/Universal-Laws/apex/expansion-proclamation.md) — Governing law
 - [Apex Engine Index](./ApexEngineIndex.md) — Complete engine documentation
 - [Triadic Knot Topology](./TriadicKnotTopology.md) — Convergence structure
 
