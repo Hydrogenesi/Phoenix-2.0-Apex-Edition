@@ -59,7 +59,18 @@ class CachedThreeFingerWaltz(ThreeFingerWaltz):
         return super().dance()
 
     def dance(self) -> Any:
-        key = tuple(self.patterns)
+        # Create a hashable key from patterns
+        # For simple types, use tuple; for complex types, use string repr
+        hashable_key = []
+        for p in self.patterns:
+            try:
+                # Test if item is hashable
+                hash(p)
+                hashable_key.append(p)
+            except TypeError:
+                # If not hashable (like dict), use repr
+                hashable_key.append(repr(p))
+        key = tuple(hashable_key)
         return self._cached_dance(key)
 
     def cache_info(self):
@@ -160,7 +171,6 @@ class IntegrationEngine:
         self.log_level = log_level
 
         self._last_waltz = None  # store last instance for metrics/cache access
-        self._waltz_cache = {}  # cache waltz instances by pattern signature
 
     def _select_waltz(self, patterns: List[Any]):
         if self.enable_cache and self.enable_telemetry:
@@ -179,15 +189,9 @@ class IntegrationEngine:
         return ThreeFingerWaltz(patterns)
 
     def integrate(self, patterns: List[Any]) -> Any:
-        # For caching to work across calls, reuse waltz instances
-        # Use a simple hash of pattern types and count as cache key
-        cache_key = (len(patterns), tuple(type(p) for p in patterns[:3]))  # Simple heuristic
-        
-        if cache_key not in self._waltz_cache:
-            self._waltz_cache[cache_key] = self._select_waltz(patterns)
-        
-        waltz = self._waltz_cache[cache_key]
-        waltz.patterns = patterns  # Update patterns for current call
+        # Create a new waltz instance for each call to ensure proper isolation
+        # The waltz's internal cache will handle repeated patterns within its lifetime
+        waltz = self._select_waltz(patterns)
         self._last_waltz = waltz
         return waltz.dance()
 
@@ -195,12 +199,13 @@ class IntegrationEngine:
         if hasattr(self._last_waltz, "cache_info"):
             info = self._last_waltz.cache_info()
             # Convert CacheInfo named tuple to dictionary
+            total = info.hits + info.misses
             return {
                 "hits": info.hits,
                 "misses": info.misses,
                 "maxsize": info.maxsize,
                 "currsize": info.currsize,
-                "hit_rate": info.hits / (info.hits + info.misses) if (info.hits + info.misses) > 0 else 0.0
+                "hit_rate": info.hits / total if total > 0 else 0.0
             }
         return {"cache": "disabled"}
 
