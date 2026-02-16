@@ -54,6 +54,8 @@ class CachedThreeFingerWaltz(ThreeFingerWaltz):
         self._cached_dance = lru_cache(maxsize=cache_size)(self._dance_impl)
 
     def _dance_impl(self, patterns_key: Tuple[Any, ...]) -> Any:
+        # Cache key is used to determine cache hits; actual patterns are in self.patterns
+        # This allows caching while maintaining the instance pattern
         return super().dance()
 
     def dance(self) -> Any:
@@ -158,6 +160,7 @@ class IntegrationEngine:
         self.log_level = log_level
 
         self._last_waltz = None  # store last instance for metrics/cache access
+        self._waltz_cache = {}  # cache waltz instances by pattern signature
 
     def _select_waltz(self, patterns: List[Any]):
         if self.enable_cache and self.enable_telemetry:
@@ -176,13 +179,29 @@ class IntegrationEngine:
         return ThreeFingerWaltz(patterns)
 
     def integrate(self, patterns: List[Any]) -> Any:
-        waltz = self._select_waltz(patterns)
+        # For caching to work across calls, reuse waltz instances
+        # Use a simple hash of pattern types and count as cache key
+        cache_key = (len(patterns), tuple(type(p) for p in patterns[:3]))  # Simple heuristic
+        
+        if cache_key not in self._waltz_cache:
+            self._waltz_cache[cache_key] = self._select_waltz(patterns)
+        
+        waltz = self._waltz_cache[cache_key]
+        waltz.patterns = patterns  # Update patterns for current call
         self._last_waltz = waltz
         return waltz.dance()
 
     def get_cache_stats(self) -> Dict[str, Any]:
         if hasattr(self._last_waltz, "cache_info"):
-            return self._last_waltz.cache_info()
+            info = self._last_waltz.cache_info()
+            # Convert CacheInfo named tuple to dictionary
+            return {
+                "hits": info.hits,
+                "misses": info.misses,
+                "maxsize": info.maxsize,
+                "currsize": info.currsize,
+                "hit_rate": info.hits / (info.hits + info.misses) if (info.hits + info.misses) > 0 else 0.0
+            }
         return {"cache": "disabled"}
 
     def get_metrics(self) -> Dict[str, Any]:
