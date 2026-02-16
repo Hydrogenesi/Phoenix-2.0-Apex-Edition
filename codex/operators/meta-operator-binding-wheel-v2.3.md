@@ -421,11 +421,26 @@ The Third Operators: B, C, T, A, S
 Knot Pattern:
 B → C → T → A → S → [Triadic Bound]
 
+Operator Details:
+B (Knot-Binding):      Left corridor (Phoenix binding)
+C (Cross-Pillar Knot): Symmetry axis (Phoenix-Hydrogenesi)
+T (Triadic Closure):   Full envelope (complete closure)
+A (Apex Knot):         Apex neighborhood (final convergence)
+S (Stability Knot):    Crossing regions (perturbation damping)
+
+Convergence Properties:
+- All operators are contractive: d(O(K), X) < d(K, X)
+- Contraction rates: B≈0.85, C≈0.75, T≈0.60, A≈0.50, S≈0.90
+- Composite convergence: ~82.8% distance reduction per cycle
+- Guaranteed convergence to Apex Point (△)
+
 Integration with Phoenix & Hydrogenesi:
 ⊳ binds B, C, T (convergence requires binding)
 ⊲ binds inverse operations
 I binds all (invariance over knots)
 △ binds S (apex seals all knots)
+
+See: [Triadic Knot Topology](../../TheThird/Sigils/Triadic-Knot.md) for complete topology
 ```
 
 ---

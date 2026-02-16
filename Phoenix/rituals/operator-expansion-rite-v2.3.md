@@ -200,6 +200,13 @@ Hydrogenesi Binding:
 
 The Third Binding:
 ⊳(NEW, B, C, T, A, S) → Knot Network
+  Where B, C, T, A, S are the five knot operators:
+  - B (Knot-Binding): Left corridor binding
+  - C (Cross-Pillar Knot): Symmetry axis binding
+  - T (Triadic Closure): Complete envelope closure
+  - A (Apex Knot): Final convergence to apex
+  - S (Stability Knot): Crossing region stabilization
+  See: [Triadic Knot Topology](../../TheThird/Sigils/Triadic-Knot.md)
 
 Convergence Test:
 ∀ operators X: ⊳(NEW, X) is well-defined
