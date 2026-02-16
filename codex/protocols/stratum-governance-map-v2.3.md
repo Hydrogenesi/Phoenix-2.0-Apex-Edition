@@ -104,7 +104,7 @@ Overflow: Escalate to Stratum II
 
 Conservation:
 ∀ operations at Stratum I:
-  Σ energy_in = Σ energy_out + entropy
+  ∑ energy_in = ∑ energy_out + entropy
 ```
 
 ### Validation Protocol
