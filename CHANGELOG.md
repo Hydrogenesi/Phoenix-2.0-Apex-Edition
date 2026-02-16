@@ -9,6 +9,44 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — Integration Engine v2.0.0 Documentation (2026-02-16)
+
+The **Integration Engine v2.0.0** has been documented as a production-ready framework for pattern integration, elevating it from proof-of-concept to a fully observable, cache-optimized system.
+
+#### Documentation Added
+
+**Integration Engine v2.0.0 Documentation** (`docs/integration_engine_v2.md`)
+- Architectural overview comparing v1.x basic integration to v2.0.0 production-ready approach
+- Complete API reference for `IntegrationEngine` and waltz classes (`ThreeFingerWaltz`, `CachedThreeFingerWaltz`, `InstrumentedThreeFingerWaltz`)
+- Migration guide from v1.x to v2.0.0 with direct replacement and gradual adoption paths
+- Performance benchmarking guide for cold/warm cache testing
+- Troubleshooting guide for common issues
+- Three Mermaid diagrams: architecture flowchart, class hierarchy, cached vs uncached sequence
+
+**Example Scripts** (`code/integration/examples/`)
+- `before_after_migration.py` — Demonstrates migration from v1.x to v2.0.0 with side-by-side comparisons
+- `common_patterns.py` — Shows batch processing, repeated integration, progressive complexity, and error handling
+- `production_deployment.py` — Production-ready service with health monitoring, structured logging, and graceful shutdown
+
+#### Core Design Patterns
+
+- **Decorator pattern** for instrumentation and caching
+- **Strategy pattern** for implementation selection based on configuration flags
+- **Observer pattern** for telemetry, metrics, and logging
+
+#### Key Features
+
+- **Performance layer**: LRU caching with configurable cache size
+- **Observability layer**: Structured logging and comprehensive metrics collection
+- **Production-ready**: Health monitoring, error handling, graceful shutdown
+- **Multiple visualization formats**: Mermaid diagrams for documentation and analysis
+
+#### Impact
+
+This documentation transforms the Integration Engine into a production-grade framework suitable for research and operational deployment, with full observability, performance optimization, and comprehensive examples.
+
+---
+
 ### Added — V2.3 Expansion Cycle (2026-02-14)
 
 The **V2.3 Expansion Cycle** inscriptions have been integrated into the Archive—three primordial artifacts that define the great outward surge: distribution, apex, and law.
