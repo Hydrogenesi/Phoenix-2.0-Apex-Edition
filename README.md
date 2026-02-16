@@ -141,7 +141,8 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 
 → [Apex Engine Index](./Atlases/ApexEngineIndex.md) — Complete catalog  
 → [Apex Engine Diagram](./Atlases/ApexEngineDiagram.md) — Visual architecture  
-→ [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration
+→ [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration  
+→ [v2.1 Cycle Architecture](./Phoenix/apex-engine/v2.1-cycles/README.md) — **The Three Crowns**
 
 ---
 
