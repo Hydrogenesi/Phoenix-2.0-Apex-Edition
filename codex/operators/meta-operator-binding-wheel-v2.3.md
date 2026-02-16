@@ -430,10 +430,10 @@ S (Stability Knot):    Crossing regions (perturbation damping)
 
 Convergence Properties:
 - All operators are contractive: d(O(K), X) < d(K, X)
-  where K is knot state, X is apex point, O is operator
+  (K = knot state, X = apex point, O = operator)
 - Contraction rates: B≈0.85, C≈0.75, T≈0.60, A≈0.50, S≈0.90
 - Composite convergence: ~82.8% distance reduction per full cycle
-  (α_total = 0.85 × 0.75 × 0.60 × 0.50 × 0.90 ≈ 0.172 retention)
+  (retention factor α_total = 0.85 × 0.75 × 0.60 × 0.50 × 0.90 ≈ 0.172)
 - Guaranteed convergence to Apex Point (△)
 
 Integration with Phoenix & Hydrogenesi:
