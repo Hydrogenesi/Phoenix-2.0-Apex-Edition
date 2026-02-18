@@ -81,6 +81,7 @@ Phoenix operators can be combined into **ritual sequences** to achieve specific 
 - [Invocation Sequences](./rituals/invocation.md) — Basic ritual structure and ceremonial grammar
 - [Recursion Cycles](./rituals/recursion-cycles.md) — Iterative self-similar transformations
 - [Apex Formation](./rituals/apex-formation.md) — Emergent complexity and convergence
+- [Operator Expansion Rite v2.3](./rituals/operator-expansion-rite-v2.3.md) — Ceremonial protocol for expanding operator sets
 
 ---
 
