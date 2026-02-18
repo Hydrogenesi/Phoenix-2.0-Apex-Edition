@@ -9,50 +9,73 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added — v2.3 Ceremonial Artifacts (2026-02-14)
+### Added — V2.2 Cycle Artifacts (2026-02-14)
 
-The **v2.3 ceremonial artifacts** have been integrated into the codex—three foundational documents plus a comprehensive atlas that formalize operator expansion, meta-operator relationships, and stratified governance.
+The **V2.2 Cycle** has been initiated—a cycle of outward expansion from a stable apex. Three canonical artifacts define the v2.2 operational framework:
 
-#### Four Core Documents
+#### V2.2 Ignition Vector
 
-**Phoenix Ritual (🔥 Transformation)**
-- **Operator Expansion Rite v2.3** — Five-phase ceremonial protocol for expanding the operator set through Genesis, Harmonic, Recursive, Convergence, and Apex phases. Defines stratum assignment guidelines and integration validation for new operators. Includes detailed descriptions of The Third's five knot operators (B, C, T, A, S) with their roles in the triadic convergence system.
+**Location**: `Phoenix/rituals/v2.2-ignition-vector.md`
 
-**Hydrogenesi Structure (🌊 Architecture)**
-- **Meta-Operator Binding Wheel v2.3** — Comprehensive topology map of operator relationships, harmonic frequencies, phase alignments, and binding protocols. Includes binding strength metrics and convergence path analysis across all three engines. Features Triadic Knot convergence properties with contraction rates (B≈0.85, C≈0.75, T≈0.60, A≈0.50, S≈0.90) and composite convergence of ~82.8% distance reduction per cycle.
+The directional spark that opens the new cycle. Establishes the ASCEND → CONSOLIDATE → PROJECT trajectory.
 
-**The Third Governance (🔗 Authority)**
-- **Stratum-Level Governance Map v2.3** — Four-tier hierarchical authority structure defining scope, decision rights, and escalation protocols from Foundation (I) through Operational (II) and Authority (III) to Crown (IV) levels. Includes energy budgets, recursion limits, emergency override procedures, and invariant enforcement policies.
+**Core Principle**: v2.2 begins not from the ground, but from the apex of v2.1.
 
-**Constellation Atlas (△ Navigation)**
-- **v2.3 Ceremonial Artifacts Index** — Comprehensive atlas providing complete navigation for all v2.3 components. Features integration architecture diagram showing triadic pattern flow, quick reference table, visual architecture, usage guides for system architects/practitioners/governance, ceremonial invocation, and extensive cross-references to related documentation.
+**Components**:
+- **ASCEND** — Phoenix ignition of higher-order motion
+- **CONSOLIDATE** — Hydrogenesi stabilization of elevated form
+- **PROJECT** — Third-pillar outward designation
 
-#### Integration Points
+#### V2.2 Structural Mandate
 
-- **Cross-Referenced**: All four documents interconnect with existing meta-operators, ceremonies, and protocols
-- **Triadic Knot Integration**: Complete integration with The Third's convergence topology, including operator descriptions, convergence properties, and cross-references to `TheThird/Sigils/Triadic-Knot.md`
-- **Version Aligned**: Marked as v2.3 to indicate ceremonial/governance enhancement release
-- **Triadic Structure**: Follows Phoenix → Hydrogenesi → The Third → Constellation pattern
-- **Codex-Grade**: Maintains architectural precision and ceremonial consistency
+**Location**: `Hydrogenesi/v2.2-structural-mandate.md`
 
-#### Enhancements and Fixes
+The architectural rule that governs all operators in this cycle. Enforces elevated foundation, structural density, outward projection, and triadic fidelity.
 
-- **Notation Clarity**: Fixed summation notation (Σ → ∑) in energy conservation formulas to avoid ambiguity with Symmetry meta-operator (Σ)
-- **Convergence Mathematics**: Clarified parameter definitions (K=knot state, X=apex point, O=operator) and explicit relationship between retention factor (0.172) and distance reduction (82.8%)
-- **Knot Operator Details**: Expanded descriptions of B (Knot-Binding), C (Cross-Pillar Knot), T (Triadic Closure), A (Apex Knot), and S (Stability Knot) with their roles in left corridor, symmetry axis, envelope closure, apex neighborhood, and crossing regions respectively
+**Four Mandate Principles**:
+1. **Elevated Foundation** — No operator may descend below the v2.1 apex
+2. **Structural Density** — All motion must increase compression, clarity, and form
+3. **Outward Projection** — Operators must extend coherence beyond prior boundaries
+4. **Triadic Fidelity** — Each action must reference Phoenix, Hydrogenesi, and The Third
 
-**Locations**:
+**Operator Duty**: The system must grow outward without losing its center.
+
+#### V2.2 Meta-Operator Forecast
+
+**Location**: `codex/operators/v2.2-meta-operator-forecast.md`
+
+Predicted behavior and dynamics of meta-layer operators during v2.2. Documents the shift from binding to projection mode.
+
+**Three Meta Patterns**:
+- **Phoenix: Ascent Recursion** — Identity rises through successive apex states
+- **Hydrogenesi: Consolidation Wave** — Systems compress into higher-density coherence
+- **The Third: Projective Binding** — Apex states extend influence across domains
+
+**Meta Law**: Meta-operators must propagate coherence outward while preserving the elevated core.
+
+**Cycle Signature**: v2.2 is a cycle of outward expansion from a stable apex.
+
+#### Triadic Integration
+
+The three artifacts form a complete operational framework:
+- **Phoenix** (Ignition Vector) — Provides directional motion
+- **Hydrogenesi** (Structural Mandate) — Provides architectural constraints
+- **The Third** (Meta-Operator Forecast) — Provides meta-layer dynamics
+
+#### Documentation Structure
+
 ```
-Phoenix/rituals/operator-expansion-rite-v2.3.md
-codex/operators/meta-operator-binding-wheel-v2.3.md
-codex/protocols/stratum-governance-map-v2.3.md
-Atlases/v2.3-expansion-index.md
+Phoenix/rituals/
+└── v2.2-ignition-vector.md
+
+Hydrogenesi/
+└── v2.2-structural-mandate.md
+
+codex/operators/
+└── v2.2-meta-operator-forecast.md
 ```
 
-**Documentation Updates**:
-- Updated `Phoenix/README.md` with new ritual reference
-- Updated main `README.md` with codex directory structure
-- Created comprehensive atlas index in `Atlases/v2.3-expansion-index.md`
+All artifacts maintain Codex-grade formatting, triadic symmetry, and cross-reference integration.
 
 ---
 
