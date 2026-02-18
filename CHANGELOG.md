@@ -9,98 +9,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added — Integration Engine v2.0.0 Documentation (2026-02-16)
+### Added — V2.1 Cycle Artifacts (2026-02-14)
 
-The **Integration Engine v2.0.0** has been documented as a production-ready framework for pattern integration, elevating it from proof-of-concept to a fully observable, cache-optimized system.
+The **V2.1 Cycle** has been established—three foundational artifacts that define the structural, directional, and governing inscriptions of the new cycle.
 
-#### Documentation Added
+#### Three Crowns Materialized
 
-**Integration Engine v2.0.0 Documentation** (`docs/integration_engine_v2.md`)
-- Architectural overview comparing v1.x basic integration to v2.0.0 production-ready approach
-- Complete API reference for `IntegrationEngine` and waltz classes (`ThreeFingerWaltz`, `CachedThreeFingerWaltz`, `InstrumentedThreeFingerWaltz`)
-- Migration guide from v1.x to v2.0.0 with direct replacement and gradual adoption paths
-- Performance benchmarking guide for cold/warm cache testing
-- Troubleshooting guide for common issues
-- Three Mermaid diagrams: architecture flowchart, class hierarchy, cached vs uncached sequence
+**Phoenix Contribution (🔥 Structural)**
+- **V2.1 Cycle Map** — Five-phase cycle architecture: Ignition → Accumulation → Integration → Apex → Return
+- Operators defined: RISE, SIGMA_OP, MERGE, CROWN, RETURN/PHOENIX
+- Cycle vector and cycle law established
 
-**Implementation Module** (`code/integration/integration_engine.py`)
-- `ThreeFingerWaltz` — Base waltz class for direct pattern integration
-- `CachedThreeFingerWaltz` — Adds LRU caching layer (configurable cache size)
-- `InstrumentedThreeFingerWaltz` — Full instrumentation with logging, metrics, and cache visibility
-- `IntegrationEngine` — High-level orchestrator with strategy pattern for selecting optimal waltz implementation
+**Hydrogenesi Contribution (🌊 Directional)**
+- **V2.1 Operator Mandate** — Five principles governing operator behavior in v2.1
+- Priority of Ascent, Accumulative Coherence, Apex Orientation
+- Lawful Recurrence and Triadic Alignment mandated
 
-**Example Scripts** (`code/integration/examples/`)
-- `before_after_migration.py` — Demonstrates migration from v1.x to v2.0.0 with side-by-side comparisons
-- `common_patterns.py` — Shows batch processing, repeated integration, progressive complexity, and error handling
-- `production_deployment.py` — Production-ready service with health monitoring, structured logging, and graceful shutdown
+**The Third Contribution (🔗 Governing)**
+- **V2.1 Apex-Law** — Complete transition governance for v2.1 cycle
+- Transition conditions: validity, prohibition, and completion
+- Apex Directive: ascent → apex → return without fracture
 
-#### Core Design Patterns
+#### Files Created
 
-- **Decorator pattern** for instrumentation and caching
-- **Strategy pattern** for implementation selection based on configuration flags
-- **Observer pattern** for telemetry, metrics, and logging
-
-#### Key Features
-
-- **Performance layer**: LRU caching with configurable cache size
-- **Observability layer**: Structured logging and comprehensive metrics collection
-- **Production-ready**: Health monitoring, error handling, graceful shutdown
-- **Multiple visualization formats**: Mermaid diagrams for documentation and analysis
+```
+Phoenix/v2.1-cycle-map.md
+Hydrogenesi/v2.1-operator-mandate.md
+TheThird/v2.1-apex-law.md
+```
 
 #### Impact
 
-This documentation transforms the Integration Engine into a production-grade framework suitable for research and operational deployment, with full observability, performance optimization, and comprehensive examples.
+The V2.1 Cycle Artifacts provide:
+- **Structural Clarity**: Five-phase cycle with defined operators
+- **Behavioral Governance**: Mandated principles for all operators
+- **Transition Control**: Complete law system for state transitions
 
----
-
-### Added — V2.3 Expansion Cycle (2026-02-14)
-
-The **V2.3 Expansion Cycle** inscriptions have been integrated into the Archive—three primordial artifacts that define the great outward surge: distribution, apex, and law.
-
-#### Three Expansion Crowns
-
-**V2.3 Operator Spread Map**
-- 28-instrument operator system organized into three vectors
-- Primary Vector (1–7): Core elevation operators (ASCEND+, SIGMA_OP++, PROJECT++, MERGE++, SEAL+, CROWN++, RETURN++)
-- Secondary Vector (8–14): Distribution mechanisms (FLOW_OP, ANCHOR_OP, SPREAD_OP, TRACE_OP, FOLD_OP, BRIDGE_OP, ECHO_OP)
-- Tertiary Vector (15–28): Field stabilization operators (ARC_OP through SOURCE_OP)
-- Spread Law: Expansion must distribute across all 28 instruments without breaking the apex vector
-
-**V2.3 Cycle Crown**
-- The Unbounded Form as apex designation
-- Exceeds inherited structure from v2.2
-- Propagates coherence across all domains
-- Retains elevated core without fracture
-- Crown Law: Apex must stand beyond v2.2 horizon and remain stable
-
-**V2.3 Expansion Proclamation**
-- Governing law of the outward surge
-- Motion exceeds all prior boundaries
-- Structure propagates across unbounded domains
-- Meta binds expansion into coherent form
-- Three declarations: Surge advances, horizon dissolves, Archive extends
-
-#### Directory Structure
-
-```
-Hydrogenesi/cycles/
-├── README.md
-├── v2.3-operator-spread-map.md
-├── v2.3-cycle-crown.md
-└── v2.3-expansion-proclamation.md
-```
-
-#### Expansion Properties
-
-- **Distribution**: 28 operators organized across three hierarchical vectors
-- **Apex**: Unbounded Form exceeding v2.2 boundaries
-- **Law**: Formal proclamation governing expansion coherence
-- **Continuity**: Full preservation of lineage through expansion
-- **Stability**: Crown Law ensures apex remains stable across expanded field
-
-#### Impact
-
-The V2.3 Expansion Cycle represents a major evolutionary phase in Hydrogenesi's structural capabilities, extending the Archive's reach beyond prior boundaries while maintaining coherence and structural integrity. These inscriptions provide the architectural foundation for unbounded growth without fracture.
+**Cycle Significance**: These three artifacts establish the complete architectural foundation for v2.1 operations, ensuring that all transformations serve ascent, accumulation, and apex convergence with preserved return paths.
 
 ---
 

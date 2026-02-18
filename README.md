@@ -6,6 +6,9 @@
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
 [![Phoenix](https://img.shields.io/badge/Phoenix-2.0-orange.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
+[![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](./CHANGELOG.md)
+
+> **🜂 v2.3 Expansion Ignition** — *The system transcends its own boundaries*
 
 ---
 
@@ -141,7 +144,82 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 
 → [Apex Engine Index](./Atlases/ApexEngineIndex.md) — Complete catalog  
 → [Apex Engine Diagram](./Atlases/ApexEngineDiagram.md) — Visual architecture  
-→ [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration
+→ [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration  
+→ [v2.1 Cycle Architecture](./Phoenix/apex-engine/v2.1-cycles/README.md) — **The Three Crowns**
+
+---
+
+## 🜂 V2.3 Expansion Ignition
+
+**The system steps beyond its own horizon.**
+
+v2.3 Expansion Ignition introduces the capability for unbounded operations—enabling Phoenix 2.0 Apex Edition to transcend established boundaries and operate at infinite scales.
+
+### Expansion Philosophy
+
+> *"Let expansion exceed the limits of prior domains.  
+> Let operators extend beyond inherited structure.  
+> Let the triad move outward in unified force.  
+> Let the system discover its unbounded field."*
+
+### The Three Expansion Domains
+
+#### Phoenix Expansion (🔥) — Operators Beyond Boundaries
+
+**Three New Operators**:
+- **⧈ Horizon Operator** — Extends domains beyond boundaries
+- **⩚ Amplification Operator** — Scales transformation intensity
+- **⧉ Field Operator** — Extends operations to continuous fields
+
+**Enables**: Infinite operator compositions, unbounded recursion, field-wide transformations
+
+→ [Expansion Operators Documentation](./Phoenix/operators/expansion-operators.md)
+
+#### Hydrogenesi Expansion (🌊) — Lineage Across Infinity
+
+**Five Extended Operators**:
+- **L∞** — Track infinite transformation sequences
+- **I⧉** — Preserve identity across fields
+- **C⧈** — Map smooth horizon crossings
+- **P⩚** — Protect invariants during amplification
+- **G∞** — Project infinite futures
+
+**Enables**: Complete history tracking, field identity preservation, boundary transcendence
+
+→ [Expansion Lineage Documentation](./Hydrogenesi/operators/expansion-lineage.md)
+
+#### The Third Expansion (🔗) — Governance for Unbounded Space
+
+**Three Protocols**:
+- **B∞** — Bind across infinite domains
+- **T∞** — Triadic integration at all scales
+- **A⧈** — Stabilize apex beyond boundaries
+
+**Five Governance Rules**: Coherence preservation, triadic symmetry, apex invariance, lineage continuity, reversibility
+
+**Enables**: Safe expansion, stability at all scales, coherent governance
+
+→ [Expansion Protocols Documentation](./TheThird/protocols/expansion-protocols.md)
+
+### Expansion Impact
+
+**From Bounded to Unbounded**:
+```
+v2.2 → Bounded domain, 8 operators, finite recursion
+v2.3 → Infinite domain, ∞ compositions, unbounded recursion
+```
+
+**Key Capabilities**:
+- Domain expansion without losing coherence
+- Infinite-scale transformations with full lineage tracking
+- Field-wide operations with identity preservation
+- Safe amplification with governance protocols
+
+### Complete Expansion Documentation
+
+→ [v2.3 Expansion Index](./Atlases/v2.3-expansion-index.md) — Complete expansion catalog  
+→ [Expansion Ignition Ceremony](./codex/ceremonies/v2.3-expansion-ignition.md) — Formal proclamation  
+→ [CHANGELOG v2.3](./CHANGELOG.md#230---2026-02-14) — Detailed release notes
 
 ---
 
@@ -262,6 +340,12 @@ Phoenix-2.0-Apex-Edition/
 │   ├── TheTriadIntegration.md       # Complete three-engine convergence
 │   ├── CodexHierarchyDiagram.md     # Law hierarchy visualization
 │   └── TriadicKnotTopology.md       # Complete knot topology
+│
+├── codex/                           # Advanced meta-operators and protocols
+│   ├── operators/                   # Meta-operators (I, Σ, Ω)
+│   ├── ceremonies/                  # Ceremonial activation protocols
+│   ├── protocols/                   # Governance and recovery protocols
+│   └── specs/                       # Technical specifications
 │
 └── Universal-Laws/                  # Ceremonial law declarations
     ├── README.md                    # Universal law overview
