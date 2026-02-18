@@ -263,6 +263,12 @@ Apex point is unique
 ### Cycle Mapping
 - [Phoenix Cycle Mapping](../Phoenix/apex-engine/cycle-mapping.md)
 
+### v2.1 Cycle Architecture — The Three Crowns
+- [v2.1 Cycles Overview](../Phoenix/apex-engine/v2.1-cycles/README.md)
+- [Transition Matrix](../Phoenix/apex-engine/v2.1-cycles/transition-matrix.md) — Phase hand-offs
+- [Pillar Alignment Chart](../Phoenix/apex-engine/v2.1-cycles/pillar-alignment-chart.md) — Triadic expressions
+- [Cycle Invocation](../Phoenix/apex-engine/v2.1-cycles/cycle-invocation.md) — Ceremonial ignition
+
 ---
 
 ## Quick Reference
