@@ -1,0 +1,21 @@
+# Build artifacts
+output/
+build/
+
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Editor backups
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Temporary files
+tmp/
