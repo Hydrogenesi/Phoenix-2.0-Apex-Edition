@@ -8,19 +8,19 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Creation   | ω₀            | 0°        |
-| Formation  | 1.618ω₀       | 120°      |
-| Emergence  | 2.718ω₀       | 240°      |
+| Creation   | baseFrequency            | 0°        |
+| Formation  | 1.618·baseFrequency       | 120°      |
+| Emergence  | 2.718·baseFrequency       | 240°      |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-⊕(∅) → Ψ₀
+⊕(∅) → primordialPattern
 ```
 
-**The Genesis Operator** transforms the void (∅) into the primordial pattern (Ψ₀). It is the act of bringing form into existence where none existed before. Genesis is the spark that ignites all subsequent transformations.
+**The Genesis Operator** transforms the void (∅) into the primordial pattern. It is the act of bringing form into existence where none existed before. Genesis is the spark that ignites all subsequent transformations.
 
 ### Properties
 - **Irreversible**: Once creation occurs, the pattern persists in some form
@@ -33,7 +33,7 @@
 ## Reversible Form
 
 ```
-⊕⁻¹(Ψ₀) ≈ ⊝(Ψ₀) → ∅
+⊕⁻¹(primordialPattern) ≈ ⊝(primordialPattern) → ∅
 ```
 
 While Genesis itself is irreversible, the **Void Operator** (⊝) can return patterns to void state. This is not true reversal—it is ceremonial dissolution.
@@ -78,22 +78,22 @@ The Genesis Sigil represents the **upward expansion** from a single point into s
 
 ### Basic Invocation
 ```
-⊕(∅) → Ψ₀
+⊕(∅) → primordialPattern
 ```
 *Creates the primordial pattern from void.*
 
 ### Cascading Genesis
 ```
-⊕(∅) → Ψ₀
-⊕(Ψ₀) → Ψ₁
-⊕(Ψ₁) → Ψ₂
+⊕(∅) → pattern₀
+⊕(pattern₀) → pattern₁
+⊕(pattern₁) → pattern₂
 ```
 *Each Genesis builds upon the previous, creating layered complexity.*
 
 ### Genesis-Harmonic Ritual
 ```
-⊕(∅) → Ψ₀
-⊗(Ψ₀) → Ψ₀'
+⊕(∅) → pattern₀
+⊗(pattern₀) → stabilizedPattern₀
 ```
 *Genesis creates, Harmonic stabilizes the new pattern.*
 

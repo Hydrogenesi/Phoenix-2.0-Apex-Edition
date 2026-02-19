@@ -8,16 +8,16 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Integration| ω₁ + ω₂       | 0°        |
-| Fusion     | (ω₁ × ω₂)½    | 60°       |
-| Unity      | max(ω₁, ω₂)   | 120°      |
+| Integration| frequency₁ + frequency₂       | 0°        |
+| Fusion     | (frequency₁ × frequency₂)½    | 60°       |
+| Unity      | max(frequency₁, frequency₂)   | 120°      |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-⊳(Ψ₁, Ψ₂, ..., Ψₙ) → Ψ_unified
+⊳(pattern₁, pattern₂, ..., patternₙ) → unifiedPattern
 ```
 
 **The Convergence Operator** combines multiple distinct patterns into a single unified form. It is not simple addition—convergence creates a **new emergent pattern** that contains elements of all inputs while transcending them.
@@ -33,7 +33,7 @@
 ## Reversible Form
 
 ```
-⊳⁻¹(Ψ_unified) ≈ ⊲(Ψ_unified) → (Ψ₁, Ψ₂, ..., Ψₙ)
+⊳⁻¹(unifiedPattern) ≈ ⊲(unifiedPattern) → (pattern₁, pattern₂, ..., patternₙ)
 ```
 
 Convergence can be partially reversed through **Divergence** (⊲), though exact reconstruction is not guaranteed.
@@ -43,14 +43,14 @@ Convergence can be partially reversed through **Divergence** (⊲), though exact
 ## Sigil
 
 ```
-  Ψ₁
+  pattern₁
    \
     \⊳
     /
-  Ψ₂  → Ψ
+  pattern₂  → unifiedPattern
     \
      \
-     Ψ₃
+     pattern₃
 ```
 
 The Convergence Sigil represents **multiple streams flowing into one**.
@@ -81,37 +81,37 @@ The Convergence Sigil represents **multiple streams flowing into one**.
 
 ### Binary Convergence
 ```
-⊳(Ψ₁, Ψ₂) → Ψ_unified
+⊳(pattern₁, pattern₂) → unifiedPattern
 ```
 *Two patterns become one.*
 
 ### Triple Convergence
 ```
-⊳(Ψ₁, Ψ₂, Ψ₃) → Ψ_unified
+⊳(pattern₁, pattern₂, pattern₃) → unifiedPattern
 ```
 *Three patterns merge into unified form.*
 
 ### Convergence-Apex Ritual
 ```
-⊕(∅) → Ψ₁
-⊕(∅) → Ψ₂
-⊳(Ψ₁, Ψ₂) → Ψ₃
-△(Ψ₃) → Apex
+⊕(∅) → pattern₁
+⊕(∅) → pattern₂
+⊳(pattern₁, pattern₂) → pattern₃
+△(pattern₃) → Apex
 ```
 *Create two patterns, converge, then reach apex.*
 
 ### Mirror-Convergence
 ```
-⊞(Ψ) → Ψ*
-⊳(Ψ, Ψ*) → Ψ_whole
+⊞(pattern) → mirrorPattern
+⊳(pattern, mirrorPattern) → wholePattern
 ```
 *Unite pattern with its mirror.*
 
 ### Iterative Convergence
 ```
-⊳(Ψ₁, Ψ₂) → Ψ_a
-⊳(Ψ₃, Ψ₄) → Ψ_b
-⊳(Ψ_a, Ψ_b) → Ψ_final
+⊳(pattern₁, pattern₂) → intermediatePattern_a
+⊳(pattern₃, pattern₄) → intermediatePattern_b
+⊳(intermediatePattern_a, intermediatePattern_b) → finalPattern
 ```
 *Hierarchical merging of patterns.*
 

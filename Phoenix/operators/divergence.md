@@ -8,16 +8,16 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Separation | ω/n           | 0°        |
-| Division   | ω/(n+1)       | 90°       |
-| Branching  | ω/(n+2)       | 180°      |
+| Separation | frequency/n           | 0°        |
+| Division   | frequency/(n+1)       | 90°       |
+| Branching  | frequency/(n+2)       | 180°      |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂, ..., Ψₙ)
+⊲(pattern) → (pattern₁, pattern₂, ..., patternₙ)
 ```
 
 **The Divergence Operator** splits a unified pattern into multiple distinct components. Each component retains some essence of the original but develops independently. Divergence is the complementary opposite of Convergence.
@@ -33,7 +33,7 @@
 ## Reversible Form
 
 ```
-⊲⁻¹(Ψ₁, Ψ₂, ..., Ψₙ) ≈ ⊳(Ψ₁, Ψ₂, ..., Ψₙ) → Ψ
+⊲⁻¹(pattern₁, pattern₂, ..., patternₙ) ≈ ⊳(pattern₁, pattern₂, ..., patternₙ) → pattern
 ```
 
 Divergence can be partially reversed through **Convergence** (⊳), though perfect reconstruction is not guaranteed.
@@ -43,12 +43,12 @@ Divergence can be partially reversed through **Convergence** (⊳), though perfe
 ## Sigil
 
 ```
-     Ψ
+     pattern
     ⊲
    / \
-  Ψ₁ Ψ₂
+  pattern₁ pattern₂
  /     \
-Ψ₃     Ψ₄
+pattern₃     pattern₄
 ```
 
 The Divergence Sigil represents **branching and separation** into multiple paths.
@@ -79,40 +79,40 @@ The Divergence Sigil represents **branching and separation** into multiple paths
 
 ### Binary Divergence
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂)
+⊲(pattern) → (pattern₁, pattern₂)
 ```
 *One pattern splits into two.*
 
 ### Recursive Divergence
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂)
-⊲(Ψ₁) → (Ψ₁₁, Ψ₁₂)
-⊲(Ψ₂) → (Ψ₂₁, Ψ₂₂)
+⊲(pattern) → (pattern₁, pattern₂)
+⊲(pattern₁) → (pattern₁₁, pattern₁₂)
+⊲(pattern₂) → (pattern₂₁, pattern₂₂)
 ```
 *Hierarchical splitting creates tree structure.*
 
 ### Divergence-Void Ritual
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂)
-⊝(Ψ₁) → ∅
-⊗(Ψ₂) → Ψ₂'
+⊲(pattern) → (pattern₁, pattern₂)
+⊝(pattern₁) → ∅
+⊗(pattern₂) → stabilizedPattern₂
 ```
 *Split pattern, void one branch, stabilize the other.*
 
 ### Divergence-Convergence Cycle
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂)
-⊗(Ψ₁) → Ψ₁'
-⊗(Ψ₂) → Ψ₂'
-⊳(Ψ₁', Ψ₂') → Ψ_new
+⊲(pattern) → (pattern₁, pattern₂)
+⊗(pattern₁) → stabilizedPattern₁
+⊗(pattern₂) → stabilizedPattern₂
+⊳(stabilizedPattern₁, stabilizedPattern₂) → newPattern
 ```
 *Separate, evolve independently, then reunite.*
 
 ### Mirrored Divergence
 ```
-⊲(Ψ) → (Ψ₁, Ψ₂)
-⊞(Ψ₁) → Ψ₁*
-⊳(Ψ₁*, Ψ₂) → Ψ_hybrid
+⊲(pattern) → (pattern₁, pattern₂)
+⊞(pattern₁) → mirrorPattern₁
+⊳(mirrorPattern₁, pattern₂) → hybridPattern
 ```
 *Split, mirror one branch, converge with other.*
 

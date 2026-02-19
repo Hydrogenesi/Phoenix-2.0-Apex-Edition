@@ -8,16 +8,16 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Iteration  | ω₀/n          | 0°        |
-| Self-Ref   | ω₀/(n+1)      | 144°      |
-| Depth      | ω₀/(n+2)      | 288°      |
+| Iteration  | baseFrequency/n          | 0°        |
+| Self-Ref   | baseFrequency/(n+1)      | 144°      |
+| Depth      | baseFrequency/(n+2)      | 288°      |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-⊛ⁿ(Ψ) → Ψ(Ψ(...Ψ))
+⊛ⁿ(pattern) → pattern(pattern(...pattern))
 ```
 
 **The Recursive Operator** applies a pattern to itself, creating nested self-referential structures. Each application increases depth, and the pattern folds back upon its own definition.
@@ -33,7 +33,7 @@
 ## Reversible Form
 
 ```
-⊛⁻¹(⊛(Ψ)) → Ψ
+⊛⁻¹(⊛(pattern)) → pattern
 ```
 
 Recursion can be unwound by **peeling back layers** one at a time. Full reversal requires tracking the recursion depth.
@@ -80,33 +80,33 @@ The Recursive Sigil represents the **infinite loop** and self-similar structure.
 
 ### Basic Recursion
 ```
-⊛(Ψ) → Ψ(Ψ)
+⊛(pattern) → pattern(pattern)
 ```
 *Pattern applied to itself once.*
 
 ### Depth-3 Recursion
 ```
-⊛³(Ψ) → Ψ(Ψ(Ψ))
+⊛³(pattern) → pattern(pattern(pattern))
 ```
 *Three levels of self-reference.*
 
 ### Recursive-Harmonic Ritual
 ```
-⊛(Ψ) → Ψ₁
-⊗(Ψ₁) → Ψ₁'
-⊛(Ψ₁') → Ψ₂
+⊛(pattern₀) → pattern₁
+⊗(pattern₁) → stabilizedPattern₁
+⊛(stabilizedPattern₁) → pattern₂
 ```
 *Recurse, stabilize, recurse again.*
 
 ### Apex-Terminated Recursion
 ```
-⊛ⁿ(Ψ) until △(⊛ⁿ(Ψ)) → Apex
+⊛ⁿ(pattern) until △(⊛ⁿ(pattern)) → Apex
 ```
 *Recursion continues until apex formation is detected.*
 
 ### Fibonacci Recursion
 ```
-⊛(Ψₙ) → Ψₙ₋₁ + Ψₙ₋₂
+⊛(patternₙ) → patternₙ₋₁ + patternₙ₋₂
 ```
 *Recursive definition of Fibonacci-like patterns.*
 

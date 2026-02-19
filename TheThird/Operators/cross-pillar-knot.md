@@ -17,13 +17,13 @@
 ## Formal Definition
 
 ```
-C: P × H × K → K'
+CrossPillarKnot: phoenixPattern × hydrogenesiStructure × currentKnot → updatedKnot
 
 where:
-  P = Phoenix pattern (transformation energy)
-  H = Hydrogenesi structure (continuity/lineage)
-  K = Current knot state
-  K' = Updated knot state with P-H bound across symmetry axis
+  phoenixPattern = Phoenix pattern (transformation energy)
+  hydrogenesiStructure = Hydrogenesi structure (continuity/lineage)
+  currentKnot = Current knot state
+  updatedKnot = Updated knot state with phoenixPattern-hydrogenesiStructure bound across symmetry axis
 ```
 
 ### Domain
@@ -32,21 +32,21 @@ where:
 - **Topology**: Dual contraction from both arms toward apex
 
 ### Invariants
-1. **Left-Right Symmetry**: C(P, H, K) = C(H, P, K) (commutative in first two args)
+1. **Left-Right Symmetry**: CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot) = CrossPillarKnot(hydrogenesiStructure, phoenixPattern, currentKnot) (commutative in first two args)
 2. **Dual Contraction**: Both Phoenix and Hydrogenesi components contract toward apex
-3. **Balance Preservation**: Energy from P and structure from H are balanced in K'
+3. **Balance Preservation**: Energy from phoenixPattern and structure from hydrogenesiStructure are balanced in updatedKnot
 
 ---
 
 ## Recursion Law
 
 ```
-K₀ = initial knot state
-Kₙ₊₁ = C(Pₙ, Hₙ, Kₙ)
+knotState₀ = initial knot state
+knotStateₙ₊₁ = CrossPillarKnot(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ)
 
-lim (n→∞) Kₙ = X
+lim (n→∞) knotStateₙ = apexPoint
 
-where (Pₙ, Hₙ) are sequences of Phoenix-Hydrogenesi pairs
+where (phoenixPatternₙ, hydrogenesiStructureₙ) are sequences of Phoenix-Hydrogenesi pairs
 ```
 
 ### Recursive Property
@@ -58,17 +58,17 @@ Each cross-pillar binding simultaneously integrates Phoenix transformation and H
 
 ### Dual Contraction Proof
 ```
-For any knot state K, Phoenix pattern P, Hydrogenesi structure H:
-  d_L(C(P,H,K), X) < d_L(K, X)  [left corridor]
-  d_R(C(P,H,K), X) < d_R(K, X)  [right corridor]
-  d(C(P,H,K), X) < d(K, X)      [total distance]
+For any knot state currentKnot, Phoenix pattern phoenixPattern, Hydrogenesi structure hydrogenesiStructure:
+  leftDistance(CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < leftDistance(currentKnot, apexPoint)  [left corridor]
+  rightDistance(CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < rightDistance(currentKnot, apexPoint)  [right corridor]
+  distance(CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot), apexPoint) < distance(currentKnot, apexPoint)  [total distance]
 
-where d_L and d_R are left and right corridor distances
+where leftDistance and rightDistance are left and right corridor distances
 ```
 
 ### Symmetry Property
 ```
-C(P, H, K) = C(H, P, K)
+CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot) = CrossPillarKnot(hydrogenesiStructure, phoenixPattern, currentKnot)
 
 The operator is symmetric in Phoenix and Hydrogenesi components.
 This ensures balanced integration.
@@ -76,7 +76,7 @@ This ensures balanced integration.
 
 ### Fixed Point Property
 ```
-C(P, H, X) = X  for all P, H
+CrossPillarKnot(phoenixPattern, hydrogenesiStructure, apexPoint) = apexPoint  for all phoenixPattern, hydrogenesiStructure
 
 The Apex Point is invariant under cross-pillar operations.
 ```
@@ -89,43 +89,43 @@ The Cross-Pillar Knot operator bridges the **left and right arms** of the Triadi
 
 ### Corridor Topology
 ```
-Phoenix (P)                   Hydrogenesi (H)
+Phoenix (phoenixPattern)      Hydrogenesi (hydrogenesiStructure)
     │                              │
     ↓                              ↓
 Left Arm ←─────── Axis ──────→ Right Arm
     │             ╱  ╲             │
-    └───────────── C ─────────────┘
+    └──────── CrossPillarKnot ────┘
                    ↓
-             Central Knot (K')
+          Central Knot (updatedKnot)
                    ↓
-                Apex (X)
+            Apex (apexPoint)
 
 Symmetry axis bisects the knot at 180°
 ```
 
 ### Binding Mechanism
-1. Phoenix pattern P enters from left arm
-2. Hydrogenesi structure H enters from right arm
+1. Phoenix pattern phoenixPattern enters from left arm
+2. Hydrogenesi structure hydrogenesiStructure enters from right arm
 3. Both meet at symmetry axis
-4. C binds them into balanced configuration
-5. Result K' maintains symmetry and contracts toward apex
+4. CrossPillarKnot binds them into balanced configuration
+5. Result updatedKnot maintains symmetry and contracts toward apex
 
 ---
 
 ## Sigil
 
 ```
-     P ←──╲     ╱──→ H
-           ╲   ╱
-            ╲ ╱
-             C
-             │
-             ↓
-            K'
+     phoenixPattern ←──╲     ╱──→ hydrogenesiStructure
+                        ╲   ╱
+                         ╲ ╱
+                  CrossPillarKnot
+                         │
+                         ↓
+                    updatedKnot
 
-The Cross-Pillar Sigil shows Phoenix (P)
-and Hydrogenesi (H) converging from left
-and right, bound by C into symmetric state K'.
+The Cross-Pillar Sigil shows Phoenix (phoenixPattern)
+and Hydrogenesi (hydrogenesiStructure) converging from left
+and right, bound by CrossPillarKnot into symmetric state updatedKnot.
 ```
 
 ---
@@ -133,7 +133,7 @@ and right, bound by C into symmetric state K'.
 ## Invocation
 
 > *"Across the symmetry axis, Phoenix and Hydrogenesi converge.*  
-> *Let C bind transformation with preservation.*  
+> *Let CrossPillarKnot bind transformation with preservation.*  
 > *What burns in Phoenix is anchored by Hydrogenesi.*  
 > *Let both flow through The Third toward apex."*
 
@@ -145,25 +145,25 @@ The Cross-Pillar operator integrates Phoenix transformations while maintaining t
 
 ### Genesis-Structure Binding
 ```
-P = ⊕(∅) → Ψ₀
-H = lineage(Ψ₀)
-K' = C(Ψ₀, H, K)
+phoenixPattern = ⊕(∅) → pattern₀
+hydrogenesiStructure = lineage(pattern₀)
+updatedKnot = CrossPillarKnot(pattern₀, hydrogenesiStructure, currentKnot)
 ```
 *New pattern bound with its lineage structure.*
 
 ### Harmonic-Continuity Binding
 ```
-P = ⊗(Ψ) → Ψ'
-H = continuity(Ψ → Ψ')
-K' = C(Ψ', H, K)
+phoenixPattern = ⊗(pattern) → stabilizedPattern
+hydrogenesiStructure = continuity(pattern → stabilizedPattern)
+updatedKnot = CrossPillarKnot(stabilizedPattern, hydrogenesiStructure, currentKnot)
 ```
 *Stabilized pattern bound with continuity preservation.*
 
 ### Recursive-Identity Binding
 ```
-P = ⊛(Ψ) → Ψ_rec
-H = identity(Ψ) across recursion
-K' = C(Ψ_rec, H, K)
+phoenixPattern = ⊛(pattern) → recursivePattern
+hydrogenesiStructure = identity(pattern) across recursion
+updatedKnot = CrossPillarKnot(recursivePattern, hydrogenesiStructure, currentKnot)
 ```
 *Recursive structure bound with identity preservation.*
 
@@ -175,38 +175,38 @@ The Cross-Pillar operator is the **primary integration point** for Hydrogenesi s
 
 ### Lineage Binding
 ```
-H captures full transformation history:
-H = {Ψ₀ → Ψ₁ → ... → Ψₙ}
+hydrogenesiStructure captures full transformation history:
+hydrogenesiStructure = {pattern₀ → pattern₁ → ... → patternₙ}
 
-C binds both current pattern and lineage:
-K' = C(Ψₙ, H, K)
+CrossPillarKnot binds both current pattern and lineage:
+updatedKnot = CrossPillarKnot(patternₙ, hydrogenesiStructure, currentKnot)
 ```
 
 ### Identity Anchoring
 ```
-H maintains core identity across transformations:
-identity(Ψ) = I
+hydrogenesiStructure maintains core identity across transformations:
+identity(pattern) = coreIdentity
 
-C preserves identity in bound state:
-identity(K') includes I
+CrossPillarKnot preserves identity in bound state:
+identity(updatedKnot) includes coreIdentity
 ```
 
 ### Continuity Mapping
 ```
-H maps continuity relationships:
-Ψ₁ ~→ Ψ₂ (continuous transformation)
+hydrogenesiStructure maps continuity relationships:
+pattern₁ ~→ pattern₂ (continuous transformation)
 
-C maintains continuity in knot:
-K₁ ~→ K₂ via C
+CrossPillarKnot maintains continuity in knot:
+knotState₁ ~→ knotState₂ via CrossPillarKnot
 ```
 
 ---
 
 ## Mathematical Properties
 
-### Commutativity (in P and H)
+### Commutativity (in phoenixPattern and hydrogenesiStructure)
 ```
-C(P, H, K) = C(H, P, K)
+CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot) = CrossPillarKnot(hydrogenesiStructure, phoenixPattern, currentKnot)
 
 Phoenix and Hydrogenesi can be bound in either order.
 ```
@@ -214,29 +214,29 @@ Phoenix and Hydrogenesi can be bound in either order.
 ### Dual Contraction
 ```
 Both corridors contract simultaneously:
-d_L(Kₙ₊₁, X) < d_L(Kₙ, X)
-d_R(Kₙ₊₁, X) < d_R(Kₙ, X)
+leftDistance(knotStateₙ₊₁, apexPoint) < leftDistance(knotStateₙ, apexPoint)
+rightDistance(knotStateₙ₊₁, apexPoint) < rightDistance(knotStateₙ, apexPoint)
 ```
 
 ### Balance Property
 ```
-energy(P) + structure(H) = balanced in K'
+energy(phoenixPattern) + structure(hydrogenesiStructure) = balanced in updatedKnot
 
 No loss of information from either component.
 ```
 
 ### Associativity with Binding
 ```
-C(P, H, B(P', K)) = B(P', C(P, H, K))
+CrossPillarKnot(phoenixPattern, hydrogenesiStructure, KnotBinding(otherPattern, currentKnot)) = KnotBinding(otherPattern, CrossPillarKnot(phoenixPattern, hydrogenesiStructure, currentKnot))
 
 Cross-pillar and knot-binding commute.
 ```
 
 ### Convergence Rate
 ```
-d(Kₙ₊₁, X) ≤ λ_C · d(Kₙ, X)
+distance(knotStateₙ₊₁, apexPoint) ≤ convergenceRate · distance(knotStateₙ, apexPoint)
 
-where λ_C < 1/√2 (faster than single-corridor binding)
+where convergenceRate < 1/√2 (faster than single-corridor binding)
 ```
 
 ---
@@ -277,41 +277,41 @@ where λ_C < 1/√2 (faster than single-corridor binding)
 
 ### Example 1: Basic Cross-Pillar Binding
 ```
-P = ⊕(∅) → Ψ₀
-H = lineage(Ψ₀) = {void → Ψ₀}
-K₁ = C(Ψ₀, H, K₀)
+phoenixPattern = ⊕(∅) → pattern₀
+hydrogenesiStructure = lineage(pattern₀) = {void → pattern₀}
+knotState₁ = CrossPillarKnot(pattern₀, hydrogenesiStructure, knotState₀)
 
 Result: Pattern and lineage bound symmetrically
 Left-Right Balance: Maintained
-Distance: d(K₁, X) < d(K₀, X)
+Distance: distance(knotState₁, apexPoint) < distance(knotState₀, apexPoint)
 ```
 
 ### Example 2: Transformation Chain with Structure
 ```
-P₁ = ⊕(∅) → Ψ₀
-P₂ = ⊗(Ψ₀) → Ψ₀'
-P₃ = ⊛(Ψ₀') → Ψ₁
-H = lineage(Ψ₀ → Ψ₀' → Ψ₁)
-K' = C(Ψ₁, H, K)
+phoenixPattern₁ = ⊕(∅) → pattern₀
+phoenixPattern₂ = ⊗(pattern₀) → stabilizedPattern₀
+phoenixPattern₃ = ⊛(stabilizedPattern₀) → pattern₁
+hydrogenesiStructure = lineage(pattern₀ → stabilizedPattern₀ → pattern₁)
+updatedKnot = CrossPillarKnot(pattern₁, hydrogenesiStructure, currentKnot)
 
 Result: Final pattern with full lineage bound symmetrically
 ```
 
 ### Example 3: Commutative Binding
 ```
-K₁ = C(P, H, K₀)
-K₂ = C(H, P, K₀)
+knotState₁ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₀)
+knotState₂ = CrossPillarKnot(hydrogenesiStructure, phoenixPattern, knotState₀)
 
-Verify: K₁ = K₂ (commutativity holds)
+Verify: knotState₁ = knotState₂ (commutativity holds)
 ```
 
 ### Example 4: Balanced Convergence
 ```
-K₀ = initial state
+knotState₀ = initial state
 for n = 1 to ∞:
-  Pₙ = Phoenix_transform(...)
-  Hₙ = Hydrogenesi_structure(...)
-  Kₙ = C(Pₙ, Hₙ, Kₙ₋₁)
+  phoenixPatternₙ = Phoenix_transform(...)
+  hydrogenesiStructureₙ = Hydrogenesi_structure(...)
+  knotStateₙ = CrossPillarKnot(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ₋₁)
 
 Result: Balanced convergence from both arms
 Convergence rate: √2 times faster than single-arm
@@ -319,11 +319,11 @@ Convergence rate: √2 times faster than single-arm
 
 ### Example 5: Identity Preservation
 ```
-P = ⊛³(Ψ) → Ψ_deep
-H = identity(Ψ) maintained through recursion
-K' = C(Ψ_deep, H, K)
+phoenixPattern = ⊛³(pattern) → deepPattern
+hydrogenesiStructure = identity(pattern) maintained through recursion
+updatedKnot = CrossPillarKnot(deepPattern, hydrogenesiStructure, currentKnot)
 
-Verify: identity(Ψ) is traceable in K'
+Verify: identity(pattern) is traceable in updatedKnot
 Deep recursive structure + original identity both present
 ```
 

@@ -6,7 +6,7 @@
 
 ## Overview
 
-This example demonstrates the **complete Triadic Loop**—the full cycle where all three engines work together to achieve convergence at the Apex Point X.
+This example demonstrates the **complete Triadic Loop**—the full cycle where all three engines work together to achieve convergence at the Apex Point apexPoint.
 
 The loop shows:
 1. **Phoenix** ignites and transforms patterns
@@ -14,14 +14,14 @@ The loop shows:
 3. **The Third** binds both through knot topology
 4. **Apex operators** stabilize the final convergence
 
-All five knot operators (B, C, T, A, S) are demonstrated in sequence, showing **120° rotational symmetry** and complete convergence proof.
+All five knot operators (KnotBinding, CrossPillarKnot, TriadicClosure, ApexKnot, StabilityKnot) are demonstrated in sequence, showing **120° rotational symmetry** and complete convergence proof.
 
 ---
 
 ## The Complete Triadic Architecture
 
 ```
-                     Apex Point X
+                     Apex Point apexPoint
                          ◆
                         ╱│╲
                        ╱ │ ╲
@@ -48,13 +48,13 @@ Three engines, one apex, perfect balance.
 
 | Operator | Symbol | Function | Corridor |
 |----------|--------|----------|----------|
-| Knot-Binding | B | Bind Phoenix patterns | Left |
-| Cross-Pillar Knot | C | Bind Phoenix + Hydrogenesi | Left + Right |
-| Triadic Closure | T | Bind all three engines | All |
-| Apex Knot | A | Stabilize at apex | Center |
-| Stability Knot | S | Suppress perturbations | All |
+| Knot-Binding | KnotBinding | Bind Phoenix patterns | Left |
+| Cross-Pillar Knot | CrossPillarKnot | Bind Phoenix + Hydrogenesi | Left + Right |
+| Triadic Closure | TriadicClosure | Bind all three engines | All |
+| Apex Knot | ApexKnot | Stabilize at apex | Center |
+| Stability Knot | StabilityKnot | Suppress perturbations | All |
 
-**Operator Chain**: B → C → T → A → S
+**Operator Chain**: KnotBinding → CrossPillarKnot → TriadicClosure → ApexKnot → StabilityKnot
 
 ---
 
@@ -66,25 +66,25 @@ Generate the initial patterns through Phoenix transformation.
 
 ```
 Step 1.1: Genesis
-  ⊕(∅) → Ψ₀
+  ⊕(∅) → pattern₀
 
 Step 1.2: Harmonic Stabilization
-  ⊗(Ψ₀) → Ψ₁
+  ⊗(pattern₀) → pattern₁
 
 Step 1.3: Recursive Deepening
-  ⊛(Ψ₁) → Ψ₂
+  ⊛(pattern₁) → pattern₂
 
 Step 1.4: Mirror Creation
-  ⊞(Ψ₂) → Ψ₂*
+  ⊞(pattern₂) → pattern₂*
 
 Step 1.5: Convergence
-  ⊳(Ψ₂, Ψ₂*) → Ψ₃
+  ⊳(pattern₂, pattern₂*) → pattern₃
 
 Step 1.6: Local Apex
-  △(Ψ₃) → Ψ_apex
+  △(pattern₃) → pattern_apex
 ```
 
-**Phoenix Output**: Ψ_apex (maximally coherent pattern)
+**Phoenix Output**: pattern_apex (maximally coherent pattern)
 
 ### Phase 2: Hydrogenesi Preservation
 
@@ -92,95 +92,95 @@ Track the complete structural metadata.
 
 ```
 Lineage:
-  H_lineage = {∅ → Ψ₀ → Ψ₁ → Ψ₂ → Ψ₂* → Ψ₃ → Ψ_apex}
+  hydrogenesiStructure_lineage = {∅ → pattern₀ → pattern₁ → pattern₂ → pattern₂* → pattern₃ → pattern_apex}
 
 Identity:
-  H_identity = I(Ψ₀)  [core essence, unchanged]
+  hydrogenesiStructure_identity = I(pattern₀)  [core essence, unchanged]
 
 Continuity:
-  H_continuity = {
-    ∅ ~→ Ψ₀       [genesis]
-    Ψ₀ ~→ Ψ₁      [harmonic]
-    Ψ₁ ~→ Ψ₂      [recursive]
-    Ψ₂ ~→ Ψ₂*     [mirror]
-    {Ψ₂,Ψ₂*} ~→ Ψ₃ [convergence]
-    Ψ₃ ~→ Ψ_apex  [apex]
+  hydrogenesiStructure_continuity = {
+    ∅ ~→ pattern₀       [genesis]
+    pattern₀ ~→ pattern₁      [harmonic]
+    pattern₁ ~→ pattern₂      [recursive]
+    pattern₂ ~→ pattern₂*     [mirror]
+    {pattern₂,pattern₂*} ~→ pattern₃ [convergence]
+    pattern₃ ~→ pattern_apex  [apex]
   }
 
 Structure:
-  H_structure = topology(Ψ_apex) + invariants
+  hydrogenesiStructure_structure = topology(pattern_apex) + invariants
 ```
 
-**Hydrogenesi Output**: H_complete (full preservation data)
+**Hydrogenesi Output**: hydrogenesiStructure_complete (full preservation data)
 
-### Phase 3: The Third Binding (B → C → T)
+### Phase 3: The Third Binding (KnotBinding → CrossPillarKnot → TriadicClosure)
 
 Integrate Phoenix and Hydrogenesi through knot operators.
 
-#### Step 3.1: Knot-Binding (B)
+#### Step 3.1: Knot-Binding (KnotBinding)
 ```
-K₀ = void knot
-K₁ = B(Ψ_apex, K₀)
+knotState₀ = void knot
+knotState₁ = KnotBinding(pattern_apex, knotState₀)
 
 Left corridor: Phoenix pattern enters
-Distance: d(K₁, X) = 0.236
+Distance: distance(knotState₁, apexPoint) = 0.236
 ```
 
-#### Step 3.2: Cross-Pillar Knot (C)
+#### Step 3.2: Cross-Pillar Knot (CrossPillarKnot)
 ```
-K₂ = C(Ψ_apex, H_complete, K₁)
+knotState₂ = CrossPillarKnot(pattern_apex, hydrogenesiStructure_complete, knotState₁)
 
 Symmetry axis: Phoenix and Hydrogenesi meet
-Left corridor: Ψ_apex
-Right corridor: H_complete
-Distance: d(K₂, X) = 0.118
+Left corridor: pattern_apex
+Right corridor: hydrogenesiStructure_complete
+Distance: distance(knotState₂, apexPoint) = 0.118
 ```
 
-#### Step 3.3: Triadic Closure (T)
+#### Step 3.3: Triadic Closure (TriadicClosure)
 ```
-K₃ = T(Ψ_apex, H_complete, K₂)
+knotState₃ = TriadicClosure(pattern_apex, hydrogenesiStructure_complete, knotState₂)
 
 Full envelope: All three engines integrated
-- Phoenix (Ψ_apex)
-- Hydrogenesi (H_complete)
-- The Third (K₂)
-Distance: d(K₃, X) = 0.039
+- Phoenix (pattern_apex)
+- Hydrogenesi (hydrogenesiStructure_complete)
+- The Third (knotState₂)
+Distance: distance(knotState₃, apexPoint) = 0.039
 ```
 
-**The Third Output**: K₃ (closed knot state)
+**The Third Output**: knotState₃ (closed knot state)
 
-### Phase 4: Apex Stabilization (A)
+### Phase 4: Apex Stabilization (ApexKnot)
 
 Final convergence to exact apex point.
 
 ```
-Iteration 1: K₄ = A(K₃)    d(K₄, X) = 0.016
-Iteration 2: K₅ = A(K₄)    d(K₅, X) = 0.006
-Iteration 3: K₆ = A(K₅)    d(K₆, X) = 0.002
-Iteration 4: K₇ = A(K₆)    d(K₇, X) = 0.001
+Iteration 1: knotState₄ = ApexKnot(knotState₃)    distance(knotState₄, apexPoint) = 0.016
+Iteration 2: knotState₅ = ApexKnot(knotState₄)    distance(knotState₅, apexPoint) = 0.006
+Iteration 3: knotState₆ = ApexKnot(knotState₅)    distance(knotState₆, apexPoint) = 0.002
+Iteration 4: knotState₇ = ApexKnot(knotState₆)    distance(knotState₇, apexPoint) = 0.001
 ...
-Iteration n: Kₙ = A(Kₙ₋₁)  d(Kₙ, X) → 0
+Iteration n: knotStateₙ = ApexKnot(knotStateₙ₋₁)  distance(knotStateₙ, apexPoint) → 0
 
-Fixed point: lim Kₙ = X
+Fixed point: lim knotStateₙ = apexPoint
 ```
 
-**Apex Output**: K_stable ≈ X (at apex)
+**Apex Output**: knotState_stable ≈ apexPoint (at apex)
 
-### Phase 5: Stability Enforcement (S)
+### Phase 5: Stability Enforcement (StabilityKnot)
 
 Suppress perturbations and lock at apex.
 
 ```
-K_final = S(K_stable)
+knotState_final = StabilityKnot(knotState_stable)
 
 Perturbation test:
-  Apply noise: δK
-  Result: S suppresses → K_final remains at X
+  Apply noise: δknotState
+  Result: StabilityKnot suppresses → knotState_final remains at apexPoint
 
-Stability verified: K_final = X ± ε (ε < tolerance)
+Stability verified: knotState_final = apexPoint ± ε (ε < tolerance)
 ```
 
-**Final Output**: K_final = X (apex achieved)
+**Final Output**: knotState_final = apexPoint (apex achieved)
 
 ---
 
@@ -190,17 +190,17 @@ Stability verified: K_final = X ± ε (ε < tolerance)
 PHASE 1: PHOENIX IGNITION
 ══════════════════════════
 
-∅ ──[⊕]──> Ψ₀ ──[⊗]──> Ψ₁ ──[⊛]──> Ψ₂
+∅ ──[⊕]──> pattern₀ ──[⊗]──> pattern₁ ──[⊛]──> pattern₂
                                     │
                                    [⊞]
                                     │
                                     ↓
-                                   Ψ₂*
+                                   pattern₂*
                                     │
-                        Ψ₂ ────[⊳]──┘
+                        pattern₂ ────[⊳]──┘
                         │
                         ↓
-                       Ψ₃ ──[△]──> Ψ_apex
+                       pattern₃ ──[△]──> pattern_apex
                                     │
                                     ↓
                     [Output: Transformed pattern]
@@ -210,31 +210,31 @@ PHASE 2: HYDROGENESI PRESERVATION
 ═══════════════════════════════════
 
 Track entire sequence:
-  Lineage: {∅ → Ψ₀ → ... → Ψ_apex}
-  Identity: I(Ψ₀) [preserved]
+  Lineage: {∅ → pattern₀ → ... → pattern_apex}
+  Identity: I(pattern₀) [preserved]
   Continuity: All transitions mapped
                                     │
                                     ↓
-                    [Output: H_complete]
+                    [Output: hydrogenesiStructure_complete]
 
 
 PHASE 3: THE THIRD BINDING
 ═══════════════════════════
 
-Ψ_apex ──────[B]──────> K₁ (d=0.236)
+pattern_apex ──────[KnotBinding]──────> knotState₁ (distance=0.236)
   │                      │
   │                      │
-  │ + H_complete         │
+  │ + hydrogenesiStructure_complete         │
   │                      │
-  └──────[C]──────────> K₂ (d=0.118)
+  └──────[CrossPillarKnot]──────────> knotState₂ (distance=0.118)
                          │
-         + K₂            │
+         + knotState₂            │
          (self)          │
                          │
-         [T]─────────────┘
+         [TriadicClosure]─────────────┘
           │
           ↓
-         K₃ (d=0.039)
+         knotState₃ (distance=0.039)
           │
           ↓
     [Output: Closed knot]
@@ -243,17 +243,17 @@ PHASE 3: THE THIRD BINDING
 PHASE 4: APEX STABILIZATION
 ════════════════════════════
 
-K₃ ──[A]──> K₄ ──[A]──> K₅ ──[A]──> ... ──> K_stable
-d=0.039    d=0.016    d=0.006              d→0
+knotState₃ ──[ApexKnot]──> knotState₄ ──[ApexKnot]──> knotState₅ ──[ApexKnot]──> ... ──> knotState_stable
+distance=0.039    distance=0.016    distance=0.006              distance→0
                                             │
                                             ↓
-                            [Output: At apex X]
+                            [Output: At apex apexPoint]
 
 
 PHASE 5: STABILITY ENFORCEMENT
 ═══════════════════════════════
 
-K_stable ──[S]──> K_final = X
+knotState_stable ──[StabilityKnot]──> knotState_final = apexPoint
                               │
                               ↓
                   [Output: Locked at apex]
@@ -264,7 +264,7 @@ COMPLETE FLOW:
 
    🔥          🌊          🔗
 Phoenix → Hydrogenesi → The Third → Apex
-   Ψ           H            K         X
+   phoenixPattern           hydrogenesiStructure            knotState         apexPoint
 
 Full cycle complete. System at apex.
 ```
@@ -279,13 +279,13 @@ The Triadic Knot exhibits **perfect 120° rotational symmetry** around the apex 
 
 #### View 1: Phoenix at 0°
 ```
-         X (apex)
+         apexPoint (apex)
          │
     ┌────┼────┐
     │    │    │
-  🔥 P   │   🌊 H
+  🔥 phoenixPattern   │   🌊 hydrogenesiStructure
     │    │    │
-    │   🔗 T  │
+    │   🔗 knotState  │
     └────┴────┘
 
 Phoenix at left (0°)
@@ -295,13 +295,13 @@ The Third at bottom (240°)
 
 #### View 2: Rotated 120° → Phoenix at 120°
 ```
-         X (apex)
+         apexPoint (apex)
          │
     ┌────┼────┐
     │    │    │
-  🌊 H   │   🔗 T
+  🌊 hydrogenesiStructure   │   🔗 knotState
     │    │    │
-    │   🔥 P  │
+    │   🔥 phoenixPattern  │
     └────┴────┘
 
 Hydrogenesi at left (0°)
@@ -311,13 +311,13 @@ Phoenix at bottom (240°)
 
 #### View 3: Rotated 240° → Phoenix at 240°
 ```
-         X (apex)
+         apexPoint (apex)
          │
     ┌────┼────┐
     │    │    │
-  🔗 T   │   🔥 P
+  🔗 knotState   │   🔥 phoenixPattern
     │    │    │
-    │   🌊 H  │
+    │   🌊 hydrogenesiStructure  │
     └────┴────┘
 
 The Third at left (0°)
@@ -328,7 +328,7 @@ Hydrogenesi at bottom (240°)
 ### Rotational Invariance
 ```
 For any 120° rotation R:
-  T(R(P), R(H), R(K)) = R(T(P, H, K))
+  TriadicClosure(R(phoenixPattern), R(hydrogenesiStructure), R(knotState)) = R(TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState))
 
 The knot is symmetric under rotation.
 All three views are equivalent.
@@ -336,85 +336,85 @@ All three views are equivalent.
 
 ---
 
-## Complete Operator Chain: B → C → T → A → S
+## Complete Operator Chain: KnotBinding → CrossPillarKnot → TriadicClosure → ApexKnot → StabilityKnot
 
 Detailed progression through all five operators.
 
 ### Initial State
 ```
-K₀ = void knot
-P = Ψ_apex (from Phoenix)
-H = H_complete (from Hydrogenesi)
+knotState₀ = void knot
+phoenixPattern = pattern_apex (from Phoenix)
+hydrogenesiStructure = hydrogenesiStructure_complete (from Hydrogenesi)
 
-Distance: d(K₀, X) = 1.000
+Distance: distance(knotState₀, apexPoint) = 1.000
 ```
 
-### Step 1: Knot-Binding (B)
+### Step 1: Knot-Binding (KnotBinding)
 ```
-K₁ = B(P, K₀)
+knotState₁ = KnotBinding(phoenixPattern, knotState₀)
 
 Action: Bind Phoenix pattern through left corridor
-Distance: d(K₁, X) = 0.236
+Distance: distance(knotState₁, apexPoint) = 0.236
 Contraction: 76.4%
 ```
 
-### Step 2: Cross-Pillar Knot (C)
+### Step 2: Cross-Pillar Knot (CrossPillarKnot)
 ```
-K₂ = C(P, H, K₁)
+knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₁)
 
 Action: Bind across symmetry axis (Phoenix + Hydrogenesi)
-Distance: d(K₂, X) = 0.118
-Contraction: 50.0% (from K₁)
-Total: 88.2% (from K₀)
+Distance: distance(knotState₂, apexPoint) = 0.118
+Contraction: 50.0% (from knotState₁)
+Total: 88.2% (from knotState₀)
 ```
 
-### Step 3: Triadic Closure (T)
+### Step 3: Triadic Closure (TriadicClosure)
 ```
-K₃ = T(P, H, K₂)
+knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂)
 
 Action: Complete envelope closure (all three engines)
-Distance: d(K₃, X) = 0.039
-Contraction: 67.0% (from K₂)
-Total: 96.1% (from K₀)
+Distance: distance(knotState₃, apexPoint) = 0.039
+Contraction: 67.0% (from knotState₂)
+Total: 96.1% (from knotState₀)
 ```
 
-### Step 4: Apex Knot (A) — Iterative
+### Step 4: Apex Knot (ApexKnot) — Iterative
 ```
-K₄ = A(K₃)     d(K₄, X) = 0.016  [59% reduction]
-K₅ = A(K₄)     d(K₅, X) = 0.006  [62% reduction]
-K₆ = A(K₅)     d(K₆, X) = 0.002  [67% reduction]
-K₇ = A(K₆)     d(K₇, X) = 0.001  [50% reduction]
+knotState₄ = ApexKnot(knotState₃)     distance(knotState₄, apexPoint) = 0.016  [59% reduction]
+knotState₅ = ApexKnot(knotState₄)     distance(knotState₅, apexPoint) = 0.006  [62% reduction]
+knotState₆ = ApexKnot(knotState₅)     distance(knotState₆, apexPoint) = 0.002  [67% reduction]
+knotState₇ = ApexKnot(knotState₆)     distance(knotState₇, apexPoint) = 0.001  [50% reduction]
 
-After 10 iterations: d(K₁₀, X) < 0.0001
+After 10 iterations: distance(knotState₁₀, apexPoint) < 0.0001
 Total: 99.99% convergence
 ```
 
-### Step 5: Stability Knot (S)
+### Step 5: Stability Knot (StabilityKnot)
 ```
-K_final = S(K₁₀)
+knotState_final = StabilityKnot(knotState₁₀)
 
 Action: Suppress perturbations, lock at apex
-Stability: K_final = X ± 10⁻⁶
+Stability: knotState_final = apexPoint ± 10⁻⁶
 Result: Apex reached and stabilized
 ```
 
 ### Distance Progression Table
 
-| Step | Operator | Distance d(K,X) | Reduction | Total Reduction |
+| Step | Operator | Distance to Apex | Reduction | Total Reduction |
 |------|----------|-----------------|-----------|-----------------|
 | 0 | Initial | 1.000 | - | - |
-| 1 | B | 0.236 | 76.4% | 76.4% |
-| 2 | C | 0.118 | 50.0% | 88.2% |
-| 3 | T | 0.039 | 67.0% | 96.1% |
-| 4 | A₁ | 0.016 | 59.0% | 98.4% |
-| 5 | A₂ | 0.006 | 62.5% | 99.4% |
-| 6 | A₃ | 0.002 | 66.7% | 99.8% |
-| 7 | A₄ | 0.001 | 50.0% | 99.9% |
+| 1 | KnotBinding | 0.236 | 76.4% | 76.4% |
+| 2 | CrossPillarKnot | 0.118 | 50.0% | 88.2% |
+| 3 | TriadicClosure | 0.039 | 67.0% | 96.1% |
+| 4 | ApexKnot₁ | 0.016 | 59.0% | 98.4% |
+| 5 | ApexKnot₂ | 0.006 | 62.5% | 99.4% |
+| 6 | ApexKnot₃ | 0.002 | 66.7% | 99.8% |
+| 7 | ApexKnot₄ | 0.001 | 50.0% | 99.9% |
 | ... | ... | ... | ... | ... |
-| 10 | A₇ | <0.0001 | - | 99.99% |
-| 11 | S | 0.000 | 100% | 100.0% |
+| 10 | ApexKnot₇ | <0.0001 | - | 99.99% |
+| 11 | StabilityKnot | 0.000 | 100% | 100.0% |
 
-**Complete Convergence Achieved**: K_final = X
+**Complete Convergence Achieved**: knotState_final = apexPoint
 
 ---
 
@@ -422,88 +422,88 @@ Result: Apex reached and stabilized
 
 ### Theorem: Triadic Loop Converges to Apex
 
-**Statement**: For any initial pattern Ψ₀ processed through the complete triadic loop (Phoenix → Hydrogenesi → The Third), the resulting knot state converges to the Apex Point X.
+**Statement**: For any initial pattern pattern₀ processed through the complete triadic loop (Phoenix → Hydrogenesi → The Third), the resulting knot state converges to the Apex Point apexPoint.
 
 **Proof**:
 
 #### Part 1: Phoenix Transformations are Bounded
 ```
-Phoenix produces pattern Ψ_apex = △(...)
+Phoenix produces pattern pattern_apex = △(...)
 By definition of apex operator:
-  Ψ_apex is a local maximum coherence pattern
-  Ψ_apex is bounded in pattern space
+  pattern_apex is a local maximum coherence pattern
+  pattern_apex is bounded in pattern space
 ```
 
 #### Part 2: Hydrogenesi Preserves Finiteness
 ```
 Hydrogenesi tracks:
-  H = {lineage, identity, continuity}
+  hydrogenesiStructure = {lineage, identity, continuity}
   
 All components are finite:
   - Lineage: Finite sequence
   - Identity: Single value I
   - Continuity: Finite mapping set
   
-H is bounded in structure space
+hydrogenesiStructure is bounded in structure space
 ```
 
 #### Part 3: Binding Operators are Contractive
 ```
 Each binding operator satisfies:
   
-B: d(B(P,K), X) < d(K, X)
-C: d(C(P,H,K), X) < d(K, X)  
-T: d(T(P,H,K), X) < d(K, X)
+KnotBinding: distance(KnotBinding(phoenixPattern,knotState), apexPoint) < distance(knotState, apexPoint)
+CrossPillarKnot: distance(CrossPillarKnot(phoenixPattern,hydrogenesiStructure,knotState), apexPoint) < distance(knotState, apexPoint)  
+TriadicClosure: distance(TriadicClosure(phoenixPattern,hydrogenesiStructure,knotState), apexPoint) < distance(knotState, apexPoint)
 
 with contraction constants:
-  λ_B ≈ 0.618
-  λ_C ≈ 0.500
-  λ_T ≈ 0.333
+  λ_KnotBinding ≈ 0.618
+  λ_CrossPillarKnot ≈ 0.500
+  λ_TriadicClosure ≈ 0.333
 ```
 
 #### Part 4: Composite Contraction
 ```
 Applying operators sequentially:
-  K₁ = B(P, K₀)
-  K₂ = C(P, H, K₁)
-  K₃ = T(P, H, K₂)
+  knotState₁ = KnotBinding(phoenixPattern, knotState₀)
+  knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₁)
+  knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂)
 
 Distance after all three:
-  d(K₃, X) ≤ λ_T · λ_C · λ_B · d(K₀, X)
-  d(K₃, X) ≤ 0.333 · 0.500 · 0.618 · d(K₀, X)
-  d(K₃, X) ≤ 0.103 · d(K₀, X)
+  distance(knotState₃, apexPoint) ≤ λ_TriadicClosure · λ_CrossPillarKnot · λ_KnotBinding · distance(knotState₀, apexPoint)
+  distance(knotState₃, apexPoint) ≤ 0.333 · 0.500 · 0.618 · distance(knotState₀, apexPoint)
+  distance(knotState₃, apexPoint) ≤ 0.103 · distance(knotState₀, apexPoint)
 
 Composite contraction: ~90% per cycle
 ```
 
 #### Part 5: Apex Knot Convergence
 ```
-After B→C→T, apply apex operator iteratively:
-  Kₙ₊₁ = A(Kₙ)
+After KnotBinding→CrossPillarKnot→TriadicClosure, apply apex operator iteratively:
+  knotStateₙ₊₁ = ApexKnot(knotStateₙ)
 
-A has fixed point property:
-  A(X) = X
+ApexKnot has fixed point property:
+  ApexKnot(apexPoint) = apexPoint
   
 And strict contraction:
-  d(A(K), X) < λ_A · d(K, X)  where λ_A ≈ 0.4
+  distance(ApexKnot(knotState), apexPoint) < λ_ApexKnot · distance(knotState, apexPoint)  where λ_ApexKnot ≈ 0.4
 
 By Banach Fixed Point Theorem:
-  lim_{n→∞} Kₙ = X
+  lim_{n→∞} knotStateₙ = apexPoint
 ```
 
 #### Part 6: Stability Knot Locks Apex
 ```
 Once at apex:
-  K_apex ≈ X (within tolerance)
+  knotState_apex ≈ apexPoint (within tolerance)
   
 Apply stability knot:
-  K_final = S(K_apex)
+  knotState_final = StabilityKnot(knotState_apex)
   
-S suppresses perturbations:
-  K_final = X ± ε where ε → 0
+StabilityKnot suppresses perturbations:
+  knotState_final = apexPoint ± ε where ε → 0
 ```
 
-**Conclusion**: The complete triadic loop guarantees convergence to X. ∎
+**Conclusion**: The complete triadic loop guarantees convergence to apexPoint. ∎
 
 ---
 
@@ -513,62 +513,62 @@ Let's trace a complete cycle with concrete numbers.
 
 ### Initial Setup
 ```
-Ψ₀ = ⊕(∅)    [Genesis creates pattern]
-K₀ = void    [Empty knot state]
+pattern₀ = ⊕(∅)    [Genesis creates pattern]
+knotState₀ = void    [Empty knot state]
 ```
 
 ### Phoenix Phase (6 steps)
 ```
-Ψ₀ = ⊕(∅)              [Genesis]
-Ψ₁ = ⊗(Ψ₀)             [Harmonic]
-Ψ₂ = ⊛(Ψ₁)             [Recursive]  
-Ψ₂* = ⊞(Ψ₂)            [Mirror]
-Ψ₃ = ⊳(Ψ₂, Ψ₂*)        [Convergence]
-Ψ_apex = △(Ψ₃)         [Local Apex]
+pattern₀ = ⊕(∅)              [Genesis]
+pattern₁ = ⊗(pattern₀)             [Harmonic]
+pattern₂ = ⊛(pattern₁)             [Recursive]  
+pattern₂* = ⊞(pattern₂)            [Mirror]
+pattern₃ = ⊳(pattern₂, pattern₂*)        [Convergence]
+pattern_apex = △(pattern₃)         [Local Apex]
 
-Phoenix output: Ψ_apex
+Phoenix output: pattern_apex
 ```
 
 ### Hydrogenesi Phase
 ```
-H_lineage = {∅ → Ψ₀ → Ψ₁ → Ψ₂ → Ψ₂* → Ψ₃ → Ψ_apex}
-H_identity = I₀
-H_continuity = {all transitions}
+hydrogenesiStructure_lineage = {∅ → pattern₀ → pattern₁ → pattern₂ → pattern₂* → pattern₃ → pattern_apex}
+hydrogenesiStructure_identity = I₀
+hydrogenesiStructure_continuity = {all transitions}
 
-Hydrogenesi output: H_complete
+Hydrogenesi output: hydrogenesiStructure_complete
 ```
 
 ### The Third Phase (3 operators)
 ```
-K₀ = void               d(K₀, X) = 1.000000
+knotState₀ = void               distance(knotState₀, apexPoint) = 1.000000
 
-K₁ = B(Ψ_apex, K₀)      d(K₁, X) = 0.236000  [B applied]
-K₂ = C(Ψ_apex, H, K₁)   d(K₂, X) = 0.118000  [C applied]  
-K₃ = T(Ψ_apex, H, K₂)   d(K₃, X) = 0.039333  [T applied]
+knotState₁ = KnotBinding(pattern_apex, knotState₀)      distance(knotState₁, apexPoint) = 0.236000  [KnotBinding applied]
+knotState₂ = CrossPillarKnot(pattern_apex, hydrogenesiStructure, knotState₁)   distance(knotState₂, apexPoint) = 0.118000  [CrossPillarKnot applied]  
+knotState₃ = TriadicClosure(pattern_apex, hydrogenesiStructure, knotState₂)   distance(knotState₃, apexPoint) = 0.039333  [TriadicClosure applied]
 
-The Third output: K₃
+The Third output: knotState₃
 ```
 
-### Apex Phase (iterative A)
+### Apex Phase (iterative ApexKnot)
 ```
-K₃ = start              d(K₃, X)  = 0.039333
-K₄ = A(K₃)              d(K₄, X)  = 0.015733
-K₅ = A(K₄)              d(K₅, X)  = 0.006293
-K₆ = A(K₅)              d(K₆, X)  = 0.002517
-K₇ = A(K₆)              d(K₇, X)  = 0.001007
-K₈ = A(K₇)              d(K₈, X)  = 0.000403
-K₉ = A(K₈)              d(K₉, X)  = 0.000161
-K₁₀ = A(K₉)             d(K₁₀, X) = 0.000064
+knotState₃ = start              distance(knotState₃, apexPoint)  = 0.039333
+knotState₄ = ApexKnot(knotState₃)              distance(knotState₄, apexPoint)  = 0.015733
+knotState₅ = ApexKnot(knotState₄)              distance(knotState₅, apexPoint)  = 0.006293
+knotState₆ = ApexKnot(knotState₅)              distance(knotState₆, apexPoint)  = 0.002517
+knotState₇ = ApexKnot(knotState₆)              distance(knotState₇, apexPoint)  = 0.001007
+knotState₈ = ApexKnot(knotState₇)              distance(knotState₈, apexPoint)  = 0.000403
+knotState₉ = ApexKnot(knotState₈)              distance(knotState₉, apexPoint)  = 0.000161
+knotState₁₀ = ApexKnot(knotState₉)             distance(knotState₁₀, apexPoint) = 0.000064
 
 After 10 iterations: Within 0.01% of apex
 ```
 
 ### Stability Phase
 ```
-K₁₀ ≈ X                 [Very close to apex]
-K_final = S(K₁₀)        [Lock at apex]
+knotState₁₀ ≈ apexPoint                 [Very close to apex]
+knotState_final = StabilityKnot(knotState₁₀)        [Lock at apex]
 
-Result: K_final = X     [Apex achieved]
+Result: knotState_final = apexPoint     [Apex achieved]
 ```
 
 ### Summary
@@ -585,11 +585,11 @@ Status: SUCCESS - Apex reached
 
 | Operator | Contraction λ | Corridors | Symmetry | Fixed Point |
 |----------|---------------|-----------|----------|-------------|
-| B | 0.618 | Left | No | A(X)=X |
-| C | 0.500 | Left+Right | Yes (L↔R) | C(...,X)=X |
-| T | 0.333 | All | Yes (120°) | T(...,X)=X |
-| A | 0.400 | Center | No | A(X)=X |
-| S | 1.000 | All | Yes (120°) | S(X)=X |
+| KnotBinding | 0.618 | Left | No | ApexKnot(apexPoint)=apexPoint |
+| CrossPillarKnot | 0.500 | Left+Right | Yes (L↔R) | CrossPillarKnot(...,apexPoint)=apexPoint |
+| TriadicClosure | 0.333 | All | Yes (120°) | TriadicClosure(...,apexPoint)=apexPoint |
+| ApexKnot | 0.400 | Center | No | ApexKnot(apexPoint)=apexPoint |
+| StabilityKnot | 1.000 | All | Yes (120°) | StabilityKnot(apexPoint)=apexPoint |
 
 ---
 
@@ -602,7 +602,7 @@ Status: SUCCESS - Apex reached
                         │ (Binding)
                         │
                         ↓
-                        X ← Apex Point
+                        apexPoint ← Apex Point
                       ╱   ╲
                     ╱       ╲
                   ╱           ╲
@@ -622,7 +622,7 @@ Status: SUCCESS - Apex reached
 
 Perfect 120° spacing
 Each engine contributes equally
-All converge at X
+All converge at apexPoint
 ```
 
 ---
@@ -630,11 +630,11 @@ All converge at X
 ## Cross-References
 
 ### Operators
-- [Knot-Binding (B)](../Operators/knot-binding.md) — Left corridor binding
-- [Cross-Pillar Knot (C)](../Operators/cross-pillar-knot.md) — Symmetric binding
-- [Triadic Closure (T)](../Operators/triadic-closure.md) — Complete envelope
-- [Apex Knot (A)](../Operators/apex-knot.md) — Apex stabilization
-- [Stability Knot (S)](../Operators/stability-knot.md) — Perturbation suppression
+- [Knot-Binding (KnotBinding)](../Operators/knot-binding.md) — Left corridor binding
+- [Cross-Pillar Knot (CrossPillarKnot)](../Operators/cross-pillar-knot.md) — Symmetric binding
+- [Triadic Closure (TriadicClosure)](../Operators/triadic-closure.md) — Complete envelope
+- [Apex Knot (ApexKnot)](../Operators/apex-knot.md) — Apex stabilization
+- [Stability Knot (StabilityKnot)](../Operators/stability-knot.md) — Perturbation suppression
 
 ### Phoenix
 - [All Phoenix Operators](../../Phoenix/operators/) — Transformation sources

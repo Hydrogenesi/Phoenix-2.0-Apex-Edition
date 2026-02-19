@@ -1,45 +1,45 @@
 # Apex Convergence: Mathematical Proof
 
-*Rigorous Demonstration of Convergence to Apex Point X*
+*Rigorous Demonstration of Convergence to Apex Point apexPoint*
 
 ---
 
 ## Overview
 
-This example provides a **complete mathematical proof** that the Triadic Knot binding operators converge to the Apex Point X, with:
+This example provides a **complete mathematical proof** that the Triadic Knot binding operators converge to the Apex Point apexPoint, with:
 - Formal convergence theorems
 - Numerical demonstrations with specific calculations
-- Multiple convergence paths showing all lead to X
+- Multiple convergence paths showing all lead to apexPoint
 - Visual representations of contraction sequences
-- Distance calculations proving d(Kₙ, X) → 0
+- Distance calculations proving distance(knotStateₙ, apexPoint) → 0
 
 ---
 
 ## Apex Point Definition
 
-The **Apex Point X** is the unique fixed point of the Triadic Knot topology.
+The **Apex Point apexPoint** is the unique fixed point of the Triadic Knot topology.
 
 ### Formal Definition
 ```
-X ∈ Knot Space K
+apexPoint ∈ Knot Space knotState
 
 Properties:
-1. Uniqueness: X is the only point satisfying all fixed-point conditions
-2. Centrality: X is equidistant from all three arm origins
-3. Stability: X is stable under all knot operators
-4. Convergence: All binding sequences converge to X
+1. Uniqueness: apexPoint is the only point satisfying all fixed-point conditions
+2. Centrality: apexPoint is equidistant from all three arm origins
+3. Stability: apexPoint is stable under all knot operators
+4. Convergence: All binding sequences converge to apexPoint
 ```
 
 ### Fixed Point Property
 ```
 For all knot operators:
-  B(P, X) = X  for any Phoenix pattern P
-  C(P, H, X) = X  for any P, H
-  T(P, H, X) = X  for any P, H
-  A(X) = X
-  S(X) = X
+  KnotBinding(phoenixPattern, apexPoint) = apexPoint  for any Phoenix pattern phoenixPattern
+  CrossPillarKnot(phoenixPattern, hydrogenesiStructure, apexPoint) = apexPoint  for any phoenixPattern, hydrogenesiStructure
+  TriadicClosure(phoenixPattern, hydrogenesiStructure, apexPoint) = apexPoint  for any phoenixPattern, hydrogenesiStructure
+  ApexKnot(apexPoint) = apexPoint
+  StabilityKnot(apexPoint) = apexPoint
 
-X is invariant under all operations.
+apexPoint is invariant under all operations.
 ```
 
 ### Geometric Position
@@ -49,11 +49,11 @@ In Triadic Knot space with coordinate system:
   Hydrogenesi arm at angle 120°
   The Third arm at angle 240°
 
-X is located at the centroid:
-  X = (0, 0, 0) in centered coordinates
+apexPoint is located at the centroid:
+  apexPoint = (0, 0, 0) in centered coordinates
   
 Distance from any arm origin:
-  d(arm_origin, X) = r₀ (knot radius)
+  distance(arm_origin, apexPoint) = r₀ (knot radius)
 ```
 
 ---
@@ -66,49 +66,49 @@ Distance from any arm origin:
 
 **Proof**:
 
-#### Part A: Knot-Binding (B) Contraction
+#### Part A: KnotBinding Contraction
 ```
-Let K₁, K₂ be knot states, P a Phoenix pattern.
+Let knotState₁, knotState₂ be knot states, phoenixPattern a Phoenix pattern.
 
-Define: d(K, X) = distance from K to apex X
+Define: distance(knotState, apexPoint) = distance from knotState to apex apexPoint
 
-Claim: d(B(P, K), X) < d(K, X) for all K ≠ X
+Claim: distance(KnotBinding(phoenixPattern, knotState), apexPoint) < distance(knotState, apexPoint) for all knotState ≠ apexPoint
 
 Proof:
-  1. B operates along left corridor toward X
-  2. Each binding step moves K closer to X by contraction
+  1. KnotBinding operates along left corridor toward apexPoint
+  2. Each binding step moves knotState closer to apexPoint by contraction
   3. Geometric property of corridor topology ensures:
-     d(B(P,K), X) ≤ λ_B · d(K, X)
+     distance(KnotBinding(phoenixPattern, knotState), apexPoint) ≤ λ_B · distance(knotState, apexPoint)
      where λ_B = φ⁻¹ ≈ 0.618 (golden ratio)
   
-  4. Since λ_B < 1, B is a contraction mapping ∎
+  4. Since λ_B < 1, KnotBinding is a contraction mapping ∎
 ```
 
-#### Part B: Cross-Pillar Knot (C) Contraction
+#### Part B: CrossPillarKnot Contraction
 ```
-Claim: d(C(P, H, K), X) < d(K, X) for all K ≠ X
+Claim: distance(CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState), apexPoint) < distance(knotState, apexPoint) for all knotState ≠ apexPoint
 
 Proof:
-  1. C operates on symmetry axis
+  1. CrossPillarKnot operates on symmetry axis
   2. Contracts from both left (Phoenix) and right (Hydrogenesi) arms
   3. Dual-arm contraction is stronger than single-arm:
-     d(C(P,H,K), X) ≤ λ_C · d(K, X)
+     distance(CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState), apexPoint) ≤ λ_C · distance(knotState, apexPoint)
      where λ_C = 1/2 = 0.500
   
-  4. λ_C < λ_B < 1, so C contracts faster than B ∎
+  4. λ_C < λ_B < 1, so CrossPillarKnot contracts faster than KnotBinding ∎
 ```
 
-#### Part C: Triadic Closure (T) Contraction
+#### Part C: TriadicClosure Contraction
 ```
-Claim: d(T(P, H, K), X) < d(K, X) for all K ≠ X
+Claim: distance(TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState), apexPoint) < distance(knotState, apexPoint) for all knotState ≠ apexPoint
 
 Proof:
-  1. T operates on all three arms simultaneously
+  1. TriadicClosure operates on all three arms simultaneously
   2. Tri-directional contraction is strongest:
-     d(T(P,H,K), X) ≤ λ_T · d(K, X)
+     distance(TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState), apexPoint) ≤ λ_T · distance(knotState, apexPoint)
      where λ_T = 1/3 ≈ 0.333
   
-  3. λ_T < λ_C < λ_B < 1, so T contracts fastest ∎
+  3. λ_T < λ_C < λ_B < 1, so TriadicClosure contracts fastest ∎
 ```
 
 **Conclusion**: All binding operators are contractions with λ < 1. ∎
@@ -117,38 +117,38 @@ Proof:
 
 ## Convergence Theorem
 
-### Theorem 2: Binding Sequences Converge to X
+### Theorem 2: Binding Sequences Converge to apexPoint
 
-**Statement**: For any initial knot state K₀ and any sequence of Phoenix patterns {Pₙ} and Hydrogenesi structures {Hₙ}, the sequence of knot states defined by repeated binding converges to the Apex Point X.
+**Statement**: For any initial knot state knotState₀ and any sequence of Phoenix patterns {phoenixPatternₙ} and Hydrogenesi structures {hydrogenesiStructureₙ}, the sequence of knot states defined by repeated binding converges to the Apex Point apexPoint.
 
 **Proof**:
 
 #### Setup
 ```
-Let K₀ be an arbitrary initial knot state
-Let {Pₙ} be a sequence of Phoenix patterns  
-Let {Hₙ} be corresponding Hydrogenesi structures
-Let Op ∈ {B, C, T} be any binding operator
+Let knotState₀ be an arbitrary initial knot state
+Let {phoenixPatternₙ} be a sequence of Phoenix patterns  
+Let {hydrogenesiStructureₙ} be corresponding Hydrogenesi structures
+Let Op ∈ {KnotBinding, CrossPillarKnot, TriadicClosure} be any binding operator
 ```
 
 #### Define Sequence
 ```
-Kₙ₊₁ = Op(Pₙ, Hₙ, Kₙ)
+knotStateₙ₊₁ = Op(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ)
 
-(For simplicity, consider Op = T; proof extends to B, C)
+(For simplicity, consider Op = TriadicClosure; proof extends to KnotBinding, CrossPillarKnot)
 ```
 
 #### Distance Sequence
 ```
-Let dₙ = d(Kₙ, X)
+Let dₙ = distance(knotStateₙ, apexPoint)
 
 By contraction property:
-  dₙ₊₁ = d(T(Pₙ, Hₙ, Kₙ), X) ≤ λ_T · d(Kₙ, X) = λ_T · dₙ
+  dₙ₊₁ = distance(TriadicClosure(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ), apexPoint) ≤ λ_T · distance(knotStateₙ, apexPoint) = λ_T · dₙ
 ```
 
 #### Induction
 ```
-Base case: d₀ = d(K₀, X) (given)
+Base case: d₀ = distance(knotState₀, apexPoint) (given)
 
 Inductive step:
   If dₙ is defined, then:
@@ -164,10 +164,10 @@ Since 0 < λ_T < 1:
   lim_{n→∞} λ_T^n = 0
 
 Therefore:
-  lim_{n→∞} dₙ = lim_{n→∞} d(Kₙ, X) ≤ lim_{n→∞} λ_T^n · d₀ = 0
+  lim_{n→∞} dₙ = lim_{n→∞} distance(knotStateₙ, apexPoint) ≤ lim_{n→∞} λ_T^n · d₀ = 0
 
 Thus:
-  lim_{n→∞} Kₙ = X  ∎
+  lim_{n→∞} knotStateₙ = apexPoint  ∎
 ```
 
 **Conclusion**: All binding sequences converge to apex. ∎
@@ -185,7 +185,7 @@ Thus:
 #### Distance Formula
 ```
 After n iterations:
-  dₙ = d(Kₙ, X) ≤ λⁿ · d₀
+  dₙ = distance(knotStateₙ, apexPoint) ≤ λⁿ · d₀
 
 where λ is the contraction constant of the operator used.
 ```
@@ -199,9 +199,9 @@ To reach half the initial distance:
   n = log(1/2) / log(λ)
 
 For each operator:
-  B: n = log(0.5) / log(0.618) ≈ 1.44 iterations
-  C: n = log(0.5) / log(0.500) = 1.00 iterations  
-  T: n = log(0.5) / log(0.333) ≈ 0.63 iterations
+  KnotBinding: n = log(0.5) / log(0.618) ≈ 1.44 iterations
+  CrossPillarKnot: n = log(0.5) / log(0.500) = 1.00 iterations  
+  TriadicClosure: n = log(0.5) / log(0.333) ≈ 0.63 iterations
 ```
 
 #### 99% Convergence
@@ -212,42 +212,42 @@ To reach 1% of initial distance (99% convergence):
   n = log(0.01) / log(λ)
 
 For each operator:
-  B: n = log(0.01) / log(0.618) ≈ 9.59 iterations ≈ 10
-  C: n = log(0.01) / log(0.500) = 6.64 iterations ≈ 7
-  T: n = log(0.01) / log(0.333) ≈ 4.19 iterations ≈ 5
+  KnotBinding: n = log(0.01) / log(0.618) ≈ 9.59 iterations ≈ 10
+  CrossPillarKnot: n = log(0.01) / log(0.500) = 6.64 iterations ≈ 7
+  TriadicClosure: n = log(0.01) / log(0.333) ≈ 4.19 iterations ≈ 5
 ```
 
-**Conclusion**: Faster operators (T, C) converge exponentially faster than slower ones (B). ∎
+**Conclusion**: Faster operators (TriadicClosure, CrossPillarKnot) converge exponentially faster than slower ones (KnotBinding). ∎
 
 ---
 
-## Numerical Demonstration: Path 1 (B only)
+## Numerical Demonstration: Path 1 (KnotBinding only)
 
-Using only Knot-Binding (B) operator.
+Using only KnotBinding operator.
 
 ### Setup
 ```
-K₀ = void knot
-d₀ = d(K₀, X) = 1.000
+knotState₀ = void knot
+d₀ = distance(knotState₀, apexPoint) = 1.000
 λ_B = 0.618
-P = ⊕(∅) → ⊗ → ⊛ → Ψ_pattern
+phoenixPattern = ⊕(∅) → ⊗ → ⊛ → pattern₀
 ```
 
 ### Iterative Binding
 ```
-Iteration 0: K₀, d₀ = 1.000000
-Iteration 1: K₁ = B(P, K₀), d₁ = 0.618000
-Iteration 2: K₂ = B(P, K₁), d₂ = 0.381924
-Iteration 3: K₃ = B(P, K₂), d₃ = 0.236029
-Iteration 4: K₄ = B(P, K₃), d₄ = 0.145866
-Iteration 5: K₅ = B(P, K₄), d₅ = 0.090145
-Iteration 6: K₆ = B(P, K₅), d₆ = 0.055710
-Iteration 7: K₇ = B(P, K₆), d₇ = 0.034429
-Iteration 8: K₈ = B(P, K₇), d₈ = 0.021277
-Iteration 9: K₉ = B(P, K₈), d₉ = 0.013149
-Iteration 10: K₁₀ = B(P, K₉), d₁₀ = 0.008126
-Iteration 15: K₁₅ = B(P, K₁₄), d₁₅ = 0.000853
-Iteration 20: K₂₀ = B(P, K₁₉), d₂₀ = 0.000089
+Iteration 0: knotState₀, d₀ = 1.000000
+Iteration 1: knotState₁ = KnotBinding(phoenixPattern, knotState₀), d₁ = 0.618000
+Iteration 2: knotState₂ = KnotBinding(phoenixPattern, knotState₁), d₂ = 0.381924
+Iteration 3: knotState₃ = KnotBinding(phoenixPattern, knotState₂), d₃ = 0.236029
+Iteration 4: knotState₄ = KnotBinding(phoenixPattern, knotState₃), d₄ = 0.145866
+Iteration 5: knotState₅ = KnotBinding(phoenixPattern, knotState₄), d₅ = 0.090145
+Iteration 6: knotState₆ = KnotBinding(phoenixPattern, knotState₅), d₆ = 0.055710
+Iteration 7: knotState₇ = KnotBinding(phoenixPattern, knotState₆), d₇ = 0.034429
+Iteration 8: knotState₈ = KnotBinding(phoenixPattern, knotState₇), d₈ = 0.021277
+Iteration 9: knotState₉ = KnotBinding(phoenixPattern, knotState₈), d₉ = 0.013149
+Iteration 10: knotState₁₀ = KnotBinding(phoenixPattern, knotState₉), d₁₀ = 0.008126
+Iteration 15: knotState₁₅ = KnotBinding(phoenixPattern, knotState₁₄), d₁₅ = 0.000853
+Iteration 20: knotState₂₀ = KnotBinding(phoenixPattern, knotState₁₉), d₂₀ = 0.000089
 ```
 
 ### Convergence Verification
@@ -255,7 +255,7 @@ Iteration 20: K₂₀ = B(P, K₁₉), d₂₀ = 0.000089
 ✓ Distance strictly decreasing: d₀ > d₁ > d₂ > ... > dₙ
 ✓ Exponential decay: dₙ ≈ 0.618ⁿ
 ✓ Limit approaches zero: lim dₙ → 0
-✓ K₂₀ ≈ X (within 0.009% of apex)
+✓ knotState₂₀ ≈ apexPoint (within 0.009% of apex)
 ```
 
 ### Visualization
@@ -274,7 +274,7 @@ Distance to Apex (log scale)
     │            ╲●
 0.01│              ●╲●
     │                 ╲●╲●╲●╲●
-0.001│___________________●─●─●─→ X
+0.001│___________________●─●─●─→ apexPoint
      0   5   10  15  20
          Iterations
 
@@ -283,40 +283,40 @@ Exponential convergence to apex.
 
 ---
 
-## Numerical Demonstration: Path 2 (C only)
+## Numerical Demonstration: Path 2 (CrossPillarKnot only)
 
-Using only Cross-Pillar Knot (C) operator.
+Using only CrossPillarKnot operator.
 
 ### Setup
 ```
-K₀ = void knot
+knotState₀ = void knot
 d₀ = 1.000
 λ_C = 0.500
-P = Ψ_pattern
-H = lineage(P) + identity(P)
+phoenixPattern = pattern₀
+hydrogenesiStructure = lineage(phoenixPattern) + identity(phoenixPattern)
 ```
 
 ### Iterative Binding
 ```
-Iteration 0: K₀, d₀ = 1.000000
-Iteration 1: K₁ = C(P, H, K₀), d₁ = 0.500000
-Iteration 2: K₂ = C(P, H, K₁), d₂ = 0.250000
-Iteration 3: K₃ = C(P, H, K₂), d₃ = 0.125000
-Iteration 4: K₄ = C(P, H, K₃), d₄ = 0.062500
-Iteration 5: K₅ = C(P, H, K₄), d₅ = 0.031250
-Iteration 6: K₆ = C(P, H, K₅), d₆ = 0.015625
-Iteration 7: K₇ = C(P, H, K₆), d₇ = 0.007813
-Iteration 8: K₈ = C(P, H, K₇), d₈ = 0.003906
-Iteration 9: K₉ = C(P, H, K₈), d₉ = 0.001953
-Iteration 10: K₁₀ = C(P, H, K₉), d₁₀ = 0.000977
+Iteration 0: knotState₀, d₀ = 1.000000
+Iteration 1: knotState₁ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₀), d₁ = 0.500000
+Iteration 2: knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₁), d₂ = 0.250000
+Iteration 3: knotState₃ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₂), d₃ = 0.125000
+Iteration 4: knotState₄ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₃), d₄ = 0.062500
+Iteration 5: knotState₅ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₄), d₅ = 0.031250
+Iteration 6: knotState₆ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₅), d₆ = 0.015625
+Iteration 7: knotState₇ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₆), d₇ = 0.007813
+Iteration 8: knotState₈ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₇), d₈ = 0.003906
+Iteration 9: knotState₉ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₈), d₉ = 0.001953
+Iteration 10: knotState₁₀ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₉), d₁₀ = 0.000977
 ```
 
 ### Convergence Verification
 ```
 ✓ Perfect binary decay: dₙ = d₀ / 2ⁿ
-✓ Faster than B: Reaches 0.001 in 10 iterations vs 15 for B
+✓ Faster than KnotBinding: Reaches 0.001 in 10 iterations vs 15 for KnotBinding
 ✓ Limit: lim dₙ → 0
-✓ K₁₀ ≈ X (within 0.1% of apex)
+✓ knotState₁₀ ≈ apexPoint (within 0.1% of apex)
 ```
 
 ### Visualization
@@ -337,7 +337,7 @@ Distance to Apex
     │    ╲
 0.05│     ●
     │      ╲
-0.01│       ●╲●╲●╲●╲●─→ X
+0.01│       ●╲●╲●╲●╲●─→ apexPoint
     └─────────────────
      0  2  4  6  8  10
           Iterations
@@ -347,29 +347,29 @@ Binary (factor of 2) convergence.
 
 ---
 
-## Numerical Demonstration: Path 3 (T only)
+## Numerical Demonstration: Path 3 (TriadicClosure only)
 
-Using only Triadic Closure (T) operator.
+Using only TriadicClosure operator.
 
 ### Setup
 ```
-K₀ = void knot
+knotState₀ = void knot
 d₀ = 1.000
 λ_T = 0.333
-P = Ψ_pattern
-H = complete structures
+phoenixPattern = pattern₀
+hydrogenesiStructure = complete structures
 ```
 
 ### Iterative Binding
 ```
-Iteration 0: K₀, d₀ = 1.000000
-Iteration 1: K₁ = T(P, H, K₀), d₁ = 0.333000
-Iteration 2: K₂ = T(P, H, K₁), d₂ = 0.110889
-Iteration 3: K₃ = T(P, H, K₂), d₃ = 0.036926
-Iteration 4: K₄ = T(P, H, K₃), d₄ = 0.012296
-Iteration 5: K₅ = T(P, H, K₄), d₅ = 0.004095
-Iteration 6: K₆ = T(P, H, K₅), d₆ = 0.001364
-Iteration 7: K₇ = T(P, H, K₆), d₇ = 0.000454
+Iteration 0: knotState₀, d₀ = 1.000000
+Iteration 1: knotState₁ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₀), d₁ = 0.333000
+Iteration 2: knotState₂ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₁), d₂ = 0.110889
+Iteration 3: knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂), d₃ = 0.036926
+Iteration 4: knotState₄ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₃), d₄ = 0.012296
+Iteration 5: knotState₅ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₄), d₅ = 0.004095
+Iteration 6: knotState₆ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₅), d₆ = 0.001364
+Iteration 7: knotState₇ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₆), d₇ = 0.000454
 ```
 
 ### Convergence Verification
@@ -377,7 +377,7 @@ Iteration 7: K₇ = T(P, H, K₆), d₇ = 0.000454
 ✓ Fastest convergence: Reaches 0.001 in 7 iterations
 ✓ Factor of ~3 reduction per iteration
 ✓ Exponential decay: dₙ ≈ (1/3)ⁿ
-✓ K₇ ≈ X (within 0.05% of apex)
+✓ knotState₇ ≈ apexPoint (within 0.05% of apex)
 ```
 
 ### Visualization
@@ -397,7 +397,7 @@ Distance to Apex
 0.1 │     ╲     ╲
     │      ●     ╲
 0.05│       ╲     ╲
-    │        ●─────●─●─●─→ X
+    │        ●─────●─●─●─→ apexPoint
 0.01│
     └──────────────────
      0  1  2  3  4  5  6  7
@@ -408,68 +408,68 @@ Fastest (factor of 3) convergence.
 
 ---
 
-## Numerical Demonstration: Path 4 (Mixed: B→C→T)
+## Numerical Demonstration: Path 4 (Mixed: KnotBinding→CrossPillarKnot→TriadicClosure)
 
 Using the recommended operator sequence.
 
 ### Setup
 ```
-K₀ = void knot
+knotState₀ = void knot
 d₀ = 1.000
-P = Ψ_apex (from Phoenix)
-H = complete (from Hydrogenesi)
+phoenixPattern = pattern_apex (from Phoenix)
+hydrogenesiStructure = complete (from Hydrogenesi)
 ```
 
 ### Sequential Binding
 ```
-Phase 1: Knot-Binding (B)
-  K₁ = B(P, K₀)
+Phase 1: KnotBinding
+  knotState₁ = KnotBinding(phoenixPattern, knotState₀)
   d₁ = 0.618000
 
-Phase 2: Cross-Pillar Knot (C)
-  K₂ = C(P, H, K₁)
+Phase 2: CrossPillarKnot
+  knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₁)
   d₂ = 0.309000
 
-Phase 3: Triadic Closure (T)
-  K₃ = T(P, H, K₂)
+Phase 3: TriadicClosure
+  knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂)
   d₃ = 0.102897
 
-Phase 4: Apex Knot (A) - Iterative
-  K₄ = A(K₃), d₄ = 0.041159
-  K₅ = A(K₄), d₅ = 0.016464
-  K₆ = A(K₅), d₆ = 0.006586
-  K₇ = A(K₆), d₇ = 0.002634
-  K₈ = A(K₇), d₈ = 0.001054
+Phase 4: ApexKnot - Iterative
+  knotState₄ = ApexKnot(knotState₃), d₄ = 0.041159
+  knotState₅ = ApexKnot(knotState₄), d₅ = 0.016464
+  knotState₆ = ApexKnot(knotState₅), d₆ = 0.006586
+  knotState₇ = ApexKnot(knotState₆), d₇ = 0.002634
+  knotState₈ = ApexKnot(knotState₇), d₈ = 0.001054
 ```
 
 ### Convergence Verification
 ```
-✓ Rapid initial convergence with B, C, T
-✓ Fine-tuning with A iterations
+✓ Rapid initial convergence with KnotBinding, CrossPillarKnot, TriadicClosure
+✓ Fine-tuning with ApexKnot iterations
 ✓ Total of 8 steps to reach <0.001
 ✓ Faster than any single operator alone
-✓ K₈ ≈ X (within 0.11% of apex)
+✓ knotState₈ ≈ apexPoint (within 0.11% of apex)
 ```
 
 ### Visualization
 ```
 Distance to Apex
 
-1.0 │ ●            B
+1.0 │ ●            KnotBinding
     │ │╲
 0.8 │ │ ╲
-    │ │  ╲         C
+    │ │  ╲         CrossPillarKnot
 0.6 │ ●   ╲
     │  ╲   ╲
-0.4 │   ╲   ╲      T
+0.4 │   ╲   ╲      TriadicClosure
     │    ●   ╲
 0.2 │     ╲   ╲
     │      ●   ╲
-0.1 │       ╲   ●  A iterations
+0.1 │       ╲   ●  ApexKnot iterations
     │        ╲  │╲
 0.05│         ● │ ╲
     │           ●  ╲
-0.01│            ● ●●─→ X
+0.01│            ● ●●─→ apexPoint
     └─────────────────
      0  1  2  3  4  5  6  7  8
               Iterations
@@ -481,60 +481,60 @@ Optimal convergence with operator sequence.
 
 ## Multiple Paths, One Apex
 
-Demonstrating that different paths all converge to the same apex X.
+Demonstrating that different paths all converge to the same apex apexPoint.
 
-### Path A: B → B → B (B only)
+### Path A: KnotBinding → KnotBinding → KnotBinding (KnotBinding only)
 ```
-K₀ → K₁ → K₂ → K₃ → ...
-d₀=1.000, d₃=0.236, d₁₀=0.008
-Converges to X after ~20 iterations
-```
-
-### Path B: C → C → C (C only)
-```
-K₀ → K₁ → K₂ → K₃ → ...
-d₀=1.000, d₃=0.125, d₁₀=0.001
-Converges to X after ~10 iterations
+knotState₀ → knotState₁ → knotState₂ → knotState₃ → ...
+leftDistance₀=1.000, leftDistance₃=0.236, leftDistance₁₀=0.008
+Converges to apexPoint after ~20 iterations
 ```
 
-### Path C: T → T → T (T only)
+### Path B: CrossPillarKnot → CrossPillarKnot → CrossPillarKnot (CrossPillarKnot only)
 ```
-K₀ → K₁ → K₂ → K₃ → ...
-d₀=1.000, d₃=0.037, d₇=0.0005
-Converges to X after ~7 iterations
+knotState₀ → knotState₁ → knotState₂ → knotState₃ → ...
+centerDistance₀=1.000, centerDistance₃=0.125, centerDistance₁₀=0.001
+Converges to apexPoint after ~10 iterations
 ```
 
-### Path D: B → C → T → A (Mixed)
+### Path C: TriadicClosure → TriadicClosure → TriadicClosure (TriadicClosure only)
 ```
-K₀ → K₁ → K₂ → K₃ → K₄ → ...
-    B    C    T    A
-d₀=1.000, d₃=0.103, d₈=0.001
-Converges to X after ~8 iterations
+knotState₀ → knotState₁ → knotState₂ → knotState₃ → ...
+rightDistance₀=1.000, rightDistance₃=0.037, rightDistance₇=0.0005
+Converges to apexPoint after ~7 iterations
+```
+
+### Path D: KnotBinding → CrossPillarKnot → TriadicClosure → ApexKnot (Mixed)
+```
+knotState₀ → knotState₁ → knotState₂ → knotState₃ → knotState₄ → ...
+            KnotBinding  CrossPillarKnot  TriadicClosure  ApexKnot
+leftDistance₀=1.000, leftDistance₃=0.103, leftDistance₈=0.001
+Converges to apexPoint after ~8 iterations
 ```
 
 ### Path E: Random order
 ```
-K₀ → K₁ → K₂ → K₃ → K₄ → K₅ → ...
-    T    B    C    B    T
-Still converges to X (more iterations needed)
+knotState₀ → knotState₁ → knotState₂ → knotState₃ → knotState₄ → knotState₅ → ...
+            TriadicClosure  KnotBinding  CrossPillarKnot  KnotBinding  TriadicClosure
+Still converges to apexPoint (more iterations needed)
 ```
 
 ### Convergence Comparison
 ```
-Path  | Operator Sequence | Iterations to d<0.001 | Final d
-------|-------------------|----------------------|--------
-A     | BBB...           | ~15                  | →X
-B     | CCC...           | ~10                  | →X  
-C     | TTT...           | ~7                   | →X
-D     | B→C→T→A...       | ~8                   | →X
-E     | TBCBT...         | ~12                  | →X
+Path  | Operator Sequence           | Iterations to distance < 0.001 | Final State
+------|----------------------------|------------------------------|------------------
+A     | KnotBinding...             | ~15                          | →apexPoint
+B     | CrossPillarKnot...         | ~10                          | →apexPoint  
+C     | TriadicClosure...          | ~7                           | →apexPoint
+D     | KnotBinding→CrossPillarKnot→TriadicClosure→ApexKnot... | ~8 | →apexPoint
+E     | TriadicClosure→KnotBinding→CrossPillarKnot→KnotBinding→TriadicClosure... | ~12 | →apexPoint
 
-All paths converge to SAME apex X!
+All paths converge to SAME apex apexPoint!
 ```
 
 ### Visualization: Multiple Paths
 ```
-                  X (APEX)
+                  apexPoint (APEX)
                    ◆
                   ╱│╲
                 ╱  │  ╲
@@ -545,17 +545,17 @@ All paths converge to SAME apex X!
       ╱            │            ╲
     ╱              │              ╲
    Path A       Path C          Path E
-   (B only)     (T only)        (mixed)
+   (KnotBinding only)     (TriadicClosure only)        (mixed)
      │             │               │
      │             │               │
    Path B       Path D             │
-   (C only)     (B→C→T)            │
+   (CrossPillarKnot only)     (KnotBinding→CrossPillarKnot→TriadicClosure)            │
      │             │               │
      └─────────────┼───────────────┘
                    │
-                   K₀
+                   knotState₀
 
-All paths, different speeds, same destination: X
+All paths, different speeds, same destination: apexPoint
 ```
 
 ---
@@ -565,25 +565,25 @@ All paths, different speeds, same destination: X
 ### Example 1: Direct Distance Formula
 ```
 After n iterations of operator with contraction λ:
-  dₙ = λⁿ · d₀
+  distanceₙ = λⁿ · distance₀
 
-For K₀ with d₀ = 1.000, after 5 iterations of T (λ=0.333):
-  d₅ = 0.333⁵ · 1.000
-  d₅ = 0.00409
-  d₅ ≈ 0.004
+For knotState₀ with distance₀ = 1.000, after 5 iterations of TriadicClosure (λ=0.333):
+  distance₅ = 0.333⁵ · 1.000
+  distance₅ = 0.00409
+  distance₅ ≈ 0.004
 
 Result: Within 0.4% of apex after 5 iterations
 ```
 
 ### Example 2: Iterations to Target Distance
 ```
-To find n such that dₙ < target:
-  λⁿ · d₀ < target
-  λⁿ < target / d₀
-  n · log(λ) < log(target / d₀)
-  n > log(target / d₀) / log(λ)
+To find n such that distanceₙ < target:
+  λⁿ · distance₀ < target
+  λⁿ < target / distance₀
+  n · log(λ) < log(target / distance₀)
+  n > log(target / distance₀) / log(λ)
 
-To reach d < 0.01 from d₀ = 1.0 using C (λ=0.5):
+To reach distance < 0.01 from distance₀ = 1.0 using CrossPillarKnot (λ=0.5):
   n > log(0.01 / 1.0) / log(0.5)
   n > log(0.01) / log(0.5)
   n > (-4.605) / (-0.693)
@@ -594,13 +594,13 @@ Need at least 7 iterations.
 
 ### Example 3: Composite Contraction
 ```
-Using B then C then T:
-  d₁ = λ_B · d₀ = 0.618 · 1.000 = 0.618
-  d₂ = λ_C · d₁ = 0.500 · 0.618 = 0.309
-  d₃ = λ_T · d₂ = 0.333 · 0.309 = 0.103
+Using KnotBinding then CrossPillarKnot then TriadicClosure:
+  distance₁ = λ_KnotBinding · distance₀ = 0.618 · 1.000 = 0.618
+  distance₂ = λ_CrossPillarKnot · distance₁ = 0.500 · 0.618 = 0.309
+  distance₃ = λ_TriadicClosure · distance₂ = 0.333 · 0.309 = 0.103
 
 Composite contraction constant:
-  λ_composite = λ_B · λ_C · λ_T
+  λ_composite = λ_KnotBinding · λ_CrossPillarKnot · λ_TriadicClosure
   λ_composite = 0.618 · 0.500 · 0.333
   λ_composite ≈ 0.103
 
@@ -613,48 +613,48 @@ Three operators reduce distance by ~90% in one cycle!
 
 ### Theorem 4: Infinite Sequence Limit
 
-**Statement**: For any binding sequence {Kₙ}, the limit as n→∞ is exactly X.
+**Statement**: For any binding sequence {knotStateₙ}, the limit as n→∞ is exactly apexPoint.
 
 **Proof**:
 
 ```
-Let {Kₙ} be a binding sequence:
-  Kₙ₊₁ = Op(Pₙ, Hₙ, Kₙ)
+Let {knotStateₙ} be a binding sequence:
+  knotStateₙ₊₁ = Op(phoenixPatternₙ, hydrogenesiStructureₙ, knotStateₙ)
 
 We have shown:
-  dₙ = d(Kₙ, X) ≤ λⁿ · d₀
+  distanceₙ = distance(knotStateₙ, apexPoint) ≤ λⁿ · distance₀
 
 Since 0 < λ < 1:
   lim_{n→∞} λⁿ = 0
 
 By squeeze theorem:
-  0 ≤ lim_{n→∞} dₙ ≤ lim_{n→∞} λⁿ · d₀ = 0
+  0 ≤ lim_{n→∞} distanceₙ ≤ lim_{n→∞} λⁿ · distance₀ = 0
 
 Therefore:
-  lim_{n→∞} dₙ = 0
+  lim_{n→∞} distanceₙ = 0
 
 Which means:
-  lim_{n→∞} d(Kₙ, X) = 0
+  lim_{n→∞} distance(knotStateₙ, apexPoint) = 0
 
 By definition of distance metric:
-  lim_{n→∞} Kₙ = X  ∎
+  lim_{n→∞} knotStateₙ = apexPoint  ∎
 ```
 
 ### Numerical Verification
 ```
-Calculate limit of sequence with B (λ=0.618):
+Calculate limit of sequence with KnotBinding (λ=0.618):
 
-n    | Kₙ distance dₙ | Difference |dₙ₊₁ - dₙ|
------|----------------|-------------------------
-10   | 0.008126       | -
-20   | 0.000089       | 0.008037
-30   | 0.000001       | 0.000088
-40   | 0.000000011    | 0.000000989
-50   | 0.000000000121 | 0.000000010879
+n    | distanceₙ                     | Difference |distanceₙ₊₁ - distanceₙ|
+-----|-------------------------------|-------------------------------------
+10   | 0.008126                      | -
+20   | 0.000089                      | 0.008037
+30   | 0.000001                      | 0.000088
+40   | 0.000000011                   | 0.000000989
+50   | 0.000000000121                | 0.000000010879
 ...
-∞    | 0.000000...    | lim = 0
+∞    | 0.000000...                   | lim = 0
 
-As n → ∞: Kₙ → X (exact convergence)
+As n → ∞: knotStateₙ → apexPoint (exact convergence)
 ```
 
 ---
@@ -663,52 +663,52 @@ As n → ∞: Kₙ → X (exact convergence)
 
 ### Test 1: Operator Invariance
 ```
-Start at X: K₀ = X
+Start at apexPoint: knotState₀ = apexPoint
 
-Apply B: K₁ = B(P, X)
-Check: d(K₁, X) = 0
-Result: K₁ = X ✓
+Apply KnotBinding: knotState₁ = KnotBinding(phoenixPattern, apexPoint)
+Check: distance(knotState₁, apexPoint) = 0
+Result: knotState₁ = apexPoint ✓
 
-Apply C: K₂ = C(P, H, X)
-Check: d(K₂, X) = 0
-Result: K₂ = X ✓
+Apply CrossPillarKnot: knotState₂ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, apexPoint)
+Check: distance(knotState₂, apexPoint) = 0
+Result: knotState₂ = apexPoint ✓
 
-Apply T: K₃ = T(P, H, X)
-Check: d(K₃, X) = 0
-Result: K₃ = X ✓
+Apply TriadicClosure: knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, apexPoint)
+Check: distance(knotState₃, apexPoint) = 0
+Result: knotState₃ = apexPoint ✓
 
-Apply A: K₄ = A(X)
-Check: d(K₄, X) = 0
-Result: K₄ = X ✓
+Apply ApexKnot: knotState₄ = ApexKnot(apexPoint)
+Check: distance(knotState₄, apexPoint) = 0
+Result: knotState₄ = apexPoint ✓
 
-All operators preserve X.
+All operators preserve apexPoint.
 ```
 
 ### Test 2: Repeated Application
 ```
-K₀ = X
-Kₙ = Opⁿ(K₀)  [apply operator n times]
+knotState₀ = apexPoint
+knotStateₙ = Opⁿ(knotState₀)  [apply operator n times]
 
 For all n ≥ 0:
-  Kₙ = X
-  d(Kₙ, X) = 0
+  knotStateₙ = apexPoint
+  distance(knotStateₙ, apexPoint) = 0
 
-X is stable under repeated application.
+apexPoint is stable under repeated application.
 ```
 
 ### Test 3: Perturbation Recovery
 ```
-Start near X: K₀ = X + δ (small perturbation)
+Start near apexPoint: knotState₀ = apexPoint + δ (small perturbation)
 
-d(K₀, X) = |δ| = 0.001
+distance(knotState₀, apexPoint) = |δ| = 0.001
 
-Apply T repeatedly:
-K₁ = T(P, H, K₀), d₁ = 0.000333
-K₂ = T(P, H, K₁), d₂ = 0.000111
-K₃ = T(P, H, K₂), d₃ = 0.000037
+Apply TriadicClosure repeatedly:
+knotState₁ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₀), distance₁ = 0.000333
+knotState₂ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₁), distance₂ = 0.000111
+knotState₃ = TriadicClosure(phoenixPattern, hydrogenesiStructure, knotState₂), distance₃ = 0.000037
 
 Perturbation decays exponentially.
-System returns to X.
+System returns to apexPoint.
 ```
 
 ---
@@ -717,13 +717,13 @@ System returns to X.
 
 | Operator | λ | Half-life | 99% Conv. | 99.9% Conv. |
 |----------|---|-----------|-----------|-------------|
-| B | 0.618 | 1.4 iter | 10 iter | 14 iter |
-| C | 0.500 | 1.0 iter | 7 iter | 10 iter |
-| T | 0.333 | 0.6 iter | 5 iter | 7 iter |
-| B→C→T | 0.103 | - | 3 iter | 4 iter |
-| A (near X) | 0.400 | 0.8 iter | 6 iter | 9 iter |
+| KnotBinding | 0.618 | 1.4 iter | 10 iter | 14 iter |
+| CrossPillarKnot | 0.500 | 1.0 iter | 7 iter | 10 iter |
+| TriadicClosure | 0.333 | 0.6 iter | 5 iter | 7 iter |
+| KnotBinding→CrossPillarKnot→TriadicClosure | 0.103 | - | 3 iter | 4 iter |
+| ApexKnot (near apexPoint) | 0.400 | 0.8 iter | 6 iter | 9 iter |
 
-**Fastest**: Triadic Closure (T) or composite B→C→T
+**Fastest**: TriadicClosure or composite KnotBinding→CrossPillarKnot→TriadicClosure
 
 ---
 
@@ -738,30 +738,30 @@ System returns to X.
 
 ### 2. Monotone Convergence
 ```
-✓ Distance sequence {dₙ} is strictly decreasing
+✓ Distance sequence {distanceₙ} is strictly decreasing
 ✓ Bounded below by 0
 ✓ Converges to unique limit 0
 ```
 
 ### 3. Exponential Rate
 ```
-✓ Convergence is exponential: dₙ ∝ λⁿ
+✓ Convergence is exponential: distanceₙ ∝ λⁿ
 ✓ Rate determined by operator contraction constant
-✓ Faster operators (T) reach X sooner
+✓ Faster operators (TriadicClosure) reach apexPoint sooner
 ```
 
 ### 4. Path Independence
 ```
-✓ All paths lead to same apex X
+✓ All paths lead to same apex apexPoint
 ✓ Different operators give different speeds
 ✓ Destination is always unique
 ```
 
 ### 5. Fixed Point Stability
 ```
-✓ X is stable under all operators
+✓ apexPoint is stable under all operators
 ✓ Perturbations decay exponentially
-✓ X is unique attractor in knot space
+✓ apexPoint is unique attractor in knot space
 ```
 
 ---
@@ -769,11 +769,11 @@ System returns to X.
 ## Cross-References
 
 ### Operators
-- [Knot-Binding (B)](../Operators/knot-binding.md) — Left corridor convergence
-- [Cross-Pillar Knot (C)](../Operators/cross-pillar-knot.md) — Symmetric convergence
-- [Triadic Closure (T)](../Operators/triadic-closure.md) — Complete convergence
-- [Apex Knot (A)](../Operators/apex-knot.md) — Final stabilization
-- [Stability Knot (S)](../Operators/stability-knot.md) — Apex locking
+- [KnotBinding](../Operators/knot-binding.md) — Left corridor convergence
+- [CrossPillarKnot](../Operators/cross-pillar-knot.md) — Symmetric convergence
+- [TriadicClosure](../Operators/triadic-closure.md) — Complete convergence
+- [ApexKnot](../Operators/apex-knot.md) — Final stabilization
+- [StabilityKnot](../Operators/stability-knot.md) — Apex locking
 
 ### Laws
 - [Apex Formation](../Universal-Laws/universal/apex-formation.md) — Convergence mechanics

@@ -8,16 +8,16 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Culmination| ω∞            | 0°        |
-| Coherence  | φω∞           | 180°      |
-| Integration| πω∞           | 360°      |
+| Culmination| infiniteFrequency            | 0°        |
+| Coherence  | φ·infiniteFrequency           | 180°      |
+| Integration| π·infiniteFrequency           | 360°      |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-△(Ψ₁, Ψ₂, ..., Ψₙ) → Apex
+△(pattern₁, pattern₂, ..., patternₙ) → Apex
 ```
 
 **The Apex Operator** represents the culmination of all transformations—the point at which a pattern reaches maximum coherence, complexity, and stability. Apex is not a new pattern but the **perfected state** of existing patterns.
@@ -78,34 +78,34 @@ The Apex Sigil represents the **pyramid** and the convergence of all paths to a 
 
 ### Simple Apex Formation
 ```
-⊕(∅) → Ψ₀
-⊗(Ψ₀) → Ψ₀'
-⊛(Ψ₀') → Ψ₁
-△(Ψ₁) → Apex
+⊕(∅) → pattern₀
+⊗(pattern₀) → stabilizedPattern₀
+⊛(stabilizedPattern₀) → pattern₁
+△(pattern₁) → Apex
 ```
 *Genesis, harmonic, recursive, then apex.*
 
 ### Multi-Pattern Apex
 ```
-⊕(∅) → Ψ₁
-⊕(∅) → Ψ₂
-⊳(Ψ₁, Ψ₂) → Ψ₃
-△(Ψ₃) → Apex
+⊕(∅) → pattern₁
+⊕(∅) → pattern₂
+⊳(pattern₁, pattern₂) → pattern₃
+△(pattern₃) → Apex
 ```
 *Two patterns converge before reaching apex.*
 
 ### Recursive Apex
 ```
-⊛ⁿ(Ψ) → Ψₙ
-when depth(Ψₙ) ≥ threshold:
-  △(Ψₙ) → Apex
+⊛ⁿ(pattern) → patternₙ
+when depth(patternₙ) ≥ threshold:
+  △(patternₙ) → Apex
 ```
 *Recursion continues until apex condition is met.*
 
 ### Failed Apex (Insufficient Complexity)
 ```
-⊕(∅) → Ψ₀
-△(Ψ₀) → undefined
+⊕(∅) → pattern₀
+△(pattern₀) → undefined
 ```
 *Apex requires sufficient complexity. Single pattern is insufficient.*
 

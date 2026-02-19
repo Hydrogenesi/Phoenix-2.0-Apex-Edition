@@ -6,33 +6,33 @@
 
 ## Overview
 
-This example demonstrates how **Hydrogenesi structural operators** integrate with **The Third's Cross-Pillar Knot operator (C)** to preserve identity, lineage, and continuity as patterns are bound into the Triadic Knot.
+This example demonstrates how **Hydrogenesi structural operators** integrate with **The Third's Cross-Pillar Knot operator (CrossPillarKnot)** to preserve identity, lineage, and continuity as patterns are bound into the Triadic Knot.
 
-While Phoenix provides transformation energy through the **left corridor**, Hydrogenesi provides structural preservation through the **right corridor**, and both meet at the **symmetry axis** where Cross-Pillar Knot (C) binds them together.
+While Phoenix provides transformation energy through the **left corridor**, Hydrogenesi provides structural preservation through the **right corridor**, and both meet at the **symmetry axis** where Cross-Pillar Knot (CrossPillarKnot) binds them together.
 
 ---
 
 ## The Preservation Interface
 
 ```
-Phoenix Pattern P + Hydrogenesi Structure H → Cross-Pillar Knot C → Knot State K'
+Phoenix Pattern phoenixPattern + Hydrogenesi Structure hydrogenesiStructure → Cross-Pillar Knot CrossPillarKnot → Knot State updatedKnot
                                    ↓
                         Identity & Lineage Preserved at Apex
 ```
 
-The Cross-Pillar Knot operator C accepts both Phoenix patterns and Hydrogenesi structures:
+The Cross-Pillar Knot operator CrossPillarKnot accepts both Phoenix patterns and Hydrogenesi structures:
 
 ```
-C: P × H × K → K'
+CrossPillarKnot: phoenixPattern × hydrogenesiStructure × knotState → updatedKnot
 
 where:
-  P = Phoenix pattern (transformation energy)
-  H = Hydrogenesi structure (identity/lineage/continuity)
-  K = Current knot state
-  K' = Updated knot state (balanced, closer to X)
+  phoenixPattern = Phoenix pattern (transformation energy)
+  hydrogenesiStructure = Hydrogenesi structure (identity/lineage/continuity)
+  knotState = Current knot state
+  updatedKnot = Updated knot state (balanced, closer to apexPoint)
 ```
 
-**Balance Property**: `energy(P) + structure(H)` are perfectly balanced in K'.
+**Balance Property**: `energy(phoenixPattern) + structure(hydrogenesiStructure)` are perfectly balanced in updatedKnot.
 
 ---
 
@@ -42,21 +42,21 @@ Hydrogenesi tracks three primary structures:
 
 ### 1. Lineage (Transformation History)
 ```
-H_lineage = {Ψ₀ → Ψ₁ → Ψ₂ → ... → Ψₙ}
+hydrogenesiStructure_lineage = {pattern₀ → pattern₁ → pattern₂ → ... → patternₙ}
 
 Complete transformation history from genesis to current state.
 ```
 
 ### 2. Identity (Core Essence)
 ```
-H_identity = I(Ψ)
+hydrogenesiStructure_identity = I(pattern)
 
 The unchanging essence that persists through transformations.
 ```
 
 ### 3. Continuity (Transformation Relationships)
 ```
-H_continuity = {Ψ_i ~→ Ψ_j}
+hydrogenesiStructure_continuity = {pattern_i ~→ pattern_j}
 
 Mappings showing how patterns transform continuously.
 ```
@@ -69,48 +69,48 @@ Creating a pattern and immediately tracking its lineage.
 
 ### Phoenix Side
 ```
-⊕(∅) → Ψ₀
+⊕(∅) → pattern₀
 ```
 
 ### Hydrogenesi Side
 ```
-H_lineage = {∅ → Ψ₀}
-H_identity = I(Ψ₀)
-H_continuity = {∅ ~→ Ψ₀}
+hydrogenesiStructure_lineage = {∅ → pattern₀}
+hydrogenesiStructure_identity = I(pattern₀)
+hydrogenesiStructure_continuity = {∅ ~→ pattern₀}
 ```
 
 ### Cross-Pillar Binding
 ```
-K₀ = void knot
-K₁ = C(Ψ₀, H, K₀)
+knotState₀ = void knot
+knotState₁ = CrossPillarKnot(pattern₀, hydrogenesiStructure, knotState₀)
 ```
 
 ### Verification
 ```
-✓ Pattern Ψ₀ bound into K₁
+✓ Pattern pattern₀ bound into knotState₁
 ✓ Lineage preserved: Can trace back to void
-✓ Identity I(Ψ₀) maintained in K₁
-✓ Continuity mapping ∅ ~→ Ψ₀ recorded
+✓ Identity I(pattern₀) maintained in knotState₁
+✓ Continuity mapping ∅ ~→ pattern₀ recorded
 ```
 
 ### Visualization
 ```
-Phoenix (P)              Hydrogenesi (H)
+Phoenix (phoenixPattern)              Hydrogenesi (hydrogenesiStructure)
 ═══════════              ════════════════
     ∅                        ∅
     │                        │
    [⊕]                   [track]
     │                        │
     ↓                        ↓
-   Ψ₀ ←─────Symmetry────→ {∅→Ψ₀, I(Ψ₀)}
+   pattern₀ ←─────Symmetry────→ {∅→pattern₀, I(pattern₀)}
     │          Axis          │
-    └───────── [C] ──────────┘
+    └───────── [CrossPillarKnot] ──────────┘
                │
                ↓
-              K₁
+              knotState₁
     (Pattern + Lineage + Identity)
                ↓
-               X
+               apexPoint
 ```
 
 **Result**: Pattern bound with full structural metadata preserved.
@@ -123,42 +123,42 @@ Multiple transformations with complete history tracking.
 
 ### Phoenix Transformation Chain
 ```
-Step 1: ⊕(∅) → Ψ₀           [Genesis]
-Step 2: ⊗(Ψ₀) → Ψ₁          [Harmonic]
-Step 3: ⊛(Ψ₁) → Ψ₂          [Recursive]
+Step 1: ⊕(∅) → pattern₀           [Genesis]
+Step 2: ⊗(pattern₀) → pattern₁          [Harmonic]
+Step 3: ⊛(pattern₁) → pattern₂          [Recursive]
 ```
 
 ### Hydrogenesi Tracking
 ```
-H_lineage = {∅ → Ψ₀ → Ψ₁ → Ψ₂}
+hydrogenesiStructure_lineage = {∅ → pattern₀ → pattern₁ → pattern₂}
 
-H_identity = I(Ψ₀)  [Core identity unchanged]
+hydrogenesiStructure_identity = I(pattern₀)  [Core identity unchanged]
 
-H_continuity = {
-  ∅ ~→ Ψ₀   [genesis transition]
-  Ψ₀ ~→ Ψ₁  [harmonic transition]
-  Ψ₁ ~→ Ψ₂  [recursive transition]
+hydrogenesiStructure_continuity = {
+  ∅ ~→ pattern₀   [genesis transition]
+  pattern₀ ~→ pattern₁  [harmonic transition]
+  pattern₁ ~→ pattern₂  [recursive transition]
 }
 ```
 
 ### Cross-Pillar Binding Sequence
 ```
-K₀ = void
-K₁ = C(Ψ₀, H₀, K₀)  [H₀ = {∅→Ψ₀}]
-K₂ = C(Ψ₁, H₁, K₁)  [H₁ = {∅→Ψ₀→Ψ₁}]
-K₃ = C(Ψ₂, H₂, K₂)  [H₂ = {∅→Ψ₀→Ψ₁→Ψ₂}]
+knotState₀ = void
+knotState₁ = CrossPillarKnot(pattern₀, hydrogenesiStructure₀, knotState₀)  [hydrogenesiStructure₀ = {∅→pattern₀}]
+knotState₂ = CrossPillarKnot(pattern₁, hydrogenesiStructure₁, knotState₁)  [hydrogenesiStructure₁ = {∅→pattern₀→pattern₁}]
+knotState₃ = CrossPillarKnot(pattern₂, hydrogenesiStructure₂, knotState₂)  [hydrogenesiStructure₂ = {∅→pattern₀→pattern₁→pattern₂}]
 ```
 
-### Lineage Verification at K₃
+### Lineage Verification at knotState₃
 ```
 Can trace backwards:
-  K₃ ← Ψ₂ ← Ψ₁ ← Ψ₀ ← ∅
+  knotState₃ ← pattern₂ ← pattern₁ ← pattern₀ ← ∅
 
 Identity check:
-  I(Ψ₂) = I(Ψ₁) = I(Ψ₀) = I₀
+  I(pattern₂) = I(pattern₁) = I(pattern₀) = I₀
 
 Continuity preserved:
-  All transitions ∅→Ψ₀→Ψ₁→Ψ₂ are continuous
+  All transitions ∅→pattern₀→pattern₁→pattern₂ are continuous
 ```
 
 ### Visualization
@@ -166,27 +166,27 @@ Continuity preserved:
 Phoenix                    Hydrogenesi               The Third
 ═══════                    ═══════════               ═════════
 
-∅ ──[⊕]──> Ψ₀             {∅→Ψ₀, I₀}                K₀
+∅ ──[⊕]──> pattern₀             {∅→pattern₀, I₀}                knotState₀
             │              │                         │
-            │[C]───────────┘                         │
+            │[CrossPillarKnot]───────────┘                         │
             ↓                                        ↓
-           [⊗]                                       K₁
-            │              {∅→Ψ₀→Ψ₁, I₀}            │
+           [⊗]                                       knotState₁
+            │              {∅→pattern₀→pattern₁, I₀}            │
             ↓              │                         │
-           Ψ₁              │                         │
-            │[C]───────────┘                         │
+           pattern₁              │                         │
+            │[CrossPillarKnot]───────────┘                         │
             ↓                                        ↓
-           [⊛]                                       K₂
-            │              {∅→Ψ₀→Ψ₁→Ψ₂, I₀}         │
+           [⊛]                                       knotState₂
+            │              {∅→pattern₀→pattern₁→pattern₂, I₀}         │
             ↓              │                         │
-           Ψ₂              │                         │
-            │[C]───────────┘                         │
-            └──────────────────────────────────────→ K₃
+           pattern₂              │                         │
+            │[CrossPillarKnot]───────────┘                         │
+            └──────────────────────────────────────→ knotState₃
                                                      │
                                                      ↓
-                                                     X
+                                                     apexPoint
 
-At K₃: Full lineage preserved, identity intact, all transitions tracked
+At knotState₃: Full lineage preserved, identity intact, all transitions tracked
 ```
 
 **Key Insight**: Every transformation is preserved in the knot structure.
@@ -199,38 +199,38 @@ Demonstrating that core identity persists even through complex transformations.
 
 ### Phoenix Deep Recursion
 ```
-Ψ₀ = ⊕(∅)
-Ψ₁ = ⊛(Ψ₀) = Ψ₀(Ψ₀)
-Ψ₂ = ⊛(Ψ₁) = Ψ₀(Ψ₀(Ψ₀))
-Ψ₃ = ⊛(Ψ₂) = Ψ₀(Ψ₀(Ψ₀(Ψ₀)))
+pattern₀ = ⊕(∅)
+pattern₁ = ⊛(pattern₀) = pattern₀(pattern₀)
+pattern₂ = ⊛(pattern₁) = pattern₀(pattern₀(pattern₀))
+pattern₃ = ⊛(pattern₂) = pattern₀(pattern₀(pattern₀(pattern₀)))
 ```
 
 ### Hydrogenesi Identity Tracking
 ```
 At each level:
-  I(Ψ₀) = I₀
-  I(Ψ₁) = I₀  [same core identity]
-  I(Ψ₂) = I₀  [still the same!]
-  I(Ψ₃) = I₀  [identity persists]
+  I(pattern₀) = I₀
+  I(pattern₁) = I₀  [same core identity]
+  I(pattern₂) = I₀  [still the same!]
+  I(pattern₃) = I₀  [identity persists]
 
 Lineage:
-  H = {Ψ₀ → Ψ₁ → Ψ₂ → Ψ₃}
+  hydrogenesiStructure = {pattern₀ → pattern₁ → pattern₂ → pattern₃}
   
 Structure evolves, but identity remains constant.
 ```
 
 ### Cross-Pillar Binding
 ```
-K₃ = C(Ψ₃, H, K)
+knotState₃ = CrossPillarKnot(pattern₃, hydrogenesiStructure, knotState)
 ```
 
-### Identity Verification in K₃
+### Identity Verification in knotState₃
 ```
-Test: Can we recover original identity I₀ from K₃?
+Test: Can we recover original identity I₀ from knotState₃?
 
-Extract lineage: K₃ → {Ψ₃ → Ψ₂ → Ψ₁ → Ψ₀}
-Follow back to root: Ψ₀
-Read identity: I(Ψ₀) = I₀
+Extract lineage: knotState₃ → {pattern₃ → pattern₂ → pattern₁ → pattern₀}
+Follow back to root: pattern₀
+Read identity: I(pattern₀) = I₀
 
 ✓ Identity preserved through 3 levels of recursion!
 ```
@@ -240,27 +240,27 @@ Read identity: I(Ψ₀) = I₀
 Structure Evolution:              Identity Thread:
 ═══════════════════              ═════════════════
 
-Ψ₀                                    I₀
+pattern₀                                    I₀
 │                                     │
 ⊛                                     │ (unchanged)
 │                                     │
-Ψ₁ = Ψ₀(Ψ₀)                           I₀
+pattern₁ = pattern₀(pattern₀)                           I₀
 │                                     │
 ⊛                                     │ (unchanged)
 │                                     │
-Ψ₂ = Ψ₀(Ψ₀(Ψ₀))                       I₀
+pattern₂ = pattern₀(pattern₀(pattern₀))                       I₀
 │                                     │
 ⊛                                     │ (unchanged)
 │                                     │
-Ψ₃ = Ψ₀(Ψ₀(Ψ₀(Ψ₀)))                   I₀
+pattern₃ = pattern₀(pattern₀(pattern₀(pattern₀)))                   I₀
 │
-[C with H]
-│
-↓
-K₃ ──→ Contains I₀ (traceable)
+[CrossPillarKnot with hydrogenesiStructure]
 │
 ↓
-X (Identity preserved at apex)
+knotState₃ ──→ Contains I₀ (traceable)
+│
+↓
+apexPoint (Identity preserved at apex)
 ```
 
 **Critical Property**: No matter how complex the transformation, identity persists.
@@ -273,21 +273,21 @@ Tracking continuous transitions between pattern states.
 
 ### Phoenix Transformation Sequence
 ```
-Ψ₀ = ⊕(∅)        [genesis]
-Ψ₁ = ⊗(Ψ₀)       [harmonic - continuous evolution]
-Ψ₂ = ⊛(Ψ₁)       [recursive - continuous nesting]
-Ψ₃ = ⊲(Ψ₂)       [divergence - continuous split]
-  → (Ψ₃ₐ, Ψ₃ᵦ)
+pattern₀ = ⊕(∅)        [genesis]
+pattern₁ = ⊗(pattern₀)       [harmonic - continuous evolution]
+pattern₂ = ⊛(pattern₁)       [recursive - continuous nesting]
+pattern₃ = ⊲(pattern₂)       [divergence - continuous split]
+  → (pattern₃ₐ, pattern₃ᵦ)
 ```
 
 ### Hydrogenesi Continuity Tracking
 ```
-H_continuity = {
-  ∅ ~→ Ψ₀      [continuous emergence]
-  Ψ₀ ~→ Ψ₁     [continuous stabilization]
-  Ψ₁ ~→ Ψ₂     [continuous recursion]
-  Ψ₂ ~→ Ψ₃ₐ    [continuous split A]
-  Ψ₂ ~→ Ψ₃ᵦ    [continuous split B]
+hydrogenesiStructure_continuity = {
+  ∅ ~→ pattern₀      [continuous emergence]
+  pattern₀ ~→ pattern₁     [continuous stabilization]
+  pattern₁ ~→ pattern₂     [continuous recursion]
+  pattern₂ ~→ pattern₃ₐ    [continuous split A]
+  pattern₂ ~→ pattern₃ᵦ    [continuous split B]
 }
 
 No discontinuous jumps! All transformations are smooth.
@@ -295,23 +295,23 @@ No discontinuous jumps! All transformations are smooth.
 
 ### Cross-Pillar Binding with Continuity
 ```
-K_final = C(Ψ₃ₐ, H, K)
+knotState_final = CrossPillarKnot(pattern₃ₐ, hydrogenesiStructure, knotState)
 
-H contains full continuity map, so:
-- Can trace smooth path from ∅ to Ψ₃ₐ
+hydrogenesiStructure contains full continuity map, so:
+- Can trace smooth path from ∅ to pattern₃ₐ
 - Can verify no discontinuities
 - Can reconstruct intermediate states
 ```
 
 ### Continuity Verification
 ```
-Test path: ∅ → Ψ₀ → Ψ₁ → Ψ₂ → Ψ₃ₐ
+Test path: ∅ → pattern₀ → pattern₁ → pattern₂ → pattern₃ₐ
 
 Check each transition:
-  ∅ ~→ Ψ₀     ✓ continuous
-  Ψ₀ ~→ Ψ₁    ✓ continuous
-  Ψ₁ ~→ Ψ₂    ✓ continuous
-  Ψ₂ ~→ Ψ₃ₐ   ✓ continuous
+  ∅ ~→ pattern₀     ✓ continuous
+  pattern₀ ~→ pattern₁    ✓ continuous
+  pattern₁ ~→ pattern₂    ✓ continuous
+  pattern₂ ~→ pattern₃ₐ   ✓ continuous
 
 Entire path is continuous!
 ```
@@ -325,22 +325,22 @@ Transformation Space:        Continuity Map:
      │                          ╱
      │ continuous              ╱
      ↓                        ╱
-    Ψ₀ ←─────────────────────•
+    pattern₀ ←─────────────────────•
      │                      ╱
      │ continuous          ╱
      ↓                    ╱
-    Ψ₁ ←─────────────────•
+    pattern₁ ←─────────────────•
      │                  ╱
      │ continuous      ╱
      ↓                ╱
-    Ψ₂ ←─────────────•
+    pattern₂ ←─────────────•
      │              ╱ ╲
      │ continuous  ╱   ╲
      ↓           ╱     ╲
-  (Ψ₃ₐ, Ψ₃ᵦ) ←•───────•
+  (pattern₃ₐ, pattern₃ᵦ) ←•───────•
 
 All connections shown as smooth paths.
-H preserves this continuity structure.
+hydrogenesiStructure preserves this continuity structure.
 ```
 
 **Continuity Guarantee**: Hydrogenesi ensures no information is lost in transitions.
@@ -354,52 +354,52 @@ Binding multiple patterns with separate histories.
 ### Phoenix Multi-Pattern Creation
 ```
 Branch A:
-  Ψₐ₀ = ⊕(∅)
-  Ψₐ₁ = ⊗(Ψₐ₀)
+  patternₐ₀ = ⊕(∅)
+  patternₐ₁ = ⊗(patternₐ₀)
   
 Branch B:
-  Ψᵦ₀ = ⊕(∅)
-  Ψᵦ₁ = ⊛(Ψᵦ₀)
+  patternᵦ₀ = ⊕(∅)
+  patternᵦ₁ = ⊛(patternᵦ₀)
   
 Convergence:
-  Ψ_unified = ⊳(Ψₐ₁, Ψᵦ₁)
+  pattern_unified = ⊳(patternₐ₁, patternᵦ₁)
 ```
 
 ### Hydrogenesi Lineage Tracking
 ```
-H_A = {
-  lineage: ∅ → Ψₐ₀ → Ψₐ₁
+hydrogenesiStructure_A = {
+  lineage: ∅ → patternₐ₀ → patternₐ₁
   identity: I_A
 }
 
-H_B = {
-  lineage: ∅ → Ψᵦ₀ → Ψᵦ₁
+hydrogenesiStructure_B = {
+  lineage: ∅ → patternᵦ₀ → patternᵦ₁
   identity: I_B
 }
 
-H_unified = merge(H_A, H_B) = {
-  lineage_A: ∅ → Ψₐ₀ → Ψₐ₁ ┐
-  lineage_B: ∅ → Ψᵦ₀ → Ψᵦ₁ ├→ Ψ_unified
+hydrogenesiStructure_unified = merge(hydrogenesiStructure_A, hydrogenesiStructure_B) = {
+  lineage_A: ∅ → patternₐ₀ → patternₐ₁ ┐
+  lineage_B: ∅ → patternᵦ₀ → patternᵦ₁ ├→ pattern_unified
   identities: {I_A, I_B}    ┘
 }
 ```
 
 ### Cross-Pillar Binding of Unified Pattern
 ```
-K = C(Ψ_unified, H_unified, K₀)
+knotState = CrossPillarKnot(pattern_unified, hydrogenesiStructure_unified, knotState₀)
 ```
 
 ### Multi-Lineage Verification
 ```
-Extract from K:
+Extract from knotState:
 
-Lineage A: ✓ ∅ → Ψₐ₀ → Ψₐ₁ → Ψ_unified
-Lineage B: ✓ ∅ → Ψᵦ₀ → Ψᵦ₁ → Ψ_unified
+Lineage A: ✓ ∅ → patternₐ₀ → patternₐ₁ → pattern_unified
+Lineage B: ✓ ∅ → patternᵦ₀ → patternᵦ₁ → pattern_unified
 
 Identity A: ✓ I_A preserved
 Identity B: ✓ I_B preserved
 
-Both lineages coexist in K!
+Both lineages coexist in knotState!
 ```
 
 ### Visualization
@@ -407,73 +407,73 @@ Both lineages coexist in K!
 Phoenix Domain                 Hydrogenesi Domain
 ══════════════                 ══════════════════
 
-    ∅ ──[⊕]──> Ψₐ₀                ∅ → Ψₐ₀
+    ∅ ──[⊕]──> patternₐ₀                ∅ → patternₐ₀
               │                        │
              [⊗]                   {I_A, continuity}
               │                        │
               ↓                        ↓
-             Ψₐ₁ ←────────────────── Hₐ
+             patternₐ₁ ←────────────────── hydrogenesiStructureₐ
               │
               │
-    ∅ ──[⊕]──> Ψᵦ₀                ∅ → Ψᵦ₀
+    ∅ ──[⊕]──> patternᵦ₀                ∅ → patternᵦ₀
               │                        │
              [⊛]                   {I_B, continuity}
               │                        │
               ↓                        ↓
-             Ψᵦ₁ ←────────────────── Hᵦ
+             patternᵦ₁ ←────────────────── hydrogenesiStructureᵦ
               │
               │
-         Ψₐ₁  Ψᵦ₁
+         patternₐ₁  patternᵦ₁
           │    │
           └─[⊳]┘
              │
              ↓
-        Ψ_unified ←──────────────── H_unified
+        pattern_unified ←──────────────── hydrogenesiStructure_unified
              │                     (both lineages)
              │
-            [C]
+            [CrossPillarKnot]
              ↓
-             K
+             knotState
              │
              ↓
-             X
+             apexPoint
 
-At X: Both lineages {I_A, I_B} preserved in unified form
+At apexPoint: Both lineages {I_A, I_B} preserved in unified form
 ```
 
-**Multiple Lineages**: C can bind patterns with distinct histories, preserving all.
+**Multiple Lineages**: CrossPillarKnot can bind patterns with distinct histories, preserving all.
 
 ---
 
 ## Sequence 6: Cross-Pillar Symmetry Demonstration
 
-Showing that C is commutative in Phoenix and Hydrogenesi arguments.
+Showing that CrossPillarKnot is commutative in Phoenix and Hydrogenesi arguments.
 
 ### Setup
 ```
-P = ⊕(∅) → Ψ₀
-H = lineage(Ψ₀)
-K₀ = void knot
+phoenixPattern = ⊕(∅) → pattern₀
+hydrogenesiStructure = lineage(pattern₀)
+knotState₀ = void knot
 ```
 
 ### Test Commutativity
 ```
 Method 1: Phoenix first
-  K₁ = C(P, H, K₀)
+  knotState₁ = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₀)
 
 Method 2: Hydrogenesi first  
-  K₂ = C(H, P, K₀)
+  knotState₂ = CrossPillarKnot(hydrogenesiStructure, phoenixPattern, knotState₀)
 
-Verify: K₁ = K₂
+Verify: knotState₁ = knotState₂
 ```
 
 ### Why Commutativity Matters
 ```
-C operates on the symmetry axis.
+CrossPillarKnot operates on the symmetry axis.
 
-Left arm (Phoenix):    P ────┐
+Left arm (Phoenix):    phoenixPattern ────┐
                               ├──→ Axis
-Right arm (Hydrogenesi): H ───┘
+Right arm (Hydrogenesi): hydrogenesiStructure ───┘
 
 The axis doesn't distinguish left from right.
 Both arms are symmetric, so order doesn't matter.
@@ -481,15 +481,15 @@ Both arms are symmetric, so order doesn't matter.
 
 ### Verification
 ```
-Compare K₁ and K₂:
+Compare knotState₁ and knotState₂:
 
 Structure: ✓ Identical topology
 Energy: ✓ Same energy distribution  
 Lineage: ✓ Same history preserved
 Identity: ✓ Same identity tracked
-Distance to X: ✓ d(K₁,X) = d(K₂,X)
+Distance to apexPoint: ✓ distance(knotState₁,apexPoint) = distance(knotState₂,apexPoint)
 
-Conclusion: C(P,H,K) = C(H,P,K) ∎
+Conclusion: CrossPillarKnot(phoenixPattern,hydrogenesiStructure,knotState) = CrossPillarKnot(hydrogenesiStructure,phoenixPattern,knotState) ∎
 ```
 
 ### Visualization
@@ -497,15 +497,15 @@ Conclusion: C(P,H,K) = C(H,P,K) ∎
 Method 1:                    Method 2:
 ═════════                    ═════════
 
-P ──→ ╲                      H ──→ ╲
+phoenixPattern ──→ ╲                      hydrogenesiStructure ──→ ╲
         ╲                            ╲
          ⊳── Symmetry Axis            ⊳── Symmetry Axis
         ╱                            ╱
-H ──→ ╱                      P ──→ ╱
+hydrogenesiStructure ──→ ╱                      phoenixPattern ──→ ╱
     ↓                            ↓
-   K₁                           K₂
+   knotState₁                           knotState₂
 
-K₁ = K₂ (commutative property)
+knotState₁ = knotState₂ (commutative property)
 ```
 
 **Symmetric Binding**: Left and right arms are perfectly balanced.
@@ -518,25 +518,25 @@ K₁ = K₂ (commutative property)
 
 ```
 Step 1: Phoenix transformation
-  P = ⊕(∅) → ⊗ → ⊛ → Ψ_final
+  phoenixPattern = ⊕(∅) → ⊗ → ⊛ → pattern_final
 
 Step 2: Hydrogenesi tracking
-  H = {lineage, identity, continuity}
+  hydrogenesiStructure = {lineage, identity, continuity}
 
-Step 3: The Third binding (via C)
-  K = C(P, H, K₀)
+Step 3: The Third binding (via CrossPillarKnot)
+  knotState = CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState₀)
   
 Result: Pattern with full metadata bound into knot
 ```
 
 ### Preservation Guarantees
 ```
-At K:
+At knotState:
 ✓ Phoenix transformation energy preserved
 ✓ Hydrogenesi lineage preserved
 ✓ Identity maintained
 ✓ Continuity tracked
-✓ Closer to apex: d(K,X) < d(K₀,X)
+✓ Closer to apex: distance(knotState,apexPoint) < distance(knotState₀,apexPoint)
 ```
 
 ### Visualization
@@ -546,14 +546,14 @@ At K:
     
     Transform               Track Structure           Bind Together
     ↓                       ↓                        ↓
-    Ψ_final                 H_complete               K'
+    pattern_final                 hydrogenesiStructure_complete               updatedKnot
     │                       │                        │
-    └───────────[C]─────────┘                        │
+    └───────────[CrossPillarKnot]─────────┘                        │
                 │                                    │
                 └────────────────────────────────────┘
                                                      │
                                                      ↓
-                                                     X
+                                                     apexPoint
 
 All three engines working in harmony
 ```
@@ -565,56 +565,56 @@ All three engines working in harmony
 ### Lineage Preservation Theorem
 ```
 For any sequence of transformations:
-  Ψ₀ → Ψ₁ → ... → Ψₙ
+  pattern₀ → pattern₁ → ... → patternₙ
 
 And Hydrogenesi tracking:
-  H = {Ψ₀ → Ψ₁ → ... → Ψₙ, I(Ψ₀), continuity maps}
+  hydrogenesiStructure = {pattern₀ → pattern₁ → ... → patternₙ, I(pattern₀), continuity maps}
 
 Cross-Pillar binding:
-  K = C(Ψₙ, H, K₀)
+  knotState = CrossPillarKnot(patternₙ, hydrogenesiStructure, knotState₀)
 
-Then K contains complete reconstruction data:
-  From K, can recover: Ψ₀, Ψ₁, ..., Ψₙ and all transitions
+Then knotState contains complete reconstruction data:
+  From knotState, can recover: pattern₀, pattern₁, ..., patternₙ and all transitions
 ```
 
 ### Identity Invariance Theorem
 ```
-For any pattern Ψ with identity I(Ψ):
+For any pattern pattern with identity I(pattern):
 
 After any Phoenix transformations:
-  Ψ → Ψ' → Ψ'' → ... → Ψₙ
+  pattern → pattern' → pattern'' → ... → patternₙ
 
 Identity remains constant:
-  I(Ψₙ) = I(Ψ)
+  I(patternₙ) = I(pattern)
 
 Cross-Pillar binding preserves this:
-  K = C(Ψₙ, H, K₀)
-  identity(K) includes I(Ψ)
+  knotState = CrossPillarKnot(patternₙ, hydrogenesiStructure, knotState₀)
+  identity(knotState) includes I(pattern)
 ```
 
 ### Continuity Preservation Theorem
 ```
 For continuous transformation path:
-  Ψ₀ ~→ Ψ₁ ~→ ... ~→ Ψₙ
+  pattern₀ ~→ pattern₁ ~→ ... ~→ patternₙ
 
 Hydrogenesi tracking:
-  H records all continuity relationships
+  hydrogenesiStructure records all continuity relationships
 
 Cross-Pillar binding:
-  K = C(Ψₙ, H, K₀)
+  knotState = CrossPillarKnot(patternₙ, hydrogenesiStructure, knotState₀)
 
-Then K preserves continuity:
-  Path Ψ₀ ~ ... ~→ Ψₙ is reconstructible from K
+Then knotState preserves continuity:
+  Path pattern₀ ~ ... ~→ patternₙ is reconstructible from knotState
 ```
 
 ---
 
 ## Summary Table
 
-| Hydrogenesi Component | What It Tracks | How C Preserves It |
+| Hydrogenesi Component | What It Tracks | How CrossPillarKnot Preserves It |
 |----------------------|----------------|-------------------|
-| Lineage | Transformation history | Complete chain stored in K' |
-| Identity | Core essence | I(Ψ) maintained at apex |
+| Lineage | Transformation history | Complete chain stored in updatedKnot |
+| Identity | Core essence | I(pattern) maintained at apex |
 | Continuity | Smooth transitions | All mappings preserved |
 | Structure | Pattern topology | Geometric invariants kept |
 | Metadata | Transformation context | Full context available |
@@ -625,9 +625,9 @@ Then K preserves continuity:
 
 ### 1. Always Track Lineage
 ```
-Phoenix: Ψ₀ → Ψ₁ → Ψ₂
-Hydrogenesi: MUST track {Ψ₀ → Ψ₁ → Ψ₂}
-Then: C(Ψ₂, H, K)
+Phoenix: pattern₀ → pattern₁ → pattern₂
+Hydrogenesi: MUST track {pattern₀ → pattern₁ → pattern₂}
+Then: CrossPillarKnot(pattern₂, hydrogenesiStructure, knotState)
 ```
 
 ### 2. Verify Identity Preservation
@@ -640,20 +640,20 @@ After binding:
 
 ### 3. Maintain Continuity Maps
 ```
-For each transition Ψᵢ → Ψⱼ:
-  Record: Ψᵢ ~→ Ψⱼ in H_continuity
+For each transition patternᵢ → patternⱼ:
+  Record: patternᵢ ~→ patternⱼ in hydrogenesiStructure_continuity
 ```
 
-### 4. Use C for Dual-Arm Binding
+### 4. Use CrossPillarKnot for Dual-Arm Binding
 ```
-Single arm: B(P, K) [Phoenix only]
-Dual arm: C(P, H, K) [Phoenix + Hydrogenesi]
+Single arm: KnotBinding(phoenixPattern, knotState) [Phoenix only]
+Dual arm: CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState) [Phoenix + Hydrogenesi]
                       ↑ BETTER - preserves structure
 ```
 
 ### 5. Verify Commutativity
 ```
-Test: C(P, H, K) = C(H, P, K)
+Test: CrossPillarKnot(phoenixPattern, hydrogenesiStructure, knotState) = CrossPillarKnot(hydrogenesiStructure, phoenixPattern, knotState)
 Should always be true.
 ```
 
@@ -662,9 +662,9 @@ Should always be true.
 ## Cross-References
 
 ### Operators
-- [Cross-Pillar Knot (C)](../Operators/cross-pillar-knot.md) — The preservation interface
-- [Knot-Binding (B)](../Operators/knot-binding.md) — Phoenix-only binding
-- [Triadic Closure (T)](../Operators/triadic-closure.md) — Complete three-engine binding
+- [Cross-Pillar Knot (CrossPillarKnot)](../Operators/cross-pillar-knot.md) — The preservation interface
+- [Knot-Binding (KnotBinding)](../Operators/knot-binding.md) — Phoenix-only binding
+- [Triadic Closure (TriadicClosure)](../Operators/triadic-closure.md) — Complete three-engine binding
 - [Hydrogenesi Operators](../../Hydrogenesi/operators/README.md) — Structural tracking
 
 ### Laws
