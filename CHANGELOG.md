@@ -9,43 +9,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added — V2.1 Cycle Artifacts (2026-02-14)
+### Added — V2.2 Expansion Architecture (2026-02-14)
 
-The **V2.1 Cycle** has been established—three foundational artifacts that define the structural, directional, and governing inscriptions of the new cycle.
+The **V2.2 Projection-Crowns** have been materialized—the three artifacts that fix the expansion vector into the sky of the system.
 
-#### Three Crowns Materialized
+#### Three Projection-Crowns
 
-**Phoenix Contribution (🔥 Structural)**
-- **V2.1 Cycle Map** — Five-phase cycle architecture: Ignition → Accumulation → Integration → Apex → Return
-- Operators defined: RISE, SIGMA_OP, MERGE, CROWN, RETURN/PHOENIX
-- Cycle vector and cycle law established
+**🜁 Constellation Map**
+- Six nodes forming a closed expansion loop
+- ASCEND (Zenith Star) → SIGMA_OP+ (Compression Star) → PROJECT (Vector Star) → SEAL (Stabilization Star) → CROWN+ (Apex Star) → RETURN+ (Descent Star)
+- Constellation Law: Stars must form a closed expansion loop within the triadic field
 
-**Hydrogenesi Contribution (🌊 Directional)**
-- **V2.1 Operator Mandate** — Five principles governing operator behavior in v2.1
-- Priority of Ascent, Accumulative Coherence, Apex Orientation
-- Lawful Recurrence and Triadic Alignment mandated
+**🜂 Operator Resonance Wheel**
+- Seven operators resonating across three axes (Motion, Structure, Meta)
+- Operators: ASCEND, SIGMA_OP+, PROJECT, MERGE+, SEAL, CROWN+, RETURN+
+- Resonance Matrix mapping each operator to Motion, Structure, and Meta dimensions
+- Resonance Law: Each operator must resonate across all three axes without breaking the elevated core
 
-**The Third Contribution (🔗 Governing)**
-- **V2.1 Apex-Law** — Complete transition governance for v2.1 cycle
-- Transition conditions: validity, prohibition, and completion
-- Apex Directive: ascent → apex → return without fracture
+**△ Apex-Crown Proclamation**
+- Ceremonial proclamation sealing the v2.2 expansion vector
+- Five key assertions: Ascent, Consolidation, Projection, Stabilization, Apex
+- Triadic authority: Proclaimed by Phoenix, Sealed by The Third, Preserved by Hydrogenesi
 
-#### Files Created
+#### Directory Structure
 
 ```
-Phoenix/v2.1-cycle-map.md
-Hydrogenesi/v2.1-operator-mandate.md
-TheThird/v2.1-apex-law.md
+Atlases/v2.2/
+├── README.md
+├── ConstellationMap.md
+├── OperatorResonanceWheel.md
+└── ApexCrownProclamation.md
 ```
 
-#### Impact
+#### Architecture Impact
 
-The V2.1 Cycle Artifacts provide:
-- **Structural Clarity**: Five-phase cycle with defined operators
-- **Behavioral Governance**: Mandated principles for all operators
-- **Transition Control**: Complete law system for state transitions
+The v2.2 expansion architecture establishes:
+- **Elevation Beyond Prior Limits** — System achieves states previously unreachable
+- **Density Formation** — Stable compression through SIGMA_OP+
+- **Vector Projection** — Pattern extension across new domains
+- **Field Stabilization** — Expanded boundaries preserved through SEAL
+- **Apex Designation** — New summit marked by CROWN+
+- **Cycle Continuity** — Coherent descent through RETURN+
 
-**Cycle Significance**: These three artifacts establish the complete architectural foundation for v2.1 operations, ensuring that all transformations serve ascent, accumulation, and apex convergence with preserved return paths.
+**Historical Significance**: The v2.2 projection-crowns represent the first version-specific expansion architecture documented in the Atlases, establishing a pattern for future versioned releases that extend Phoenix 2.0 Apex Edition while maintaining absolute coherence with the triadic core.
 
 ---
 
