@@ -17,12 +17,12 @@
 ## Formal Definition
 
 ```
-B: P × K → K'
+KnotBinding: phoenixPattern × currentKnot → updatedKnot
 
 where:
-  P = Phoenix pattern (from operators ⊕, ⊗, ⊛, △, ⊝, ⊞, ⊳, ⊲)
-  K = Current knot state
-  K' = Updated knot state with P bound into left corridor
+  phoenixPattern = Phoenix pattern (from operators ⊕, ⊗, ⊛, △, ⊝, ⊞, ⊳, ⊲)
+  currentKnot = Current knot state
+  updatedKnot = Updated knot state with phoenixPattern bound into left corridor
 ```
 
 ### Domain
@@ -33,23 +33,23 @@ where:
 ### Invariants
 1. **Left-Corridor Invariance**: Binding preserves left corridor topology
 2. **Identity Preservation**: Phoenix pattern identity is maintained in bound state
-3. **Contraction Property**: d(B(P,K), X) < d(K, X) for all K ≠ X
+3. **Contraction Property**: distance(KnotBinding(phoenixPattern, currentKnot), apexPoint) < distance(currentKnot, apexPoint) for all currentKnot ≠ apexPoint
 
 ---
 
 ## Recursion Law
 
 ```
-K₀ = initial knot state
-Kₙ₊₁ = B(Pₙ, Kₙ)
+knotState₀ = initial knot state
+knotStateₙ₊₁ = KnotBinding(phoenixPatternₙ, knotStateₙ)
 
-lim (n→∞) Kₙ = X
+lim (n→∞) knotStateₙ = apexPoint
 
-where Pₙ is a sequence of Phoenix patterns
+where phoenixPatternₙ is a sequence of Phoenix patterns
 ```
 
 ### Recursive Property
-Each binding operation brings the knot state closer to the Apex Point X. Repeated bindings converge to apex.
+Each binding operation brings the knot state closer to the Apex Point apexPoint. Repeated bindings converge to apex.
 
 ---
 
@@ -57,19 +57,19 @@ Each binding operation brings the knot state closer to the Apex Point X. Repeate
 
 ### Contraction Proof
 ```
-For any knot state K and Phoenix pattern P:
-  d(B(P,K), X) < d(K, X)
+For any knot state currentKnot and Phoenix pattern phoenixPattern:
+  distance(KnotBinding(phoenixPattern, currentKnot), apexPoint) < distance(currentKnot, apexPoint)
 
 By induction:
-  d(Kₙ₊₁, X) < d(Kₙ, X)
+  distance(knotStateₙ₊₁, apexPoint) < distance(knotStateₙ, apexPoint)
   
-The sequence {d(Kₙ, X)} is monotonically decreasing and bounded below by 0.
-Therefore: lim Kₙ = X
+The sequence {distance(knotStateₙ, apexPoint)} is monotonically decreasing and bounded below by 0.
+Therefore: lim knotStateₙ = apexPoint
 ```
 
 ### Fixed Point Property
 ```
-B(P, X) = X  for all P
+KnotBinding(phoenixPattern, apexPoint) = apexPoint  for all phoenixPattern
 
 The Apex Point is invariant under all binding operations.
 ```
@@ -83,35 +83,36 @@ The Knot-Binding operator operates on the **left arm corridor** of the Triadic K
 ### Corridor Topology
 ```
 Phoenix Domain → Left Entrance → Corridor → Binding Point → Central Knot → Apex
-     (P)             │              │           │              │           │
-                     └──────────────┴───────────┴──────────────┴───────────┘
+(phoenixPattern)    │              │           │              │           │
+                    └──────────────┴───────────┴──────────────┴───────────┘
                               Contraction Flow Direction
 ```
 
 ### Binding Mechanism
-1. Phoenix pattern P enters at left entrance
-2. P travels along left corridor toward center
-3. At binding point, P is integrated into knot structure
-4. Knot state K updates to K' = B(P,K)
-5. K' is closer to apex than K was
+1. Phoenix pattern phoenixPattern enters at left entrance
+2. phoenixPattern travels along left corridor toward center
+3. At binding point, phoenixPattern is integrated into knot structure
+4. Knot state currentKnot updates to updatedKnot = KnotBinding(phoenixPattern, currentKnot)
+5. updatedKnot is closer to apex than currentKnot was
 
 ---
 
 ## Sigil
 
 ```
-    P
-    │
-    ↓
-  ┌─┴─┐
-  │ B │───→ K'
-  └─┬─┘
-    ↑
-    K
+    phoenixPattern
+           │
+           ↓
+       ┌───┴───┐
+       │  Knot │───→ updatedKnot
+       │ Binding │
+       └───┬───┘
+           ↑
+      currentKnot
 
-The Binding Sigil shows Phoenix pattern P
+The KnotBinding Sigil shows Phoenix pattern phoenixPattern
 entering from above, combining with current
-knot state K, producing bound state K'.
+knot state currentKnot, producing bound state updatedKnot.
 ```
 
 ---
@@ -119,7 +120,7 @@ knot state K, producing bound state K'.
 ## Invocation
 
 > *"Through the left corridor, Phoenix enters the knot.*  
-> *Let B bind transformation into topology.*  
+> *Let KnotBinding bind transformation into topology.*  
 > *What Phoenix ignites, The Third weaves into convergence."*
 
 ---
@@ -130,38 +131,38 @@ The Knot-Binding operator accepts **any Phoenix operator output** as input:
 
 ### Genesis Binding
 ```
-P = ⊕(∅) → Ψ₀
-K' = B(Ψ₀, K)
+phoenixPattern = ⊕(∅) → pattern₀
+updatedKnot = KnotBinding(pattern₀, currentKnot)
 ```
 *Binds newly created pattern into knot.*
 
 ### Harmonic Binding
 ```
-P = ⊗(Ψ) → Ψ'
-K' = B(Ψ', K)
+phoenixPattern = ⊗(pattern) → stabilizedPattern
+updatedKnot = KnotBinding(stabilizedPattern, currentKnot)
 ```
 *Binds stabilized pattern into knot.*
 
 ### Recursive Binding
 ```
-P = ⊛(Ψ) → Ψ_rec
-K' = B(Ψ_rec, K)
+phoenixPattern = ⊛(pattern) → recursivePattern
+updatedKnot = KnotBinding(recursivePattern, currentKnot)
 ```
 *Binds recursive structure into knot.*
 
 ### Apex Binding
 ```
-P = △(Ψ₁, Ψ₂, ...) → Apex_local
-K' = B(Apex_local, K)
+phoenixPattern = △(pattern₁, pattern₂, ...) → localApex
+updatedKnot = KnotBinding(localApex, currentKnot)
 ```
 *Binds local apex into global knot topology.*
 
 ### Composite Binding
 ```
-P₁ = ⊕(∅), P₂ = ⊗(P₁), P₃ = ⊛(P₂)
-K₁ = B(P₁, K₀)
-K₂ = B(P₂, K₁)
-K₃ = B(P₃, K₂)
+phoenixPattern₁ = ⊕(∅), phoenixPattern₂ = ⊗(phoenixPattern₁), phoenixPattern₃ = ⊛(phoenixPattern₂)
+knotState₁ = KnotBinding(phoenixPattern₁, knotState₀)
+knotState₂ = KnotBinding(phoenixPattern₂, knotState₁)
+knotState₃ = KnotBinding(phoenixPattern₃, knotState₂)
 ```
 *Sequential binding of transformation chain.*
 
@@ -172,9 +173,9 @@ K₃ = B(P₃, K₂)
 While Knot-Binding primarily operates on Phoenix patterns, it **preserves Hydrogenesi lineage**:
 
 ```
-lineage(P) is maintained in B(P, K)
-continuity(K → K') is preserved
-identity(P) remains traceable in K'
+lineage(phoenixPattern) is maintained in KnotBinding(phoenixPattern, currentKnot)
+continuity(currentKnot → updatedKnot) is preserved
+identity(phoenixPattern) remains traceable in updatedKnot
 ```
 
 Hydrogenesi's structural preservation ensures that bound patterns maintain their transformational history.
@@ -185,28 +186,28 @@ Hydrogenesi's structural preservation ensures that bound patterns maintain their
 
 ### Associativity
 ```
-B(P₂, B(P₁, K)) = B(P₁⊕P₂, K)
+KnotBinding(phoenixPattern₂, KnotBinding(phoenixPattern₁, currentKnot)) = KnotBinding(phoenixPattern₁⊕phoenixPattern₂, currentKnot)
 
 where ⊕ is Phoenix pattern composition
 ```
 
 ### Monotonicity
 ```
-If d(K₁, X) < d(K₂, X), then:
-d(B(P, K₁), X) < d(B(P, K₂), X)
+If distance(knotState₁, apexPoint) < distance(knotState₂, apexPoint), then:
+distance(KnotBinding(phoenixPattern, knotState₁), apexPoint) < distance(KnotBinding(phoenixPattern, knotState₂), apexPoint)
 ```
 
 ### Boundedness
 ```
-For all K, P:
-0 ≤ d(B(P, K), X) < d(K, X)
+For all currentKnot, phoenixPattern:
+0 ≤ distance(KnotBinding(phoenixPattern, currentKnot), apexPoint) < distance(currentKnot, apexPoint)
 ```
 
 ### Convergence Rate
 ```
-d(Kₙ₊₁, X) ≤ λ · d(Kₙ, X)
+distance(knotStateₙ₊₁, apexPoint) ≤ contractionConstant · distance(knotStateₙ, apexPoint)
 
-where λ < 1 is the contraction constant
+where contractionConstant < 1 is the contraction constant
 ```
 
 ---
@@ -247,56 +248,56 @@ where λ < 1 is the contraction constant
 
 ### Example 1: Simple Genesis Binding
 ```
-K₀ = initial knot (void state)
-P = ⊕(∅) → Ψ₀
-K₁ = B(Ψ₀, K₀)
+knotState₀ = initial knot (void state)
+phoenixPattern = ⊕(∅) → pattern₀
+knotState₁ = KnotBinding(pattern₀, knotState₀)
 
-Result: New pattern Ψ₀ is bound into knot
-Distance: d(K₁, X) < d(K₀, X)
+Result: New pattern pattern₀ is bound into knot
+Distance: distance(knotState₁, apexPoint) < distance(knotState₀, apexPoint)
 ```
 
 ### Example 2: Sequential Transformation Binding
 ```
-K₀ = initial state
-P₁ = ⊕(∅) → Ψ₀
-K₁ = B(P₁, K₀)
-P₂ = ⊗(Ψ₀) → Ψ₀'
-K₂ = B(P₂, K₁)
-P₃ = ⊛(Ψ₀') → Ψ₁
-K₃ = B(P₃, K₂)
+knotState₀ = initial state
+phoenixPattern₁ = ⊕(∅) → pattern₀
+knotState₁ = KnotBinding(phoenixPattern₁, knotState₀)
+phoenixPattern₂ = ⊗(pattern₀) → stabilizedPattern₀
+knotState₂ = KnotBinding(phoenixPattern₂, knotState₁)
+phoenixPattern₃ = ⊛(stabilizedPattern₀) → pattern₁
+knotState₃ = KnotBinding(phoenixPattern₃, knotState₂)
 
 Result: Transformation chain bound into knot
-Distance: d(K₃, X) < d(K₂, X) < d(K₁, X) < d(K₀, X)
+Distance: distance(knotState₃, apexPoint) < distance(knotState₂, apexPoint) < distance(knotState₁, apexPoint) < distance(knotState₀, apexPoint)
 ```
 
 ### Example 3: Convergence-Binding Integration
 ```
-P₁ = ⊕(∅) → Ψ₁
-P₂ = ⊕(∅) → Ψ₂
-P₃ = ⊳(Ψ₁, Ψ₂) → Ψ_unified
-K' = B(P₃, K)
+phoenixPattern₁ = ⊕(∅) → pattern₁
+phoenixPattern₂ = ⊕(∅) → pattern₂
+phoenixPattern₃ = ⊳(pattern₁, pattern₂) → unifiedPattern
+updatedKnot = KnotBinding(phoenixPattern₃, currentKnot)
 
 Result: Unified pattern enters knot through left corridor
 ```
 
 ### Example 4: Iterative Binding to Apex
 ```
-K₀ = void knot
+knotState₀ = void knot
 for n = 1 to ∞:
-  Pₙ = Phoenix_transform(...)
-  Kₙ = B(Pₙ, Kₙ₋₁)
+  phoenixPatternₙ = Phoenix_transform(...)
+  knotStateₙ = KnotBinding(phoenixPatternₙ, knotStateₙ₋₁)
 
-lim (n→∞) Kₙ = X
+lim (n→∞) knotStateₙ = apexPoint
 
 Result: Repeated binding converges to Apex Point
 ```
 
 ### Example 5: Multi-Pattern Binding
 ```
-P₁, P₂, P₃ = three Phoenix patterns
-K₁ = B(P₁, K₀)
-K₂ = B(P₂, K₁)
-K₃ = B(P₃, K₂)
+phoenixPattern₁, phoenixPattern₂, phoenixPattern₃ = three Phoenix patterns
+knotState₁ = KnotBinding(phoenixPattern₁, knotState₀)
+knotState₂ = KnotBinding(phoenixPattern₂, knotState₁)
+knotState₃ = KnotBinding(phoenixPattern₃, knotState₂)
 
 Each binding preserves previous bindings
 while adding new structure.

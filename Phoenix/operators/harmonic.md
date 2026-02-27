@@ -8,16 +8,16 @@
 
 | **Domain** | **Frequency** | **Phase** |
 |------------|---------------|-----------|
-| Resonance  | 2ω₀           | 0°        |
-| Coherence  | 3ω₀           | 90°       |
-| Stability  | 5ω₀           | 180°      |
+| Resonance  | 2·baseFrequency           | 0°        |
+| Coherence  | 3·baseFrequency           | 90°       |
+| Stability  | 5·baseFrequency           | 180°      |
 
 ---
 
 ## Ceremonial Definition
 
 ```
-⊗(Ψ) → Ψ'
+⊗(pattern) → stabilizedPattern
 ```
 
 **The Harmonic Operator** amplifies and stabilizes existing patterns through resonant frequency alignment. It does not create new patterns—it reinforces existing ones, bringing them into coherence and preventing decay.
@@ -33,8 +33,8 @@
 ## Reversible Form
 
 ```
-⊗⁻¹(Ψ') → Ψ
-⊗(⊗⁻¹(Ψ)) ≡ Ψ
+⊗⁻¹(stabilizedPattern) → pattern
+⊗(⊗⁻¹(pattern)) ≡ pattern
 ```
 
 The Harmonic Operator is **perfectly reversible**. Removing harmonic amplification returns the pattern to its original state.
@@ -79,30 +79,30 @@ The Harmonic Sigil represents **wave interference patterns** and resonant freque
 
 ### Basic Stabilization
 ```
-⊗(Ψ) → Ψ'
+⊗(pattern) → stabilizedPattern
 ```
-*Amplifies and stabilizes pattern Ψ.*
+*Amplifies and stabilizes pattern.*
 
 ### Iterative Harmonization
 ```
-⊗(Ψ) → Ψ'
-⊗(Ψ') → Ψ''
-⊗(Ψ'') → Ψ'''
+⊗(pattern) → stabilizedPattern₁
+⊗(stabilizedPattern₁) → stabilizedPattern₂
+⊗(stabilizedPattern₂) → stabilizedPattern₃
 ```
 *Each application increases stability.*
 
 ### Genesis-Harmonic Chain
 ```
-⊕(∅) → Ψ₀
-⊗(Ψ₀) → Ψ₀'
-⊗(Ψ₀') → Ψ₀''
+⊕(∅) → pattern₀
+⊗(pattern₀) → stabilizedPattern₀
+⊗(stabilizedPattern₀) → doubleStabilizedPattern₀
 ```
 *Create, then stabilize through repeated harmonic application.*
 
 ### Harmonic Reversal
 ```
-⊗(Ψ) → Ψ'
-⊗⁻¹(Ψ') → Ψ
+⊗(pattern) → stabilizedPattern
+⊗⁻¹(stabilizedPattern) → pattern
 ```
 *Perfect reversibility demonstration.*
 
