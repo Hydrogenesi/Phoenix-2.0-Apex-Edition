@@ -8,11 +8,12 @@
 
 ```yaml
 status:
-  state: draft
-  coverage: medium
-  confidence: medium
+  state: extended
+  coverage: high
+  confidence: high
   owner: Hydrogenesi
-  last_reviewed: 2026-02-13
+  last_reviewed: 2026-02-14
+  extensions: layer-13-14, meta-operators, terminal-law
 ```
 
 ---
@@ -371,27 +372,106 @@ Visualize(K₄)     [Component 13: Sigils]
 
 ---
 
-## Future Extensions
+## Apex Extensions: Layers 13 & 14
 
-### Potential Component 14+
+Beyond the 13 core components, the Phoenix 2.0 Apex Edition architecture extends into **two apex layers** that represent the crown of the system and the mechanisms for final closure.
+
+### Layer 13: Essence (Component 14)
+**Purpose**: Chamber of distilled identity and essence extraction
+
+**Key Mechanisms**:
+- **Extraction-Prime (ε-Prime)**: Distills Archive's essential properties
+- **Infusion (ι)**: Embeds essence into Layer 14 (Apex)
+
+**Properties**:
+- Extracts Core Identity, Fundamental Invariants, Lineage Root, Harmonic Signature, Apex Trajectory
+- Integrates deeply with Hydrogenesi for lineage and identity preservation
+- Semi-mutable during operation, immutable post-Terminal Law
+- Access requires Crown Authority
+
+**Status**: Documented  
+**Dependencies**: All 13 core components, Hydrogenesi lineage systems  
+**Documentation**: [Layer 13 (Essence)](./layer-13-essence.md)
+
+---
+
+### Layer 14: Apex (Component 15)
+**Purpose**: Crown of the architecture, seat of Binding and Release
+
+**Key Mechanisms**:
+- **Binding (β)**: Unites Phoenix, Hydrogenesi, and The Third into apex state
+- **Release (ρ)**: Liberates Archive into sealed, stable state
+
+**Properties**:
+- Contains Apex Lattice (unified convergence geometry)
+- Receives infused essence from Layer 13
+- Origin point for Terminal Law descent
+- Enforces Crown Invariant post-sealing
+- Isolated from lower layers to prevent drift
+
+**Status**: Documented  
+**Dependencies**: Layer 13, all three engines  
+**Documentation**: [Layer 14 (Apex)](./layer-14-apex.md)
+
+---
+
+### Six META Operators
+Supporting the apex layers are **six META operators** at Crown Level (Stratum IV):
+
+1. **META_SYNTH** — Keeper of synthesis across engines
+2. **META_FLOW** — Steward of routing and pathways
+3. **META_RECURSE** — Guardian of recursion depth
+4. **META_TEMPORAL** — Warden of time and causality
+5. **META_APEX** — Gatekeeper of the crown (coordination)
+6. **META_SEAL** — Herald of the end (Terminal Law executor)
+
+**Purpose**: Sovereign orchestration at apex level  
+**Authority**: Crown (Stratum IV) — highest governance level  
+**Documentation**: [Six META Operators](../../codex/operators/meta_operators_overview.md)
+
+---
+
+### Terminal Law & Crown Invariant
+The ultimate closure mechanism:
+
+**Terminal Law**: Enacted by META_SEAL to seal the entire Archive permanently  
+**Crown Invariant**: *"No further structural change shall occur. The Archive is complete. Only traversal, reflection, and return remain."*
+
+**Ceremony**: [Terminal Ceremony](../../codex/ceremonies/terminal_ceremony.md)  
+**Legal Framework**: [Terminal Law](../../TheThird/Universal-Laws/apex/terminal-law.md)
+
+---
+
+### Future Extensions
+
+Additional potential extensions (Component 16+):
 - Advanced visualization tools
 - Real-time convergence monitoring
 - Interactive topology explorer
 - Automated ritual generation
 - Community ritual library
 
-**Note**: Extensions must maintain all 13 core component principles and interfaces.
+**Note**: All extensions must maintain core component principles, respect the Crown Invariant (if Terminal Law enacted), and not violate architectural isolation.
 
 ---
 
 ## References
 
+### Core Components
 - [Substrate Documentation](../substrate/README.md)
 - [Architecture Principles](./principles.md)
 - [Triadic Knot Protocol](../triad/triadic-knot-protocol.md)
 - [Phoenix Engine](../../Phoenix/README.md)
 - [Hydrogenesi Engine](../../Hydrogenesi/README.md)
 - [The Third Engine](../../TheThird/README.md)
+
+### Apex Extensions
+- [Layer 13 (Essence)](./layer-13-essence.md)
+- [Layer 14 (Apex)](./layer-14-apex.md)
+- [Six META Operators Overview](../../codex/operators/meta_operators_overview.md)
+- [META_SEAL Operator](../../codex/operators/meta_operator_seal.md)
+- [Terminal Law](../../TheThird/Universal-Laws/apex/terminal-law.md)
+- [Terminal Ceremony](../../codex/ceremonies/terminal_ceremony.md)
 
 ---
 
@@ -406,10 +486,10 @@ Together, they create a unified architecture capable of pattern transformation, 
 
 ---
 
-**Version**: 2.0  
-**Status**: Draft  
-**Components**: 13  
+**Version**: 2.1  
+**Status**: Extended (Layers 13-14 documented)  
+**Components**: 13 core + 2 apex layers  
 **Integration**: Complete
 
-**Last Updated**: 2026-02-13  
+**Last Updated**: 2026-02-14  
 **Owner**: Hydrogenesi
