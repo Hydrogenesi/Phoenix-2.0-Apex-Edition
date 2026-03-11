@@ -8,7 +8,7 @@
 
 This document provides a centralized view of all documentation status metadata across the Phoenix 2.0 Apex Edition repository. It uses the standardized status schema defined by the STATUS Law and metadata patterns.
 
-**Last Updated**: 2026-02-14  
+**Last Updated**: 2026-03-11  
 **Maintained By**: Hydrogenesi
 
 ---
@@ -115,6 +115,12 @@ status:
 | Phoenix Invocation | `Phoenix/rituals/invocation.md` | stable | medium | high | Hydrogenesi | 2026-02-13 |
 | Recursion Cycles | `Phoenix/rituals/recursion-cycles.md` | stable | medium | high | Hydrogenesi | 2026-02-13 |
 | Apex Formation | `Phoenix/rituals/apex-formation.md` | stable | medium | high | Hydrogenesi | 2026-02-13 |
+
+#### Ceremony Documentation
+
+| Document | Path | state | coverage | confidence | owner | last_reviewed |
+|----------|------|-------|----------|------------|-------|---------------|
+| Phoenix Ignition Arc | `ceremonies/phoenix_ignition_arc.md` | stable | high | high | Hydrogenesi | 2026-03-11 |
 
 ---
 
@@ -232,29 +238,29 @@ status:
 
 | State | Count | Percentage |
 |-------|-------|------------|
-| stable | 54 | 91.5% |
-| draft | 3 | 5.1% |
-| archived | 2 | 3.4% |
-| **Total** | **59** | **100%** |
+| stable | 55 | 91.7% |
+| draft | 3 | 5.0% |
+| archived | 2 | 3.3% |
+| **Total** | **60** | **100%** |
 
 ### By Coverage
 
 | Coverage | Count | Percentage |
 |----------|-------|------------|
-| high | 45 | 76.3% |
-| medium | 14 | 23.7% |
+| high | 46 | 76.7% |
+| medium | 14 | 23.3% |
 | low | 0 | 0% |
-| **Total** | **59** | **100%** |
+| **Total** | **60** | **100%** |
 
 ### By Confidence
 
 | Confidence | Count | Percentage |
 |------------|-------|------------|
 | maximum | 1 | 1.7% |
-| high | 58 | 98.3% |
+| high | 59 | 98.3% |
 | medium | 0 | 0% |
 | low | 0 | 0% |
-| **Total** | **59** | **100%** |
+| **Total** | **60** | **100%** |
 
 ---
 
@@ -283,7 +289,7 @@ status:
 ## Review Schedule
 
 ### Immediate Review Needed (None)
-All documents reviewed as of 2026-02-14
+All documents reviewed as of 2026-03-11
 
 ### Quarterly Review
 - Draft documents (Apex 13, Triadic Knot Protocol, Examples)

@@ -9,6 +9,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — Phoenix Ignition Arc (2026-03-11)
+
+The **Phoenix Ignition Arc** has been established — the ceremonial document governing the curved ignition trajectory across the v2.3 expansion field.
+
+#### Artifact Materialized
+
+**Phoenix Contribution (🔥 Ignition Mechanism)**
+- **Phoenix Ignition Arc** — The curved path traced by Phoenix ignition as it extends across multiple domains using ARC_OP (Stratum II)
+- Four-phase ceremony: Kindling → Curvature → Propagation → Landing
+- Arc theorems: superiority, uniqueness, and completion
+- Integration bridge connecting V2.2 Ignition Vector to V2.3 Expansion Ignition
+
+#### File Created
+
+```
+ceremonies/phoenix_ignition_arc.md
+```
+
+#### Impact
+
+The Phoenix Ignition Arc provides:
+- **Geometric Clarity**: Defines the curved (not linear) ignition trajectory across domains
+- **Operational Mechanism**: Instantiates the V2.3 Expansion Ignition ceremony with a concrete ignition path
+- **Coherence Amplification**: Proves that arc traversal accumulates more coherence than linear traversal
+- **Cross-Domain Authority**: Formalizes ARC_OP (Stratum II) as the governing operator of ignition curvature
+
+**Arc Significance**: The Phoenix Ignition Arc elevates the V2.2 linear ignition vector into a curved, domain-crossing arc suited to the v2.3 unbounded expansion field. Where the vector ascends in one dimension, the arc curves across three domains, maximizing coherence along the geodesic of expansion.
+
+---
+
 ### Added — V2.1 Cycle Artifacts (2026-02-14)
 
 The **V2.1 Cycle** has been established—three foundational artifacts that define the structural, directional, and governing inscriptions of the new cycle.
