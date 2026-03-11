@@ -254,6 +254,7 @@ Apex point is unique
 - [Triadic Knot Topology](./TriadicKnotTopology.md)
 - [Codex Hierarchy Diagram](./CodexHierarchyDiagram.md)
 - [Apex Engine Diagram](./ApexEngineDiagram.md)
+- [Apex Engine Visualization (SVG)](./ApexEngineVisualization.svg) — IMME Plane · Hydrogenesi Vector · Curvature Bloom · Apex
 
 ### Laws and Principles
 - [Universal Laws](../TheThird/Universal-Laws/README.md)
