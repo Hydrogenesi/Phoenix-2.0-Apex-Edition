@@ -12,8 +12,11 @@ Implements:
 from __future__ import annotations
 import logging
 import time
-from functools import lru_cache
-from typing import Any, Dict, List, Tuple
+from collections import namedtuple, OrderedDict
+from typing import Any, Dict, List, Optional, Tuple
+
+# Named tuple compatible with functools.lru_cache's CacheInfo for drop-in compatibility
+_CacheInfo = namedtuple("_CacheInfo", ["hits", "misses", "maxsize", "currsize"])
 
 
 # ------------------------------------------------------------
@@ -26,15 +29,19 @@ class ThreeFingerWaltz:
     Performs a direct integration of the provided patterns.
     """
 
-    def __init__(self, patterns: List[Any]):
-        self.patterns = patterns
+    def __init__(self, patterns: Optional[List[Any]] = None):
+        self.patterns: List[Any] = patterns if patterns is not None else []
 
-    def dance(self) -> Any:
+    def dance(self, patterns: Optional[List[Any]] = None) -> Any:
         """
         Execute the waltz. Override this in subclasses if needed.
+
+        Args:
+            patterns: Patterns to integrate. Falls back to self.patterns when omitted.
         """
         # Placeholder logic — replace with your real integration logic.
-        return tuple(self.patterns)
+        actual = patterns if patterns is not None else self.patterns
+        return tuple(actual)
 
 
 # ------------------------------------------------------------
@@ -44,37 +51,63 @@ class ThreeFingerWaltz:
 class CachedThreeFingerWaltz(ThreeFingerWaltz):
     """
     Adds LRU caching to the Three-Finger Waltz.
+
+    The cache persists for the lifetime of this instance, so repeated calls
+    with the same patterns benefit from O(1) lookups instead of recomputing.
     """
 
-    def __init__(self, patterns: List[Any], cache_size: int = 128):
+    def __init__(self, patterns: Optional[List[Any]] = None, cache_size: int = 128):
         super().__init__(patterns)
         self.cache_size = cache_size
+        # OrderedDict preserves insertion order for LRU eviction (no extra dependency)
+        self._lru: OrderedDict = OrderedDict()
+        self._hits = 0
+        self._misses = 0
 
-        # Wrap the dance() method in an LRU cache
-        self._cached_dance = lru_cache(maxsize=cache_size)(self._dance_impl)
-
-    def _dance_impl(self, patterns_key: Tuple[Any, ...]) -> Any:
-        # Cache key is used to determine cache hits; actual patterns are in self.patterns
-        # This allows caching while maintaining the instance pattern
-        return super().dance()
-
-    def dance(self) -> Any:
-        # Create a hashable key from patterns
-        # For simple types, use tuple; for complex types, use string repr
-        hashable_key = []
-        for p in self.patterns:
+    @staticmethod
+    def _make_key(patterns: List[Any]) -> Tuple[Any, ...]:
+        """
+        Build a hashable cache key from a patterns list.
+        Hashable items are used directly; unhashable items fall back to repr().
+        """
+        key_parts: List[Any] = []
+        for p in patterns:
             try:
-                # Test if item is hashable
                 hash(p)
-                hashable_key.append(p)
+                key_parts.append(p)
             except TypeError:
-                # If not hashable (like dict), use repr
-                hashable_key.append(repr(p))
-        key = tuple(hashable_key)
-        return self._cached_dance(key)
+                key_parts.append(repr(p))
+        return tuple(key_parts)
 
-    def cache_info(self):
-        return self._cached_dance.cache_info()
+    def dance(self, patterns: Optional[List[Any]] = None) -> Any:
+        actual = patterns if patterns is not None else self.patterns
+
+        # When cache_size is 0, bypass caching entirely
+        if not self.cache_size:
+            self._misses += 1
+            return super().dance(actual)
+
+        key = self._make_key(actual)
+
+        if key in self._lru:
+            self._hits += 1
+            self._lru.move_to_end(key)          # mark as most-recently used
+            return self._lru[key]
+
+        self._misses += 1
+        result = super().dance(actual)           # compute with original patterns
+        if len(self._lru) >= self.cache_size:
+            self._lru.popitem(last=False)        # evict least-recently-used entry
+        self._lru[key] = result
+        return result
+
+    def cache_info(self) -> _CacheInfo:
+        return _CacheInfo(
+            hits=self._hits,
+            misses=self._misses,
+            maxsize=self.cache_size,
+            currsize=len(self._lru),
+        )
 
 
 # ------------------------------------------------------------
@@ -92,7 +125,7 @@ class InstrumentedThreeFingerWaltz(CachedThreeFingerWaltz):
 
     def __init__(
         self,
-        patterns: List[Any],
+        patterns: Optional[List[Any]] = None,
         cache_size: int = 128,
         log_level: int = logging.INFO,
     ):
@@ -107,12 +140,13 @@ class InstrumentedThreeFingerWaltz(CachedThreeFingerWaltz):
             "error_count": 0,
         }
 
-    def dance(self) -> Any:
+    def dance(self, patterns: Optional[List[Any]] = None) -> Any:
+        actual = patterns if patterns is not None else self.patterns
         start = time.perf_counter()
-        self.logger.info(f"[WALTZ] Starting integration of {len(self.patterns)} patterns")
+        self.logger.info(f"[WALTZ] Starting integration of {len(actual)} patterns")
 
         try:
-            result = super().dance()
+            result = super().dance(actual)
         except Exception as e:
             self.metrics["error_count"] += 1
             self.logger.error(f"[WALTZ] Error: {e}")
@@ -126,19 +160,12 @@ class InstrumentedThreeFingerWaltz(CachedThreeFingerWaltz):
         return result
 
     def get_metrics(self) -> Dict[str, Any]:
-        if self.metrics["total_executions"] == 0:
-            avg = 0.0
-        else:
-            avg = self.metrics["total_duration"] / self.metrics["total_executions"]
-
+        n = self.metrics["total_executions"]
+        avg = self.metrics["total_duration"] / n if n > 0 else 0.0
         return {
-            "total_executions": self.metrics["total_executions"],
+            "total_executions": n,
             "avg_duration_seconds": avg,
-            "error_rate": (
-                self.metrics["error_count"] / self.metrics["total_executions"]
-                if self.metrics["total_executions"] > 0
-                else 0.0
-            ),
+            "error_rate": self.metrics["error_count"] / n if n > 0 else 0.0,
         }
 
 
@@ -156,6 +183,9 @@ class IntegrationEngine:
         enable_cache only              → CachedThreeFingerWaltz
         enable_telemetry only          → InstrumentedThreeFingerWaltz (cache_size=0)
         neither                        → ThreeFingerWaltz
+
+    The waltz instance is created once and reused across all integrate() calls
+    so that the LRU cache accumulates hits over the engine's lifetime.
     """
 
     def __init__(
@@ -170,46 +200,44 @@ class IntegrationEngine:
         self.cache_size = cache_size
         self.log_level = log_level
 
-        self._last_waltz = None  # store last instance for metrics/cache access
+        # Create the waltz once so the cache persists across integrate() calls
+        self._waltz = self._create_waltz()
 
-    def _select_waltz(self, patterns: List[Any]):
+    def _create_waltz(self) -> ThreeFingerWaltz:
         if self.enable_cache and self.enable_telemetry:
             return InstrumentedThreeFingerWaltz(
-                patterns, cache_size=self.cache_size, log_level=self.log_level
+                cache_size=self.cache_size, log_level=self.log_level
             )
 
         if self.enable_cache:
-            return CachedThreeFingerWaltz(patterns, cache_size=self.cache_size)
+            return CachedThreeFingerWaltz(cache_size=self.cache_size)
 
         if self.enable_telemetry:
             return InstrumentedThreeFingerWaltz(
-                patterns, cache_size=0, log_level=self.log_level
+                cache_size=0, log_level=self.log_level
             )
 
-        return ThreeFingerWaltz(patterns)
+        return ThreeFingerWaltz()
 
     def integrate(self, patterns: List[Any]) -> Any:
-        # Create a new waltz instance for each call to ensure proper isolation
-        # The waltz's internal cache will handle repeated patterns within its lifetime
-        waltz = self._select_waltz(patterns)
-        self._last_waltz = waltz
-        return waltz.dance()
+        return self._waltz.dance(patterns)
 
     def get_cache_stats(self) -> Dict[str, Any]:
-        if hasattr(self._last_waltz, "cache_info"):
-            info = self._last_waltz.cache_info()
-            # Convert CacheInfo named tuple to dictionary
+        if hasattr(self._waltz, "cache_info"):
+            info = self._waltz.cache_info()
+            if info.maxsize == 0:
+                return {"cache": "disabled"}
             total = info.hits + info.misses
             return {
                 "hits": info.hits,
                 "misses": info.misses,
                 "maxsize": info.maxsize,
                 "currsize": info.currsize,
-                "hit_rate": info.hits / total if total > 0 else 0.0
+                "hit_rate": info.hits / total if total > 0 else 0.0,
             }
         return {"cache": "disabled"}
 
     def get_metrics(self) -> Dict[str, Any]:
-        if hasattr(self._last_waltz, "get_metrics"):
-            return self._last_waltz.get_metrics()
+        if hasattr(self._waltz, "get_metrics"):
+            return self._waltz.get_metrics()
         return {"metrics": "disabled"}

@@ -92,7 +92,7 @@ def progressive_complexity():
     metrics = engine.get_metrics()
     print(f"\nExecution metrics:")
     print(f"  Total executions: {metrics.get('total_executions', 0)}")
-    print(f"  Average duration: {metrics.get('avg_duration', 0):.4f}s")
+    print(f"  Average duration: {metrics.get('avg_duration_seconds', 0):.4f}s")
     print()
 
 
