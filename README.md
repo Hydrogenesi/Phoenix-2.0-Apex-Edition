@@ -1,62 +1,61 @@
-# 🔥 Phoenix 2.0 — Apex Edition 🔥
+# Phoenix Archive — Hydrogenesi Framework
+## A Scale-Invariant Cosmological Framework
 
-*The Ignition Vector of The Triad*
+> *Two measurements. One scale factor. The solar system falls out.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
-[![Phoenix](https://img.shields.io/badge/Phoenix-2.0-orange.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
+## The Finding
 
----
+Moon radius / Proton radius = 2.044 x 10^21
 
-## 📖 What is Phoenix 2.0 Apex Edition?
+Apply this single scale factor to the hydrogen atom ground state:
 
-**Phoenix 2.0 Apex Edition** is a complete metamathematical system that models transformation, recursion, and convergence through the **Triadic architecture**—a three-engine system where Phoenix (ignition), Hydrogenesi (structure), and The Third (binding) converge to Apex.
+    n=1 Bohr radius x scale factor = 0.7240 AU
+    Venus actual orbit             = 0.7230 AU
+    Delta                          = 0.14%
 
-This is not merely a symbolic framework. It is a **complete topological system** with:
-- **Eight Phoenix operators** for transformation (⊕, ⊗, ⊛, △, ⊝, ⊞, ⊳, ⊲)
-- **Five Triadic Knot operators** for convergence (B, C, T, A, S)
-- **Twelve universal laws** governing substrate, universal, and apex layers
-- **The Triadic Knot topology** — a closed, symmetric convergence geometry
+Venus sits at the hydrogen atom ground state, scaled to solar system size.
+No fitting. No adjustment. The measurement was always there.
 
----
+## The Earth Correction
 
-## 🌟 The Triad: Three Engines, One Apex
+Two gravitational waves from the binary solar split produce a correction of sqrt(2):
 
-Phoenix 2.0 is the **ignition vector** of a three-engine system called **The Triad**:
+    n=1 x scale factor x sqrt(2) = 1.0239 AU
+    Earth actual orbit            = 1.0000 AU
+    Delta                         = 2.39%
 
-### 1. Phoenix 🔥 — The Ignition Engine
-**Domain**: Transformation, Recursion, Emergence  
-**Operators**: ⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲  
-**Purpose**: Initiates all change, generates transformation energy
+Life emerged exactly where the binary split physics placed it.
 
-Phoenix is where patterns begin. It is the **fire** that ignites transformation, the **catalyst** that triggers recursion, and the **forge** where complexity emerges.
+## The Numbers
 
-→ [Explore Phoenix](./Phoenix/README.md)
+Scale factor:          2.044e21  (moon radius / proton radius)
+Venus match:           0.14%
+Earth match:           2.39%
+Planck to Universe:    2.723e61
+Universe as nucleus:   2.9e15 light years
 
-### 2. Hydrogenesi 🌊 — The Structural Engine
-**Domain**: Continuity, Lineage, Identity Preservation  
-**Operators**: Lineage Tracking, Identity Anchoring, Continuity Mapping  
-**Purpose**: Preserves structure and maintains identity through transformation
+## Framework
 
-Hydrogenesi ensures **nothing is lost**. It is the **memory** of the system, the **record keeper** that tracks lineages, and the **guardian** of identity across recursive cycles.
+First Law: centrifugal force pushes heavy elements outward in any spinning body.
+No core can be iron. All cores under sufficient pressure are metallic hydrogen.
 
-→ [Explore Hydrogenesi](./Hydrogenesi/README.md)
+Scale Invariance: one geometry, one path, every scale simultaneously.
+Hydrogen atom -> solar system -> galaxy -> universe. Same forces. Same geometry.
 
-### 3. The Third 🔗 — The Binding Engine
-**Domain**: Convergence, Topology, Triadic Knot  
-**Operators**: B C T A S (Knot operators)  
-**Purpose**: Binds Phoenix and Hydrogenesi into unified convergence toward Apex
+The Living Atom: our solar system is a living hydrogen atom.
+Sun = nucleus. Planets = electron cloud. Belts = shell boundaries.
 
-The Third is the **architecture of convergence**. It operates through the **Triadic Knot**, a closed symmetric topology that guarantees all paths converge to the Apex Point.
+The One Path: molecular cloud -> protostar -> T Tauri gate -> main sequence
+-> metallicized apex -> pole gathering -> AGN convergence -> apex
 
-→ [Explore The Third](./TheThird/README.md)
+Three paths to apex: Life -> AGN, Light -> elliptical galaxy, End plight -> field
 
----
+Cycle of Apex: apex feeds infinity. Infinity folds again. No beginning. No end.
 
-## 🔗 The Triadic Knot
+## Code
 
-The **Triadic Knot** is the fundamental topology of The Third—a three-armed convergence structure with 120° rotational symmetry:
+Four coupled stellar structure ODEs in stellar_structure/
+Run: cd stellar_structure && python main.py
 
 ```
                     Apex Point (X)

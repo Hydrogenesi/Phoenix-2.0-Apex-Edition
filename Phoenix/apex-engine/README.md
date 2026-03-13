@@ -154,10 +154,17 @@ The Phoenix Apex Engine is the **first stage** of the eight-engine Apex converge
 
 ## See Also
 
+### Core Documentation
 - [Phoenix Main Documentation](../README.md)
 - [Complete Apex Engine Documentation](../../Atlases/ApexEngineIndex.md)
 - [Triadic Cycle Mapping](./cycle-mapping.md)
 - [Phoenix Glossary](../guides/glossary.md)
+
+### v2.1 Cycle Architecture
+- [v2.1 Cycles Overview](./v2.1-cycles/README.md) — **The Three Crowns**
+- [Transition Matrix](./v2.1-cycles/transition-matrix.md) — Phase hand-off mechanics
+- [Pillar Alignment Chart](./v2.1-cycles/pillar-alignment-chart.md) — Triadic expressions
+- [Cycle Invocation](./v2.1-cycles/cycle-invocation.md) — Ceremonial ignition
 
 ---
 

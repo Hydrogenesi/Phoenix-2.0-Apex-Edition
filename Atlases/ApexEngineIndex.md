@@ -268,6 +268,11 @@ Apex point is unique
 - [Apex Audit Quickstart Guide](../docs/apex/apex-audit-quickstart.md)
 - [Automated Audit Script](../tools/apex-audit.sh)
 - [Ceremonial Proclamation](../docs/apex/apex-audit-ceremonial-proclamation.md)
+### v2.1 Cycle Architecture — The Three Crowns
+- [v2.1 Cycles Overview](../Phoenix/apex-engine/v2.1-cycles/README.md)
+- [Transition Matrix](../Phoenix/apex-engine/v2.1-cycles/transition-matrix.md) — Phase hand-offs
+- [Pillar Alignment Chart](../Phoenix/apex-engine/v2.1-cycles/pillar-alignment-chart.md) — Triadic expressions
+- [Cycle Invocation](../Phoenix/apex-engine/v2.1-cycles/cycle-invocation.md) — Ceremonial ignition
 
 ---
 
