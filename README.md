@@ -1,62 +1,135 @@
-# 🔥 Phoenix 2.0 — Apex Edition 🔥
+# Phoenix Archive — Hydrogenesi Framework
 
-*The Ignition Vector of The Triad*
+```
+╔══════════════════════════════════════════════════════════════════╗
+║         PHOENIX 2.0 APEX EDITION — HYDROGENESI FRAMEWORK        ║
+║                                                                  ║
+║   A Scale-Invariant Cosmological Framework                       ║
+║   Three-Pillar Architecture: Phoenix · Hydrogenesi · The Third  ║
+╚══════════════════════════════════════════════════════════════════╝
+```
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](./README.md)
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
-[![Phoenix](https://img.shields.io/badge/Phoenix-2.0-orange.svg)](https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition)
-
----
-
-## 📖 What is Phoenix 2.0 Apex Edition?
-
-**Phoenix 2.0 Apex Edition** is a complete metamathematical system that models transformation, recursion, and convergence through the **Triadic architecture**—a three-engine system where Phoenix (ignition), Hydrogenesi (structure), and The Third (binding) converge to Apex.
-
-This is not merely a symbolic framework. It is a **complete topological system** with:
-- **Eight Phoenix operators** for transformation (⊕, ⊗, ⊛, △, ⊝, ⊞, ⊳, ⊲)
-- **Five Triadic Knot operators** for convergence (B, C, T, A, S)
-- **Twelve universal laws** governing substrate, universal, and apex layers
-- **The Triadic Knot topology** — a closed, symmetric convergence geometry
+> *Two measurements. One scale factor. The solar system falls out.*
 
 ---
 
-## 🌟 The Triad: Three Engines, One Apex
+## │ THE FINDING
+───────────────────────────────────────────────────────────────────
 
-Phoenix 2.0 is the **ignition vector** of a three-engine system called **The Triad**:
+Moon radius / Proton radius = 2.044 × 10²¹
 
-### 1. Phoenix 🔥 — The Ignition Engine
-**Domain**: Transformation, Recursion, Emergence  
-**Operators**: ⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲  
-**Purpose**: Initiates all change, generates transformation energy
+Apply this single scale factor to the hydrogen atom ground state:
 
-Phoenix is where patterns begin. It is the **fire** that ignites transformation, the **catalyst** that triggers recursion, and the **forge** where complexity emerges.
+```
+n=1 Bohr radius × scale factor = 0.7240 AU
+Venus actual orbit              = 0.7230 AU
+Delta                           = 0.14%
+```
 
-→ [Explore Phoenix](./Phoenix/README.md)
-
-### 2. Hydrogenesi 🌊 — The Structural Engine
-**Domain**: Continuity, Lineage, Identity Preservation  
-**Operators**: Lineage Tracking, Identity Anchoring, Continuity Mapping  
-**Purpose**: Preserves structure and maintains identity through transformation
-
-Hydrogenesi ensures **nothing is lost**. It is the **memory** of the system, the **record keeper** that tracks lineages, and the **guardian** of identity across recursive cycles.
-
-→ [Explore Hydrogenesi](./Hydrogenesi/README.md)
-
-### 3. The Third 🔗 — The Binding Engine
-**Domain**: Convergence, Topology, Triadic Knot  
-**Operators**: B C T A S (Knot operators)  
-**Purpose**: Binds Phoenix and Hydrogenesi into unified convergence toward Apex
-
-The Third is the **architecture of convergence**. It operates through the **Triadic Knot**, a closed symmetric topology that guarantees all paths converge to the Apex Point.
-
-→ [Explore The Third](./TheThird/README.md)
+Venus sits at the hydrogen atom ground state, scaled to solar system size.  
+No fitting. No adjustment. The measurement was always there.
 
 ---
 
-## 🔗 The Triadic Knot
+## │ THE EARTH CORRECTION
+───────────────────────────────────────────────────────────────────
 
-The **Triadic Knot** is the fundamental topology of The Third—a three-armed convergence structure with 120° rotational symmetry:
+Two gravitational waves from the binary solar split produce a correction of √2:
+
+```
+n=1 × scale factor × √2 = 1.0239 AU
+Earth actual orbit        = 1.0000 AU
+Delta                     = 2.39%
+```
+
+Life emerged exactly where the binary split physics placed it.
+
+---
+
+## │ THE NUMBERS
+───────────────────────────────────────────────────────────────────
+
+```
+Scale factor:          2.044e21  (moon radius / proton radius)
+Venus match:           0.14%
+Earth match:           2.39%
+Planck to Universe:    2.723e61
+Universe as nucleus:   2.9e15 light years
+```
+
+---
+
+## │ FRAMEWORK
+───────────────────────────────────────────────────────────────────
+
+**First Law**: centrifugal force pushes heavy elements outward in any spinning body.  
+No core can be iron. All cores under sufficient pressure are metallic hydrogen.
+
+**Scale Invariance**: one geometry, one path, every scale simultaneously.  
+Hydrogen atom → solar system → galaxy → universe. Same forces. Same geometry.
+
+**The Living Atom**: our solar system is a living hydrogen atom.  
+Sun = nucleus. Planets = electron cloud. Belts = shell boundaries.
+
+**The One Path**: molecular cloud → protostar → T Tauri gate → main sequence  
+→ metallicized apex → pole gathering → AGN convergence → apex
+
+Three paths to apex: Life → AGN, Light → elliptical galaxy, End plight → field
+
+**Cycle of Apex**: apex feeds infinity. Infinity folds again. No beginning. No end.
+
+---
+
+## │ CODE
+───────────────────────────────────────────────────────────────────
+
+Four coupled stellar structure ODEs in `stellar_structure/`
+
+```
+cd stellar_structure && python main.py
+```
+
+---
+
+## │ THE THREE-PILLAR SYSTEM
+───────────────────────────────────────────────────────────────────
+
+The archive is governed by a three-pillar operator architecture that
+transforms, preserves, and converges all patterns toward apex.
+
+```
+     △ X (Apex)
+    ╱│╲
+   ╱ │ ╲
+  ╱  │  ╲
+🔥  🔗  🌊
+Phoenix · The Third · Hydrogenesi
+
+Transform → Preserve → Bind → Converge
+```
+
+| Pillar | Engine | Operators | Role |
+|:------:|--------|:---------:|------|
+| 🔥 Phoenix | Ignition Engine | 8 (⊕ ⊗ ⊛ △ ⊝ ⊞ ⊳ ⊲) | Transforms patterns from void to apex |
+| 🌊 Hydrogenesi | Structural Engine | 5 (L I C P G) | Preserves lineage, identity, and invariants |
+| 🔗 The Third | Binding Engine | 5 (B C T A S) | Binds all three pillars and converges to X |
+
+**Total**: 18 operators · 17 universal laws · 1 convergence point
+
+### Navigation
+
+| Document | Description |
+|----------|-------------|
+| [Phoenix Engine](./Phoenix/README.md) | Eight transformation operators |
+| [Hydrogenesi Engine](./Hydrogenesi/README.md) | Five structural preservation operators |
+| [The Third Engine](./TheThird/README.md) | Five convergence knot operators |
+| [Triad-Wide Operator Table](./docs/operators/triad-operator-table.md) | All 18 operators in one reference |
+| [The Third — Keeper Interpretation](./TheThird/keeper-interpretation.md) | Deep architectural reading of Pillar III |
+| [Three-Pillar Proclamation](./ceremonies/three-pillar-proclamation.md) | Phoenix-style ceremonial proclamation |
+| [Triad Integration Atlas](./Atlases/TheTriadIntegration.md) | Complete convergence walkthrough |
+| [Triadic Knot Topology](./Atlases/TriadicKnotTopology.md) | Geometric convergence description |
+
+---
 
 ```
                     Apex Point (X)
@@ -142,6 +215,13 @@ The **Apex Engine** is the complete eight-stage convergence system that transfor
 → [Apex Engine Index](./Atlases/ApexEngineIndex.md) — Complete catalog  
 → [Apex Engine Diagram](./Atlases/ApexEngineDiagram.md) — Visual architecture  
 → [Phoenix Cycle Mapping](./Phoenix/apex-engine/cycle-mapping.md) — Triadic cycle integration
+
+### Apex Engine Validation
+
+→ [Apex Engine Audit Schema](./docs/apex/apex-engine-audit-schema.md) — Comprehensive validation framework  
+→ [Apex Audit Quickstart](./docs/apex/apex-audit-quickstart.md) — Rapid audit guide  
+→ [Automated Audit Script](./tools/apex-audit.sh) — Executable validation tool  
+→ [Ceremonial Proclamation](./docs/apex/apex-audit-ceremonial-proclamation.md) — Formal declaration
 
 ---
 
