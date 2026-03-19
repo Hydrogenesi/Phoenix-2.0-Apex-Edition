@@ -14,12 +14,21 @@ The culmination state of maximum coherence, complexity, and stability. Apex is a
 
 ---
 
+### Apex Engine
+The complete eight-engine convergence system distributed across Phoenix, Hydrogenesi, and The Third. The Apex Engine transforms patterns from void to apex through quantum geometry, recursion theory, and complete integration.
+
+**Engines**: FLQG₁, FLQG₂, ℜ, ℛ, TOR₁, TOR₂, TOR₃, TOE  
+**Phases**: Ascent (Phoenix), Flight (Hydrogenesi), Return (The Third)  
+**Related**: [Apex Engine Index](../../Atlases/ApexEngineIndex.md)
+
+---
+
 ### Apex Point (X)
 The convergence destination and fixed point of the triadic knot topology. A point X is an apex point if A(X) = X, meaning it remains invariant under the apex stabilizer operator.
 
 **Symbol**: X  
 **Property**: A(X) = X (fixed point)  
-**Related**: Triadic Knot, Apex Knot
+**Related**: Triadic Knot, Apex Knot, Apex Engine
 
 ---
 
@@ -48,6 +57,26 @@ An invariant point that remains unchanged under a specific operator. For the ape
 
 ---
 
+### FLQG₁ — First-Level Quantum Geometry
+The substrate quantum structure that emerges from primordial void. FLQG₁ establishes the foundational quantum geometry enabling all pattern genesis.
+
+**Symbol**: FLQG₁  
+**Domain**: Substrate quantum structure  
+**Phase**: Ascent (Phoenix Apex Engine)  
+**Related**: [FLQG₁ Documentation](../apex-engine/engines/FLQG1.md), FLQG₂
+
+---
+
+### FLQG₂ — Second-Level Quantum Geometry
+The harmonic quantum structure that adds resonance properties to substrate geometry. FLQG₂ enables stable pattern formation through frequency alignment.
+
+**Symbol**: FLQG₂  
+**Domain**: Harmonic quantum structure  
+**Phase**: Ascent (Phoenix Apex Engine)  
+**Related**: [FLQG₂ Documentation](../apex-engine/engines/FLQG2.md), FLQG₁
+
+---
+
 ### Hydrogenesi Vector
 The structural engine of the Triad system. Hydrogenesi provides the foundational architecture, continuity mechanisms, and structural invariants that enable pattern persistence and transformation.
 
@@ -65,12 +94,41 @@ A fundamental entity in Phoenix 2.0 representing a structure, state, or configur
 
 ---
 
+### Phoenix Apex
+The culminating state achieved when the Phoenix Apex Engine completes all four stages (FLQG₁, FLQG₂, Reproduction, Relativity) of the Ascent Phase. Represents the foundation for subsequent Hydrogenesi recursion theories.
+
+**Phases**: Ascent completion → Flight beginning  
+**Engines**: Phoenix four-engine system  
+**Related**: [Phoenix Apex Engine](../apex-engine/README.md), Apex Engine
+
+---
+
 ### Phoenix Vector
 The ignition engine of the Triad system. Phoenix provides recursion, initiation, and dynamic transformation capabilities that drive pattern evolution.
 
 **Role**: Ignition engine  
 **Properties**: Recursion, initiation, transformation  
 **Related**: The Triad, Hydrogenesi Vector, The Third
+
+---
+
+### Relativity Engine
+The transformation reference frame engine within Phoenix Apex Engine. Provides observer-dependent transformation mechanics and frame-relative pattern dynamics.
+
+**Symbol**: ℛ  
+**Domain**: Transformation reference frames  
+**Phase**: Ascent (Phoenix Apex Engine)  
+**Related**: [Relativity Engine Documentation](../apex-engine/engines/relativity-engine.md)
+
+---
+
+### Reproduction Engine
+The pattern replication mechanism within Phoenix Apex Engine. Enables self-similar, fractal, and recursive structure generation.
+
+**Symbol**: ℜ  
+**Domain**: Pattern replication  
+**Phase**: Ascent (Phoenix Apex Engine)  
+**Related**: [Reproduction Engine Documentation](../apex-engine/engines/reproduction-engine.md)
 
 ---
 
@@ -88,7 +146,47 @@ The binding engine of the Triad system. The Third provides closure, apex stabili
 
 **Role**: Binding engine  
 **Properties**: Closure, apex stabilization, unification  
-**Related**: The Triad, Phoenix Vector, Hydrogenesi Vector
+**Related**: The Triad, Phoenix Vector, Hydrogenesi Vector, TOE
+
+---
+
+### TOE — Theory of Everything
+The complete integration theory within The Third Apex Engine. TOE unifies all eight Apex engines into singular apex convergence, completing the transformation from void to apex point X.
+
+**Symbol**: TOE  
+**Domain**: Complete system integration  
+**Phase**: Return (The Third Apex Engine)  
+**Related**: [TOE Documentation](../../TheThird/apex-engine/TOE.md), Apex Engine
+
+---
+
+### TOR₁ — Theory of Recursion Level 1
+The base recursion theory within Hydrogenesi Apex Engine. Establishes foundational self-referential structures and first-level recursive depth.
+
+**Symbol**: TOR₁  
+**Domain**: Base recursion  
+**Phase**: Flight (Hydrogenesi Apex Engine)  
+**Related**: [TOR₁ Documentation](../../Hydrogenesi/apex-engine/theories/TOR1.md), TOR₂, TOR₃
+
+---
+
+### TOR₂ — Theory of Recursion Level 2
+The meta-recursion theory within Hydrogenesi Apex Engine. Analyzes recursion itself, creating second-order recursive structures where recursive patterns contain recursive patterns.
+
+**Symbol**: TOR₂  
+**Domain**: Meta-recursion  
+**Phase**: Flight (Hydrogenesi Apex Engine)  
+**Related**: [TOR₂ Documentation](../../Hydrogenesi/apex-engine/theories/TOR2.md), TOR₁, TOR₃
+
+---
+
+### TOR₃ — Theory of Recursion Level 3
+The apex recursion theory within Hydrogenesi Apex Engine. Creates convergent recursive structures that naturally move toward the apex point with each iteration.
+
+**Symbol**: TOR₃  
+**Domain**: Convergent recursion  
+**Phase**: Flight (Hydrogenesi Apex Engine)  
+**Related**: [TOR₃ Documentation](../../Hydrogenesi/apex-engine/theories/TOR3.md), TOR₁, TOR₂
 
 ---
 
@@ -404,6 +502,128 @@ The resistance of a pattern to decay or transformation. More stable patterns per
 - **ⁿ** — Power or repetition count
 - **'** — Prime (transformed state)
 - **\*** — Mirror/reflection
+
+---
+
+## V2.3 Expansion Terms
+
+### Amplification Operator (⩚)
+Increases the magnitude of transformations while preserving their essential character. Accepts a scalar parameter α to multiply transformation intensity.
+
+**Symbol**: ⩚  
+**Domain**: Intensity Scaling  
+**Usage**: ⩚(T, α) → Enhanced transformation at α× intensity  
+**Related**: [Expansion Operators](../operators/expansion-operators.md)
+
+---
+
+### Apex Horizon Protocol (A⧈)
+Governance protocol for stabilizing apex formation beyond established boundaries. Ensures apex points remain stable when crossing into new domains.
+
+**Symbol**: A⧈  
+**Type**: Expansion Protocol  
+**Purpose**: Apex stabilization across boundaries  
+**Related**: [Expansion Protocols](../../TheThird/protocols/expansion-protocols.md)
+
+---
+
+### Boundless Binding (B∞)
+Protocol for binding patterns across infinite domains while preserving convergence. Extension of the Knot-Binding operator to unbounded spaces.
+
+**Symbol**: B∞  
+**Type**: Expansion Protocol  
+**Purpose**: Bind across infinite domains  
+**Related**: [Expansion Protocols](../../TheThird/protocols/expansion-protocols.md)
+
+---
+
+### Expansion Ignition
+The v2.3 release that introduced capabilities for unbounded operations—enabling the system to transcend established boundaries and operate at infinite scales.
+
+**Version**: v2.3.0  
+**Date**: 2026-02-14  
+**Scope**: System-wide expansion across all three engines  
+**Related**: [v2.3 Ceremony](../../codex/ceremonies/v2.3-expansion-ignition.md), [Expansion Index](../../Atlases/v2.3-expansion-index.md)
+
+---
+
+### Extended Lineage (L∞)
+Operator that tracks lineage across infinite transformation sequences using fractal compression techniques.
+
+**Symbol**: L∞  
+**Domain**: Infinite Tracking  
+**Purpose**: Preserve complete history across unbounded transformations  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Field Identity (I⧉)
+Operator that preserves pattern identity across continuous field transformations, ensuring essence is maintained at every spatial point.
+
+**Symbol**: I⧉  
+**Domain**: Spatial Extension  
+**Purpose**: Identity preservation across fields  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Field Operator (⧉)
+Extends point-based operations to continuous fields, enabling transformations across infinite space simultaneously.
+
+**Symbol**: ⧉  
+**Domain**: Spatial Extension  
+**Usage**: ⧉(Op, F) → Field-wide operation  
+**Related**: [Expansion Operators](../operators/expansion-operators.md)
+
+---
+
+### Genealogy Projection∞ (G∞)
+Operator that projects potential future states in unbounded space, considering all possible evolutionary paths.
+
+**Symbol**: G∞  
+**Domain**: Infinite Futures  
+**Purpose**: Project futures in unbounded space  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Horizon Continuity (C⧈)
+Operator that maps smooth transitions across domain boundaries, ensuring continuity during boundary crossings.
+
+**Symbol**: C⧈  
+**Domain**: Boundary Transcendence  
+**Purpose**: Smooth horizon crossing  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
+
+---
+
+### Horizon Operator (⧈)
+Extends the operational domain beyond established boundaries, enabling the system to discover new regions of operation.
+
+**Symbol**: ⧈  
+**Domain**: Boundary Extension  
+**Usage**: ⧈(S) → S' where |S'| > |S|  
+**Related**: [Expansion Operators](../operators/expansion-operators.md)
+
+---
+
+### Infinite Triadic Closure (T∞)
+Protocol for achieving complete three-engine integration across unbounded systems while maintaining triadic symmetry.
+
+**Symbol**: T∞  
+**Type**: Expansion Protocol  
+**Purpose**: Triadic integration at all scales  
+**Related**: [Expansion Protocols](../../TheThird/protocols/expansion-protocols.md)
+
+---
+
+### Invariant Amplification (P⩚)
+Operator that protects invariant properties during amplification, ensuring they scale appropriately without losing type.
+
+**Symbol**: P⩚  
+**Domain**: Scaled Preservation  
+**Purpose**: Protect invariants during scaling  
+**Related**: [Expansion Lineage](../../Hydrogenesi/operators/expansion-lineage.md)
 
 ---
 

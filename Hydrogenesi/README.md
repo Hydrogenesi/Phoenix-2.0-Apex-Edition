@@ -37,15 +37,19 @@ The essential identity of a pattern—its core structure and harmonic signature�
 
 ---
 
-## Structural Operators
+## The Five Structural Operators
 
-Hydrogenesi operates through a set of **structural preservation operators** (full documentation coming in future release):
+Hydrogenesi operates through five fundamental **structural preservation operators**, each governing a distinct aspect of continuity and memory:
 
-- **Lineage Tracking** — Records transformation history
-- **Identity Anchoring** — Preserves core pattern structure
-- **Continuity Mapping** — Maintains connections across transformations
-- **Invariant Preservation** — Protects essential properties
-- **Genealogy Projection** — Projects forward lineages
+| Operator | Symbol | Domain | Purpose |
+|----------|--------|---------|---------|
+| [Lineage Tracking](./operators/lineage-tracking.md) | `L` | History | Records complete transformation ancestry |
+| [Identity Anchoring](./operators/identity-anchoring.md) | `I` | Essence | Preserves immutable core identity |
+| [Continuity Mapping](./operators/continuity-mapping.md) | `C` | Transitions | Maintains smooth connections between states |
+| [Invariant Preservation](./operators/invariant-preservation.md) | `P` | Properties | Protects essential invariants through change |
+| [Genealogy Projection](./operators/genealogy-projection.md) | `G` | Futures | Projects possible future evolution paths |
+
+Together, these five operators ensure that **nothing is lost** through transformation. They form the memory layer of The Triad, preserving structure while Phoenix ignites change and The Third binds toward apex.
 
 ---
 
@@ -83,7 +87,18 @@ See [Universal Laws](../TheThird/Universal-Laws/universal/) for complete documen
 ## Navigation
 
 ### Core Documentation
-- [Operators](./operators/README.md) — Structural preservation operators (coming soon)
+- [Operators](./operators/README.md) — The five structural preservation operators
+  - [Lineage Tracking (L)](./operators/lineage-tracking.md) — History preservation
+  - [Identity Anchoring (I)](./operators/identity-anchoring.md) — Essence anchoring
+  - [Continuity Mapping (C)](./operators/continuity-mapping.md) — Transition bridges
+  - [Invariant Preservation (P)](./operators/invariant-preservation.md) — Property protection
+  - [Genealogy Projection (G)](./operators/genealogy-projection.md) — Future pathways
+
+### Expansion Cycles
+- [V2.3 Expansion Cycle](./expansion-cycles/v2.3/README.md) — Governing engines of expansion
+  - [Operator Expansion Rite](./expansion-cycles/v2.3/operator-expansion-rite.md) — 28 expansion instruments
+  - [Meta-Operator Binding Wheel](./expansion-cycles/v2.3/meta-operator-binding-wheel.md) — Meta-operator orchestration
+  - [Stratum-Level Governance Map](./expansion-cycles/v2.3/stratum-level-governance-map.md) — 5-stratum governance
 
 ### The Triad
 - [Back to Main](../README.md) — Triad architecture overview
@@ -95,30 +110,35 @@ See [Universal Laws](../TheThird/Universal-Laws/universal/) for complete documen
 
 ---
 
-## Status
-
-🚧 **This documentation is under development.** 🚧
-
-Hydrogenesi's full operator set and ceremonial applications will be documented in a future release. The principles and integration patterns described here are canonical and stable.
-
-For now, Hydrogenesi operates as the **silent guardian** of structural integrity—present in every transformation, preserving continuity even when not explicitly invoked.
-
----
-
 ## Quick Reference
 
-### Core Function
+### Operator Notation
+- **L** — Lineage Tracking (history)
+- **I** — Identity Anchoring (essence)
+- **C** — Continuity Mapping (transitions)
+- **P** — Invariant Preservation (properties)
+- **G** — Genealogy Projection (futures)
+
+### Core Functions
 ```
-For any Phoenix transformation:
-  Phoenix: Ψ₁ → Ψ₂
-  Hydrogenesi: lineage(Ψ₁) ⊆ lineage(Ψ₂)
+For any Phoenix transformation Ψ' = Op(Ψ):
+  L(Ψ') = L(Ψ) ∪ {Ψ'}         [Extend lineage]
+  I(Ψ') = I(Ψ)                 [Preserve identity]
+  C(Ψ, Ψ') exists              [Map continuity]
+  P(Ψ') ⊇ P(Ψ)                 [Guard invariants]
+  G(Ψ') = new futures          [Project paths]
 ```
 
-### Preservation Principle
+### Complete Preservation
 ```
-identity(Ψ) is preserved across all transformations
-continuity(Ψ₁ → Ψ₂) is maintained
-lineage(Ψ) is traceable to origin
+For pattern Ψ:
+  History:    L(Ψ) traces back to origin
+  Essence:    I(Ψ) anchored at Genesis
+  Connection: C maps all transitions
+  Properties: P protects invariants
+  Future:     G shows possible paths
+  
+Nothing is lost. Everything is preserved.
 ```
 
 ---
