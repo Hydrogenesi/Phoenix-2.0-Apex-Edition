@@ -9,6 +9,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.1 Integration Artifacts (2026-02-14)
+
+The **V2.1 Integration Artifacts** have been inscribed into the Codex—the three sovereign documents that activate the five-phase cycle and establish triadic alignment across Phoenix, Hydrogenesi, and The Third.
+
+#### V2.1 Artifacts
+
+**🜁 V2.1 Transition Matrix** (`codex/specs/v2.1-transition-matrix.md`)
+- Documents phase-to-phase handoff conditions and operators
+- Establishes validation criteria for all transitions
+- Maps the five-phase cycle: IGNITION → ACCUMULATION → INTEGRATION → APEX → RETURN
+
+**🜂 V2.1 Pillar Alignment Chart** (`codex/specs/v2.1-pillar-alignment-chart.md`)
+- Defines how Phoenix, Hydrogenesi, and The Third express in each phase
+- Specifies operator alignments per phase per pillar
+- Enforces triadic law across all phases
+
+**△ V2.1 Cycle Invocation** (`codex/specs/v2.1-cycle-invocation.md`)
+- Ceremonial ignition sequence that opens the engine
+- Establishes the lawful conditions for cycle initiation
+- Seals the triadic binding across all phases
+
+These artifacts are clean, sovereign, and ready for direct integration—no drift, no commentary within the blocks. They activate the cycle, not just describe it.
 ### Added — Phoenix Ignition Arc (2026-03-11)
 
 The **Phoenix Ignition Arc** has been established — the ceremonial document governing the curved ignition trajectory across the v2.3 expansion field.
