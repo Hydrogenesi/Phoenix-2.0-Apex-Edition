@@ -1,0 +1,17 @@
+version: 1
+operators:
+  - id: q-desic
+    kind: bridge
+    module: src.au.ops.q_desic
+    function: run
+    description: Curvature–Residue ↔ AGN‑Replication bridge operator
+  - id: curvature-residue
+    kind: structural
+    module: src.au.ops.curvature_residue
+    function: run
+    description: Curvature residue evaluation
+  - id: agn-replication
+    kind: dynamic
+    module: src.au.ops.agn_replication
+    function: run
+    description: AGN replication gradient evaluation
