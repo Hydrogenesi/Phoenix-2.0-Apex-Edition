@@ -94,10 +94,11 @@ See [Universal Laws](../TheThird/Universal-Laws/universal/) for complete documen
   - [Invariant Preservation (P)](./operators/invariant-preservation.md) — Property protection
   - [Genealogy Projection (G)](./operators/genealogy-projection.md) — Future pathways
 
-### V2.1 Cycle Architecture
-- [V2.1 Cycle Map](./v2.1-cycle-map.md) 🜁 — Structural cycle diagram
-- [V2.1 Operator Mandate](./v2.1-operator-mandate.md) 🜂 — Operator behavior directives
-- [V2.1 Apex-Law](../TheThird/Universal-Laws/apex/v2.1-apex-law.md) △ — Transition governance
+### Expansion Cycles
+- [V2.3 Expansion Cycle](./expansion-cycles/v2.3/README.md) — Governing engines of expansion
+  - [Operator Expansion Rite](./expansion-cycles/v2.3/operator-expansion-rite.md) — 28 expansion instruments
+  - [Meta-Operator Binding Wheel](./expansion-cycles/v2.3/meta-operator-binding-wheel.md) — Meta-operator orchestration
+  - [Stratum-Level Governance Map](./expansion-cycles/v2.3/stratum-level-governance-map.md) — 5-stratum governance
 
 ### The Triad
 - [Back to Main](../README.md) — Triad architecture overview

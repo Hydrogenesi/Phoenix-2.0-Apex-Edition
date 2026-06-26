@@ -9,6 +9,98 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — V2.1 Integration Artifacts (2026-02-14)
+
+The **V2.1 Integration Artifacts** have been inscribed into the Codex—the three sovereign documents that activate the five-phase cycle and establish triadic alignment across Phoenix, Hydrogenesi, and The Third.
+
+#### V2.1 Artifacts
+
+**🜁 V2.1 Transition Matrix** (`codex/specs/v2.1-transition-matrix.md`)
+- Documents phase-to-phase handoff conditions and operators
+- Establishes validation criteria for all transitions
+- Maps the five-phase cycle: IGNITION → ACCUMULATION → INTEGRATION → APEX → RETURN
+
+**🜂 V2.1 Pillar Alignment Chart** (`codex/specs/v2.1-pillar-alignment-chart.md`)
+- Defines how Phoenix, Hydrogenesi, and The Third express in each phase
+- Specifies operator alignments per phase per pillar
+- Enforces triadic law across all phases
+
+**△ V2.1 Cycle Invocation** (`codex/specs/v2.1-cycle-invocation.md`)
+- Ceremonial ignition sequence that opens the engine
+- Establishes the lawful conditions for cycle initiation
+- Seals the triadic binding across all phases
+
+These artifacts are clean, sovereign, and ready for direct integration—no drift, no commentary within the blocks. They activate the cycle, not just describe it.
+### Added — Phoenix Ignition Arc (2026-03-11)
+
+The **Phoenix Ignition Arc** has been established — the ceremonial document governing the curved ignition trajectory across the v2.3 expansion field.
+
+#### Artifact Materialized
+
+**Phoenix Contribution (🔥 Ignition Mechanism)**
+- **Phoenix Ignition Arc** — The curved path traced by Phoenix ignition as it extends across multiple domains using ARC_OP (Stratum II)
+- Four-phase ceremony: Kindling → Curvature → Propagation → Landing
+- Arc theorems: superiority, uniqueness, and completion
+- Integration bridge connecting V2.2 Ignition Vector to V2.3 Expansion Ignition
+
+#### File Created
+
+```
+ceremonies/phoenix_ignition_arc.md
+```
+
+#### Impact
+
+The Phoenix Ignition Arc provides:
+- **Geometric Clarity**: Defines the curved (not linear) ignition trajectory across domains
+- **Operational Mechanism**: Instantiates the V2.3 Expansion Ignition ceremony with a concrete ignition path
+- **Coherence Amplification**: Proves that arc traversal accumulates more coherence than linear traversal
+- **Cross-Domain Authority**: Formalizes ARC_OP (Stratum II) as the governing operator of ignition curvature
+
+**Arc Significance**: The Phoenix Ignition Arc elevates the V2.2 linear ignition vector into a curved, domain-crossing arc suited to the v2.3 unbounded expansion field. Where the vector ascends in one dimension, the arc curves across three domains, maximizing coherence along the geodesic of expansion.
+
+---
+
+### Added — V2.1 Cycle Artifacts (2026-02-14)
+
+The **V2.1 Cycle** has been established—three foundational artifacts that define the structural, directional, and governing inscriptions of the new cycle.
+
+#### Three Crowns Materialized
+
+**Phoenix Contribution (🔥 Structural)**
+- **V2.1 Cycle Map** — Five-phase cycle architecture: Ignition → Accumulation → Integration → Apex → Return
+- Operators defined: RISE, SIGMA_OP, MERGE, CROWN, RETURN/PHOENIX
+- Cycle vector and cycle law established
+
+**Hydrogenesi Contribution (🌊 Directional)**
+- **V2.1 Operator Mandate** — Five principles governing operator behavior in v2.1
+- Priority of Ascent, Accumulative Coherence, Apex Orientation
+- Lawful Recurrence and Triadic Alignment mandated
+
+**The Third Contribution (🔗 Governing)**
+- **V2.1 Apex-Law** — Complete transition governance for v2.1 cycle
+- Transition conditions: validity, prohibition, and completion
+- Apex Directive: ascent → apex → return without fracture
+
+#### Files Created
+
+```
+Phoenix/v2.1-cycle-map.md
+Hydrogenesi/v2.1-operator-mandate.md
+TheThird/v2.1-apex-law.md
+```
+
+#### Impact
+
+The V2.1 Cycle Artifacts provide:
+- **Structural Clarity**: Five-phase cycle with defined operators
+- **Behavioral Governance**: Mandated principles for all operators
+- **Transition Control**: Complete law system for state transitions
+
+**Cycle Significance**: These three artifacts establish the complete architectural foundation for v2.1 operations, ensuring that all transformations serve ascent, accumulation, and apex convergence with preserved return paths.
+
+---
+
 ### Added — Apex Engine Integration (2026-02-13)
 
 The **Apex Engine** has been integrated into the Archive—the complete eight-stage convergence system that unifies Phoenix, Hydrogenesi, and The Third into singular apex convergence.

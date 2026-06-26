@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+hydrogenesis.egg-info/PKG-INFO
+hydrogenesis.egg-info/SOURCES.txt
+hydrogenesis.egg-info/dependency_links.txt
+hydrogenesis.egg-info/top_level.txt
