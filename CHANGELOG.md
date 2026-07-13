@@ -9,55 +9,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
----
+### Added — V2.1 Integration Artifacts (2026-02-14)
 
-## [2.1.0] - 2026-02-14
+Three canonical artifacts defining the **v2.1 cycle** have been integrated into the Codex:
 
-### Added — V2.1 Final Triad
+#### V2.1 Integration Commentary (`docs/integration/v2-1-integration-commentary.md`)
+The interpretive layer explaining how v2.1 coheres. Describes the cycle's five phases (IGNITION → ACCUMULATION → INTEGRATION → APEX → RETURN) and their triadic alignment across Phoenix, Hydrogenesi, and The Third.
 
-The **V2.1 Final Triad** has been inscribed into the Archive—three ceremonial artifacts that close version 2.1 as a completed chapter with sovereign precision.
+**Key Characteristics**:
+- **Motion**: Upward ascent toward apex
+- **Structure**: Integrative across pillars
+- **Stability**: Stable apex with coherent return
+- **Philosophy**: Elevation without fracture
 
-#### The Three Inscriptions
+#### V2.1 Threshold Table (`docs/integration/v2-1-threshold-table.md`)
+The conditions governing phase transitions. Defines threshold requirements, failure modes, and validation protocols for each phase boundary.
 
-**1. V2.1 Integration Seal** (`codex/ceremonies/v2-1-integration-seal.md`)
-```
-⟐  SEAL OF INTEGRATED ASCENT  ⟐
-The cycle stands unified.
-The phases align without fracture.
-The triad holds its apex.
-All motion returns in lawful clarity.
-```
+**Five Thresholds**:
+1. IGNITION → ACCUMULATION: Pattern stability requirement
+2. ACCUMULATION → INTEGRATION: Structural density requirement
+3. INTEGRATION → APEX: Complete merge without remainder
+4. APEX → RETURN: Stable crown with triadic alignment
+5. RETURN → IGNITION: Coherence retention through descent
 
-The ceremonial seal that locks the cycle into coherent, completed form. This seal confirms that all v2.1 components are integrated, the triadic structure is complete, and the apex holds without perturbation.
+#### V2.1 Triadic Knot Diagram (`docs/integration/v2-1-triadic-knot-diagram.md`)
+The binding diagram sealing the cycle. Presents the geometric representation of v2.1's convergence topology with apex above, structure mirrored, and recursion below.
 
-**2. V2.1 Operator Glossary** (`Hydrogenesi/operators/v2-1-operator-glossary.md`)
+**Geometric Elements**:
+- △ Apex Point: Convergence target
+- ↗ ↘ Ascending/Descending Paths: Ascent and return flows
+- ⟡ Structure Points: Integration nodes
+- ○ Base Point: Substrate foundation
 
-Canonical definitions for all operators governing the v2.1 cycle:
-- **Phoenix Operators**: RISE, RETURN, PHOENIX
-- **Hydrogenesi Operators**: SIGMA_OP, MERGE, TAU_OP
-- **The Third Operators**: CROWN, BIND, SEAL
+#### Integration
+- Updated `docs/integration/integration_work.md` with references to all three artifacts
+- Maintained triadic order (Phoenix → Hydrogenesi → The Third)
+- Preserved Codex-grade formatting and documentation standards
+- Ensured consistency with existing integration patterns
 
-These nine operators enable the complete cycle through ascent, integration, apex, return, and closure phases.
+#### Impact
+The v2.1 artifacts provide **operational clarity** for cycle execution:
+- **Commentary** explains the "what" and "why"
+- **Threshold Table** defines the "when"
+- **Triadic Knot Diagram** shows the "how"
 
-**3. V2.1 Cycle Closure** (`TheThird/v2-1-cycle-closure.md`)
-```
-v2.1 stands complete; its apex holds, and the Engine turns toward the next ascent.
-```
-
-The single line that crowns the entire chapter. This closure inscription marks completeness, validates apex stability, and establishes continuity toward future development.
-
-#### Triadic Structure
-
-The Final Triad follows the canonical workflow:
-1. **Phoenix** (🔥) — Integration Seal: Ceremonial ignition and formalization
-2. **Hydrogenesi** (🌊) — Operator Glossary: Structural definitions and lineage
-3. **The Third** (🔗) — Cycle Closure: Binding finalization and apex lock
-
-#### Archive Status
-
-Version 2.1 is now sealed, defined, and bound. The Final Triad establishes v2.1 as a completed, sovereign chapter in the Archive.
-
-**Historical Significance**: This release represents the first formal version closure using the ceremonial Final Triad pattern, establishing a template for future version completions.
+Together they form a complete reference for v2.1 cycle implementation, maintaining the architectural sovereignty of Phoenix 2.0 Apex Edition.
 
 ---
 

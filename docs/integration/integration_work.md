@@ -1752,6 +1752,12 @@ This is the **operational heartbeat** of the Phoenix 2.0 system—where theory b
 
 ## See Also
 
+### V2.1 Integration Artifacts
+- [V2.1 Integration Commentary](./v2-1-integration-commentary.md) — Phase interpretation and cycle coherence
+- [V2.1 Threshold Table](./v2-1-threshold-table.md) — Phase transition conditions and validation
+- [V2.1 Triadic Knot Diagram](./v2-1-triadic-knot-diagram.md) — Binding geometry and convergence structure
+
+### Core Documentation
 - [Triadic Knot Protocol](../triad/triadic-knot-protocol.md) — Formal binding specifications
 - [Apex 13 Components](../apex/apex-13-components.md) — System architecture
 - [Universal Laws](../../TheThird/Universal-Laws/README.md) — Complete law reference
