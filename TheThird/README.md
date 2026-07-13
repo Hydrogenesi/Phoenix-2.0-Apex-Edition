@@ -195,6 +195,10 @@ See [Apex Laws](./Universal-Laws/apex/)
 ```
 TheThird/
 ├── README.md                    # This file
+├── v2-1-cycle-closure.md       # V2.1 final closure inscription
+├── apex-engine/                 # The Third's Apex Engine component
+│   ├── README.md
+│   └── TOE.md                   # Theory of Everything
 ├── Operators/                   # The five knot operators
 │   ├── knot-binding.md
 │   ├── cross-pillar-knot.md

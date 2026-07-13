@@ -10,6 +10,12 @@ This directory contains the complete documentation for Hydrogenesi's five struct
 
 ---
 
+## Version-Specific Operator Glossaries
+
+- [V2.1 Operator Glossary](./v2-1-operator-glossary.md) — Canonical operators for v2.1 cycle (RISE, SIGMA_OP, MERGE, CROWN, RETURN, PHOENIX, TAU_OP, BIND, SEAL)
+
+---
+
 ## The Five Operators
 
 ### 1. [Lineage Tracking Operator (L)](./lineage-tracking.md)

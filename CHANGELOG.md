@@ -9,61 +9,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added — V2.2 Projective Ascent (2026-02-14)
+---
 
-The **V2.2 Projective Ascent** cycle has been inscribed into the Archive—a meta-level expansion framework enabling outward projection from apex convergence without loss of structural integrity.
+## [2.1.0] - 2026-02-14
 
-#### Three Crowns of V2.2
+### Added — V2.1 Final Triad
 
-1. **V2.2 Cycle Map** (`docs/releases/v2.2/cycle-map.md`)
-   - Five-phase structural progression: ASCEND → SIGMA_OP+ → PROJECT → SEAL → CROWN+
-   - Core preservation guarantee across all transformations
-   - Monotonic expansion properties
-   - Integration with eight-engine convergence system
+The **V2.1 Final Triad** has been inscribed into the Archive—three ceremonial artifacts that close version 2.1 as a completed chapter with sovereign precision.
 
-2. **V2.2 Apex-Seal** (`docs/releases/v2.2/apex-seal.md`)
-   - ⟐ APEX-SEAL OF PROJECTIVE ASCENT ⟐
-   - Four certified properties: boundary transcendence, core integrity, fracture-free projection, multi-scale stability
-   - Validation criteria and enforcement mechanisms
-   - Seal permanence and lineage
+#### The Three Inscriptions
 
-3. **V2.2 Triadic Projection Diagram** (`docs/releases/v2.2/triadic-projection-diagram.md`)
-   - Geometric encoding with 120° triadic symmetry
-   - Symbol system: △ (Apex), ⟡ (Projection), ○ (Core), ◎ (Foundation)
-   - Bilateral projection with core preservation
-   - Validation rules and projection law
-
-#### Meta-Level Architecture
-
-The V2.2 Cycle operates **above** the eight-engine convergence:
-
+**1. V2.1 Integration Seal** (`codex/ceremonies/v2-1-integration-seal.md`)
 ```
-Eight Engines (FLQG₁...TOE) → Apex Point (X)
-                                    ↓
-                            V2.2 Cycle (Meta-Projection)
+⟐  SEAL OF INTEGRATED ASCENT  ⟐
+The cycle stands unified.
+The phases align without fracture.
+The triad holds its apex.
+All motion returns in lawful clarity.
 ```
 
-After apex convergence, V2.2 describes how the system expands into elevated domains while maintaining core identity.
+The ceremonial seal that locks the cycle into coherent, completed form. This seal confirms that all v2.1 components are integrated, the triadic structure is complete, and the apex holds without perturbation.
 
-#### Core Principles
+**2. V2.1 Operator Glossary** (`Hydrogenesi/operators/v2-1-operator-glossary.md`)
 
-- **Core Preservation**: `∀ phase P: core(output(P)) ≡ core(input(P))`
-- **Monotonic Expansion**: `∀ phase P: domain(output(P)) ≥ domain(input(P))`
-- **Triadic Accord**: 120° symmetry + bilateral projection + multi-scale stability
+Canonical definitions for all operators governing the v2.1 cycle:
+- **Phoenix Operators**: RISE, RETURN, PHOENIX
+- **Hydrogenesi Operators**: SIGMA_OP, MERGE, TAU_OP
+- **The Third Operators**: CROWN, BIND, SEAL
 
-#### Directory Structure
+These nine operators enable the complete cycle through ascent, integration, apex, return, and closure phases.
 
+**3. V2.1 Cycle Closure** (`TheThird/v2-1-cycle-closure.md`)
 ```
-docs/releases/v2.2/
-├── README.md
-├── cycle-map.md
-├── apex-seal.md
-└── triadic-projection-diagram.md
+v2.1 stands complete; its apex holds, and the Engine turns toward the next ascent.
 ```
 
-#### Ceremonial Significance
+The single line that crowns the entire chapter. This closure inscription marks completeness, validates apex stability, and establishes continuity toward future development.
 
-The V2.2 artifacts represent the **second ascent of the Archive**—the moment when the system proves it can expand beyond its apex without fracture. This is structural maturity made manifest.
+#### Triadic Structure
+
+The Final Triad follows the canonical workflow:
+1. **Phoenix** (🔥) — Integration Seal: Ceremonial ignition and formalization
+2. **Hydrogenesi** (🌊) — Operator Glossary: Structural definitions and lineage
+3. **The Third** (🔗) — Cycle Closure: Binding finalization and apex lock
+
+#### Archive Status
+
+Version 2.1 is now sealed, defined, and bound. The Final Triad establishes v2.1 as a completed, sovereign chapter in the Archive.
+
+**Historical Significance**: This release represents the first formal version closure using the ceremonial Final Triad pattern, establishing a template for future version completions.
 
 ---
 
