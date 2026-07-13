@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="520" viewBox="0 0 600 520">
+
+  <!-- Background -->
+  <rect width="600" height="520" fill="#0d0d0d"/>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="15" font-weight="bold">Apex Engine — Convergence Visualization</text>
+  <text x="300" y="52" text-anchor="middle" fill="#888888" font-family="monospace" font-size="11">IMME Plane · Hydrogenesi Vector · Curvature Bloom · Apex</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- IMME Plane: perspective grid substrate (dark grey)      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Horizontal plane lines -->
+  <line x1="60"  y1="380" x2="540" y2="380" stroke="#444444" stroke-width="2"/>
+  <line x1="82"  y1="396" x2="518" y2="396" stroke="#444444" stroke-width="2" opacity="0.80"/>
+  <line x1="108" y1="412" x2="492" y2="412" stroke="#444444" stroke-width="2" opacity="0.60"/>
+  <line x1="134" y1="428" x2="466" y2="428" stroke="#444444" stroke-width="2" opacity="0.40"/>
+
+  <!-- Perspective convergence lines (left side) -->
+  <line x1="60"  y1="380" x2="300" y2="290" stroke="#444444" stroke-width="2" opacity="0.80"/>
+  <line x1="160" y1="380" x2="300" y2="290" stroke="#444444" stroke-width="2" opacity="0.55"/>
+  <line x1="230" y1="380" x2="300" y2="290" stroke="#444444" stroke-width="2" opacity="0.35"/>
+
+  <!-- Perspective convergence lines (right side) -->
+  <line x1="540" y1="380" x2="300" y2="290" stroke="#444444" stroke-width="2" opacity="0.80"/>
+  <line x1="440" y1="380" x2="300" y2="290" stroke="#444444" stroke-width="2" opacity="0.55"/>
+  <line x1="370" y1="380" x2="300" y2="290" stroke="#444444" stroke-width="2" opacity="0.35"/>
+
+  <!-- IMME Plane label -->
+  <text x="430" y="374" fill="#666666" font-family="monospace" font-size="11">IMME Plane</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Curvature Bloom: concentric expanding ellipses (orange) -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <ellipse cx="300" cy="290" rx="170" ry="76"
+           fill="none" stroke="#FFA500" stroke-width="3"/>
+  <ellipse cx="300" cy="290" rx="118" ry="53"
+           fill="none" stroke="#FFA500" stroke-width="3" opacity="0.75"/>
+  <ellipse cx="300" cy="290" rx="68"  ry="30"
+           fill="none" stroke="#FFA500" stroke-width="3" opacity="0.50"/>
+
+  <!-- Curvature Bloom label -->
+  <text x="92" y="270" fill="#FFA500" font-family="monospace" font-size="11">Curvature Bloom</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Hydrogenesi Vector: directional arrow toward Apex (cyan)-->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Shaft -->
+  <line x1="300" y1="372" x2="300" y2="120"
+        stroke="#00FFFF" stroke-width="4"/>
+
+  <!-- Arrow head -->
+  <polygon points="300,96 289,128 311,128" fill="#00FFFF"/>
+
+  <!-- Hydrogenesi Vector label -->
+  <text x="310" y="245" fill="#00FFFF" font-family="monospace" font-size="11">Hydrogenesi Vector</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Apex Point: convergence focus                          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Glow ring -->
+  <circle cx="300" cy="96" r="14" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.40"/>
+  <!-- Outer ring -->
+  <circle cx="300" cy="96" r="9"  fill="none" stroke="#FFD700" stroke-width="2"/>
+  <!-- Inner dot -->
+  <circle cx="300" cy="96" r="4"  fill="#FFD700"/>
+
+  <!-- Apex triangle sigil -->
+  <text x="300" y="79" text-anchor="middle" fill="#FFD700" font-family="monospace" font-size="20" font-weight="bold">△</text>
+
+  <!-- Apex label -->
+  <text x="314" y="100" fill="#FFD700" font-family="monospace" font-size="11">Apex</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- Footer legend                                          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <line x1="60"  y1="475" x2="90"  y2="475" stroke="#444444" stroke-width="2"/>
+  <text x="96"  y="479" fill="#666666" font-family="monospace" font-size="10">IMME Plane</text>
+
+  <line x1="200" y1="475" x2="230" y2="475" stroke="#00FFFF" stroke-width="4"/>
+  <text x="236" y="479" fill="#00FFFF" font-family="monospace" font-size="10">Hydrogenesi Vector</text>
+
+  <line x1="390" y1="475" x2="420" y2="475" stroke="#FFA500" stroke-width="3"/>
+  <text x="426" y="479" fill="#FFA500" font-family="monospace" font-size="10">Curvature Bloom</text>
+
+  <circle cx="75" cy="498" r="4" fill="#FFD700"/>
+  <text x="84"  y="502" fill="#FFD700" font-family="monospace" font-size="10">Apex △</text>
+
+</svg>
