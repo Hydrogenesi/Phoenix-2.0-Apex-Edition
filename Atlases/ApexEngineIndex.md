@@ -254,6 +254,7 @@ Apex point is unique
 - [Triadic Knot Topology](./TriadicKnotTopology.md)
 - [Codex Hierarchy Diagram](./CodexHierarchyDiagram.md)
 - [Apex Engine Diagram](./ApexEngineDiagram.md)
+- [Apex Engine Visualization (SVG)](./ApexEngineVisualization.svg) — IMME Plane · Hydrogenesi Vector · Curvature Bloom · Apex
 
 ### Laws and Principles
 - [Universal Laws](../TheThird/Universal-Laws/README.md)
@@ -262,6 +263,17 @@ Apex point is unique
 
 ### Cycle Mapping
 - [Phoenix Cycle Mapping](../Phoenix/apex-engine/cycle-mapping.md)
+
+### Audit and Validation
+- [Apex Engine Audit Schema](../docs/apex/apex-engine-audit-schema.md)
+- [Apex Audit Quickstart Guide](../docs/apex/apex-audit-quickstart.md)
+- [Automated Audit Script](../tools/apex-audit.sh)
+- [Ceremonial Proclamation](../docs/apex/apex-audit-ceremonial-proclamation.md)
+### v2.1 Cycle Architecture — The Three Crowns
+- [v2.1 Cycles Overview](../Phoenix/apex-engine/v2.1-cycles/README.md)
+- [Transition Matrix](../Phoenix/apex-engine/v2.1-cycles/transition-matrix.md) — Phase hand-offs
+- [Pillar Alignment Chart](../Phoenix/apex-engine/v2.1-cycles/pillar-alignment-chart.md) — Triadic expressions
+- [Cycle Invocation](../Phoenix/apex-engine/v2.1-cycles/cycle-invocation.md) — Ceremonial ignition
 
 ---
 

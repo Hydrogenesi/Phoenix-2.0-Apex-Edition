@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydrogenesis"
+version = "0.1.0"
+description = "Your project description"
+requires-python = ">=3.13"
+[tool.setuptools.packages.find]
+include = ["Hydrogenesi*"]
