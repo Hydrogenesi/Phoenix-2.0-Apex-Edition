@@ -1,33 +1,33 @@
-# HA-8 Open Problems
+# HA-8 Open Problems and Formal Architecture
 
-Two technical problems remain unresolved and require proper mathematical work.
+The Codex is written as a formal architectural framework.
+Certain stability and positivity statements are posed as propositions
+on specified subspaces. Fully rigorous derivation is left to future mathematical work.
 
-## Problem 3: Energy Functional Language
+## Problem 3: Virial Equilibrium
 
-F = U + Omega is total energy, not thermodynamic free energy.
-Self-gravitating systems have no global minimum of F.
-The gravothermal catastrophe is real and must be acknowledged.
+Proposition (Virial equilibrium).
+The configuration phi_star satisfies the virial relation
+2T + Omega = 0
+and is dynamically stable under small perturbations in V.
 
-Required fix:
-Replace free energy language with virial equilibrium language.
-phi_star is a virial-balanced, dynamically stable equilibrium
-under small perturbations with fixed mass and boundary conditions.
-This is not a global energy minimum.
+Note: This is not a global energy minimum.
 Negative heat capacity exists outside the constrained manifold.
+Free energy language is replaced throughout by virial equilibrium language.
 
-## Problem 4: Hessian Positive Definiteness
+## Problem 4: Hessian Positivity on Subspace V
 
-H_rho_rho is nonzero and typically negative in self-gravitating systems.
-A Hessian with a zero diagonal entry cannot be strictly positive definite.
+Definition. Let V be the subspace of perturbations (delta_rho, delta_X)
+satisfying homologous perturbation conditions with fixed mass shells
+and boundary conditions.
 
-Required fix:
-Restrict to homologous perturbations or fixed mass shells.
-Prove positivity on that subspace explicitly.
-Or drop the positive definite claim entirely
-and tie stability to virial and dynamical arguments instead.
+Proposition. On V, the second variation delta^2 F is positive definite.
+
+Working Hypothesis. A full proof on V is left to future work.
+The present Codex uses this as a structural assumption.
+No claim of global positive definiteness is made.
 
 ## Status
 
-These problems require a mathematician to resolve properly.
-The nucleus reframe in HA8-nucleus-reframe.md addresses Problems 1 and 2.
-Problems 3 and 4 remain open.
+HA8-nucleus-reframe.md addresses Problems 1 and 2.
+Problems 3 and 4 are stated as propositions on V, not proven theorems.
