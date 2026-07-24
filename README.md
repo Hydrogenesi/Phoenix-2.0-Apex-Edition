@@ -808,6 +808,7 @@ Binding becomes apex.
 Three becomes one.
 ────────────────────────────────────────────────────────
 ```
+Phoenix-2.0-Apex-Edition v2.0.0-apex finalized on July 23, 2026
 
 ---
 
