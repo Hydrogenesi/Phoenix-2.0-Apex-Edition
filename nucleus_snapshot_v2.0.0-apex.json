@@ -1,0 +1,20 @@
+{
+  "snapshot_version": "v2.0.0-apex",
+  "timestamp": "2026-07-23T21:14:00-07:00",
+  "engine": {
+    "lineage": "Apex-Edition",
+    "cycle_map": "v2.1",
+    "third_pillar_alignment": "stable",
+    "invariance_state": "validated",
+    "codex_books": ["I", "II", "III", "IV", "V"],
+    "operator_system": "Phoenix-Core"
+  },
+  "modules": {
+    "hydrogenesis": "0.1.0",
+    "phoenix_ignition": "stable",
+    "triadic_knot": "v2.3",
+    "identity_recursion": "v2.1",
+    "structural_duality": "v2.2"
+  },
+  "release_notes": "Phoenix-2.0-Apex-Edition finalized for v2.0.0-apex release."
+}
