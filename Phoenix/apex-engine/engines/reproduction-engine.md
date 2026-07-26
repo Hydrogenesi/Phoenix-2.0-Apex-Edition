@@ -263,6 +263,7 @@ Reproduction creates the patterns that recursion theories organize.
 - [Phoenix Apex Engine Overview](../README.md)
 - [Recursive Operator](../../operators/recursive.md)
 - [Divergence Operator](../../operators/divergence.md)
+- [Fractal Engine](../../../FractalEngine/) — cinematic rendering layer built on this engine's pattern-replication basis
 
 ---
 
