@@ -159,6 +159,9 @@ Navigate to specific sections for detailed information:
 - [**Sigils**](Sigils/) - Visual operator representations
 - [**Three Finger Waltz**](ThreeFingerWaltz/) - Ceremonial gesture sequences
 
+### Production & Cinematic Systems
+- [**Fractal Engine**](FractalEngine/) - AE-ready recursive rendering architecture (Galactic → Micro-field)
+
 ### Meta-Framework
 - [**Architecture**](Architecture/) - Why this framework will endure
 - [**Structural Invariants**](Architecture/StructuralInvariants.md) - Universal patterns underlying the system
