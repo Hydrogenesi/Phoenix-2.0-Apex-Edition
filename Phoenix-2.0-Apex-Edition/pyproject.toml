@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matriun"
+version = "0.1.0"
+description = "Matrix utility functions with a CLI demo"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "TUA Contributors" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+matriun = "matriun_cli:main"
+
+[tool.setuptools]
+py-modules = ["matriun", "matriun_cli"]

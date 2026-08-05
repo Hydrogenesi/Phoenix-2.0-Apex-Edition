@@ -1,0 +1,372 @@
+HA‑8 Lineage Overview Plate
+Structural, Equilibrium, and Stability Architecture of the HA‑8 Lineage
+1. Operator Framework
+We distinguish two operators fundamental to the HA‑8 lineage:
+
+𝐸
+𝑒
+𝑞
+ — the formal equilibrium operator, mapping any admissible state to its hydrostatic–radiative equilibrium with fixed mass and composition.
+
+𝐸
+𝑝
+ℎ
+𝑦
+𝑠
+ — the physical evolution operator, advancing the state by a physical timestep 
+Δ
+𝑡
+, including nuclear burning, composition change, and structural response.
+
+All structural phases, equilibrium statements, and stability claims in the HA‑8 lineage refer exclusively to 
+𝐸
+𝑒
+𝑞
+.
+
+2. Structural Sequence: The HA‑8 Octave
+The HA‑8 lineage is organized as an eight‑phase structural sequence:
+
+𝜙
+0
+→
+𝜙
+1
+→
+⋯
+→
+𝜙
+8
+★
+→
+𝜙
+8.1
+Each phase represents a distinct structural configuration under 
+𝐸
+𝑒
+𝑞
+.
+The octave is symbolic, not numerical; it does not encode contraction under 
+𝐸
+𝑝
+ℎ
+𝑦
+𝑠
+.
+
+Phase Summary
+HA‑0 — Seed configuration  
+Arbitrary admissible hydrogen profile; no equilibrium conditions satisfied.
+
+HA‑1 — Hydrostatic pre‑balance  
+Partial pressure–gravity consistency.
+
+HA‑2 — Radiative pre‑balance  
+Partial radiative flux consistency.
+
+HA‑3 — Coupled pre‑equilibrium  
+Joint hydrostatic–radiative improvement; core mismatch remains.
+
+HA‑4 — Core regularization  
+Central profiles regularize; near‑virial core.
+
+HA‑5 — Envelope regularization  
+Outer layers stabilized; boundary conditions enforced.
+
+HA‑8★ — Proto‑equilibrium  
+Hydrostatic and radiative equations satisfied to leading order; virial balance incomplete.
+
+HA‑8.1 — Stabilized equilibrium  
+Full hydrostatic–radiative equilibrium; virial balance exact; fixed point of 
+𝐸
+𝑒
+𝑞
+.
+
+3. Proto‑Equilibrium: HA‑8★
+The HA‑8★ configuration is defined by:
+
+𝐸
+𝑒
+𝑞
+(
+𝜙
+8
+★
+)
+≠
+𝜙
+8
+★
+,
+but hydrostatic and radiative equations are satisfied to leading order.
+
+Structural Properties
+near‑hydrostatic equilibrium
+
+near‑radiative consistency
+
+incomplete virial balance
+
+globally coherent but not fully stabilized
+
+Role in the Lineage
+HA‑8★ is the penultimate structural phase, the precursor to full equilibrium.
+
+4. Stabilized Equilibrium: HA‑8.1
+The HA‑8.1 configuration satisfies all equilibrium conditions under 
+𝐸
+𝑒
+𝑞
+:
+
+Hydrostatic equilibrium
+𝑑
+𝑃
+𝑑
+𝑟
+=
+−
+𝐺
+𝑀
+(
+𝑟
+)
+𝜌
+(
+𝑟
+)
+𝑟
+2
+.
+Radiative/convective transport consistency
+Flux profiles consistent with opacity, temperature, and the HA‑8 transport equations.
+
+Virial relation
+2
+𝑇
+(
+𝜙
+8.1
+)
++
+Ω
+(
+𝜙
+8.1
+)
+=
+0.
+Fixed point under 
+𝐸
+𝑒
+𝑞
+𝐸
+𝑒
+𝑞
+(
+𝜙
+8.1
+)
+=
+𝜙
+8.1
+.
+Role in the Lineage
+HA‑8.1 is the canonical equilibrium of the HA‑8 lineage and the endpoint of the structural octave.
+
+5. Stability Framework
+Stability of HA‑8.1 is evaluated on a constrained perturbation subspace:
+
+Perturbation Subspace 
+𝑉
+Perturbations 
+(
+𝛿
+𝜌
+,
+𝛿
+𝑋
+)
+ satisfy:
+
+Mass conservation
+
+∫
+0
+𝑅
+𝛿
+𝜌
+(
+𝑟
+)
+ 
+4
+𝜋
+𝑟
+2
+ 
+𝑑
+𝑟
+=
+0.
+Boundary regularity  
+𝛿
+𝜌
+(
+0
+)
+=
+𝛿
+𝜌
+(
+𝑅
+)
+=
+𝛿
+𝑋
+(
+0
+)
+=
+𝛿
+𝑋
+(
+𝑅
+)
+=
+0.
+
+Shell‑preserving structure  
+𝛿
+𝜌
+(
+𝑟
+)
+=
+𝑓
+(
+𝑟
+)
+𝜌
+8.1
+(
+𝑟
+)
+,
+ 
+𝛿
+𝑋
+(
+𝑟
+)
+=
+𝑓
+(
+𝑟
+)
+𝑋
+8.1
+(
+𝑟
+)
+.
+
+Constrained Positivity
+On 
+𝑉
+:
+
+𝛿
+2
+𝐹
+[
+𝜙
+8.1
+]
+(
+𝛿
+𝜌
+,
+𝛿
+𝑋
+)
+≥
+𝑐
+ 
+∥
+(
+𝛿
+𝜌
+,
+𝛿
+𝑋
+)
+∥
+2
+,
+(
+𝛿
+𝜌
+,
+𝛿
+𝑋
+)
+∈
+𝑉
+,
+for some 
+𝑐
+>
+0
+.
+
+This is adopted as a structural stability assumption; full proof is left to future work.
+
+6. Lineage Interpretation
+The HA‑8 lineage is:
+
+a formal structural sequence under 
+𝐸
+𝑒
+𝑞
+,
+
+culminating in the HA‑8.1 stabilized equilibrium,
+
+anchored by a proto‑equilibrium phase (HA‑8★),
+
+stabilized on a constrained perturbation subspace,
+
+virial‑balanced and dynamically stable within that subspace,
+
+the architectural backbone of the HA‑series in the Codex.
+
+7. Integration into the Codex Architecture
+The HA‑8 lineage connects directly to:
+
+Nucleus Reframe — resolving Problems 1 and 2
+
+Canonical Statement — formal operator and equilibrium structure
+
+Open Problems — Problems 3 and 4 as propositions on 
+𝑉
+
+Fixed‑Point Formalization — 
+𝐸
+(
+𝑁
+)
+=
+𝑁
+ and the equilibrium operator
+
+Octave Plate — structural phases
+
+Stability Plate — constrained positivity
+
+Proto‑Equilibrium Plate — HA‑8★
+
+Equilibrium Characterization Plate — HA‑8.1
+
+Together, these documents form the complete HA‑8 lineage spine.
