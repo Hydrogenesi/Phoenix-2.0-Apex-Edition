@@ -541,13 +541,10 @@ class PhoenixIgnition:
 
     def get_log(self) -> List[str]:
         """Materialize deferred log entries and return the internal operation log."""
-        materialized: List[str] = []
         for index, entry in enumerate(self._log):
             if callable(entry):
-                entry = entry()
-                self._log[index] = entry
-            materialized.append(entry)
-        return materialized
+                self._log[index] = entry()
+        return list(self._log)
 
 
 # --------------------------------------------------------
