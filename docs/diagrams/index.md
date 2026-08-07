@@ -79,6 +79,7 @@ High-quality graphics, charts, and illustrations.
 - **Geometric Charts** - Triadic topology and convergence paths
 - **Scale Correspondence Maps** - Cosmic and atomic correlations
 - **Procedural Flows** - Step-by-step operator sequences
+- **Animation Sequences** - Engine-driven operator and sigil motion studies
 - **Harmonic Visualizations** - Frequency and resonance patterns
 - **Sigil Representations** - Ceremonial and symbolic forms
 
@@ -90,6 +91,8 @@ High-quality graphics, charts, and illustrations.
 - **Presentation Slides** - Framework overview graphics
 
 ### [View Visual Diagrams Directory](visual/)
+
+### [View Animation Framework](animations/plate_dynamics.md)
 
 ---
 

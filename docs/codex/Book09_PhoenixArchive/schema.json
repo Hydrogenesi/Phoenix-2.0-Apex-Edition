@@ -1,0 +1,9 @@
+{
+  "book": "Book09_PhoenixArchive",
+  "sections": [
+    "ceremonies/index.md",
+    "ceremonies/sigils.md",
+    "ceremonies/gestures.md"
+  ],
+  "major_ceremonies": 10
+}

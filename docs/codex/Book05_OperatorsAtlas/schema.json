@@ -1,0 +1,8 @@
+{
+  "book": "Book05_OperatorsAtlas",
+  "sections": [
+    "operators/index.md",
+    "operators/composition.md"
+  ],
+  "operator_count": 18
+}

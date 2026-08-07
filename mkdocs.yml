@@ -44,6 +44,29 @@ nav:
       - Book 05 — Operators Atlas:
           - Overview: codex/Book05_OperatorsAtlas/INDEX.md
           - Chapters: codex/Book05_OperatorsAtlas/chapters/
+          - Operators Reference: codex/Book05_OperatorsAtlas/operators/index.md
+          - Composition System: codex/Book05_OperatorsAtlas/operators/composition.md
+          - Phoenix Operators:
+              - Genesis: codex/Book05_OperatorsAtlas/operators/phoenix_op_genesis.md
+              - Harmonic: codex/Book05_OperatorsAtlas/operators/phoenix_op_harmonic.md
+              - Recursive: codex/Book05_OperatorsAtlas/operators/phoenix_op_recursive.md
+              - Apex: codex/Book05_OperatorsAtlas/operators/phoenix_op_apex.md
+              - Void: codex/Book05_OperatorsAtlas/operators/phoenix_op_void.md
+              - Mirror: codex/Book05_OperatorsAtlas/operators/phoenix_op_mirror.md
+              - Convergence: codex/Book05_OperatorsAtlas/operators/phoenix_op_convergence.md
+              - Divergence: codex/Book05_OperatorsAtlas/operators/phoenix_op_divergence.md
+          - Hydrogenesi Operators:
+              - Lineage: codex/Book05_OperatorsAtlas/operators/hydrogenesi_op_lineage.md
+              - Identity: codex/Book05_OperatorsAtlas/operators/hydrogenesi_op_identity.md
+              - Continuity: codex/Book05_OperatorsAtlas/operators/hydrogenesi_op_continuity.md
+              - Preservation: codex/Book05_OperatorsAtlas/operators/hydrogenesi_op_preservation.md
+              - Genealogy: codex/Book05_OperatorsAtlas/operators/hydrogenesi_op_genealogy.md
+          - Knot Operators:
+              - Binding: codex/Book05_OperatorsAtlas/operators/knot_op_binding.md
+              - Cross-Pillar: codex/Book05_OperatorsAtlas/operators/knot_op_cross_pillar.md
+              - Closure: codex/Book05_OperatorsAtlas/operators/knot_op_closure.md
+              - Apex Knot: codex/Book05_OperatorsAtlas/operators/knot_op_apex_knot.md
+              - Stability: codex/Book05_OperatorsAtlas/operators/knot_op_stability.md
       
       - Book 06 — Flame and Ghost:
           - Overview: codex/Book06_FlameAndGhost/INDEX.md
@@ -60,6 +83,20 @@ nav:
       - Book 09 — Phoenix Archive:
           - Overview: codex/Book09_PhoenixArchive/INDEX.md
           - Chapters: codex/Book09_PhoenixArchive/chapters/
+          - Ceremonies: codex/Book09_PhoenixArchive/ceremonies/index.md
+          - Sigils: codex/Book09_PhoenixArchive/ceremonies/sigils.md
+          - Gestures: codex/Book09_PhoenixArchive/ceremonies/gestures.md
+          - Ceremony Sequences:
+              - Ignition Spiral: codex/Book09_PhoenixArchive/ceremonies/ceremony_ignition_spiral.md
+              - Harmonic Attunement: codex/Book09_PhoenixArchive/ceremonies/ceremony_harmonic_attunement.md
+              - Recursion Lattice: codex/Book09_PhoenixArchive/ceremonies/ceremony_recursion_lattice.md
+              - Apex Alignment: codex/Book09_PhoenixArchive/ceremonies/ceremony_apex_alignment.md
+              - Flame/Ghost Balance: codex/Book09_PhoenixArchive/ceremonies/ceremony_flame_ghost_balance.md
+              - Mirror Binding: codex/Book09_PhoenixArchive/ceremonies/ceremony_mirror_binding.md
+              - Convergence Anchor: codex/Book09_PhoenixArchive/ceremonies/ceremony_convergence_anchor.md
+              - Divergence Scan: codex/Book09_PhoenixArchive/ceremonies/ceremony_divergence_scan.md
+              - Knot Binding: codex/Book09_PhoenixArchive/ceremonies/ceremony_knot_binding.md
+              - Apex Knot Crowning: codex/Book09_PhoenixArchive/ceremonies/ceremony_apex_knot_crowning.md
       
       - Book 10 — Quantumonix Protocols:
           - Overview: codex/Book10_QuantumonixProtocols/INDEX.md
@@ -80,11 +117,20 @@ nav:
   - Diagrams:
       - ASCII: diagrams/ascii/
       - Visual: diagrams/visual/
+      - Animations:
+          - Plate Dynamics: diagrams/animations/plate_dynamics.md
+          - After Effects Integration: diagrams/animations/after_effects.md
+          - Interactive Visualizations: diagrams/animations/interactive.md
   
   - Engines:
       - Phoenix Engine: engines/phoenix.md
       - QPE: engines/qpe.md
       - Dragon Node: engines/dragon.md
+      - Phoenix Engine (Detailed): engines/phoenix_detailed.md
+      - QPE (Detailed): engines/qpe_detailed.md
+      - Dragon Node (Detailed): engines/dragon_detailed.md
+      - Multi-Engine Architecture: engines/architecture.md
+      - Integration Guide: engines/integration_guide.md
   
   - Development:
       - Repo Structure: dev/repo.md

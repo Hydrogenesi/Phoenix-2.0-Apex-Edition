@@ -38,7 +38,7 @@ The primary execution engine for Phoenix 2.0 operators.
 - **Performance**: O(n log n) for most operations
 - **Scalability**: Tested up to 10⁶ element systems
 
-[**Phoenix Engine Documentation →**](phoenix.md)
+[**Phoenix Engine Documentation →**](phoenix.md) · [Detailed Spec](phoenix_detailed.md)
 
 ---
 
@@ -60,7 +60,7 @@ Execution engine for quantum aspects of the framework.
 - **Performance**: Scales with qubit count
 - **Features**: Hybrid classical-quantum execution
 
-[**QPE Documentation →**](qpe.md)
+[**QPE Documentation →**](qpe.md) · [Detailed Spec](qpe_detailed.md)
 
 ---
 
@@ -83,7 +83,7 @@ Engine for coordinating Phoenix operations across distributed systems.
 - **Storage**: Distributed database compatible
 - **Reliability**: Byzantine fault tolerant consensus
 
-[**Dragon Node Documentation →**](dragon.md)
+[**Dragon Node Documentation →**](dragon.md) · [Detailed Spec](dragon_detailed.md)
 
 ---
 
@@ -111,7 +111,7 @@ Engine for coordinating Phoenix operations across distributed systems.
 → Deploy [Dragon Node](dragon.md)
 
 ### "I want multi-engine orchestration"
-→ Combine all three engines
+→ Combine all three engines via [Multi-Engine Architecture](architecture.md)
 
 ---
 
@@ -149,9 +149,11 @@ Use Dragon Node:
 ## 🔗 Related Documentation
 
 - [Codex: Book 05 - Operators Atlas](../codex/Book05_OperatorsAtlas/) - Complete operator reference
+- [Codex: Book 05 Operators Reference](../codex/Book05_OperatorsAtlas/operators/index.md) - 18 operator dashboard
 - [Codex: Book 10 - Quantumonix Protocols](../codex/Book10_QuantumonixProtocols/) - Quantum theory
 - [Codex: Book 12 - Phoenix Odyssey](../codex/Book12_PhoenixOdyssey/) - Implementation guide
 - [Development: Multi-Node Setup](../dev/multinode.md) - Deployment guide
+- [Integration Guide](integration_guide.md) - Phoenix-QPE-Dragon pipeline
 
 ---
 
