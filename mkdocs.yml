@@ -1,0 +1,110 @@
+site_name: Phoenix 2.0 Apex Edition
+site_description: Phoenix 2.0 Apex Edition - Recursive Harmonic Operator Framework Documentation
+site_url: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
+repo_url: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
+repo_name: Phoenix-2.0-Apex-Edition
+
+theme:
+  name: material
+  palette:
+    primary: red
+    accent: orange
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  
+  - Codex:
+      - Origin Set: codex/origin/index.md
+      - Plates: codex/plates/index.md
+      
+      - Book 01 — Genesis & Origin:
+          - Overview: codex/Book01_Genesis_Origin/INDEX.md
+          - Chapters: codex/Book01_Genesis_Origin/chapters/
+      
+      - Book 02 — Cosmic Correspondence:
+          - Overview: codex/Book02_Cosmic_Correspondence/INDEX.md
+          - Chapters: codex/Book02_Cosmic_Correspondence/chapters/
+      
+      - Book 03 — Hydrogenesi Theory:
+          - Overview: codex/Book03_Hydrogenesi_Theory/INDEX.md
+          - Chapters: codex/Book03_Hydrogenesi_Theory/chapters/
+      
+      - Book 04 — Fractal Continuum:
+          - Overview: codex/Book04_FractalContinuum/INDEX.md
+          - Chapters: codex/Book04_FractalContinuum/chapters/
+      
+      - Book 05 — Operators Atlas:
+          - Overview: codex/Book05_OperatorsAtlas/INDEX.md
+          - Chapters: codex/Book05_OperatorsAtlas/chapters/
+      
+      - Book 06 — Flame and Ghost:
+          - Overview: codex/Book06_FlameAndGhost/INDEX.md
+          - Chapters: codex/Book06_FlameAndGhost/chapters/
+      
+      - Book 07 — Trial of Immortality:
+          - Overview: codex/Book07_TrialOfImmortality/INDEX.md
+          - Chapters: codex/Book07_TrialOfImmortality/chapters/
+      
+      - Book 08 — Song of Flame:
+          - Overview: codex/Book08_SongOfFlame/INDEX.md
+          - Chapters: codex/Book08_SongOfFlame/chapters/
+      
+      - Book 09 — Phoenix Archive:
+          - Overview: codex/Book09_PhoenixArchive/INDEX.md
+          - Chapters: codex/Book09_PhoenixArchive/chapters/
+      
+      - Book 10 — Quantumonix Protocols:
+          - Overview: codex/Book10_QuantumonixProtocols/INDEX.md
+          - Chapters: codex/Book10_QuantumonixProtocols/chapters/
+      
+      - Book 11 — Operators Testament:
+          - Overview: codex/Book11_OperatorsTestament/INDEX.md
+          - Chapters: codex/Book11_OperatorsTestament/chapters/
+      
+      - Book 12 — Phoenix Odyssey:
+          - Overview: codex/Book12_PhoenixOdyssey/INDEX.md
+          - Chapters: codex/Book12_PhoenixOdyssey/chapters/
+      
+      - Book 13 — Apex Edition:
+          - Overview: codex/Book13_ApexEdition/INDEX.md
+          - Chapters: codex/Book13_ApexEdition/chapters/
+  
+  - Diagrams:
+      - ASCII: diagrams/ascii/
+      - Visual: diagrams/visual/
+  
+  - Engines:
+      - Phoenix Engine: engines/phoenix.md
+      - QPE: engines/qpe.md
+      - Dragon Node: engines/dragon.md
+  
+  - Development:
+      - Repo Structure: dev/repo.md
+      - Multi‑Node Setup: dev/multinode.md
+      - Release Notes: dev/release-notes.md
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
