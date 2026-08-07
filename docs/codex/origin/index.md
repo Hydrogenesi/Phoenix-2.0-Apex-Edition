@@ -1,5 +1,7 @@
 # 🌱 Origin: The Foundational Trilogy
 
+HOME > CODEX > ORIGIN
+
 ```
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
@@ -244,3 +246,9 @@ From void to form, from isolation to connection, from chaos to convergence.
 
 *Last Updated: August 7, 2026*  
 *Foundation Section - The Bedrock of Phoenix 2.0 Apex Edition*
+
+
+## Navigation
+- [Back to Home](../index.md)
+- [Open Navigation Hub](../NAVIGATE.md)
+- [Terminology Index](../TERMINOLOGY.md)

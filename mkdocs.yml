@@ -20,76 +20,30 @@ theme:
 
 nav:
   - Home: index.md
-  
+  - Publication:
+      - Style Guide: STYLE.md
+      - Terminology Index: TERMINOLOGY.md
+      - Visual Hierarchy: VISUAL_HIERARCHY.md
+      - Navigation Standards: NAVIGATION.md
+      - Master Navigation Hub: NAVIGATE.md
   - Codex:
+      - Codex Landing: codex/index.md
       - Origin Set: codex/origin/index.md
       - Plates: codex/plates/index.md
-      
-      - Book 01 — Genesis & Origin:
-          - Overview: codex/Book01_Genesis_Origin/INDEX.md
-          - Chapters: codex/Book01_Genesis_Origin/chapters/
-      
-      - Book 02 — Cosmic Correspondence:
-          - Overview: codex/Book02_Cosmic_Correspondence/INDEX.md
-          - Chapters: codex/Book02_Cosmic_Correspondence/chapters/
-      
-      - Book 03 — Hydrogenesi Theory:
-          - Overview: codex/Book03_Hydrogenesi_Theory/INDEX.md
-          - Chapters: codex/Book03_Hydrogenesi_Theory/chapters/
-      
-      - Book 04 — Fractal Continuum:
-          - Overview: codex/Book04_FractalContinuum/INDEX.md
-          - Chapters: codex/Book04_FractalContinuum/chapters/
-      
-      - Book 05 — Operators Atlas:
-          - Overview: codex/Book05_OperatorsAtlas/INDEX.md
-          - Chapters: codex/Book05_OperatorsAtlas/chapters/
-      
-      - Book 06 — Flame and Ghost:
-          - Overview: codex/Book06_FlameAndGhost/INDEX.md
-          - Chapters: codex/Book06_FlameAndGhost/chapters/
-      
-      - Book 07 — Trial of Immortality:
-          - Overview: codex/Book07_TrialOfImmortality/INDEX.md
-          - Chapters: codex/Book07_TrialOfImmortality/chapters/
-      
-      - Book 08 — Song of Flame:
-          - Overview: codex/Book08_SongOfFlame/INDEX.md
-          - Chapters: codex/Book08_SongOfFlame/chapters/
-      
-      - Book 09 — Phoenix Archive:
-          - Overview: codex/Book09_PhoenixArchive/INDEX.md
-          - Chapters: codex/Book09_PhoenixArchive/chapters/
-      
-      - Book 10 — Quantumonix Protocols:
-          - Overview: codex/Book10_QuantumonixProtocols/INDEX.md
-          - Chapters: codex/Book10_QuantumonixProtocols/chapters/
-      
-      - Book 11 — Operators Testament:
-          - Overview: codex/Book11_OperatorsTestament/INDEX.md
-          - Chapters: codex/Book11_OperatorsTestament/chapters/
-      
-      - Book 12 — Phoenix Odyssey:
-          - Overview: codex/Book12_PhoenixOdyssey/INDEX.md
-          - Chapters: codex/Book12_PhoenixOdyssey/chapters/
-      
-      - Book 13 — Apex Edition:
-          - Overview: codex/Book13_ApexEdition/INDEX.md
-          - Chapters: codex/Book13_ApexEdition/chapters/
-  
   - Diagrams:
-      - ASCII: diagrams/ascii/
-      - Visual: diagrams/visual/
-  
+      - Diagrams Landing: diagrams/index.md
+      - Diagram Index: diagrams/DIAGRAM_INDEX.md
+      - Embedding Standards: diagrams/EMBEDDING.md
+      - Gallery: diagrams/GALLERY.md
   - Engines:
+      - Engines Landing: engines/index.md
+      - Standards: engines/STANDARDS.md
       - Phoenix Engine: engines/phoenix.md
       - QPE: engines/qpe.md
       - Dragon Node: engines/dragon.md
-  
-  - Development:
-      - Repo Structure: dev/repo.md
-      - Multi‑Node Setup: dev/multinode.md
-      - Release Notes: dev/release-notes.md
+      - Multi-Engine Architecture: engines/architecture.md
+      - Cross References: engines/CROSS_REFERENCES.md
+      - Tutorial: engines/TUTORIAL.md
 
 markdown_extensions:
   - pymdownx.superfences

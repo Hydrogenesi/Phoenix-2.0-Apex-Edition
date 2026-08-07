@@ -1,5 +1,7 @@
 # 📚 Codex
 
+HOME > CODEX
+
 ```
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
@@ -137,3 +139,9 @@ The **Foundational Trilogy** establishing first principles:
 *All paths converge to apex.*
 
 </div>
+
+
+## Navigation
+- [Back to Home](../index.md)
+- [Open Navigation Hub](../NAVIGATE.md)
+- [Terminology Index](../TERMINOLOGY.md)
