@@ -132,8 +132,8 @@ def law_recursion(pattern: Pattern, max_depth: int = 64) -> None:
     Raises LawViolation when recursion depth exceeds *max_depth*.
     Apply ⊗ (Harmonic) to stabilize before continuing deep recursion.
     """
-    warning_depth = max_depth // 2
-    if warning_depth <= pattern.depth <= max_depth:
+    warning_depth = math.ceil(max_depth / 2)
+    if warning_depth <= pattern.depth < max_depth:
         warnings.warn(
             f"Recursion depth {pattern.depth} reached warning threshold "
             f"({warning_depth}/{max_depth}). Consider applying ⊗ stabilization.",
@@ -389,9 +389,17 @@ class PhoenixIgnition:
         self._log: List[str | Callable[[], str]] = []
 
     def _emit(self, msg: str | Callable[[], str]) -> None:
+        if callable(msg):
+            if self.verbose:
+                rendered = msg()
+                self._log.append(rendered)
+                print(rendered)
+            else:
+                self._log.append(msg)
+            return
         self._log.append(msg)
         if self.verbose:
-            print(msg() if callable(msg) else msg)
+            print(msg)
 
     # ------------------------------------------------------------------
     # Ritual: Basic Phoenix Sequence
@@ -530,7 +538,13 @@ class PhoenixIgnition:
 
     def get_log(self) -> List[str]:
         """Return a copy of the internal operation log."""
-        return [entry() if callable(entry) else entry for entry in self._log]
+        materialized: List[str] = []
+        for index, entry in enumerate(self._log):
+            if callable(entry):
+                entry = entry()
+                self._log[index] = entry
+            materialized.append(entry)
+        return materialized
 
 
 # --------------------------------------------------------

@@ -52,6 +52,21 @@ def test_emit_callable_is_lazy_until_log_materialization():
     assert calls["count"] == 1
 
 
+def test_emit_callable_evaluated_once_in_verbose_mode(capsys):
+    engine = ignition.PhoenixIgnition(verbose=True)
+    calls = {"count": 0}
+
+    def build_message():
+        calls["count"] += 1
+        return "verbose-message"
+
+    engine._emit(build_message)
+    assert calls["count"] == 1
+    assert engine.get_log() == ["verbose-message"]
+    assert calls["count"] == 1
+    assert "verbose-message" in capsys.readouterr().out
+
+
 def test_density_from_pressure_supports_vectorized_inputs():
     model = StellarModel()
     pressures = np.array([1.0e5, 2.5e8, 9.0e10])
