@@ -75,6 +75,14 @@ class StellarModel:
         self.r_start = r_start
         self.r_end = r_end
         self.cache_physics = cache_physics
+        if cache_physics:
+            self._energy_fn = lru_cache(maxsize=4096)(total_energy)
+            self._pressure_fn = lru_cache(maxsize=4096)(total_pressure)
+            self._opacity_fn = lru_cache(maxsize=4096)(total_opacity)
+        else:
+            self._energy_fn = total_energy
+            self._pressure_fn = total_pressure
+            self._opacity_fn = total_opacity
         self.solution = None
 
     # ------------------------------------------------------------------
@@ -105,35 +113,14 @@ class StellarModel:
             return float(rho)
         return rho
 
-    @staticmethod
-    @lru_cache(maxsize=4096)
-    def _cached_total_energy(rho: float, T: float) -> float:
-        return total_energy(rho, T)
-
-    @staticmethod
-    @lru_cache(maxsize=4096)
-    def _cached_total_pressure(rho: float, T: float) -> float:
-        return total_pressure(rho, T)
-
-    @staticmethod
-    @lru_cache(maxsize=4096)
-    def _cached_total_opacity(rho: float, T: float) -> float:
-        return total_opacity(rho, T)
-
     def _compute_total_energy(self, rho: float, T: float) -> float:
-        if self.cache_physics:
-            return self._cached_total_energy(rho, T)
-        return total_energy(rho, T)
+        return self._energy_fn(rho, T)
 
     def _compute_total_pressure(self, rho: float, T: float) -> float:
-        if self.cache_physics:
-            return self._cached_total_pressure(rho, T)
-        return total_pressure(rho, T)
+        return self._pressure_fn(rho, T)
 
     def _compute_total_opacity(self, rho: float, T: float) -> float:
-        if self.cache_physics:
-            return self._cached_total_opacity(rho, T)
-        return total_opacity(rho, T)
+        return self._opacity_fn(rho, T)
 
     # ------------------------------------------------------------------
     # ODE right-hand side

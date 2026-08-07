@@ -67,23 +67,19 @@ def test_density_from_pressure_supports_vectorized_inputs():
 
 
 def test_stellar_model_cache_toggle_controls_lru_usage():
-    StellarModel._cached_total_energy.cache_clear()
-
     cached_model = StellarModel(cache_physics=True)
+    cached_model._energy_fn.cache_clear()
     cached_model._compute_total_energy(1.0e5, 2.0e7)
     cached_model._compute_total_energy(1.0e5, 2.0e7)
 
-    cached_info = StellarModel._cached_total_energy.cache_info()
+    cached_info = cached_model._energy_fn.cache_info()
     assert cached_info.hits >= 1
 
-    StellarModel._cached_total_energy.cache_clear()
     uncached_model = StellarModel(cache_physics=False)
     uncached_model._compute_total_energy(1.0e5, 2.0e7)
     uncached_model._compute_total_energy(1.0e5, 2.0e7)
 
-    uncached_info = StellarModel._cached_total_energy.cache_info()
-    assert uncached_info.hits == 0
-    assert uncached_info.misses == 0
+    assert not hasattr(uncached_model._energy_fn, "cache_info")
 
 
 def test_total_pressure_supports_optional_cache_for_scalar_inputs():

@@ -40,11 +40,14 @@ from typing import Any, Callable, List, Optional, Tuple
 
 
 _hash_cache = {}
+_HASH_CACHE_MAXSIZE = 4096
 
 
 def fast_hash(state):
     key = repr(state)
     if key not in _hash_cache:
+        if len(_hash_cache) >= _HASH_CACHE_MAXSIZE:
+            _hash_cache.pop(next(iter(_hash_cache)))
         _hash_cache[key] = hashlib.sha1(key.encode()).hexdigest()[:8]
     return _hash_cache[key]
 
@@ -130,7 +133,7 @@ def law_recursion(pattern: Pattern, max_depth: int = 64) -> None:
     Apply ⊗ (Harmonic) to stabilize before continuing deep recursion.
     """
     warning_depth = max_depth // 2
-    if pattern.depth == warning_depth:
+    if warning_depth <= pattern.depth <= max_depth:
         warnings.warn(
             f"Recursion depth {pattern.depth} reached warning threshold "
             f"({warning_depth}/{max_depth}). Consider applying ⊗ stabilization.",
