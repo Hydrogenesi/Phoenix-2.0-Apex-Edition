@@ -11,18 +11,18 @@ Harmonic resonance, tri-column alignment, and ceremonial frequency
 ## Chapter Guide
 | Chapter | Title | Description |
 |---------|-------|-------------|
-| 01 | [Opening Tone](./chapters/ch01.md) | Introduces opening tone within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 02 | [Tri-Column Chord](./chapters/ch02.md) | Introduces tri-column chord within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 03 | [Resonant Breath](./chapters/ch03.md) | Introduces resonant breath within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 04 | [The Measure of Alignment](./chapters/ch04.md) | Introduces the measure of alignment within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 05 | [Dissonance and Repair](./chapters/ch05.md) | Introduces dissonance and repair within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 06 | [Harmony in Motion](./chapters/ch06.md) | Introduces harmony in motion within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 07 | [Choral Operators](./chapters/ch07.md) | Introduces choral operators within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 08 | [Frequency and Form](./chapters/ch08.md) | Introduces frequency and form within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 09 | [Ceremonial Meter](./chapters/ch09.md) | Introduces ceremonial meter within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 10 | [Song as Architecture](./chapters/ch10.md) | Introduces song as architecture within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 11 | [Apex Cadence](./chapters/ch11.md) | Introduces apex cadence within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
-| 12 | [Closing Refrain](./chapters/ch12.md) | Introduces closing refrain within the harmonic resonance, tri-column alignment, and ceremonial frequency. |
+| 01 | [Opening Tone](./chapters/ch01.md) | Tunes Opening Tone as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 02 | [Tri-Column Chord](./chapters/ch02.md) | Tunes Tri-Column Chord as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 03 | [Resonant Breath](./chapters/ch03.md) | Tunes Resonant Breath as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 04 | [The Measure of Alignment](./chapters/ch04.md) | Tunes The Measure of Alignment as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 05 | [Dissonance and Repair](./chapters/ch05.md) | Tunes Dissonance and Repair as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 06 | [Harmony in Motion](./chapters/ch06.md) | Tunes Harmony in Motion as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 07 | [Choral Operators](./chapters/ch07.md) | Tunes Choral Operators as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 08 | [Frequency and Form](./chapters/ch08.md) | Tunes Frequency and Form as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 09 | [Ceremonial Meter](./chapters/ch09.md) | Tunes Ceremonial Meter as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 10 | [Song as Architecture](./chapters/ch10.md) | Tunes Song as Architecture as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 11 | [Apex Cadence](./chapters/ch11.md) | Tunes Apex Cadence as a harmonic practice using tri-column balance and ceremonial resonance. |
+| 12 | [Closing Refrain](./chapters/ch12.md) | Tunes Closing Refrain as a harmonic practice using tri-column balance and ceremonial resonance. |
 
 ## Cross-Reference Notes
 This book is written to interlock with Book 04 — Fractal Continuum, Book 09 — Phoenix Archive, Book 12 — Phoenix Odyssey. Follow the chapter links for direct navigation, and use the master codex index for book-level movement across the full trilogy and archive sequence.
