@@ -1,0 +1,15 @@
+{
+  "book_number": 11,
+  "title": "Operators Testament",
+  "theme": "Advanced operator composition and emergent cross-pillar behavior",
+  "chapters": 25,
+  "content_status": "complete",
+  "related_concepts": [
+    "composition",
+    "emergence",
+    "cross-pillar interactions",
+    "operator sequences",
+    "stability"
+  ],
+  "reading_order": "Read after Book05 and Book10 to extend operator fluency into advanced composition."
+}

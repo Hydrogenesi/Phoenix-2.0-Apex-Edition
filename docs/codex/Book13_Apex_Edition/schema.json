@@ -1,0 +1,15 @@
+{
+  "book_number": 13,
+  "title": "Apex Edition",
+  "theme": "Meta-framework architecture, endurance, and future development",
+  "chapters": 10,
+  "content_status": "complete",
+  "related_concepts": [
+    "architecture",
+    "invariants",
+    "endurance",
+    "future development",
+    "meta framework"
+  ],
+  "reading_order": "Read last as the meta-framework reflection on why the whole architecture endures."
+}

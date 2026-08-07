@@ -1,0 +1,15 @@
+{
+  "book_number": 10,
+  "title": "Quantumonix Protocols",
+  "theme": "Quantum recursion and first-level quantum geometry within the framework",
+  "chapters": 16,
+  "content_status": "complete",
+  "related_concepts": [
+    "FLQG",
+    "quantum recursion",
+    "observer coupling",
+    "substrate geometry",
+    "quantum operators"
+  ],
+  "reading_order": "Read after Book02 and Book03 for the quantum expression of the larger cosmological model."
+}

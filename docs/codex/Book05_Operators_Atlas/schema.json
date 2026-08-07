@@ -1,0 +1,15 @@
+{
+  "book_number": 5,
+  "title": "Operators Atlas",
+  "theme": "Canonical reference for all Phoenix, Hydrogenesi, and Third operators",
+  "chapters": 20,
+  "content_status": "complete",
+  "related_concepts": [
+    "operator notation",
+    "invocation",
+    "composition",
+    "properties",
+    "examples"
+  ],
+  "reading_order": "Read after Books01-04 for formal operational fluency."
+}

@@ -1,0 +1,15 @@
+{
+  "book_number": 3,
+  "title": "Hydrogenesi Theory",
+  "theme": "Complete cosmological framework for stellar, binary, and galactic recursion",
+  "chapters": 35,
+  "content_status": "complete",
+  "related_concepts": [
+    "stellar structure",
+    "binary mechanics",
+    "AGN convergence",
+    "apex paths",
+    "structural preservation"
+  ],
+  "reading_order": "Read after Books01-02 as the full theoretical architecture of the framework."
+}

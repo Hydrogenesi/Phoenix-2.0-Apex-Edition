@@ -1,0 +1,15 @@
+{
+  "book_number": 12,
+  "title": "Phoenix Odyssey",
+  "theme": "Narrative implementation guide and practical pathway for practitioners",
+  "chapters": 30,
+  "content_status": "complete",
+  "related_concepts": [
+    "practice",
+    "implementation",
+    "case studies",
+    "guidance",
+    "application"
+  ],
+  "reading_order": "Read after core theory and operator books as the practitioner-facing implementation guide."
+}

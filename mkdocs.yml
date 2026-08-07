@@ -1,0 +1,26 @@
+site_name: Phoenix 2.0 Apex Edition Codex
+site_description: Complete Phoenix-Hydrogenesi-Apex documentation corpus
+nav:
+  - Home: index.md
+  - Codex:
+      - Master Index: codex/INDEX.md
+      - Book 01 - Genesis & Origin: codex/Book01_Genesis_Origin/INDEX.md
+      - Book 02 - The Cosmic Correspondence: codex/Book02_The_Cosmic_Correspondence/INDEX.md
+      - Book 03 - Hydrogenesi Theory: codex/Book03_Hydrogenesi_Theory/INDEX.md
+      - Book 04 - Fractal Continuum: codex/Book04_Fractal_Continuum/INDEX.md
+      - Book 05 - Operators Atlas: codex/Book05_Operators_Atlas/INDEX.md
+      - Book 06 - Flame and Ghost: codex/Book06_Flame_and_Ghost/INDEX.md
+      - Book 07 - Trial of Immortality: codex/Book07_Trial_of_Immortality/INDEX.md
+      - Book 08 - Song of Flame: codex/Book08_Song_of_Flame/INDEX.md
+      - Book 09 - Phoenix Archive: codex/Book09_Phoenix_Archive/INDEX.md
+      - Book 10 - Quantumonix Protocols: codex/Book10_Quantumonix_Protocols/INDEX.md
+      - Book 11 - Operators Testament: codex/Book11_Operators_Testament/INDEX.md
+      - Book 12 - Phoenix Odyssey: codex/Book12_Phoenix_Odyssey/INDEX.md
+      - Book 13 - Apex Edition: codex/Book13_Apex_Edition/INDEX.md
+  - Architecture:
+      - Principles: architecture/principles.md
+  - Operators:
+      - Hydrogenesi Operators: operators/hydrogenesi_operators_table.md
+      - Triad Operator Table: operators/triad-operator-table.md
+  - Integration:
+      - v2.1 Overview: v2.1/README.md

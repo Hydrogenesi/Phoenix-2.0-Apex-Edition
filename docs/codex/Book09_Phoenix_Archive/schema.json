@@ -1,0 +1,15 @@
+{
+  "book_number": 9,
+  "title": "Phoenix Archive",
+  "theme": "Historical, ceremonial, and symbolic records of Phoenix practice",
+  "chapters": 40,
+  "content_status": "complete",
+  "related_concepts": [
+    "archive",
+    "ritual mechanics",
+    "ceremony",
+    "sigils",
+    "historical sequences"
+  ],
+  "reading_order": "Read after Book08 when ritual language and operator structure are already familiar."
+}
