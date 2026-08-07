@@ -45,10 +45,13 @@ _HASH_CACHE_MAXSIZE = 4096
 
 def fast_hash(state):
     key = repr(state)
-    if key not in _hash_cache:
-        if len(_hash_cache) >= _HASH_CACHE_MAXSIZE:
-            _hash_cache.pop(next(iter(_hash_cache)))
-        _hash_cache[key] = hashlib.sha1(key.encode()).hexdigest()[:8]
+    if key in _hash_cache:
+        value = _hash_cache.pop(key)
+        _hash_cache[key] = value
+        return value
+    if len(_hash_cache) >= _HASH_CACHE_MAXSIZE:
+        _hash_cache.pop(next(iter(_hash_cache)))
+    _hash_cache[key] = hashlib.sha1(key.encode()).hexdigest()[:8]
     return _hash_cache[key]
 
 
@@ -537,7 +540,7 @@ class PhoenixIgnition:
         return apex
 
     def get_log(self) -> List[str]:
-        """Return a copy of the internal operation log."""
+        """Materialize deferred log entries and return the internal operation log."""
         materialized: List[str] = []
         for index, entry in enumerate(self._log):
             if callable(entry):
