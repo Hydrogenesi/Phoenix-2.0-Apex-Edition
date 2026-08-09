@@ -1,5 +1,5 @@
 site_name: Phoenix 2.0 Apex Edition
-site_description: Phoenix 2.0 Apex Edition - Recursive Harmonic Operator Framework Documentation
+site_description: Phoenix 2.0 Apex Edition - Tri-linked documentation knowledge graph
 site_url: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
 repo_url: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
 repo_name: Phoenix-2.0-Apex-Edition
@@ -19,77 +19,44 @@ theme:
     - content.code.copy
 
 nav:
+  # Legacy docs outside this nav remain available in-repo but are intentionally de-linked.
   - Home: index.md
-  
   - Codex:
+      - Codex Home: codex/index.md
       - Origin Set: codex/origin/index.md
       - Plates: codex/plates/index.md
-      
-      - Book 01 — Genesis & Origin:
-          - Overview: codex/Book01_Genesis_Origin/INDEX.md
-          - Chapters: codex/Book01_Genesis_Origin/chapters/
-      
-      - Book 02 — Cosmic Correspondence:
-          - Overview: codex/Book02_Cosmic_Correspondence/INDEX.md
-          - Chapters: codex/Book02_Cosmic_Correspondence/chapters/
-      
-      - Book 03 — Hydrogenesi Theory:
-          - Overview: codex/Book03_Hydrogenesi_Theory/INDEX.md
-          - Chapters: codex/Book03_Hydrogenesi_Theory/chapters/
-      
-      - Book 04 — Fractal Continuum:
-          - Overview: codex/Book04_FractalContinuum/INDEX.md
-          - Chapters: codex/Book04_FractalContinuum/chapters/
-      
-      - Book 05 — Operators Atlas:
-          - Overview: codex/Book05_OperatorsAtlas/INDEX.md
-          - Chapters: codex/Book05_OperatorsAtlas/chapters/
-      
-      - Book 06 — Flame and Ghost:
-          - Overview: codex/Book06_FlameAndGhost/INDEX.md
-          - Chapters: codex/Book06_FlameAndGhost/chapters/
-      
-      - Book 07 — Trial of Immortality:
-          - Overview: codex/Book07_TrialOfImmortality/INDEX.md
-          - Chapters: codex/Book07_TrialOfImmortality/chapters/
-      
-      - Book 08 — Song of Flame:
-          - Overview: codex/Book08_SongOfFlame/INDEX.md
-          - Chapters: codex/Book08_SongOfFlame/chapters/
-      
-      - Book 09 — Phoenix Archive:
-          - Overview: codex/Book09_PhoenixArchive/INDEX.md
-          - Chapters: codex/Book09_PhoenixArchive/chapters/
-      
-      - Book 10 — Quantumonix Protocols:
-          - Overview: codex/Book10_QuantumonixProtocols/INDEX.md
-          - Chapters: codex/Book10_QuantumonixProtocols/chapters/
-      
-      - Book 11 — Operators Testament:
-          - Overview: codex/Book11_OperatorsTestament/INDEX.md
-          - Chapters: codex/Book11_OperatorsTestament/chapters/
-      
-      - Book 12 — Phoenix Odyssey:
-          - Overview: codex/Book12_PhoenixOdyssey/INDEX.md
-          - Chapters: codex/Book12_PhoenixOdyssey/chapters/
-      
-      - Book 13 — Apex Edition:
-          - Overview: codex/Book13_ApexEdition/INDEX.md
-          - Chapters: codex/Book13_ApexEdition/chapters/
-  
-  - Diagrams:
-      - ASCII: diagrams/ascii/
-      - Visual: diagrams/visual/
-  
+      - Operators Atlas:
+          - Operator Dashboard: codex/Book05_OperatorsAtlas/operators/index.md
+          - Phoenix Operators: codex/Book05_OperatorsAtlas/operators/phoenix_operators.md
+          - Hydrogenesi Operators: codex/Book05_OperatorsAtlas/operators/hydrogenesi_operators.md
+          - Knot Operators: codex/Book05_OperatorsAtlas/operators/knot_operators.md
+          - Composition Matrix: codex/Book05_OperatorsAtlas/operators/composition_matrix.md
+      - Ceremony Atlas:
+          - Ceremony Index: codex/Book09_PhoenixArchive/ceremonies/index.md
+          - By Purpose: codex/Book09_PhoenixArchive/ceremonies/ceremonies_by_purpose.md
+          - By Complexity: codex/Book09_PhoenixArchive/ceremonies/ceremonies_by_complexity.md
+          - Safety: codex/Book09_PhoenixArchive/ceremonies/ceremony_safety.md
+          - Sigils: codex/Book09_PhoenixArchive/ceremonies/sigils.md
+          - Gestures: codex/Book09_PhoenixArchive/ceremonies/gestures.md
+          - Harmonic Frequencies: codex/Book09_PhoenixArchive/ceremonies/harmonic_frequencies.md
+          - Verification Matrix: codex/Book09_PhoenixArchive/ceremonies/verification_matrix.md
   - Engines:
-      - Phoenix Engine: engines/phoenix.md
-      - QPE: engines/qpe.md
-      - Dragon Node: engines/dragon.md
-  
-  - Development:
-      - Repo Structure: dev/repo.md
-      - Multi‑Node Setup: dev/multinode.md
-      - Release Notes: dev/release-notes.md
+      - Engines Home: engines/index.md
+      - Phoenix Engine: engines/phoenix_engine.md
+      - QPE Engine: engines/qpe_engine.md
+      - Dragon Engine: engines/dragon_engine.md
+      - Engine Comparison: engines/engine_comparison.md
+      - Architecture: engines/architecture.md
+      - Codex Architecture Map: engines/codex_architecture_map.md
+  - Diagrams:
+      - Diagrams Home: diagrams/index.md
+      - Animation Framework: diagrams/animations/index.md
+      - Operator Animation: diagrams/animations/operator_animation.md
+      - Convergence Animation: diagrams/animations/convergence_animation.md
+      - Ignition Animation: diagrams/animations/ignition_animation.md
+      - State Transition Animation: diagrams/animations/state_transition_animation.md
+      - Ceremony Flows: diagrams/ceremonies/ceremony_flows/index.md
+      - Timing Charts: diagrams/ceremonies/timing_charts/index.md
 
 markdown_extensions:
   - pymdownx.superfences
@@ -102,7 +69,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - minify
 
 extra:
   social:
