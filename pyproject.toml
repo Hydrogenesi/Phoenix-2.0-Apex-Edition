@@ -1,11 +1,23 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=65", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hydrogenesis"
+name = "phoenixengine-apex"
 version = "0.1.0"
-description = "Your project description"
-requires-python = ">=3.13"
+description = "PhoenixEngine Apex Edition Monorepo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+au = "au.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
 [tool.setuptools.packages.find]
-include = ["Hydrogenesi*"]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md", "*.json"]
