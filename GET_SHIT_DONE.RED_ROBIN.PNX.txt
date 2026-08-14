@@ -1,0 +1,13 @@
+RED ROBIN — CONTROL FILE
+
+LANES
+- RED ROBIN: workflow orchestration
+- MAG: Engine\Modules\MAG\ code only
+
+RULES
+- Do not paste prompt text into PowerShell
+- PowerShell gets commands only
+- Copilot windows get prompt files only
+
+BATON LOOP
+A -> B -> C -> D -> A

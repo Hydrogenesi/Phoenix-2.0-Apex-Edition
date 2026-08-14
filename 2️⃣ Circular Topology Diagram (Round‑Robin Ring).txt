@@ -1,0 +1,20 @@
+2️⃣ Circular Topology Diagram (Round‑Robin Ring)
+               ┌──────────────┐
+           ┌────▶│  Operator A   │────┐
+           │      └──────────────┘    │
+           │                           │
+ ┌─────────┴─────────┐         ┌──────┴─────────┐
+ │   Operator D       │◀──────▶│   Operator B    │
+ └─────────┬─────────┘         └─────────┬──────┘
+           │                           │
+           │      ┌──────────────┐     │
+           └────▶│  Operator C   │◀────┘
+                 └──────────────┘
+
+Interpretation:
+
+A → B → C → D → A
+
+Each node checks its slice + two boundaries.
+
+The ring ensures rolling correctness and self‑healing.

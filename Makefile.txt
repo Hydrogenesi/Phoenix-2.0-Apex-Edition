@@ -1,0 +1,19 @@
+PYTHON := python
+PIP := pip
+
+.PHONY: setup lint test build docs
+
+setup:
+    $(PIP) install -e .[dev]
+
+lint:
+    $(PYTHON) -m ruff src apps packages
+
+test:
+    $(PYTHON) -m pytest
+
+build:
+    $(PYTHON) -m build
+
+docs:
+    mkdocs build
