@@ -13,16 +13,16 @@ export class FluxRenderer {
   private start = performance.now();
   private running = false;
 
-  private uTime!: WebGLUniformLocation;
-  private uResolution!: WebGLUniformLocation;
-  private uThroughput!: WebGLUniformLocation;
-  private uPhase!: WebGLUniformLocation;
-  private uCoherence!: WebGLUniformLocation;
-  private uNoiseFloor!: WebGLUniformLocation;
-  private uAlert!: WebGLUniformLocation;
-  private uPaletteA!: WebGLUniformLocation;
-  private uPaletteB!: WebGLUniformLocation;
-  private uPaletteC!: WebGLUniformLocation;
+  private uTime:       WebGLUniformLocation | null = null;
+  private uResolution: WebGLUniformLocation | null = null;
+  private uThroughput: WebGLUniformLocation | null = null;
+  private uPhase:      WebGLUniformLocation | null = null;
+  private uCoherence:  WebGLUniformLocation | null = null;
+  private uNoiseFloor: WebGLUniformLocation | null = null;
+  private uAlert:      WebGLUniformLocation | null = null;
+  private uPaletteA:   WebGLUniformLocation | null = null;
+  private uPaletteB:   WebGLUniformLocation | null = null;
+  private uPaletteC:   WebGLUniformLocation | null = null;
 
   private state: FluxUniforms = {
     throughput: 0.4,
@@ -73,17 +73,16 @@ export class FluxRenderer {
 
     const t = (performance.now() - this.start) / 1000;
 
-    gl.uniform1f(this.uTime, t);
-    gl.uniform2f(this.uResolution, this.canvas.width, this.canvas.height);
-    gl.uniform1f(this.uThroughput, this.state.throughput);
-    gl.uniform1f(this.uPhase, this.state.phase);
-    gl.uniform1f(this.uCoherence, this.state.coherence);
-    gl.uniform1f(this.uNoiseFloor, this.state.noiseFloor);
-    gl.uniform1f(this.uAlert, this.state.alert);
-
-    gl.uniform3f(this.uPaletteA, 0.08, 0.23, 0.55);
-    gl.uniform3f(this.uPaletteB, 0.18, 0.74, 0.92);
-    gl.uniform3f(this.uPaletteC, 0.95, 0.36, 0.30);
+    if (this.uTime)       gl.uniform1f(this.uTime, t);
+    if (this.uResolution) gl.uniform2f(this.uResolution, this.canvas.width, this.canvas.height);
+    if (this.uThroughput) gl.uniform1f(this.uThroughput, this.state.throughput);
+    if (this.uPhase)      gl.uniform1f(this.uPhase, this.state.phase);
+    if (this.uCoherence)  gl.uniform1f(this.uCoherence, this.state.coherence);
+    if (this.uNoiseFloor) gl.uniform1f(this.uNoiseFloor, this.state.noiseFloor);
+    if (this.uAlert)      gl.uniform1f(this.uAlert, this.state.alert);
+    if (this.uPaletteA)   gl.uniform3f(this.uPaletteA, 0.08, 0.23, 0.55);
+    if (this.uPaletteB)   gl.uniform3f(this.uPaletteB, 0.18, 0.74, 0.92);
+    if (this.uPaletteC)   gl.uniform3f(this.uPaletteC, 0.95, 0.36, 0.30);
 
     gl.drawArrays(gl.TRIANGLES, 0, 3);
     requestAnimationFrame(this.frame);
@@ -101,22 +100,24 @@ export class FluxRenderer {
   private cacheUniforms(): void {
     const gl = this.gl;
     const p = this.program;
-    const get = (n: string) => {
+    const get = (n: string): WebGLUniformLocation | null => {
       const u = gl.getUniformLocation(p, n);
-      if (!u) throw new Error(`Missing uniform: ${n}`);
+      if (u === null) {
+        console.warn(`FluxRenderer: uniform "${n}" not found — it may have been optimised away.`);
+      }
       return u;
     };
 
-    this.uTime = get("u_time");
-    this.uResolution = get("u_resolution");
-    this.uThroughput = get("u_throughput");
-    this.uPhase = get("u_phase");
-    this.uCoherence = get("u_coherence");
-    this.uNoiseFloor = get("u_noiseFloor");
-    this.uAlert = get("u_alert");
-    this.uPaletteA = get("u_paletteA");
-    this.uPaletteB = get("u_paletteB");
-    this.uPaletteC = get("u_paletteC");
+    this.uTime        = get("u_time");
+    this.uResolution  = get("u_resolution");
+    this.uThroughput  = get("u_throughput");
+    this.uPhase       = get("u_phase");
+    this.uCoherence   = get("u_coherence");
+    this.uNoiseFloor  = get("u_noiseFloor");
+    this.uAlert       = get("u_alert");
+    this.uPaletteA    = get("u_paletteA");
+    this.uPaletteB    = get("u_paletteB");
+    this.uPaletteC    = get("u_paletteC");
   }
 
   private resize(): void {

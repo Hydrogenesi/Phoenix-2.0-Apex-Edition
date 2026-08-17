@@ -74,13 +74,35 @@ export function FluxView({
     rendererRef.current.setState(update);
   }, [fluxState]);
 
+  const fmt = (v: number | undefined) =>
+    v !== undefined ? v.toFixed(3) : "—";
+
   return (
-    <canvas
-      ref={canvasRef}
-      width={width}
-      height={height}
-      style={{ width: "100%", height: "auto", borderRadius: 8 }}
-      aria-label="Quantum flux animation"
-    />
+    <div className="flux-view">
+      <canvas
+        ref={canvasRef}
+        width={width}
+        height={height}
+        aria-label="Quantum flux animation"
+      />
+      <div className="flux-stats">
+        <div className="flux-stat">
+          <span className="flux-stat__label">throughput</span>
+          <span className="flux-stat__value">{fmt(fluxState?.throughput)}</span>
+        </div>
+        <div className="flux-stat">
+          <span className="flux-stat__label">phase</span>
+          <span className="flux-stat__value">{fmt(fluxState?.phase)}</span>
+        </div>
+        <div className="flux-stat">
+          <span className="flux-stat__label">coherence</span>
+          <span className="flux-stat__value">{fmt(fluxState?.coherence)}</span>
+        </div>
+        <div className="flux-stat">
+          <span className="flux-stat__label">noise floor</span>
+          <span className="flux-stat__value">{fmt(fluxState?.noise_floor)}</span>
+        </div>
+      </div>
+    </div>
   );
 }

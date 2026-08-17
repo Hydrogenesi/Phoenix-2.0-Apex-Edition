@@ -31,7 +31,6 @@ export function GraphCanvas({ layout, width = 800, height = 500 }: GraphCanvasPr
       ref={canvasRef}
       width={width}
       height={height}
-      style={{ width: "100%", height: "auto", borderRadius: 8 }}
       aria-label="Agent graph layout"
     />
   );

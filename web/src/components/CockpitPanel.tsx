@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import type { FluxStatePayload, AgentHealthPayload } from "../ws/protocol";
+import type { FluxStatePayload } from "../ws/protocol";
 import { GraphCanvas } from "./GraphCanvas";
 import { FluxView } from "./FluxView";
+import { Plate71View } from "./Plate71View";
 import type { GraphLayout } from "../viz/layoutRenderer";
 
 interface CockpitPanelProps {
@@ -23,7 +24,6 @@ export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPan
     coherence: 0.8,
     noise_floor: 0.12,
   });
-  const [health, setHealth] = useState<Record<string, AgentHealthPayload>>({});
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [sessionError, setSessionError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -34,7 +34,6 @@ export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPan
 
     async function bootstrap() {
       try {
-        // Establish session via HTTP handshake (no WebSocket backend available).
         const hsRes = await fetch(
           `/api/cockpit/handshake?run_id=${encodeURIComponent(runId)}`,
           { signal: ctrl.signal }
@@ -45,19 +44,12 @@ export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPan
           setSessionId(frame.payload.session_id);
         }
 
-        // Fetch initial layout and flux state over HTTP.
         const [layoutRes, fluxRes] = await Promise.all([
           fetch(`/api/graph/layout?run_id=${encodeURIComponent(runId)}`, { signal: ctrl.signal }),
           fetch(`/api/flux/state?run_id=${encodeURIComponent(runId)}`, { signal: ctrl.signal }),
         ]);
-        if (layoutRes.ok) {
-          const layoutData = (await layoutRes.json()) as GraphLayout;
-          setLayout(layoutData);
-        }
-        if (fluxRes.ok) {
-          const fluxData = (await fluxRes.json()) as FluxStatePayload;
-          setFluxState(fluxData);
-        }
+        if (layoutRes.ok) setLayout((await layoutRes.json()) as GraphLayout);
+        if (fluxRes.ok)   setFluxState((await fluxRes.json()) as FluxStatePayload);
       } catch (err) {
         if ((err as { name?: string }).name !== "AbortError") {
           setSessionError(err instanceof Error ? err.message : String(err));
@@ -73,62 +65,46 @@ export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPan
   }, [runId]);
 
   return (
-    <div style={{ padding: 16 }}>
-      <header style={{ marginBottom: 12 }}>
-        <h2 style={{ margin: 0 }}>PhoenixEngine Cockpit</h2>
-        <small style={{ color: "#888" }}>
-          run_id: <code>{runId}</code>
-          {sessionId && (
-            <>
-              {" · "}session: <code>{sessionId}</code>
-            </>
-          )}
+    <div className="cockpit">
+      {/* ── Header ────────────────────────────────────────────── */}
+      <div className="cockpit__header">
+        <h2 className="cockpit__title">🔥 PhoenixEngine Cockpit</h2>
+        <div className="cockpit__meta">
+          <span>run: <code>{runId}</code></span>
+          {sessionId && <span>session: <code>{sessionId}</code></span>}
           {sessionError && (
-            <span style={{ color: "#f88", marginLeft: 8 }}>⚠ {sessionError}</span>
+            <span className="badge badge--error">⚠ {sessionError}</span>
           )}
-        </small>
-      </header>
+        </div>
+      </div>
 
-      <section>
-        <h3>Agent Graph</h3>
+      {/* ── Agent Graph ───────────────────────────────────────── */}
+      <div className="panel">
+        <div className="panel__header">
+          <h3 className="panel__title">🕸 Agent Graph</h3>
+          <span className="panel__subtitle">tri-layer deterministic layout</span>
+        </div>
         <GraphCanvas layout={layout} />
-      </section>
+      </div>
 
-      <section style={{ marginTop: 24 }}>
-        <h3>Quantum Flux</h3>
+      {/* ── Quantum Flux ──────────────────────────────────────── */}
+      <div className="panel">
+        <div className="panel__header">
+          <h3 className="panel__title">⚡ Quantum Flux</h3>
+          <span className="panel__subtitle">WebGL2 shader · real-time</span>
+        </div>
         <FluxView fluxState={fluxState} />
-      </section>
+      </div>
 
-      {Object.keys(health).length > 0 && (
-        <section style={{ marginTop: 24 }}>
-          <h3>Agent Health</h3>
-          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-            <thead>
-              <tr>
-                {["Agent", "Status", "CPU", "Mem MB", "Queue", "Latency p95"].map((h) => (
-                  <th key={h} style={{ textAlign: "left", padding: "4px 8px", borderBottom: "1px solid #333" }}>
-                    {h}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {Object.values(health).map((a) => (
-                <tr key={a.agent_id}>
-                  <td style={{ padding: "4px 8px" }}>{a.agent_id}</td>
-                  <td style={{ padding: "4px 8px", color: a.status === "healthy" ? "#73f0a8" : a.status === "degraded" ? "#ffb74d" : "#ff5a5a" }}>
-                    {a.status}
-                  </td>
-                  <td style={{ padding: "4px 8px" }}>{(a.cpu * 100).toFixed(1)}%</td>
-                  <td style={{ padding: "4px 8px" }}>{a.mem_mb}</td>
-                  <td style={{ padding: "4px 8px" }}>{a.queue_depth}</td>
-                  <td style={{ padding: "4px 8px" }}>{a.latency_ms_p95} ms</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </section>
-      )}
+      {/* ── Plate71 ───────────────────────────────────────────── */}
+      <div className="panel">
+        <div className="panel__header">
+          <h3 className="panel__title">△ Plate 71</h3>
+          <span className="panel__subtitle">symbolic layer · plate71@1.0.0</span>
+        </div>
+        <Plate71View layout={layout as Record<string, unknown> | null} />
+      </div>
+
     </div>
   );
 }
