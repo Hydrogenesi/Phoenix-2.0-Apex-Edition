@@ -29,7 +29,7 @@ jobs:
         run: python -m pytest -v
 
   markdown-links:
-    name: Markdown link check (advisory)
+    name: Markdown link check (no new breaks)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,4 +39,4 @@ jobs:
           python-version: "3.11"
 
       - name: Check relative Markdown links
-        run: python3 tools/check_markdown_links.py || true
+        run: python3 tools/check_markdown_links.py

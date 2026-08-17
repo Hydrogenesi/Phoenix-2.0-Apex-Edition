@@ -162,9 +162,9 @@ while not apex(Ψ):
 
 - [Law of Emergence](./emergence.md) — Recursion produces emergent complexity
 - [Law of Conservation](./conservation.md) — Energy conserved across recursion
-- [Recursive Operator](../operators/recursive.md) — Embodies recursion
-- [Apex Operator](../operators/apex.md) — Terminates recursion
-- [Recursion Cycles](../rituals/recursion-cycles.md) — Ritual applications
+- [Recursive Operator](../../../Phoenix/operators/recursive.md) — Embodies recursion
+- [Apex Operator](../../../Phoenix/operators/apex.md) — Terminates recursion
+- [Recursion Cycles](../../../Phoenix/rituals/recursion-cycles.md) — Ritual applications
 
 ---
 

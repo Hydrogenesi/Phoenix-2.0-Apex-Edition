@@ -256,8 +256,8 @@ This means:
 
 - [V2.2 Cycle Map](./cycle-map.md) — The phase progression this diagram encodes
 - [V2.2 Apex-Seal](./apex-seal.md) — The seal that validates this geometry
-- [Triadic Knot Topology](../../Atlases/TriadicKnotTopology.md) — The underlying knot structure
-- [Triadic Knot Protocol](../triad/triadic-knot-protocol.md) — Protocol for triadic operations
+- [Triadic Knot Topology](../../../Atlases/TriadicKnotTopology.md) — The underlying knot structure
+- [Triadic Knot Protocol](../../triad/triadic-knot-protocol.md) — Protocol for triadic operations
 
 ---
 

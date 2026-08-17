@@ -228,9 +228,9 @@ Stability has minimal effect on well-behaved states.
 - [Apex Knot](./apex-knot.md) — Final stabilization
 
 ### Phoenix Operators
-- [Recursive Operator](../Phoenix/operators/recursive.md) — Source of deep perturbations
-- [Void Operator](../Phoenix/operators/void.md) — Source of oscillatory perturbations
-- [All Phoenix Operators](../Phoenix/operators/) — Potential perturbation sources
+- [Recursive Operator](../../Phoenix/operators/recursive.md) — Source of deep perturbations
+- [Void Operator](../../Phoenix/operators/void.md) — Source of oscillatory perturbations
+- [All Phoenix Operators](../../Phoenix/operators/) — Potential perturbation sources
 
 ### Governing Laws
 - [Law of Conservation](../Universal-Laws/substrate/conservation.md) — Energy preserved during damping

@@ -220,10 +220,10 @@ where λ < 1 is the contraction constant
 - [Stability Knot](./stability-knot.md) — Suppresses perturbations
 
 ### Phoenix Operators
-- [Genesis Operator](../Phoenix/operators/genesis.md) — Source of creation patterns
-- [Harmonic Operator](../Phoenix/operators/harmonic.md) — Source of stabilized patterns
-- [Recursive Operator](../Phoenix/operators/recursive.md) — Source of recursive patterns
-- [All Phoenix Operators](../Phoenix/operators/) — Complete transformation set
+- [Genesis Operator](../../Phoenix/operators/genesis.md) — Source of creation patterns
+- [Harmonic Operator](../../Phoenix/operators/harmonic.md) — Source of stabilized patterns
+- [Recursive Operator](../../Phoenix/operators/recursive.md) — Source of recursive patterns
+- [All Phoenix Operators](../../Phoenix/operators/) — Complete transformation set
 
 ### Governing Laws
 - [Law of Conservation](../Universal-Laws/substrate/conservation.md) — Energy preserved in binding
