@@ -764,6 +764,81 @@ Phoenix 2.0 Apex Edition can model:
 
 ---
 
+## 🛠 Developer Setup — Running Locally
+
+### Prerequisites
+
+- Python 3.13+
+- Node.js 20+ (for the frontend)
+
+### 1) Backend
+
+```bash
+# From the repo root
+cd Phoenix-2.0-Apex-Edition
+
+# Install test dependencies (no extra runtime deps required)
+pip install pytest
+
+# Run the backend HTTP server (default port 8000)
+python -m phoenixengine.app
+
+# Available endpoints:
+#   GET  /health
+#   GET  /api/graph/layout
+#   GET  /api/cockpit/handshake
+#   GET  /api/plate71/svg
+#   GET  /api/flux/state
+#   POST /api/operator/run
+
+# Or set a custom port:
+PORT=9000 python -m phoenixengine.app
+```
+
+### 2) Frontend
+
+```bash
+cd web
+npm install
+npm run dev        # http://localhost:5173
+
+# Routes:
+#   /         → Home (links to all views)
+#   /cockpit  → Full cockpit: WS + graph + flux
+#   /graph    → Standalone graph layout (fetches /api/graph/layout)
+#   /flux     → Standalone flux renderer (polls /api/flux/state)
+```
+
+The Vite dev server automatically proxies `/api/*` and `/health` to `http://localhost:8000`, so start the backend first.
+
+### 3) Run tests
+
+```bash
+cd Phoenix-2.0-Apex-Edition
+python -m pytest -v
+```
+
+### Architecture notes
+
+| Module | Path | Purpose |
+|--------|------|---------|
+| Graph layout engine | `phoenixengine/modules/graph_layout/engine.py` | Tri-layer deterministic layout |
+| Cockpit WS protocol | `phoenixengine/modules/cockpit_ws/protocol.py` | `phoenix.cockpit.v1` framing |
+| Plate71 SVG builder | `phoenixengine/modules/plate71/svg_builder.py` | Symbolic SVG overlay |
+| Flux fragment shader | `phoenixengine/modules/quantum_flux/shader/flux.frag.glsl` | WebGL2 real-time animation |
+| Operator pipeline | `phoenixengine/pipeline/operator_mode.py` | Orchestrates all 5 stages |
+| App entrypoint | `phoenixengine/app.py` | Stdlib HTTP server wiring all routes |
+| Frontend WS client | `web/src/ws/client.ts` | Auto-reconnecting cockpit WS |
+| Layout renderer | `web/src/viz/layoutRenderer.ts` | 2-D canvas graph painter |
+| Flux renderer | `web/src/viz/fluxRenderer.ts` | WebGL2 shader animation |
+
+> **Temporary stubs:** `phoenixengine/stubs.py` contains `StubCockpitServer`,
+> `StubFluxEngine`, and `StubDocsBuilder` that allow the full pipeline to run
+> in local dev without a real WebSocket server, flux compute engine, or docs
+> builder. Replace each stub with a full implementation as those modules mature.
+
+---
+
 ## 🤝 Contributing
 
 Contributions that maintain consistency with the Triadic architecture and universal laws are welcome. Please ensure:
