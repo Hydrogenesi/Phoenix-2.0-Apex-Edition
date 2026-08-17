@@ -250,10 +250,10 @@ where λ_C < 1/√2 (faster than single-corridor binding)
 - [Stability Knot](./stability-knot.md) — Perturbation suppression
 
 ### Phoenix Operators
-- [All Phoenix Operators](../Phoenix/operators/) — Transformation sources
+- [All Phoenix Operators](../../Phoenix/operators/) — Transformation sources
 
 ### Hydrogenesi Operators
-- [Hydrogenesi Operators](../Hydrogenesi/operators/README.md) — Structural preservation
+- [Hydrogenesi Operators](../../Hydrogenesi/operators/README.md) — Structural preservation
 
 ### Governing Laws
 - [Tri-Column Balance](../Universal-Laws/universal/tri-column-balance.md) — Left-center-right stability

@@ -118,8 +118,8 @@ Use proper energy tracking:
 
 - [Law of Symmetry](./symmetry.md) — Symmetry ensures conservation
 - [Law of Duality](./duality.md) — Creation/destruction duality maintains balance
-- [Genesis Operator](../operators/genesis.md) — Must draw from void potential
-- [Void Operator](../operators/void.md) — Returns energy to void
+- [Genesis Operator](../../../Phoenix/operators/genesis.md) — Must draw from void potential
+- [Void Operator](../../../Phoenix/operators/void.md) — Returns energy to void
 
 ---
 

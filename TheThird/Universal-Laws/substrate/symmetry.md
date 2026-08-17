@@ -132,9 +132,9 @@ where Ψ₁' ≠ Ψ₁ or Ψ₂' ≠ Ψ₂
 
 - [Law of Conservation](./conservation.md) — Symmetry preserves energy
 - [Law of Duality](./duality.md) — Duality is a form of symmetry
-- [Mirror Operator](../operators/mirror.md) — Embodies symmetry principle
-- [Genesis Operator](../operators/genesis.md) — Symmetric with Void
-- [Void Operator](../operators/void.md) — Symmetric with Genesis
+- [Mirror Operator](../../../Phoenix/operators/mirror.md) — Embodies symmetry principle
+- [Genesis Operator](../../../Phoenix/operators/genesis.md) — Symmetric with Void
+- [Void Operator](../../../Phoenix/operators/void.md) — Symmetric with Genesis
 
 ---
 

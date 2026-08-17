@@ -276,9 +276,9 @@ Fastest possible convergence for tri-arm topology.
 - [Stability Knot](./stability-knot.md) — Perturbation suppression
 
 ### Phoenix Operators
-- [Apex Operator](../Phoenix/operators/apex.md) — Phoenix's apex formation
-- [Convergence Operator](../Phoenix/operators/convergence.md) — Phoenix's unification
-- [All Phoenix Operators](../Phoenix/operators/) — Complete set
+- [Apex Operator](../../Phoenix/operators/apex.md) — Phoenix's apex formation
+- [Convergence Operator](../../Phoenix/operators/convergence.md) — Phoenix's unification
+- [All Phoenix Operators](../../Phoenix/operators/) — Complete set
 
 ### Governing Laws
 - [Tri-Column Balance](../Universal-Laws/universal/tri-column-balance.md) — Three-arm equilibrium

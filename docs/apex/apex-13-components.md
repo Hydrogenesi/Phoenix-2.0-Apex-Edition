@@ -387,7 +387,7 @@ Visualize(K₄)     [Component 13: Sigils]
 ## References
 
 - [Substrate Documentation](../substrate/README.md)
-- [Architecture Principles](./principles.md)
+- [Architecture Principles](../architecture/principles.md)
 - [Triadic Knot Protocol](../triad/triadic-knot-protocol.md)
 - [Phoenix Engine](../../Phoenix/README.md)
 - [Hydrogenesi Engine](../../Hydrogenesi/README.md)
