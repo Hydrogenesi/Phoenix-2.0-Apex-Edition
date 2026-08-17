@@ -16,10 +16,10 @@ Phoenix -> QPE -> Dragon Node
 ```
 
 ## Navigation
-- Previous: [Chapter NN-1](./chNN-1.md)
-- Next: [Chapter NN+1](./chNN+1.md)
-- Parent Book: [Book Overview](../INDEX.md)
-- Related: [Engine Architecture](../../engines/architecture.md)
+- Previous: `Chapter NN-1 path`
+- Next: `Chapter NN+1 path`
+- Parent Book: `Book INDEX path`
+- Related: `docs/engines/architecture.md`
 
 ---
 *Last updated: YYYY-MM-DD*

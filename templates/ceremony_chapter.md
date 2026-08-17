@@ -19,10 +19,10 @@ Safety and consistency constraints.
 Observable success criteria.
 
 ## Navigation
-- Previous: [Chapter NN-1](./chNN-1.md)
-- Next: [Chapter NN+1](./chNN+1.md)
-- Parent Book: [Book Overview](../INDEX.md)
-- Related: [Ceremony Diagrams](../../diagrams/ceremonies/)
+- Previous: `Chapter NN-1 path`
+- Next: `Chapter NN+1 path`
+- Parent Book: `Book INDEX path`
+- Related: `docs/diagrams/ceremonies/`
 
 ---
 *Last updated: YYYY-MM-DD*

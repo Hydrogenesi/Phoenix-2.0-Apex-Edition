@@ -250,5 +250,5 @@ From void to form, from isolation to connection, from chaos to convergence.
 
 ## Navigation
 - [Back to Home](../index.md)
-- [Open Navigation Hub](../NAVIGATE.md)
-- [Terminology Index](../TERMINOLOGY.md)
+- [Open Navigation Hub](../../NAVIGATE.md)
+- [Terminology Index](../../TERMINOLOGY.md)

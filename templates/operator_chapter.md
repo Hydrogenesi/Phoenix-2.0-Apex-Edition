@@ -17,10 +17,10 @@ result = apply_operator(state, "<symbol>")
 ```
 
 ## Navigation
-- Previous: [Chapter NN-1](./chNN-1.md)
-- Next: [Chapter NN+1](./chNN+1.md)
-- Parent Book: [Book Overview](../INDEX.md)
-- Related: [Engine Mapping](../../engines/CROSS_REFERENCES.md)
+- Previous: `Chapter NN-1 path`
+- Next: `Chapter NN+1 path`
+- Parent Book: `Book INDEX path`
+- Related: `docs/engines/CROSS_REFERENCES.md`
 
 ---
 *Last updated: YYYY-MM-DD*
