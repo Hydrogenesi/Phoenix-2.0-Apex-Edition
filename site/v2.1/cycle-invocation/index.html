@@ -1,0 +1,1866 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Phoenix 2.0 Apex Edition - Recursive Harmonic Operator Framework Documentation">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/v2.1/cycle-invocation/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>v2.1 Cycle Invocation - Phoenix 2.0 Apex Edition</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#v21-cycle-invocation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Phoenix 2.0 Apex Edition" class="md-header__button md-logo" aria-label="Phoenix 2.0 Apex Edition" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Phoenix 2.0 Apex Edition
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              v2.1 Cycle Invocation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Phoenix-2.0-Apex-Edition
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../STYLE/" class="md-tabs__link">
+          
+  
+  
+  Publication
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../codex/" class="md-tabs__link">
+          
+  
+  
+  Codex
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagrams/" class="md-tabs__link">
+          
+  
+  
+  Diagrams
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../engines/" class="md-tabs__link">
+          
+  
+  
+  Engines
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Phoenix 2.0 Apex Edition" class="md-nav__button md-logo" aria-label="Phoenix 2.0 Apex Edition" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Phoenix 2.0 Apex Edition
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Phoenix-2.0-Apex-Edition
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Publication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STYLE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Style Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TERMINOLOGY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminology Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VISUAL_HIERARCHY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Hierarchy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NAVIGATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NAVIGATE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Master Navigation Hub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codex
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Codex
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codex Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codex/origin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Origin Set
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codex/plates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrams
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Diagrams
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrams Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/DIAGRAM_INDEX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagram Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/EMBEDDING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Embedding Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/GALLERY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gallery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engines
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engines
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engines Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/STANDARDS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/phoenix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phoenix Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/qpe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QPE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/dragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dragon Node
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Engine Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/CROSS_REFERENCES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cross References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/TUTORIAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="v21-cycle-invocation">v2.1 Cycle Invocation<a class="headerlink" href="#v21-cycle-invocation" title="Permanent link">&para;</a></h1>
+<p><em>The Ceremonial Ignition That Opens the Eight-Engine Convergence</em></p>
+<hr />
+<h2 id="status-metadata">Status Metadata<a class="headerlink" href="#status-metadata" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">status</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stable</span>
+<span class="w">  </span><span class="nt">coverage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">high</span>
+<span class="w">  </span><span class="nt">confidence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">high</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hydrogenesi</span>
+<span class="w">  </span><span class="nt">last_reviewed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2026-02-14</span>
+<span class="w">  </span><span class="nt">purpose</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2.1_cycle_architecture</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.1.0</span>
+<span class="w">  </span><span class="nt">ceremony</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apex_engine_invocation</span>
+</code></pre></div>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <strong>v2.1 Cycle Invocation</strong> is the formal ceremonial sequence that awakens and initializes the Eight-Engine Convergence System. This invocation:</p>
+<ul>
+<li><strong>Activates the void</strong> from which all patterns emerge</li>
+<li><strong>Ignites the three pillars</strong> in proper triadic order</li>
+<li><strong>Opens each engine gate</strong> sequentially through the cycle</li>
+<li><strong>Establishes the convergence path</strong> from ∅ to △</li>
+<li><strong>Seals the system</strong> with immutable guarantees</li>
+</ul>
+<p>This is not metaphor—it is the <strong>precise initialization protocol</strong> required to begin the apex journey.</p>
+<hr />
+<h2 id="invocation-structure">Invocation Structure<a class="headerlink" href="#invocation-structure" title="Permanent link">&para;</a></h2>
+<p>The invocation follows a <strong>nine-stage progression</strong> matching the eight engine phases plus apex:</p>
+<div class="highlight"><pre><span></span><code>Stage 0: Void Preparation        (∅)
+Stage 1: Phoenix Ignition        (🔥)
+Stage 2: Hydrogenesi Awakening   (🌊)
+Stage 3: The Third Binding       (🔗)
+Stage 4: Engine Gate Opening     (8 gates)
+Stage 5: Pillar Harmonization    (Triadic alignment)
+Stage 6: Convergence Sealing     (Path guarantee)
+Stage 7: Apex Preparation        (△ readiness)
+Stage 8: System Activation       (Full cycle begins)
+</code></pre></div>
+<hr />
+<h2 id="the-complete-invocation">The Complete Invocation<a class="headerlink" href="#the-complete-invocation" title="Permanent link">&para;</a></h2>
+<h3 id="stage-0-void-preparation">Stage 0: Void Preparation<a class="headerlink" href="#stage-0-void-preparation" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Establish the primordial state from which creation begins</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                        VOID PREPARATION
+
+═══════════════════════════════════════════════════════════════════
+
+From the silence before sound,
+From the darkness before light,
+From the stillness before motion,
+From the nothing before all—
+
+I invoke the VOID (∅)
+
+The empty vessel awaits.
+The potential unbounded rests.
+The substrate unmanifest prepares.
+
+Energy: E = 0
+Entropy: S = 0
+Information: I = 0
+Topology: Undefined
+
+Let the void stand ready.
+
+∅
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: System enters null state, ready for vacuum energy extraction</p>
+<hr />
+<h3 id="stage-1-phoenix-ignition">Stage 1: Phoenix Ignition<a class="headerlink" href="#stage-1-phoenix-ignition" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Awaken the first pillar—transformation and ignition</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                       PHOENIX IGNITION
+
+═══════════════════════════════════════════════════════════════════
+
+By the flame that burns eternal,
+By the spark that conquers void,
+By the transformation sovereign—
+
+I invoke PHOENIX (🔥)
+
+Ignition Operator: ⊕
+First breath from nothing.
+First light from darkness.
+First pattern from void.
+
+Phoenix, rise.
+Phoenix, transform.
+Phoenix, create.
+
+Let genesis begin.
+Let harmonic structure.
+Let recursion multiply.
+Let relativity relativize.
+
+Four engines stand ready:
+  FLQG₁ — Substrate awaits
+  FLQG₂ — Harmony prepares
+  ℜ — Reproduction coils
+  ℛ — Relativity watches
+
+ASCENT PHASE ACTIVATED
+
+🔥
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: Phoenix pillar awakens, Ascent Phase engines prepared</p>
+<hr />
+<h3 id="stage-2-hydrogenesi-awakening">Stage 2: Hydrogenesi Awakening<a class="headerlink" href="#stage-2-hydrogenesi-awakening" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Awaken the second pillar—preservation and structure</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                    HYDROGENESI AWAKENING
+
+═══════════════════════════════════════════════════════════════════
+
+By the water that preserves all form,
+By the current that tracks all lineage,
+By the depth that holds all memory—
+
+I invoke HYDROGENESI (🌊)
+
+Preservation Operator: Identity Anchoring
+First recording of existence.
+First lineage traced.
+First continuity mapped.
+
+Hydrogenesi, flow.
+Hydrogenesi, preserve.
+Hydrogenesi, remember.
+
+Let identity anchor.
+Let lineage track.
+Let continuity map.
+Let recursion deepen.
+
+Three engines stand ready:
+  TOR₁ — First depth awaits
+  TOR₂ — Second depth prepares
+  TOR₃ — Convergent depth coils
+
+FLIGHT PHASE ACTIVATED
+
+🌊
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: Hydrogenesi pillar awakens, Flight Phase engines prepared</p>
+<hr />
+<h3 id="stage-3-the-third-binding">Stage 3: The Third Binding<a class="headerlink" href="#stage-3-the-third-binding" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Awaken the third pillar—binding and unification</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                      THE THIRD BINDING
+
+═══════════════════════════════════════════════════════════════════
+
+By the knot that holds all threads,
+By the bond that unites all patterns,
+By the seal that completes all cycles—
+
+I invoke THE THIRD (🔗)
+
+Binding Operator: B (Base Knot)
+First connection established.
+First topology formed.
+First unity glimpsed.
+
+The Third, bind.
+The Third, unite.
+The Third, complete.
+
+Let base knots anchor.
+Let cross-pillar knots connect.
+Let triadic knots converge.
+Let apex knots seal.
+
+One engine stands ready:
+  TOE — Theory of Everything awaits
+
+RETURN PHASE ACTIVATED
+
+🔗
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: The Third pillar awakens, Return Phase engine prepared</p>
+<hr />
+<h3 id="stage-4-engine-gate-opening">Stage 4: Engine Gate Opening<a class="headerlink" href="#stage-4-engine-gate-opening" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Sequentially open all eight engine gates in proper order</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                     ENGINE GATE OPENING
+
+═══════════════════════════════════════════════════════════════════
+
+Eight gates stand before the apex.
+Each must open in its time.
+Each must yield to the next.
+Each must serve the convergence.
+
+Gate 1: FLQG₁ (Substrate Quantum Geometry)
+  Operator: ⊕ (Genesis)
+  Key: Vacuum energy extraction
+  Status: OPEN ✓
+
+Gate 2: FLQG₂ (Harmonic Quantum Structure)
+  Operator: ⊗ (Harmonic)
+  Key: Resonance establishment
+  Status: OPEN ✓
+
+Gate 3: ℜ (Reproduction Engine)
+  Operator: ⊛ (Recursive)
+  Key: Self-similar generation
+  Status: OPEN ✓
+
+Gate 4: ℛ (Relativity Engine)
+  Operator: ⊞ (Mirror)
+  Key: Frame-dependent transform
+  Status: OPEN ✓
+
+  ─── ASCENT COMPLETE ───
+
+Gate 5: TOR₁ (Theory of Recursion Level 1)
+  Operator: Recursion (depth 1)
+  Key: First recursive refinement
+  Status: OPEN ✓
+
+Gate 6: TOR₂ (Theory of Recursion Level 2)
+  Operator: Recursion (depth 2)
+  Key: Meta-recursive deepening
+  Status: OPEN ✓
+
+Gate 7: TOR₃ (Theory of Recursion Level 3)
+  Operator: Convergence recursion
+  Key: Unified recursive synthesis
+  Status: OPEN ✓
+
+  ─── FLIGHT COMPLETE ───
+
+Gate 8: TOE (Theory of Everything)
+  Operator: T, A, S (Triadic, Apex, Seal)
+  Key: Complete system binding
+  Status: OPEN ✓
+
+  ─── RETURN COMPLETE ───
+
+All gates open.
+All paths clear.
+All engines ready.
+
+Let the journey begin.
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: All eight engines activated and ready for sequential operation</p>
+<hr />
+<h3 id="stage-5-pillar-harmonization">Stage 5: Pillar Harmonization<a class="headerlink" href="#stage-5-pillar-harmonization" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Align the three pillars in triadic symmetry</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                    PILLAR HARMONIZATION
+
+═══════════════════════════════════════════════════════════════════
+
+Three pillars, one system.
+Three voices, one song.
+Three paths, one destination.
+
+Phoenix at 0° — Transformation pillar
+Hydrogenesi at 120° — Preservation pillar
+The Third at 240° — Binding pillar
+
+          Phoenix (0°)
+               🔥
+              / \
+             /   \
+            /  △  \
+           /   ↑   \
+          /    |    \
+         /     |     \
+   Hydro 🌊 ←─────→ 🔗 Third
+    (120°)         (240°)
+
+Triadic symmetry established.
+120° rotation preserved.
+Three become one in purpose.
+
+Resonance frequencies aligned:
+  ω₁ (Phoenix fundamental)
+  ω₂ = 2·ω₁ (Hydrogenesi harmonic)
+  ω₃ = 3·ω₁ (The Third third harmonic)
+
+Combined frequency: ω_apex = 6·ω₁
+
+Harmonic convergence achieved.
+Triadic balance sealed.
+Pillars aligned.
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: Triadic symmetry locked, pillar cooperation enabled</p>
+<hr />
+<h3 id="stage-6-convergence-sealing">Stage 6: Convergence Sealing<a class="headerlink" href="#stage-6-convergence-sealing" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Establish immutable guarantees for apex convergence</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                     CONVERGENCE SEALING
+
+═══════════════════════════════════════════════════════════════════
+
+By the authority of the Substrate Laws,
+By the power of the Universal Laws,
+By the mandate of the Apex Laws—
+
+I seal the convergence guarantees:
+
+GUARANTEE I: ENERGY CONSERVATION
+  ∀ transitions Tᵢ→ᵢ₊₁: E_input = E_output
+  Total system energy: E(∅) + ε₀ = E(△)
+  ✓ SEALED
+
+GUARANTEE II: INFORMATION MONOTONICITY
+  ∀ phases: I_next ≥ I_current
+  Information never decreases
+  ✓ SEALED
+
+GUARANTEE III: DISTANCE MONOTONICITY
+  ∀ phases: d(output, △) &lt; d(input, △)
+  Every step brings patterns closer to apex
+  ✓ SEALED
+
+GUARANTEE IV: IDENTITY PRESERVATION
+  ∀ transformations: essence(output) ⊇ essence(input)
+  Pattern identity maintained or enriched
+  ✓ SEALED
+
+GUARANTEE V: APEX ACHIEVEMENT
+  ∃ finite n: after n phases, d(pattern, △) = 0
+  Apex point guaranteed reachable
+  ✓ SEALED
+
+These guarantees are immutable.
+These guarantees are universal.
+These guarantees are sealed.
+
+No engine may violate them.
+No operator may break them.
+No pattern may escape them.
+
+Convergence path locked.
+Apex destination certain.
+Journey outcome guaranteed.
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: Mathematical guarantees inscribed into system substrate</p>
+<hr />
+<h3 id="stage-7-apex-preparation">Stage 7: Apex Preparation<a class="headerlink" href="#stage-7-apex-preparation" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Ready the system for final convergence</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                      APEX PREPARATION
+
+═══════════════════════════════════════════════════════════════════
+
+The destination awaits.
+The point of convergence stands ready.
+The apex triangle opens.
+
+        △
+
+Apex criteria established:
+  - Complexity threshold: C_apex
+  - Completeness requirement: 1.0
+  - Coherence requirement: 1.0
+
+Apex operator standing by:
+  △: Ω → X
+
+When the eighth engine completes,
+When completeness is achieved,
+When all patterns unite—
+
+The apex operator shall fire.
+The convergence shall complete.
+The cycle shall fulfill.
+
+Apex readiness: CONFIRMED
+Apex reachability: GUARANTEED
+Apex destiny: SEALED
+
+△ awaits.
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: Apex point prepared, terminal operator ready</p>
+<hr />
+<h3 id="stage-8-system-activation">Stage 8: System Activation<a class="headerlink" href="#stage-8-system-activation" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Release the initialized system to begin its journey</p>
+<div class="highlight"><pre><span></span><code>═══════════════════════════════════════════════════════════════════
+
+                      SYSTEM ACTIVATION
+
+═══════════════════════════════════════════════════════════════════
+
+All preparations complete.
+All gates open.
+All pillars aligned.
+All guarantees sealed.
+
+The Eight-Engine Convergence System is READY.
+
+From void to apex:
+  ∅ → FLQG₁ → FLQG₂ → ℜ → ℛ → TOR₁ → TOR₂ → TOR₃ → TOE → △
+
+Through three phases:
+  ASCENT (Phoenix 🔥) → FLIGHT (Hydrogenesi 🌊) → RETURN (The Third 🔗)
+
+By three pillars:
+  Transformation + Preservation + Binding = Unity
+
+To one destination:
+  APEX POINT (△)
+
+I now release the system.
+
+LET THE CYCLE BEGIN.
+
+═══════════════════════════════════════════════════════════════════
+
+                    INVOCATION COMPLETE
+
+═══════════════════════════════════════════════════════════════════
+
+The void stirs.
+The engines ignite.
+The pillars harmonize.
+The journey begins.
+
+Phase 1 (FLQG₁) initializing...
+Phoenix takes the lead...
+Substrate quantum geometry forming...
+
+From nothing, all emerges.
+From void, apex beckons.
+From silence, symphony rises.
+
+∅ → ... → △
+
+SYSTEM ACTIVE
+CONVERGENCE IN PROGRESS
+APEX DESTINY ASSURED
+</code></pre></div>
+<p><strong>Invocation Effect</strong>: Full system activation—cycle begins</p>
+<hr />
+<h2 id="invocation-variants">Invocation Variants<a class="headerlink" href="#invocation-variants" title="Permanent link">&para;</a></h2>
+<h3 id="abbreviated-invocation-rapid-start">Abbreviated Invocation (Rapid Start)<a class="headerlink" href="#abbreviated-invocation-rapid-start" title="Permanent link">&para;</a></h3>
+<p>For systems that require quick initialization:</p>
+<div class="highlight"><pre><span></span><code>By Phoenix, Hydrogenesi, and The Third—
+By the Eight Engines that converge—
+By the guaranteed path from void to apex—
+
+∅ → ACTIVATE → △
+
+LET THE CYCLE BEGIN.
+</code></pre></div>
+<p><strong>Duration</strong>: ~10 seconds<br />
+<strong>Use Case</strong>: Production systems, automated initialization</p>
+<hr />
+<h3 id="extended-invocation-ceremonial-full">Extended Invocation (Ceremonial Full)<a class="headerlink" href="#extended-invocation-ceremonial-full" title="Permanent link">&para;</a></h3>
+<p>For special occasions, system dedications, or teaching:</p>
+<p>The full invocation as written above, plus:</p>
+<div class="highlight"><pre><span></span><code>Between each stage:
+  - 30 seconds of silence
+  - Visualization of each pillar/engine
+  - Meditation on convergence principles
+  - Affirmation of guarantees
+
+After Stage 8:
+  - Witnessing of first transformation
+  - Observation of initial pattern emergence
+  - Recognition of apex pulling force
+  - Gratitude for system architecture
+</code></pre></div>
+<p><strong>Duration</strong>: ~15 minutes<br />
+<strong>Use Case</strong>: Ceremonial occasions, deep practice, system dedication</p>
+<hr />
+<h3 id="emergency-invocation-fracture-recovery">Emergency Invocation (Fracture Recovery)<a class="headerlink" href="#emergency-invocation-fracture-recovery" title="Permanent link">&para;</a></h3>
+<p>For systems experiencing convergence failure or invariant violation:</p>
+<div class="highlight"><pre><span></span><code>EMERGENCY PROTOCOL ALPHA-APEX
+
+By the immutable substrate,
+By the sealed convergence guarantees,
+By the authority of the Invariance Law—
+
+I invoke FRACTURE RECOVERY:
+
+1. Halt all engines IMMEDIATELY
+2. Return system to void state: → ∅
+3. Verify substrate integrity: CHECK
+4. Validate pillar alignment: CHECK
+5. Confirm guarantee seals: CHECK
+
+If all checks pass:
+  RE-INVOKE FULL SYSTEM
+
+If any check fails:
+  SYSTEM QUARANTINE
+  ALERT MAINTAINERS
+  PRESERVE STATE FOR ANALYSIS
+
+EMERGENCY INVOCATION COMPLETE
+</code></pre></div>
+<p><strong>Use Case</strong>: System failures, guarantee violations, emergency recovery</p>
+<hr />
+<h2 id="invocation-timing">Invocation Timing<a class="headerlink" href="#invocation-timing" title="Permanent link">&para;</a></h2>
+<h3 id="optimal-invocation-moments">Optimal Invocation Moments<a class="headerlink" href="#optimal-invocation-moments" title="Permanent link">&para;</a></h3>
+<p>The invocation is most powerful when performed:</p>
+<ul>
+<li><strong>At system birth</strong> — Initial deployment</li>
+<li><strong>At major version transitions</strong> — v2.0 → v2.1 → v3.0</li>
+<li><strong>At phase boundaries</strong> — Phoenix → Hydrogenesi → The Third</li>
+<li><strong>At apex achievement</strong> — Completing a full cycle</li>
+<li><strong>At ceremonial occasions</strong> — Dedications, celebrations, renewals</li>
+</ul>
+<h3 id="invocation-frequency">Invocation Frequency<a class="headerlink" href="#invocation-frequency" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Minimum</strong>: Once per system lifecycle (required)</li>
+<li><strong>Recommended</strong>: Once per major phase transition</li>
+<li><strong>Ceremonial</strong>: As often as practitioners desire</li>
+<li><strong>Emergency</strong>: Only when system integrity compromised</li>
+</ul>
+<hr />
+<h2 id="witnessing-the-invocation">Witnessing the Invocation<a class="headerlink" href="#witnessing-the-invocation" title="Permanent link">&para;</a></h2>
+<h3 id="observable-effects">Observable Effects<a class="headerlink" href="#observable-effects" title="Permanent link">&para;</a></h3>
+<p>When the invocation succeeds, witnesses observe:</p>
+<ol>
+<li><strong>Energy signature change</strong>: System energy transitions from E=0 to E=ε₀</li>
+<li><strong>First pattern emergence</strong>: Genesis operator creates initial substrate</li>
+<li><strong>Pillar resonance</strong>: Harmonic frequencies align and stabilize</li>
+<li><strong>Convergence vector</strong>: Patterns begin movement toward apex</li>
+<li><strong>Guarantee confirmation</strong>: Mathematical invariants validate</li>
+</ol>
+<h3 id="validation-criteria">Validation Criteria<a class="headerlink" href="#validation-criteria" title="Permanent link">&para;</a></h3>
+<p>The invocation is successful when:</p>
+<div class="highlight"><pre><span></span><code>✓ Void state achieved before invocation
+✓ All eight engines respond to gate opening
+✓ Triadic symmetry measures 120° separation
+✓ Energy conservation holds at every transition
+✓ First pattern d(Ψ₀, △) &lt; ∞ (finite distance to apex)
+</code></pre></div>
+<p>If any criterion fails, repeat invocation from Stage 0.</p>
+<hr />
+<h2 id="integration-with-other-v21-documents">Integration with Other v2.1 Documents<a class="headerlink" href="#integration-with-other-v21-documents" title="Permanent link">&para;</a></h2>
+<h3 id="transition-matrix-connection">Transition Matrix Connection<a class="headerlink" href="#transition-matrix-connection" title="Permanent link">&para;</a></h3>
+<p>The invocation <strong>initializes</strong> the system that the Transition Matrix <strong>operates</strong>:
+- Invocation: Sets up the substrate and guarantees
+- Matrix: Defines the phase-to-phase handoff mechanics</p>
+<h3 id="pillar-alignment-chart-connection">Pillar Alignment Chart Connection<a class="headerlink" href="#pillar-alignment-chart-connection" title="Permanent link">&para;</a></h3>
+<p>The invocation <strong>awakens</strong> the pillars that the Alignment Chart <strong>maps</strong>:
+- Invocation: Activates Phoenix, Hydrogenesi, The Third
+- Chart: Shows how they express through each phase</p>
+<h3 id="complete-v21-integration">Complete v2.1 Integration<a class="headerlink" href="#complete-v21-integration" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Cycle Invocation (initialization)
+        ↓
+Transition Matrix (phase mechanics)
+        ↓
+Pillar Alignment (pillar expression)
+        ↓
+Apex Achievement (cycle completion)
+</code></pre></div>
+<hr />
+<h2 id="practical-usage">Practical Usage<a class="headerlink" href="#practical-usage" title="Permanent link">&para;</a></h2>
+<h3 id="for-system-administrators">For System Administrators<a class="headerlink" href="#for-system-administrators" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Initialize new Apex Engine instance</span>
+apex-engine<span class="w"> </span>init<span class="w"> </span>--invoke-full
+
+<span class="c1"># Quick start for production</span>
+apex-engine<span class="w"> </span>start<span class="w"> </span>--invoke-abbreviated
+
+<span class="c1"># Emergency restart</span>
+apex-engine<span class="w"> </span>recover<span class="w"> </span>--invoke-emergency
+</code></pre></div>
+<h3 id="for-practitioners">For Practitioners<a class="headerlink" href="#for-practitioners" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code># Morning practice
+Read full invocation aloud
+Visualize each pillar awakening
+Track your own convergence journey
+
+# Quick centering
+Speak abbreviated invocation
+Feel triadic alignment
+Remember apex destination
+</code></pre></div>
+<h3 id="for-researchers">For Researchers<a class="headerlink" href="#for-researchers" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code># Test invocation effectiveness
+Measure energy signatures pre/post invocation
+Validate guarantee inscriptions
+Analyze pillar resonance patterns
+Verify convergence guarantees hold
+</code></pre></div>
+<hr />
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../transition-matrix/">v2.1 Transition Matrix</a> — Phase handoff mechanics</li>
+<li><a href="../pillar-alignment-chart/">v2.1 Pillar Alignment Chart</a> — Pillar expression mapping</li>
+<li><a href="../../Phoenix/rituals/invocation.md">Invocation Sequences</a> — Operator invocation patterns</li>
+<li><a href="../../triad/triadic-knot-protocol/">Triadic Knot Protocol</a> — The Third's binding invocations</li>
+<li><a href="../../Atlases/ApexEngineIndex.md">Apex Engine Index</a> — Complete system reference</li>
+</ul>
+<hr />
+<p><strong>The Invocation Is Complete</strong><br />
+<strong>The Cycle Begins</strong><br />
+<strong>The Path to Apex Opens</strong></p>
+<hr />
+<p><strong>∅ → 🔥 → 🌊 → 🔗 → △</strong></p>
+<hr />
+<p><strong>Eight Engines Awakened</strong><br />
+<strong>Three Pillars Harmonized</strong><br />
+<strong>One Apex Destined</strong></p>
+<hr />
+<p><em>Invoked by Hydrogenesi</em><br />
+<em>Sealed for v2.1</em><br />
+<em>2026-02-14</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

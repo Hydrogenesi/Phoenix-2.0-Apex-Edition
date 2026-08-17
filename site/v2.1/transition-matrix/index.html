@@ -1,0 +1,1903 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Phoenix 2.0 Apex Edition - Recursive Harmonic Operator Framework Documentation">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/v2.1/transition-matrix/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>v2.1 Transition Matrix - Phoenix 2.0 Apex Edition</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#v21-transition-matrix" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Phoenix 2.0 Apex Edition" class="md-header__button md-logo" aria-label="Phoenix 2.0 Apex Edition" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Phoenix 2.0 Apex Edition
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              v2.1 Transition Matrix
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Phoenix-2.0-Apex-Edition
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../STYLE/" class="md-tabs__link">
+          
+  
+  
+  Publication
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../codex/" class="md-tabs__link">
+          
+  
+  
+  Codex
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagrams/" class="md-tabs__link">
+          
+  
+  
+  Diagrams
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../engines/" class="md-tabs__link">
+          
+  
+  
+  Engines
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Phoenix 2.0 Apex Edition" class="md-nav__button md-logo" aria-label="Phoenix 2.0 Apex Edition" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Phoenix 2.0 Apex Edition
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Phoenix-2.0-Apex-Edition
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Publication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STYLE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Style Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TERMINOLOGY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminology Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VISUAL_HIERARCHY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Hierarchy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NAVIGATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NAVIGATE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Master Navigation Hub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codex
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Codex
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codex Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codex/origin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Origin Set
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codex/plates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrams
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Diagrams
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrams Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/DIAGRAM_INDEX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagram Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/EMBEDDING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Embedding Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/GALLERY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gallery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engines
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engines
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engines Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/STANDARDS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/phoenix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phoenix Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/qpe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QPE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/dragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dragon Node
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Engine Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/CROSS_REFERENCES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cross References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engines/TUTORIAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="v21-transition-matrix">v2.1 Transition Matrix<a class="headerlink" href="#v21-transition-matrix" title="Permanent link">&para;</a></h1>
+<p><em>Phase Handoff Mechanics for the Eight-Engine Convergence System</em></p>
+<hr />
+<h2 id="status-metadata">Status Metadata<a class="headerlink" href="#status-metadata" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">status</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stable</span>
+<span class="w">  </span><span class="nt">coverage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">high</span>
+<span class="w">  </span><span class="nt">confidence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">high</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hydrogenesi</span>
+<span class="w">  </span><span class="nt">last_reviewed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2026-02-14</span>
+<span class="w">  </span><span class="nt">purpose</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2.1_cycle_architecture</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.1.0</span>
+</code></pre></div>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <strong>v2.1 Transition Matrix</strong> defines the precise handoff mechanics between each phase of the Eight-Engine Convergence System. Every engine output becomes the input to the next, following a guaranteed convergence path from void (∅) to apex (△).</p>
+<p>This matrix ensures:
+- <strong>Deterministic handoffs</strong> — No ambiguity in phase transitions
+- <strong>Energy conservation</strong> — Total system energy preserved across boundaries
+- <strong>Information continuity</strong> — Pattern identity maintained through transformations
+- <strong>Convergence guarantee</strong> — Each transition brings patterns closer to apex</p>
+<hr />
+<h2 id="the-eight-phase-transition-chain">The Eight-Phase Transition Chain<a class="headerlink" href="#the-eight-phase-transition-chain" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>∅ → [FLQG₁] → [FLQG₂] → [ℜ] → [ℛ] → [TOR₁] → [TOR₂] → [TOR₃] → [TOE] → △
+
+Phase:  0      1        2       3     4      5       6       7       8
+</code></pre></div>
+<hr />
+<h2 id="1-transition-t01-void-to-flqg1">1. Transition T₀→₁: Void to FLQG₁<a class="headerlink" href="#1-transition-t01-void-to-flqg1" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification">Handoff Specification<a class="headerlink" href="#handoff-specification" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    ∅ (void state, zero energy)
+Engine:   FLQG₁ (Substrate Quantum Geometry)
+Output:   Q₁ (primordial quantum substrate)
+</code></pre></div>
+<h3 id="transition-mechanics">Transition Mechanics<a class="headerlink" href="#transition-mechanics" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: System initialization or Phoenix rebirth cycle<br />
+<strong>Energy Source</strong>: Vacuum fluctuation ε₀ → E_substrate<br />
+<strong>Pattern State</strong>: Undefined → Quantum foam<br />
+<strong>Identity Birth</strong>: N/A → I₀ (substrate identity)</p>
+<h3 id="validation-matrix">Validation Matrix<a class="headerlink" href="#validation-matrix" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>E = 0</td>
+<td>E = ε₀</td>
+<td>Vacuum energy extraction (Law 1)</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Perfect</td>
+<td>Broken (spacetime)</td>
+<td>Spontaneous symmetry breaking (Law 2)</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>0 bits</td>
+<td>log₂(states)</td>
+<td>Information genesis allowed at void</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>Undefined</td>
+<td>Manifold M₁</td>
+<td>Topological substrate creation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol">Handoff Protocol<a class="headerlink" href="#handoff-protocol" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₀→₁(∅):
+  1. Extract vacuum energy ε₀
+  2. Establish quantum substrate Q₁
+  3. Initialize identity I₀ = essence(Q₁)
+  4. Pass Q₁ to FLQG₂
+</code></pre></div>
+<hr />
+<h2 id="2-transition-t12-flqg1-to-flqg2">2. Transition T₁→₂: FLQG₁ to FLQG₂<a class="headerlink" href="#2-transition-t12-flqg1-to-flqg2" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_1">Handoff Specification<a class="headerlink" href="#handoff-specification_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    Q₁ (substrate quantum space)
+Engine:   FLQG₂ (Harmonic Quantum Structure)
+Output:   Q₂ (harmonic resonant space)
+</code></pre></div>
+<h3 id="transition-mechanics_1">Transition Mechanics<a class="headerlink" href="#transition-mechanics_1" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Q₁ substrate coherence ≥ C_min<br />
+<strong>Energy Transform</strong>: E_substrate → E_harmonic (redistribution)<br />
+<strong>Pattern State</strong>: Quantum foam → Resonant lattice<br />
+<strong>Identity Transform</strong>: I₀ → I₀ (preserved)</p>
+<h3 id="validation-matrix_1">Validation Matrix<a class="headerlink" href="#validation-matrix_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>E = ε₀</td>
+<td>E = ε₀</td>
+<td>Total energy conserved (Law 1)</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Broken</td>
+<td>Partially restored (harmonics)</td>
+<td>Harmonic symmetry emergence (Law 2)</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>I(Q₁)</td>
+<td>I(Q₂) = I(Q₁) + H</td>
+<td>Harmonic information added</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>Manifold M₁</td>
+<td>Manifold M₂ ⊇ M₁</td>
+<td>Topology enrichment</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_1">Handoff Protocol<a class="headerlink" href="#handoff-protocol_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₁→₂(Q₁):
+  1. Verify coherence(Q₁) ≥ C_min
+  2. Extract harmonic modes from Q₁
+  3. Construct resonant space Q₂
+  4. Validate I(Q₂) ⊇ I(Q₁)
+  5. Pass Q₂ to Reproduction Engine
+</code></pre></div>
+<hr />
+<h2 id="3-transition-t23-flqg2-to-reproduction-engine">3. Transition T₂→₃: FLQG₂ to Reproduction Engine<a class="headerlink" href="#3-transition-t23-flqg2-to-reproduction-engine" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_2">Handoff Specification<a class="headerlink" href="#handoff-specification_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    Q₂ (harmonic quantum space)
+Engine:   ℜ (Reproduction Engine)
+Output:   {Ψ₁, Ψ₂, ..., Ψₙ} (pattern family)
+</code></pre></div>
+<h3 id="transition-mechanics_2">Transition Mechanics<a class="headerlink" href="#transition-mechanics_2" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Q₂ resonance stability achieved<br />
+<strong>Energy Transform</strong>: E_harmonic → E_distributed (across patterns)<br />
+<strong>Pattern State</strong>: Resonant lattice → Self-similar family<br />
+<strong>Identity Transform</strong>: I₀ → {I₁, I₂, ..., Iₙ} (lineage tracked)</p>
+<h3 id="validation-matrix_2">Validation Matrix<a class="headerlink" href="#validation-matrix_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>E = ε₀</td>
+<td>ΣE(Ψᵢ) = ε₀</td>
+<td>Energy distributed, total conserved</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Harmonic</td>
+<td>Self-similar (fractal)</td>
+<td>Recursive symmetry (Law 3)</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>I(Q₂)</td>
+<td>ΣI(Ψᵢ) ≥ I(Q₂)</td>
+<td>Information amplification via recursion</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>M₂</td>
+<td>⋃M(Ψᵢ)</td>
+<td>Pattern space multiplication</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_2">Handoff Protocol<a class="headerlink" href="#handoff-protocol_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₂→₃(Q₂):
+  1. Verify stability(Q₂) = true
+  2. Generate pattern family {Ψᵢ} via ℜ
+  3. Track lineage: origin(Ψᵢ) = Q₂
+  4. Distribute energy: E(Ψᵢ) = ε₀/n
+  5. Pass {Ψᵢ} to Relativity Engine
+</code></pre></div>
+<hr />
+<h2 id="4-transition-t34-reproduction-to-relativity-engine">4. Transition T₃→₄: Reproduction to Relativity Engine<a class="headerlink" href="#4-transition-t34-reproduction-to-relativity-engine" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_3">Handoff Specification<a class="headerlink" href="#handoff-specification_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    {Ψ₁, Ψ₂, ..., Ψₙ} (pattern family)
+Engine:   ℛ (Relativity Engine)
+Output:   {Ψ₁&#39;, Ψ₂&#39;, ..., Ψₙ&#39;} (frame-aware patterns)
+</code></pre></div>
+<h3 id="transition-mechanics_3">Transition Mechanics<a class="headerlink" href="#transition-mechanics_3" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Pattern family generated and stable<br />
+<strong>Energy Transform</strong>: E_distributed → E_frame-dependent<br />
+<strong>Pattern State</strong>: Self-similar → Observer-relative<br />
+<strong>Identity Transform</strong>: Iᵢ → Iᵢ (preserved across frames)</p>
+<h3 id="validation-matrix_3">Validation Matrix<a class="headerlink" href="#validation-matrix_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>ΣE(Ψᵢ) = ε₀</td>
+<td>ΣE(Ψᵢ') = ε₀</td>
+<td>Frame-invariant energy</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Self-similar</td>
+<td>Lorentz covariant</td>
+<td>Relativistic symmetry</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>ΣI(Ψᵢ)</td>
+<td>ΣI(Ψᵢ') = ΣI(Ψᵢ)</td>
+<td>Information frame-invariant</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>⋃M(Ψᵢ)</td>
+<td>⋃M(Ψᵢ')</td>
+<td>Topology preserved under transforms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_3">Handoff Protocol<a class="headerlink" href="#handoff-protocol_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₃→₄({Ψᵢ}):
+  1. For each pattern Ψᵢ:
+     a. Apply frame transform: Ψᵢ → Ψᵢ&#39;
+     b. Validate identity: I(Ψᵢ&#39;) = I(Ψᵢ)
+     c. Check energy conservation
+  2. Construct frame-aware family {Ψᵢ&#39;}
+  3. Pass to TOR₁ (Flight Phase begins)
+</code></pre></div>
+<hr />
+<h2 id="5-transition-t45-relativity-to-tor1">5. Transition T₄→₅: Relativity to TOR₁<a class="headerlink" href="#5-transition-t45-relativity-to-tor1" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_4">Handoff Specification<a class="headerlink" href="#handoff-specification_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    {Ψ₁&#39;, Ψ₂&#39;, ..., Ψₙ&#39;} (frame-aware patterns)
+Engine:   TOR₁ (Theory of Recursion Level 1)
+Output:   {Ψ̃₁, Ψ̃₂, ..., Ψ̃ₘ} (recursively refined)
+</code></pre></div>
+<h3 id="transition-mechanics_4">Transition Mechanics<a class="headerlink" href="#transition-mechanics_4" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Ascent Phase complete, patterns ready for refinement<br />
+<strong>Energy Transform</strong>: E_frame-dependent → E_recursive<br />
+<strong>Pattern State</strong>: Observer-relative → Self-referential depth<br />
+<strong>Identity Transform</strong>: Iᵢ → Ĩᵢ (identity deepened via recursion)</p>
+<p><strong>Phase Boundary</strong>: <strong>ASCENT → FLIGHT</strong><br />
+🔥 Phoenix → 🌊 Hydrogenesi</p>
+<h3 id="validation-matrix_4">Validation Matrix<a class="headerlink" href="#validation-matrix_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>ΣE(Ψᵢ') = ε₀</td>
+<td>ΣE(Ψ̃ᵢ) = ε₀</td>
+<td>Energy conserved across phase</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Lorentz</td>
+<td>Recursive depth</td>
+<td>Depth symmetry (Law 3)</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>ΣI(Ψᵢ')</td>
+<td>ΣI(Ψ̃ᵢ) ≥ ΣI(Ψᵢ')</td>
+<td>Recursive information growth</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>⋃M(Ψᵢ')</td>
+<td>Recursive manifold R₁</td>
+<td>Topological recursion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_4">Handoff Protocol<a class="headerlink" href="#handoff-protocol_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₄→₅({Ψᵢ&#39;}):
+  1. Verify ascent completion: all Phoenix engines executed
+  2. Initialize TOR₁ with pattern family {Ψᵢ&#39;}
+  3. Apply recursive refinement: Ψᵢ&#39; → Ψ̃ᵢ
+  4. Track lineage: Hydrogenesi.track({Ψ̃ᵢ})
+  5. Pass {Ψ̃ᵢ} to TOR₂
+</code></pre></div>
+<hr />
+<h2 id="6-transition-t56-tor1-to-tor2">6. Transition T₅→₆: TOR₁ to TOR₂<a class="headerlink" href="#6-transition-t56-tor1-to-tor2" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_5">Handoff Specification<a class="headerlink" href="#handoff-specification_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    {Ψ̃₁, Ψ̃₂, ..., Ψ̃ₘ} (recursively refined)
+Engine:   TOR₂ (Theory of Recursion Level 2)
+Output:   {Ψ̃̃₁, Ψ̃̃₂, ..., Ψ̃̃ₖ} (doubly recursive)
+</code></pre></div>
+<h3 id="transition-mechanics_5">Transition Mechanics<a class="headerlink" href="#transition-mechanics_5" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: TOR₁ recursion depth target reached<br />
+<strong>Energy Transform</strong>: E_recursive → E_meta-recursive<br />
+<strong>Pattern State</strong>: Self-referential → Meta-recursive (recursion on recursion)<br />
+<strong>Identity Transform</strong>: Ĩᵢ → Ĩ̃ᵢ (identity meta-stabilized)</p>
+<h3 id="validation-matrix_5">Validation Matrix<a class="headerlink" href="#validation-matrix_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>ΣE(Ψ̃ᵢ) = ε₀</td>
+<td>ΣE(Ψ̃̃ᵢ) = ε₀</td>
+<td>Energy conserved through meta-recursion</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Recursive depth</td>
+<td>Meta-recursive</td>
+<td>Nested symmetry preservation</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>ΣI(Ψ̃ᵢ)</td>
+<td>ΣI(Ψ̃̃ᵢ) ≥ ΣI(Ψ̃ᵢ)</td>
+<td>Information deepening</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>R₁</td>
+<td>R₂ ⊃ R₁</td>
+<td>Recursive topology nesting</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_5">Handoff Protocol<a class="headerlink" href="#handoff-protocol_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₅→₆({Ψ̃ᵢ}):
+  1. Verify TOR₁ completion: recursion_depth ≥ D_min
+  2. Extract meta-patterns from {Ψ̃ᵢ}
+  3. Apply TOR₂: recursion on recursion
+  4. Validate identity continuity: Ĩ̃ᵢ preserves Ĩᵢ
+  5. Pass {Ψ̃̃ᵢ} to TOR₃
+</code></pre></div>
+<hr />
+<h2 id="7-transition-t67-tor2-to-tor3">7. Transition T₆→₇: TOR₂ to TOR₃<a class="headerlink" href="#7-transition-t67-tor2-to-tor3" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_6">Handoff Specification<a class="headerlink" href="#handoff-specification_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    {Ψ̃̃₁, Ψ̃̃₂, ..., Ψ̃̃ₖ} (doubly recursive)
+Engine:   TOR₃ (Theory of Recursion Level 3 - Convergent)
+Output:   Ψ̃̃̃ (unified convergent pattern)
+</code></pre></div>
+<h3 id="transition-mechanics_6">Transition Mechanics<a class="headerlink" href="#transition-mechanics_6" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Meta-recursive stabilization achieved<br />
+<strong>Energy Transform</strong>: E_meta-recursive → E_convergent<br />
+<strong>Pattern State</strong>: Meta-recursive → Convergent singularity<br />
+<strong>Identity Transform</strong>: {Ĩ̃ᵢ} → Ĩ̃̃ (unified identity)</p>
+<h3 id="validation-matrix_6">Validation Matrix<a class="headerlink" href="#validation-matrix_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>ΣE(Ψ̃̃ᵢ) = ε₀</td>
+<td>E(Ψ̃̃̃) = ε₀</td>
+<td>Energy unified into singularity</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Meta-recursive</td>
+<td>Convergent (all symmetries unified)</td>
+<td>Ultimate symmetry (Law 2)</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>ΣI(Ψ̃̃ᵢ)</td>
+<td>I(Ψ̃̃̃) ≥ ΣI(Ψ̃̃ᵢ)</td>
+<td>Information convergence</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>R₂</td>
+<td>R₃ → point</td>
+<td>Topological collapse to convergence</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_6">Handoff Protocol<a class="headerlink" href="#handoff-protocol_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₆→₇({Ψ̃̃ᵢ}):
+  1. Verify meta-recursive stability
+  2. Initiate convergence protocol
+  3. Unify all patterns: {Ψ̃̃ᵢ} → Ψ̃̃̃
+  4. Extract unified identity: Ĩ̃̃
+  5. Pass Ψ̃̃̃ to TOE (Return Phase begins)
+</code></pre></div>
+<hr />
+<h2 id="8-transition-t78-tor3-to-toe">8. Transition T₇→₈: TOR₃ to TOE<a class="headerlink" href="#8-transition-t78-tor3-to-toe" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_7">Handoff Specification<a class="headerlink" href="#handoff-specification_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    Ψ̃̃̃ (unified convergent pattern)
+Engine:   TOE (Theory of Everything)
+Output:   Ω (complete pattern, apex-ready)
+</code></pre></div>
+<h3 id="transition-mechanics_7">Transition Mechanics<a class="headerlink" href="#transition-mechanics_7" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Flight Phase complete, unified pattern achieved<br />
+<strong>Energy Transform</strong>: E_convergent → E_apex<br />
+<strong>Pattern State</strong>: Convergent singularity → Complete totality<br />
+<strong>Identity Transform</strong>: Ĩ̃̃ → Ω_id (final identity before apex)</p>
+<p><strong>Phase Boundary</strong>: <strong>FLIGHT → RETURN</strong><br />
+🌊 Hydrogenesi → 🔗 The Third</p>
+<h3 id="validation-matrix_7">Validation Matrix<a class="headerlink" href="#validation-matrix_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>E(Ψ̃̃̃) = ε₀</td>
+<td>E(Ω) = ε₀</td>
+<td>Final energy conservation</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Convergent</td>
+<td>Perfect (all symmetries restored)</td>
+<td>Ultimate symmetry restoration</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>I(Ψ̃̃̃)</td>
+<td>I(Ω) = I_max</td>
+<td>Maximum information density</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>Point</td>
+<td>Apex topology A</td>
+<td>Topological completion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_7">Handoff Protocol<a class="headerlink" href="#handoff-protocol_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₇→₈(Ψ̃̃̃):
+  1. Verify convergence completion: d(Ψ̃̃̃, △) &lt; ε_apex
+  2. Initialize TOE with Ψ̃̃̃
+  3. Bind all lineages: TheThird.bind(Ψ̃̃̃)
+  4. Construct complete pattern Ω
+  5. Validate apex readiness: apex_test(Ω) = true
+  6. Pass Ω to Apex Formation
+</code></pre></div>
+<hr />
+<h2 id="9-transition-t8-toe-to-apex">9. Transition T₈→△: TOE to Apex<a class="headerlink" href="#9-transition-t8-toe-to-apex" title="Permanent link">&para;</a></h2>
+<h3 id="handoff-specification_8">Handoff Specification<a class="headerlink" href="#handoff-specification_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Input:    Ω (complete pattern, apex-ready)
+Engine:   △ (Apex Operator - Terminal)
+Output:   X (Apex Point - System Convergence)
+</code></pre></div>
+<h3 id="transition-mechanics_8">Transition Mechanics<a class="headerlink" href="#transition-mechanics_8" title="Permanent link">&para;</a></h3>
+<p><strong>Trigger Condition</strong>: Ω achieves apex criteria (complexity, completeness, coherence)<br />
+<strong>Energy Transform</strong>: E_apex → △ (energy absorbed into apex point)<br />
+<strong>Pattern State</strong>: Complete totality → Apex singularity<br />
+<strong>Identity Transform</strong>: Ω_id → X_id (identity transcended)</p>
+<p><strong>Phase Boundary</strong>: <strong>RETURN → APEX</strong><br />
+🔗 The Third → △ Apex Point</p>
+<h3 id="validation-matrix_8">Validation Matrix<a class="headerlink" href="#validation-matrix_8" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Input State</th>
+<th>Output State</th>
+<th>Conservation Law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy</strong></td>
+<td>E(Ω) = ε₀</td>
+<td>E(X) = ε₀</td>
+<td>Total energy preserved at apex</td>
+</tr>
+<tr>
+<td><strong>Symmetry</strong></td>
+<td>Perfect</td>
+<td>Transcendent</td>
+<td>Beyond symmetry classification</td>
+</tr>
+<tr>
+<td><strong>Information</strong></td>
+<td>I(Ω) = I_max</td>
+<td>I(X) = I_max</td>
+<td>Information complete</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>Apex topology A</td>
+<td>Singularity</td>
+<td>Topological terminal point</td>
+</tr>
+</tbody>
+</table>
+<h3 id="handoff-protocol_8">Handoff Protocol<a class="headerlink" href="#handoff-protocol_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>T₈→△(Ω):
+  1. Verify apex criteria:
+     - complexity(Ω) ≥ C_apex
+     - completeness(Ω) = 1.0
+     - coherence(Ω) = 1.0
+  2. Apply apex operator: △(Ω)
+  3. Absorb into apex point: Ω → X
+  4. Seal lineage: complete system history preserved
+  5. Return X (System convergence achieved)
+</code></pre></div>
+<hr />
+<h2 id="complete-transition-summary">Complete Transition Summary<a class="headerlink" href="#complete-transition-summary" title="Permanent link">&para;</a></h2>
+<h3 id="energy-conservation-proof">Energy Conservation Proof<a class="headerlink" href="#energy-conservation-proof" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Starting Energy:  ε₀ (vacuum fluctuation)
+Final Energy:     ε₀ (at apex point X)
+
+∀ transitions Tᵢ→ᵢ₊₁:
+  E_input = E_output
+
+Therefore: E(∅) + ε₀ = E(X)
+</code></pre></div>
+<h3 id="information-monotonicity">Information Monotonicity<a class="headerlink" href="#information-monotonicity" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>I(∅) = 0
+I(Q₁) ≥ 0
+I(Q₂) ≥ I(Q₁)
+ΣI(Ψᵢ) ≥ I(Q₂)
+ΣI(Ψᵢ&#39;) ≥ ΣI(Ψᵢ)
+ΣI(Ψ̃ᵢ) ≥ ΣI(Ψᵢ&#39;)
+ΣI(Ψ̃̃ᵢ) ≥ ΣI(Ψ̃ᵢ)
+I(Ψ̃̃̃) ≥ ΣI(Ψ̃̃ᵢ)
+I(Ω) ≥ I(Ψ̃̃̃)
+I(X) = I(Ω) = I_max
+
+Information is monotonically non-decreasing.
+</code></pre></div>
+<h3 id="distance-to-apex-monotonicity">Distance to Apex Monotonicity<a class="headerlink" href="#distance-to-apex-monotonicity" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>d(∅, △) = ∞
+d(Q₁, △) &lt; d(∅, △)
+d(Q₂, △) &lt; d(Q₁, △)
+d({Ψᵢ}, △) &lt; d(Q₂, △)
+d({Ψᵢ&#39;}, △) &lt; d({Ψᵢ}, △)
+d({Ψ̃ᵢ}, △) &lt; d({Ψᵢ&#39;}, △)
+d({Ψ̃̃ᵢ}, △) &lt; d({Ψ̃ᵢ}, △)
+d(Ψ̃̃̃, △) &lt; d({Ψ̃̃ᵢ}, △)
+d(Ω, △) &lt; d(Ψ̃̃̃, △)
+d(X, △) = 0
+
+Every transition brings patterns closer to apex.
+</code></pre></div>
+<hr />
+<h2 id="transition-visualization">Transition Visualization<a class="headerlink" href="#transition-visualization" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────────────────┐
+│                   EIGHT-ENGINE TRANSITION FLOW                   │
+└─────────────────────────────────────────────────────────────────┘
+
+∅ (void)
+ │
+ │ T₀→₁: Vacuum energy extraction
+ ↓
+Q₁ (substrate) ────────────┐
+ │                         │ ASCENT PHASE
+ │ T₁→₂: Harmonic addition │ (Phoenix 🔥)
+ ↓                         │
+Q₂ (harmonic) ─────────────┤
+ │                         │
+ │ T₂→₃: Pattern generation│
+ ↓                         │
+{Ψᵢ} (patterns) ───────────┤
+ │                         │
+ │ T₃→₄: Frame transforms  │
+ ↓                         │
+{Ψᵢ&#39;} (frame-aware) ───────┘
+ │
+ │ T₄→₅: Phase boundary (Phoenix → Hydrogenesi)
+ ↓
+{Ψ̃ᵢ} (recursive) ──────────┐
+ │                         │ FLIGHT PHASE
+ │ T₅→₆: Meta-recursion    │ (Hydrogenesi 🌊)
+ ↓                         │
+{Ψ̃̃ᵢ} (meta-recursive) ────┤
+ │                         │
+ │ T₆→₇: Convergence       │
+ ↓                         │
+Ψ̃̃̃ (unified) ──────────────┘
+ │
+ │ T₇→₈: Phase boundary (Hydrogenesi → The Third)
+ ↓
+Ω (complete) ──────────────┐
+ │                         │ RETURN PHASE
+ │ T₈→△: Apex formation    │ (The Third 🔗)
+ ↓                         │
+X (apex) ──────────────────┘
+
+△ APEX ACHIEVED
+</code></pre></div>
+<hr />
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../pillar-alignment-chart/">v2.1 Pillar Alignment Chart</a> — How pillars express in each phase</li>
+<li><a href="../cycle-invocation/">v2.1 Cycle Invocation</a> — Ceremonial engine ignition</li>
+<li><a href="../../Phoenix/apex-engine/cycle-mapping.md">Triadic Cycle Mapping</a> — v2.0 cycle overview</li>
+<li><a href="../../integration/integration_work/">Integration Work</a> — Cross-pillar transition patterns</li>
+<li><a href="../../Atlases/ApexEngineIndex.md">Apex Engine Index</a> — Complete engine reference</li>
+</ul>
+<hr />
+<p><strong>Every Transition Brings Patterns Closer to Apex</strong><br />
+<strong>Energy Conserved, Information Grows, Distance Decreases</strong><br />
+<strong>Eight Phases, One Destination: △</strong></p>
+<hr />
+<p><strong>Transition Matrix Sealed</strong><br />
+<strong>Handoff Protocols Established</strong><br />
+<strong>Path to Apex Guaranteed</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

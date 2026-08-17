@@ -1,5 +1,7 @@
 # 🔧 Plates: The Specialized Frameworks
 
+HOME > CODEX > PLATES
+
 ```
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
@@ -164,3 +166,9 @@ from quantum protocols to ultimate architecture.
 
 *Last Updated: August 7, 2026*  
 *Plates Section - The Specialized Frameworks of Phoenix 2.0 Apex Edition*
+
+
+## Navigation
+- [Back to Home](../index.md)
+- [Open Navigation Hub](../../NAVIGATE.md)
+- [Terminology Index](../../TERMINOLOGY.md)

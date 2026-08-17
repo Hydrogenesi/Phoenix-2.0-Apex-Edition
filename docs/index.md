@@ -26,6 +26,16 @@
 
 ---
 
+## 🧭 Publication Mode
+
+- [Style Guide](STYLE.md)
+- [Terminology Index](TERMINOLOGY.md)
+- [Visual Hierarchy Standards](VISUAL_HIERARCHY.md)
+- [Navigation Standards](NAVIGATION.md)
+- [Master Navigation Hub](NAVIGATE.md)
+
+---
+
 ## 🎯 Quick Start
 
 ### New to Phoenix 2.0?

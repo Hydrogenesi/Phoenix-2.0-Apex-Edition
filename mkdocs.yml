@@ -21,6 +21,12 @@ theme:
 nav:
   # Legacy docs outside this nav remain available in-repo but are intentionally de-linked.
   - Home: index.md
+  - Publication:
+      - Style Guide: STYLE.md
+      - Terminology Index: TERMINOLOGY.md
+      - Visual Hierarchy: VISUAL_HIERARCHY.md
+      - Navigation Standards: NAVIGATION.md
+      - Master Navigation Hub: NAVIGATE.md
   - Codex:
       - Codex Home: codex/index.md
       - Origin Set: codex/origin/index.md
@@ -42,14 +48,23 @@ nav:
           - Verification Matrix: codex/Book09_PhoenixArchive/ceremonies/verification_matrix.md
   - Engines:
       - Engines Home: engines/index.md
-      - Phoenix Engine: engines/phoenix_engine.md
-      - QPE Engine: engines/qpe_engine.md
-      - Dragon Engine: engines/dragon_engine.md
+      - Standards: engines/STANDARDS.md
+      - Phoenix Engine: engines/phoenix.md
+      - QPE: engines/qpe.md
+      - Dragon Node: engines/dragon.md
+      - Multi-Engine Architecture: engines/architecture.md
+      - Cross References: engines/CROSS_REFERENCES.md
+      - Tutorial: engines/TUTORIAL.md
+      - Phoenix Engine (Expanded): engines/phoenix_engine.md
+      - QPE Engine (Expanded): engines/qpe_engine.md
+      - Dragon Engine (Expanded): engines/dragon_engine.md
       - Engine Comparison: engines/engine_comparison.md
-      - Architecture: engines/architecture.md
       - Codex Architecture Map: engines/codex_architecture_map.md
   - Diagrams:
       - Diagrams Home: diagrams/index.md
+      - Diagram Index: diagrams/DIAGRAM_INDEX.md
+      - Embedding Standards: diagrams/EMBEDDING.md
+      - Gallery: diagrams/GALLERY.md
       - Animation Framework: diagrams/animations/index.md
       - Operator Animation: diagrams/animations/operator_animation.md
       - Convergence Animation: diagrams/animations/convergence_animation.md
