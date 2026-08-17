@@ -1,2 +1,8 @@
 __pycache__/
 site/
+
+# Frontend build artifacts
+web/node_modules/
+web/dist/
+web/.vite/
+*.tsbuildinfo

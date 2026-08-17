@@ -9,3 +9,6 @@ description = "Your project description"
 requires-python = ">=3.13"
 [tool.setuptools.packages.find]
 include = ["Hydrogenesi*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

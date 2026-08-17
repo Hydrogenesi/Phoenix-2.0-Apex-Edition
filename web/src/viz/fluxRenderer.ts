@@ -11,6 +11,7 @@ export class FluxRenderer {
   private program: WebGLProgram;
   private vao: WebGLVertexArrayObject;
   private start = performance.now();
+  private running = false;
 
   private uTime!: WebGLUniformLocation;
   private uResolution!: WebGLUniformLocation;
@@ -62,6 +63,7 @@ export class FluxRenderer {
   }
 
   frame = (): void => {
+    if (!this.running) return;
     const gl = this.gl;
     this.resize();
 
@@ -88,7 +90,12 @@ export class FluxRenderer {
   };
 
   startLoop(): void {
+    this.running = true;
     requestAnimationFrame(this.frame);
+  }
+
+  stopLoop(): void {
+    this.running = false;
   }
 
   private cacheUniforms(): void {
