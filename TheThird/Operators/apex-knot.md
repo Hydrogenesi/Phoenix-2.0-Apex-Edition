@@ -232,8 +232,8 @@ Zero derivative at fixed point indicates stability.
 - [Stability Knot](./stability-knot.md) — Perturbation suppression
 
 ### Phoenix Operators
-- [Apex Operator](../Phoenix/operators/apex.md) — Phoenix's local apex
-- [All Phoenix Operators](../Phoenix/operators/) — Transformation sources
+- [Apex Operator](../../Phoenix/operators/apex.md) — Phoenix's local apex
+- [All Phoenix Operators](../../Phoenix/operators/) — Transformation sources
 
 ### Governing Laws
 - [Apex Formation](../Universal-Laws/universal/apex-formation.md) — Convergence mechanics

@@ -1,5 +1,5 @@
 site_name: Phoenix 2.0 Apex Edition
-site_description: Phoenix 2.0 Apex Edition - Recursive Harmonic Operator Framework Documentation
+site_description: Phoenix 2.0 Apex Edition - Tri-linked documentation knowledge graph
 site_url: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
 repo_url: https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition
 repo_name: Phoenix-2.0-Apex-Edition
@@ -19,6 +19,7 @@ theme:
     - content.code.copy
 
 nav:
+  # Legacy docs outside this nav remain available in-repo but are intentionally de-linked.
   - Home: index.md
   - Publication:
       - Style Guide: STYLE.md
@@ -27,16 +28,26 @@ nav:
       - Navigation Standards: NAVIGATION.md
       - Master Navigation Hub: NAVIGATE.md
   - Codex:
-      - Codex Landing: codex/index.md
+      - Codex Home: codex/index.md
       - Origin Set: codex/origin/index.md
       - Plates: codex/plates/index.md
-  - Diagrams:
-      - Diagrams Landing: diagrams/index.md
-      - Diagram Index: diagrams/DIAGRAM_INDEX.md
-      - Embedding Standards: diagrams/EMBEDDING.md
-      - Gallery: diagrams/GALLERY.md
+      - Operators Atlas:
+          - Operator Dashboard: codex/Book05_OperatorsAtlas/operators/index.md
+          - Phoenix Operators: codex/Book05_OperatorsAtlas/operators/phoenix_operators.md
+          - Hydrogenesi Operators: codex/Book05_OperatorsAtlas/operators/hydrogenesi_operators.md
+          - Knot Operators: codex/Book05_OperatorsAtlas/operators/knot_operators.md
+          - Composition Matrix: codex/Book05_OperatorsAtlas/operators/composition_matrix.md
+      - Ceremony Atlas:
+          - Ceremony Index: codex/Book09_PhoenixArchive/ceremonies/index.md
+          - By Purpose: codex/Book09_PhoenixArchive/ceremonies/ceremonies_by_purpose.md
+          - By Complexity: codex/Book09_PhoenixArchive/ceremonies/ceremonies_by_complexity.md
+          - Safety: codex/Book09_PhoenixArchive/ceremonies/ceremony_safety.md
+          - Sigils: codex/Book09_PhoenixArchive/ceremonies/sigils.md
+          - Gestures: codex/Book09_PhoenixArchive/ceremonies/gestures.md
+          - Harmonic Frequencies: codex/Book09_PhoenixArchive/ceremonies/harmonic_frequencies.md
+          - Verification Matrix: codex/Book09_PhoenixArchive/ceremonies/verification_matrix.md
   - Engines:
-      - Engines Landing: engines/index.md
+      - Engines Home: engines/index.md
       - Standards: engines/STANDARDS.md
       - Phoenix Engine: engines/phoenix.md
       - QPE: engines/qpe.md
@@ -44,6 +55,23 @@ nav:
       - Multi-Engine Architecture: engines/architecture.md
       - Cross References: engines/CROSS_REFERENCES.md
       - Tutorial: engines/TUTORIAL.md
+      - Phoenix Engine (Expanded): engines/phoenix_engine.md
+      - QPE Engine (Expanded): engines/qpe_engine.md
+      - Dragon Engine (Expanded): engines/dragon_engine.md
+      - Engine Comparison: engines/engine_comparison.md
+      - Codex Architecture Map: engines/codex_architecture_map.md
+  - Diagrams:
+      - Diagrams Home: diagrams/index.md
+      - Diagram Index: diagrams/DIAGRAM_INDEX.md
+      - Embedding Standards: diagrams/EMBEDDING.md
+      - Gallery: diagrams/GALLERY.md
+      - Animation Framework: diagrams/animations/index.md
+      - Operator Animation: diagrams/animations/operator_animation.md
+      - Convergence Animation: diagrams/animations/convergence_animation.md
+      - Ignition Animation: diagrams/animations/ignition_animation.md
+      - State Transition Animation: diagrams/animations/state_transition_animation.md
+      - Ceremony Flows: diagrams/ceremonies/ceremony_flows/index.md
+      - Timing Charts: diagrams/ceremonies/timing_charts/index.md
 
 markdown_extensions:
   - pymdownx.superfences
@@ -56,7 +84,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - minify
 
 extra:
   social:

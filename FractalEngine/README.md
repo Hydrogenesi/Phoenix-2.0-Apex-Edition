@@ -18,6 +18,10 @@ It is not a single module — it is the entire recursive architecture, structure
 
 [`FractalEngine_Master_Preset.jsx`](./FractalEngine_Master_Preset.jsx) builds this entire rig automatically inside After Effects — every comp, control, expression, and the camera — via **File > Scripts > Run Script File...**. The recursion/dynamo/torus/field/aurora layers it creates are placeholder solids; swap in your own fractal artwork or footage without touching the rig, expressions, or parenting.
 
+### 🎬 Production Pipeline
+
+[`PIPELINE.md`](./PIPELINE.md) maps Codex input through the rig to a finished render, including how the Three-Pillar Architecture (Phoenix · Hydrogenesi · The Third) feeds the control hub's parameters.
+
 ---
 
 ## 🧩 1 — Master Comps

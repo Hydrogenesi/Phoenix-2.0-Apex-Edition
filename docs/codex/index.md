@@ -1,20 +1,15 @@
-# 📚 Codex
+# Codex
 
 HOME > CODEX
 
-```
-    ╔═══════════════════════════════════════════════════════════════╗
-    ║                                                               ║
-    ║              THE COMPLETE PHOENIX 2.0 CODEX                   ║
-    ║                                                               ║
-    ║    306 Chapters Across 13 Books of Framework Documentation    ║
-    ║                                                               ║
-    ║     From First Principles to Advanced Theory and Beyond       ║
-    ║                                                               ║
-    ╚═══════════════════════════════════════════════════════════════╝
-```
+## Tri-Link Knowledge Graph Entry Points
+- [Operators Atlas Hub](Book05_OperatorsAtlas/operators/index.md)
+- [Ceremony Atlas Hub](Book09_PhoenixArchive/ceremonies/index.md)
+- [Engine Architecture Map](../engines/codex_architecture_map.md)
 
----
+## Existing Gateways
+- [Origin Set](origin/index.md)
+- [Plates](plates/index.md)
 
 ## 📖 The Codex Structure
 
@@ -59,89 +54,11 @@ The **Foundational Trilogy** establishing first principles:
 
 ---
 
-## 🎯 How to Use This Codex
-
-### By Reading Level
-
-**Beginner**
-1. Read [Origin Set](origin/) completely
-2. Skim [Operators Atlas](Book05_OperatorsAtlas/)
-3. Follow [Phoenix Odyssey](Book12_PhoenixOdyssey/)
-
-**Intermediate**
-1. Review [Origin Set](origin/) key chapters
-2. Study [Operators Atlas](Book05_OperatorsAtlas/)
-3. Explore [Plates](plates/) by interest
-
-**Advanced**
-1. Reference [Origin Set](origin/) as needed
-2. Deep dive into [Operators Testament](Book11_OperatorsTestament/)
-3. Study [Apex Edition](Book13_ApexEdition/)
-
-### By Topic
-
-**Operators & Reference**
-- [Operators Atlas](Book05_OperatorsAtlas/) - All 18 operators
-- [Operators Testament](Book11_OperatorsTestament/) - Advanced theory
-
-**Cosmology & Scale Invariance**
-- [Cosmic Correspondence](origin/Book02_Cosmic_Correspondence/)
-- [Hydrogenesi Theory](origin/Book03_Hydrogenesi_Theory/)
-- [Fractal Continuum](Book04_FractalContinuum/)
-
-**Mechanics & Theory**
-- [Flame and Ghost](Book06_FlameAndGhost/) - Duality
-- [Trial of Immortality](Book07_TrialOfImmortality/) - Convergence
-- [Song of Flame](Book08_SongOfFlame/) - Harmonic resonance
-
-**Practical Implementation**
-- [Phoenix Archive](Book09_PhoenixArchive/) - Rituals and ceremonies
-- [Phoenix Odyssey](Book12_PhoenixOdyssey/) - Step-by-step guides
-
-**Advanced & Meta**
-- [Quantumonix Protocols](Book10_QuantumonixProtocols/) - Quantum aspects
-- [Apex Edition](Book13_ApexEdition/) - Framework architecture
-
----
-
-## 📊 Statistics
-
-- **Total Chapters**: 306
-- **Total Books**: 13
-- **Words Per Chapter**: 800-1200
-- **Total Documentation**: ~320,000 words
-- **Framework Elements**:
-  - 12 Universal Laws
-  - 18 Operators
-  - 3 Pillars
-  - ∞ Applications
-
----
-
-## ✨ Features
-
-✅ **306 Comprehensive Chapters** - Complete framework coverage  
-✅ **Two-Level Organization** - Origin (foundation) + Plates (specialized)  
-✅ **Framework-Aligned Content** - Consistent terminology throughout  
-✅ **Cross-Referenced** - Navigate between related topics  
-✅ **Practitioner-Ready** - Real examples and invocation sequences  
-✅ **Mathematically Rigorous** - Formal definitions and proofs  
-
----
-
-<div align="center">
-
-**The Codex Awaits**
-
-[**Start with Origin →**](origin/)  
-[**Jump to Plates →**](plates/)
-
-*All paths converge to apex.*
-
-</div>
-
-
 ## Navigation
 - [Back to Home](../index.md)
 - [Open Navigation Hub](../NAVIGATE.md)
 - [Terminology Index](../TERMINOLOGY.md)
+
+## See Also
+- [Documentation Home](../index.md)
+- [Diagrams](../diagrams/index.md)
