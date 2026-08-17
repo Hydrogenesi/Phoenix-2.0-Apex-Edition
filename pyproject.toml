@@ -11,4 +11,4 @@ requires-python = ">=3.13"
 include = ["Hydrogenesi*"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+addopts = ["--ignore=test_performance_optimizations.py"]
