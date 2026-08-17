@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface Plate71ViewProps {
   /** If provided, POST this layout to the SVG endpoint instead of using SAMPLE_GRAPH. */
@@ -19,6 +19,9 @@ export function Plate71View({ layout = null, pollMs = 0 }: Plate71ViewProps) {
   const [svg, setSvg] = useState<string | null>(null);
   const [state, setState] = useState<LoadState>("idle");
   const [error, setError] = useState<string | null>(null);
+  // Tracks the most-recent AbortController so the refresh button can abort
+  // any in-progress fetch and start a fresh one.
+  const ctrlRef = useRef<AbortController | null>(null);
 
   const fetchSvg = useCallback(
     async (signal?: AbortSignal) => {
@@ -51,6 +54,7 @@ export function Plate71View({ layout = null, pollMs = 0 }: Plate71ViewProps) {
 
   useEffect(() => {
     const ctrl = new AbortController();
+    ctrlRef.current = ctrl;
     fetchSvg(ctrl.signal);
     let timerId: ReturnType<typeof setInterval> | undefined;
     if (pollMs > 0) {
@@ -58,15 +62,24 @@ export function Plate71View({ layout = null, pollMs = 0 }: Plate71ViewProps) {
     }
     return () => {
       ctrl.abort();
+      ctrlRef.current = null;
       if (timerId !== undefined) clearInterval(timerId);
     };
   }, [fetchSvg, pollMs]);
+
+  function handleRefresh() {
+    // Abort any ongoing fetch first, then start a new one with a fresh signal.
+    ctrlRef.current?.abort();
+    const ctrl = new AbortController();
+    ctrlRef.current = ctrl;
+    fetchSvg(ctrl.signal);
+  }
 
   return (
     <div className="plate71-viewer">
       <button
         className="plate71-viewer__refresh"
-        onClick={() => fetchSvg()}
+        onClick={handleRefresh}
         title="Refresh SVG"
       >
         ↺ refresh

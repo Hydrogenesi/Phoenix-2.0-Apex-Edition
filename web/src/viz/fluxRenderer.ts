@@ -13,16 +13,16 @@ export class FluxRenderer {
   private start = performance.now();
   private running = false;
 
-  private uTime!: WebGLUniformLocation;
-  private uResolution!: WebGLUniformLocation;
-  private uThroughput!: WebGLUniformLocation;
-  private uPhase!: WebGLUniformLocation;
-  private uCoherence!: WebGLUniformLocation;
-  private uNoiseFloor!: WebGLUniformLocation;
-  private uAlert!: WebGLUniformLocation;
-  private uPaletteA!: WebGLUniformLocation;
-  private uPaletteB!: WebGLUniformLocation;
-  private uPaletteC!: WebGLUniformLocation;
+  private uTime:       WebGLUniformLocation | null = null;
+  private uResolution: WebGLUniformLocation | null = null;
+  private uThroughput: WebGLUniformLocation | null = null;
+  private uPhase:      WebGLUniformLocation | null = null;
+  private uCoherence:  WebGLUniformLocation | null = null;
+  private uNoiseFloor: WebGLUniformLocation | null = null;
+  private uAlert:      WebGLUniformLocation | null = null;
+  private uPaletteA:   WebGLUniformLocation | null = null;
+  private uPaletteB:   WebGLUniformLocation | null = null;
+  private uPaletteC:   WebGLUniformLocation | null = null;
 
   private state: FluxUniforms = {
     throughput: 0.4,
@@ -108,16 +108,16 @@ export class FluxRenderer {
       return u;
     };
 
-    this.uTime        = get("u_time")        as WebGLUniformLocation;
-    this.uResolution  = get("u_resolution")  as WebGLUniformLocation;
-    this.uThroughput  = get("u_throughput")  as WebGLUniformLocation;
-    this.uPhase       = get("u_phase")       as WebGLUniformLocation;
-    this.uCoherence   = get("u_coherence")   as WebGLUniformLocation;
-    this.uNoiseFloor  = get("u_noiseFloor")  as WebGLUniformLocation;
-    this.uAlert       = get("u_alert")       as WebGLUniformLocation;
-    this.uPaletteA    = get("u_paletteA")    as WebGLUniformLocation;
-    this.uPaletteB    = get("u_paletteB")    as WebGLUniformLocation;
-    this.uPaletteC    = get("u_paletteC")    as WebGLUniformLocation;
+    this.uTime        = get("u_time");
+    this.uResolution  = get("u_resolution");
+    this.uThroughput  = get("u_throughput");
+    this.uPhase       = get("u_phase");
+    this.uCoherence   = get("u_coherence");
+    this.uNoiseFloor  = get("u_noiseFloor");
+    this.uAlert       = get("u_alert");
+    this.uPaletteA    = get("u_paletteA");
+    this.uPaletteB    = get("u_paletteB");
+    this.uPaletteC    = get("u_paletteC");
   }
 
   private resize(): void {
