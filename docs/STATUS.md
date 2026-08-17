@@ -365,9 +365,9 @@ All documents reviewed as of 2026-03-11
 
 ## References
 
-- [Architecture Principles](../architecture/principles.md) — Longevity and versioning
-- [Main README](../../README.md) — Repository overview
-- [Substrate Documentation](../substrate/README.md) — Core laws
+- [Architecture Principles](architecture/principles.md) — Longevity and versioning
+- [Main README](../README.md) — Repository overview
+- [Substrate Documentation](substrate/README.md) — Core laws
 
 ---
 

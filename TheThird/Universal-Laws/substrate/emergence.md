@@ -173,9 +173,9 @@ if complexity(Ψ) > threshold:
 
 - [Law of Recursion](./recursion.md) — Recursion enables emergence
 - [Law of Conservation](./conservation.md) — Energy enables emergence
-- [Apex Operator](../operators/apex.md) — Ultimate emergent form
-- [Convergence Operator](../operators/convergence.md) — Facilitates emergence
-- [Apex Formation](../rituals/apex-formation.md) — Emergence mechanics
+- [Apex Operator](../../../Phoenix/operators/apex.md) — Ultimate emergent form
+- [Convergence Operator](../../../Phoenix/operators/convergence.md) — Facilitates emergence
+- [Apex Formation](../../../Phoenix/rituals/apex-formation.md) — Emergence mechanics
 
 ---
 

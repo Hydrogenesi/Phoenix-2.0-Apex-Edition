@@ -177,11 +177,11 @@ Chaos → ⊗ → Order → ⊗⁻¹ → Chaos → ...
 
 - [Law of Symmetry](./symmetry.md) — Symmetry embodies duality
 - [Law of Conservation](./conservation.md) — Duality preserves balance
-- [Genesis Operator](../operators/genesis.md) — Pole of creation
-- [Void Operator](../operators/void.md) — Pole of dissolution
-- [Mirror Operator](../operators/mirror.md) — Creates dual reflections
-- [Convergence Operator](../operators/convergence.md) — Unity pole
-- [Divergence Operator](../operators/divergence.md) — Separation pole
+- [Genesis Operator](../../../Phoenix/operators/genesis.md) — Pole of creation
+- [Void Operator](../../../Phoenix/operators/void.md) — Pole of dissolution
+- [Mirror Operator](../../../Phoenix/operators/mirror.md) — Creates dual reflections
+- [Convergence Operator](../../../Phoenix/operators/convergence.md) — Unity pole
+- [Divergence Operator](../../../Phoenix/operators/divergence.md) — Separation pole
 
 ---
 

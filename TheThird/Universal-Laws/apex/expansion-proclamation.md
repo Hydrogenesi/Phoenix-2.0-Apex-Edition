@@ -569,11 +569,11 @@ When beginning an expansion cycle, invoke the Proclamation:
 
 ## See Also
 
-- [Operator Spread Map v2.3](../../Atlases/OperatorSpreadMap-v2.3.md) — Energy distribution pattern
-- [Cycle Crown v2.3](../../docs/triad/CycleCrown-v2.3.md) — Apex designation
+- [Operator Spread Map v2.3](../../../Atlases/OperatorSpreadMap-v2.3.md) — Energy distribution pattern
+- [Cycle Crown v2.3](../../../docs/triad/CycleCrown-v2.3.md) — Apex designation
 - [Apex Laws](./README.md) — Complete apex law layer
 - [Universal Laws](../universal/README.md) — Structural governance
-- [Substrate Laws](../../Phoenix/laws/README.md) — Foundational principles
+- [Substrate Laws](../../../Phoenix/laws/README.md) — Foundational principles
 
 ---
 

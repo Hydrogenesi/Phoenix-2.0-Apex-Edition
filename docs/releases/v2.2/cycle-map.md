@@ -173,8 +173,8 @@ IF core_integrity(cycle_output) < core_integrity(cycle_input):
 
 - [V2.2 Apex-Seal](./apex-seal.md) — The seal marking this cycle's apex-state
 - [V2.2 Triadic Projection Diagram](./triadic-projection-diagram.md) — The geometric encoding
-- [Phoenix Apex Engine](../../Phoenix/apex-engine/README.md) — The underlying convergence system
-- [Triadic Cycle Mapping](../../Phoenix/apex-engine/cycle-mapping.md) — The base cycle structure
+- [Phoenix Apex Engine](../../../Phoenix/apex-engine/README.md) — The underlying convergence system
+- [Triadic Cycle Mapping](../../../Phoenix/apex-engine/cycle-mapping.md) — The base cycle structure
 
 ---
 
