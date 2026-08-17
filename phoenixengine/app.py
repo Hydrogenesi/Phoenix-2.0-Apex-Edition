@@ -23,7 +23,7 @@ import json
 import os
 import sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, Optional
 from urllib.parse import parse_qs, urlparse
 
 from phoenixengine.api.routes_cockpit import handle_handshake, handle_client_frame
@@ -64,9 +64,12 @@ class PhoenixHandler(BaseHTTPRequestHandler):
             return None
         raw = self.rfile.read(length)
         try:
-            return json.loads(raw)
+            data = json.loads(raw)
         except json.JSONDecodeError:
             return None
+        if not isinstance(data, dict):
+            return None
+        return data
 
     def _send_json(self, data: Any, status: int = 200) -> None:
         body = json.dumps(data, indent=2).encode()

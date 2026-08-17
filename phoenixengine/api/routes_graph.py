@@ -1,7 +1,6 @@
 """Graph layout API route handler."""
 from __future__ import annotations
 
-import json
 from typing import Any, Dict, Optional
 
 from phoenixengine.modules.graph_layout.engine import TriLayerDeterministicLayout

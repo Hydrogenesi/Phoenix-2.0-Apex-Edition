@@ -66,12 +66,12 @@ export function FluxView({
 
   useEffect(() => {
     if (!rendererRef.current || !fluxState) return;
-    rendererRef.current.setState({
-      throughput: fluxState.throughput,
-      phase: fluxState.phase,
-      coherence: fluxState.coherence,
-      noiseFloor: fluxState.noise_floor,
-    });
+    const update: Partial<Parameters<typeof rendererRef.current.setState>[0]> = {};
+    if (fluxState.throughput !== undefined) update.throughput = fluxState.throughput;
+    if (fluxState.phase !== undefined) update.phase = fluxState.phase;
+    if (fluxState.coherence !== undefined) update.coherence = fluxState.coherence;
+    if (fluxState.noise_floor !== undefined) update.noiseFloor = fluxState.noise_floor;
+    rendererRef.current.setState(update);
   }, [fluxState]);
 
   return (
