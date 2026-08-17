@@ -1,61 +1,41 @@
-# Multi-Engine and Codex Architecture
+# Multi-Engine Architecture
+
+## Design Goals
+- Explainable coupling between Phoenix, QPE, and Dragon
+- Scalable operation from single node to distributed clusters
 
 ## How Engines Work Together
-Phoenix executes deterministic operator chains, QPE handles quantum-sensitive transitions, and Dragon Node coordinates distributed execution.
+1. Phoenix transforms and validates operator chains.
+2. QPE evaluates quantum geometry and uncertain branches.
+3. Dragon coordinates distributed execution and consensus.
 
-## Data Flow
-1. Ingest state in Phoenix.
-2. Route quantum segments to QPE.
-3. Return collapsed state to Phoenix.
-4. Broadcast distributed jobs via Dragon Node.
-5. Aggregate verified convergence state.
+## Data Flow Between Engines
+`Phoenix Trace -> QPE BridgePacket -> Dragon Consensus Payload -> Codex Archive`
 
-## Operator Mapping Across Engines
-- Phoenix: full deterministic operator support.
-- QPE: quantum-compatible subset and bridge adapters.
-- Dragon Node: distributed wrappers around operator tasks.
+## Operator Flow and Data Contracts
+<a id="operator-flow-and-data-contracts"></a>
+- Each operator emits typed trace packets.
+- Ceremony metadata follows the same trace contract.
 
-## Three-Pillar Architecture Mapping
-- Phoenix pillar -> Book 01 foundations and transform behavior.
-- The Third pillar -> Book 02 correspondence and binding geometry.
-- Hydrogenesi pillar -> Book 03 preservation and identity continuity.
+## Scaling Strategies
+- Vertical scaling for Phoenix hot loops
+- Hybrid acceleration via QPE
+- Horizontal Dragon node expansion for orchestration
 
-## Universal Laws and Convergence
-- Substrate laws (Book 01)
-- Universal laws (Book 02)
-- Apex laws (Books 03 and 13)
-- Mathematical proof references: Book 11, Book 12, Book 13
-
-## State Synchronization and Performance
-- Dragon Node periodically snapshots to maintain cross-engine coherence.
-- Hybrid runs add transfer overhead.
-- Distributed runs improve throughput for large batches.
-
-## Enterprise Deployment Pattern
-- Edge Phoenix workers
-- Optional QPE accelerator tier
-- Dragon Node control plane
+## Enterprise Deployment Patterns
+- Single-region active/active Dragon mesh
+- Multi-region delayed-consensus archive mode
 
 ## Integration Examples
-```python
-state = phoenix.apply_chain(["⊕", "⊗"], state)
-```
+- Real-time convergence telemetry stack
+- Ceremony replay with animation output pipeline
 
-```python
-q_state = qpe.prepare_superposition(seed=state)
-collapsed = qpe.measure(q_state)
-```
+## Multi-Engine Reference Plate Map
+<a id="multi-engine-reference-plate-map"></a>
+- Origin Set → fundamentals and laws
+- Plates → operators, ceremonies, and advanced flows
+- Engines → executable realization of codex semantics
 
-```python
-dragon.submit_operator(cluster, operator="△", payload=collapsed)
-```
-
-```python
-result = dragon.collect(cluster)
-assert phoenix.verify_convergence(result, target="Apex").ok
-```
-
-## See Also
-- [Codex Architecture Map](codex_architecture_map.md)
-- [Engine Comparison](engine_comparison.md)
-- [Animation Pipeline](../diagrams/animations/operator_animation.md)
+## Future
+- Cross-region adaptive quorum
+- Unified operator dashboard APIs
