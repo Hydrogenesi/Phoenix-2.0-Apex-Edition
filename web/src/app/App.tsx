@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 /**
  * Root application shell.
- * Mounts a minimal nav bar and renders the active route via <Outlet />.
+ * Mounts a sticky nav bar and renders the active route via <Outlet />.
  */
 export default function App() {
   const [health, setHealth] = useState<"ok" | "error" | "pending">("pending");
@@ -15,18 +15,40 @@ export default function App() {
   }, []);
 
   return (
-    <div style={{ fontFamily: "Inter, Segoe UI, sans-serif", background: "#07091a", color: "#e8eeff", minHeight: "100vh" }}>
-      <nav style={{ display: "flex", gap: 20, padding: "12px 20px", borderBottom: "1px solid #1a2040" }}>
-        <strong style={{ color: "#5b7cff" }}>PhoenixEngine</strong>
-        <Link to="/" style={{ color: "#aabbff", textDecoration: "none" }}>Home</Link>
-        <Link to="/cockpit" style={{ color: "#aabbff", textDecoration: "none" }}>Cockpit</Link>
-        <Link to="/graph" style={{ color: "#aabbff", textDecoration: "none" }}>Graph</Link>
-        <Link to="/flux" style={{ color: "#aabbff", textDecoration: "none" }}>Flux</Link>
-        <span style={{ marginLeft: "auto", color: health === "ok" ? "#73f0a8" : health === "error" ? "#ff5a5a" : "#888", fontSize: 12 }}>
-          {health === "ok" ? "● backend online" : health === "error" ? "● backend offline" : "● …"}
-        </span>
+    <div className="app-shell">
+      <nav className="app-nav">
+        <Link to="/" className="app-nav__brand">PhoenixEngine</Link>
+        {(
+          [
+            ["/cockpit", "Cockpit"],
+            ["/graph",   "Graph"],
+            ["/flux",    "Flux"],
+            ["/plate71", "Plate71"],
+          ] as [string, string][]
+        ).map(([path, label]) => (
+          <NavLink
+            key={path}
+            to={path}
+            className={({ isActive }) =>
+              "app-nav__link" + (isActive ? " app-nav__link--active" : "")
+            }
+          >
+            {label}
+          </NavLink>
+        ))}
+
+        <div className="app-nav__status">
+          <span
+            className={`app-nav__status-dot app-nav__status-dot--${health}`}
+            aria-hidden="true"
+          />
+          <span>
+            {health === "ok" ? "backend online" : health === "error" ? "backend offline" : "connecting…"}
+          </span>
+        </div>
       </nav>
-      <main style={{ padding: 20 }}>
+
+      <main className="app-main">
         <Outlet />
       </main>
     </div>

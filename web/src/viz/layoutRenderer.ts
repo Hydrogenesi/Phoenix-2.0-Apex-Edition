@@ -83,6 +83,8 @@ export class LayoutRenderer {
   }
 
   private toPx(x: number, y: number, w: number, h: number): [number, number] {
-    return [x * w, y * h];
+    // Inset by PAD so nodes at the edges (x=0, y=0, x=1, y=1) are never clipped.
+    const PAD = 40;
+    return [(x * (w - 2 * PAD)) + PAD, (y * (h - 2 * PAD)) + PAD];
   }
 }

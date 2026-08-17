@@ -25,9 +25,13 @@ export function FluxPage() {
 
   return (
     <div>
-      <h2>⚡ Quantum Flux</h2>
+      <div style={{ marginBottom: "var(--sp-6)" }}>
+        <h2>⚡ Quantum Flux</h2>
+        <p style={{ color: "var(--text-muted)", fontSize: "var(--fs-sm)", marginTop: "var(--sp-2)" }}>
+          Real-time WebGL2 flux renderer — polling every 2 s.
+        </p>
+      </div>
       <FluxView fluxState={fluxState} />
-      <pre style={{ fontSize: 11, marginTop: 12 }}>{JSON.stringify(fluxState, null, 2)}</pre>
     </div>
   );
 }

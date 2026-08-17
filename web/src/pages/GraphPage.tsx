@@ -15,15 +15,24 @@ export function GraphPage() {
 
   return (
     <div>
-      <h2>Agent Graph Layout</h2>
-      {error && <p style={{ color: "#f88" }}>Error: {error}</p>}
-      {!layout && !error && <p>Loading layout…</p>}
+      <div style={{ marginBottom: "var(--sp-6)" }}>
+        <h2>🕸 Agent Graph Layout</h2>
+        <p style={{ color: "var(--text-muted)", fontSize: "var(--fs-sm)", marginTop: "var(--sp-2)" }}>
+          Tri-layer deterministic layout of the agent graph.
+        </p>
+      </div>
+
+      {error && <p className="state-error">Error: {error}</p>}
+      {!layout && !error && <p className="state-loading">Loading layout…</p>}
+
       {layout && (
         <>
           <GraphCanvas layout={layout} />
-          <details style={{ marginTop: 12 }}>
-            <summary style={{ cursor: "pointer", color: "#888" }}>Raw layout JSON</summary>
-            <pre style={{ fontSize: 11, overflow: "auto", maxHeight: 300 }}>
+          <details style={{ marginTop: "var(--sp-4)" }}>
+            <summary style={{ cursor: "pointer", color: "var(--text-muted)", fontSize: "var(--fs-sm)" }}>
+              Raw layout JSON
+            </summary>
+            <pre style={{ marginTop: "var(--sp-2)" }}>
               {JSON.stringify(layout, null, 2)}
             </pre>
           </details>
