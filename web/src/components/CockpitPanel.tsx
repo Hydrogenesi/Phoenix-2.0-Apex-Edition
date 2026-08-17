@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import { CockpitWSClient } from "../ws/client";
-import type { WSMessage } from "../ws/client";
+import { useEffect, useRef, useState } from "react";
 import type { FluxStatePayload, AgentHealthPayload } from "../ws/protocol";
 import { GraphCanvas } from "./GraphCanvas";
 import { FluxView } from "./FluxView";
@@ -12,8 +10,10 @@ interface CockpitPanelProps {
 }
 
 /**
- * Full cockpit panel: bootstraps the WebSocket session, subscribes to all
- * relevant topics, and renders the graph + flux views with live data.
+ * Full cockpit panel: bootstraps a session via the HTTP handshake endpoint
+ * (`/api/cockpit/handshake`) and polls `/api/cockpit/frame` for updates.
+ * Using HTTP transport because the backend exposes only HTTP endpoints under
+ * `/api/*` — there is no `/ws/cockpit` WebSocket handler.
  */
 export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPanelProps) {
   const [layout, setLayout] = useState<GraphLayout | null>(initialLayout);
@@ -25,40 +25,50 @@ export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPan
   });
   const [health, setHealth] = useState<Record<string, AgentHealthPayload>>({});
   const [sessionId, setSessionId] = useState<string | null>(null);
-  const [wsError, setWsError] = useState<string | null>(null);
+  const [sessionError, setSessionError] = useState<string | null>(null);
+  const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    const client = new CockpitWSClient(runId);
-    const unsub = client.onMessage((msg: WSMessage) => {
-      const type = msg.type as string;
-      if (type === "ready") {
-        const payload = msg.payload as { session_id: string };
-        setSessionId(payload.session_id);
-        client.subscribe([
-          "graph.snapshot",
-          "graph.diff",
-          "agent.health",
-          "flux.state",
-          "plate71.state",
-        ]);
-      } else if (type === "graph.snapshot") {
-        const p = msg.payload as GraphLayout;
-        setLayout(p);
-      } else if (type === "flux.state") {
-        setFluxState(msg.payload as FluxStatePayload);
-      } else if (type === "agent.health") {
-        const p = msg.payload as AgentHealthPayload;
-        setHealth((prev) => ({ ...prev, [p.agent_id]: p }));
-      } else if (type === "error") {
-        const p = msg.payload as { message: string };
-        setWsError(p.message);
-      }
-    });
+    const ctrl = new AbortController();
+    abortRef.current = ctrl;
 
-    client.connect();
+    async function bootstrap() {
+      try {
+        // Establish session via HTTP handshake (no WebSocket backend available).
+        const hsRes = await fetch(
+          `/api/cockpit/handshake?run_id=${encodeURIComponent(runId)}`,
+          { signal: ctrl.signal }
+        );
+        if (!hsRes.ok) throw new Error(`handshake failed: ${hsRes.status}`);
+        const frame = (await hsRes.json()) as { type: string; payload: { session_id: string } };
+        if (frame.type === "ready") {
+          setSessionId(frame.payload.session_id);
+        }
+
+        // Fetch initial layout and flux state over HTTP.
+        const [layoutRes, fluxRes] = await Promise.all([
+          fetch(`/api/graph/layout?run_id=${encodeURIComponent(runId)}`, { signal: ctrl.signal }),
+          fetch(`/api/flux/state?run_id=${encodeURIComponent(runId)}`, { signal: ctrl.signal }),
+        ]);
+        if (layoutRes.ok) {
+          const layoutData = (await layoutRes.json()) as GraphLayout;
+          setLayout(layoutData);
+        }
+        if (fluxRes.ok) {
+          const fluxData = (await fluxRes.json()) as FluxStatePayload;
+          setFluxState(fluxData);
+        }
+      } catch (err) {
+        if ((err as { name?: string }).name !== "AbortError") {
+          setSessionError(err instanceof Error ? err.message : String(err));
+        }
+      }
+    }
+
+    bootstrap();
     return () => {
-      unsub();
-      client.disconnect();
+      ctrl.abort();
+      abortRef.current = null;
     };
   }, [runId]);
 
@@ -73,8 +83,8 @@ export function CockpitPanel({ runId = "dev", initialLayout = null }: CockpitPan
               {" · "}session: <code>{sessionId}</code>
             </>
           )}
-          {wsError && (
-            <span style={{ color: "#f88", marginLeft: 8 }}>⚠ {wsError}</span>
+          {sessionError && (
+            <span style={{ color: "#f88", marginLeft: 8 }}>⚠ {sessionError}</span>
           )}
         </small>
       </header>
