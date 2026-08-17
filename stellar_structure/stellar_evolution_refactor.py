@@ -17,6 +17,8 @@ replacing the previous arbitrary M_r = 1e20 starting value.
 
 from __future__ import annotations
 
+from functools import lru_cache
+
 import numpy as np
 from scipy.integrate import solve_ivp
 
@@ -66,11 +68,21 @@ class StellarModel:
         T_c: float = 1.5e7,
         r_start: float = 1e3,
         r_end: float = SOLAR_RADIUS,
+        cache_physics: bool = True,
     ) -> None:
         self.rho_c = rho_c
         self.T_c = T_c
         self.r_start = r_start
         self.r_end = r_end
+        self.cache_physics = cache_physics
+        if cache_physics:
+            self._energy_fn = lru_cache(maxsize=4096)(total_energy)
+            self._pressure_fn = lru_cache(maxsize=4096)(total_pressure)
+            self._opacity_fn = lru_cache(maxsize=4096)(total_opacity)
+        else:
+            self._energy_fn = total_energy
+            self._pressure_fn = total_pressure
+            self._opacity_fn = total_opacity
         self.solution = None
 
     # ------------------------------------------------------------------
@@ -78,7 +90,9 @@ class StellarModel:
     # ------------------------------------------------------------------
 
     @staticmethod
-    def _density_from_pressure(P: float, T: float, mu: float = 0.6) -> float:
+    def _density_from_pressure(
+        P: float | np.ndarray, T: float | np.ndarray, mu: float = 0.6
+    ) -> float | np.ndarray:
         """
         Return gas density given pressure P and temperature T by solving
         the ideal-gas + radiation EOS for rho.
@@ -89,12 +103,24 @@ class StellarModel:
         a = 7.566e-16          # radiation constant [J m^-3 K^-4]
         k_B = 1.381e-23        # Boltzmann constant [J K^-1]
         m_p = 1.673e-27        # proton mass [kg]
-        P_rad = a * T ** 4 / 3.0
-        P_gas = max(P - P_rad, 0.0)
-        # P_gas = rho * k_B * T / (mu * m_p)  =>  rho = P_gas * mu * m_p / (k_B * T)
-        if T <= 0:
-            return 0.0
-        return P_gas * mu * m_p / (k_B * T)
+        P_arr = np.asarray(P, dtype=float)
+        T_arr = np.asarray(T, dtype=float)
+        P_rad = a * T_arr ** 4 / 3.0
+        P_gas = np.maximum(P_arr - P_rad, 0.0)
+        with np.errstate(divide="ignore", invalid="ignore"):
+            rho = np.where(T_arr <= 0.0, 0.0, P_gas * mu * m_p / (k_B * T_arr))
+        if np.isscalar(P) and np.isscalar(T):
+            return float(rho)
+        return rho
+
+    def _compute_total_energy(self, rho: float, T: float) -> float:
+        return self._energy_fn(rho, T)
+
+    def _compute_total_pressure(self, rho: float, T: float) -> float:
+        return self._pressure_fn(rho, T)
+
+    def _compute_total_opacity(self, rho: float, T: float) -> float:
+        return self._opacity_fn(rho, T)
 
     # ------------------------------------------------------------------
     # ODE right-hand side
@@ -133,11 +159,11 @@ class StellarModel:
         dM_dr = mass_gradient(r, rho)
 
         # 3. Energy generation
-        epsilon = total_energy(rho, T)
+        epsilon = self._compute_total_energy(rho, T)
         dL_dr = 4.0 * np.pi * r ** 2 * rho * epsilon
 
         # 4. Radiative (or convective) temperature gradient
-        kappa = total_opacity(rho, T)
+        kappa = self._compute_total_opacity(rho, T)
         if is_convective(rho, T, r, L, M, P):
             # Adiabatic gradient (gamma = 5/3 monatomic ideal gas)
             gamma = 5.0 / 3.0
@@ -183,9 +209,9 @@ class StellarModel:
             'metallic_core' – True if P_c > metallic-hydrogen threshold
             'convective'    – True if centre is convectively unstable
         """
-        P_c = total_pressure(self.rho_c, self.T_c)
-        epsilon_c = total_energy(self.rho_c, self.T_c)
-        kappa_c = total_opacity(self.rho_c, self.T_c)
+        P_c = self._compute_total_pressure(self.rho_c, self.T_c)
+        epsilon_c = self._compute_total_energy(self.rho_c, self.T_c)
+        kappa_c = self._compute_total_opacity(self.rho_c, self.T_c)
         return {
             "P_c": P_c,
             "rho_c": self.rho_c,
@@ -227,9 +253,9 @@ class StellarModel:
         # We set L = 0 at the centre (exact boundary condition at r = 0); the
         # luminosity then builds up self-consistently through dL/dr as we
         # integrate outward.
-        epsilon_c = total_energy(self.rho_c, self.T_c)
+        epsilon_c = self._compute_total_energy(self.rho_c, self.T_c)
         bc = central_boundary_conditions(self.r_start, self.rho_c, self.T_c, epsilon_c)
-        P_c = total_pressure(self.rho_c, self.T_c)
+        P_c = self._compute_total_pressure(self.rho_c, self.T_c)
         # bc[0] is the Taylor correction  (≤ 0); add it to the central EOS pressure.
         state0 = [P_c + bc[0], bc[1], 0.0, bc[3]]
 
@@ -249,7 +275,7 @@ class StellarModel:
 
         r = sol.t
         P, M, L, T = sol.y
-        rho = np.array([self._density_from_pressure(p, t) for p, t in zip(P, T)])
+        rho = self._density_from_pressure(P, T)
 
         # Diagnostics at the outermost computed point
         surf = surface_conditions()

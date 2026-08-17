@@ -33,9 +33,26 @@ import argparse
 import hashlib
 import math
 import sys
+import warnings
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, List, Optional, Tuple
+from typing import Any, Callable, List, Optional, Tuple
+
+
+_hash_cache = {}
+_HASH_CACHE_MAXSIZE = 4096
+
+
+def fast_hash(state):
+    key = repr(state)
+    if key in _hash_cache:
+        value = _hash_cache.pop(key)
+        _hash_cache[key] = value
+        return value
+    if len(_hash_cache) >= _HASH_CACHE_MAXSIZE:
+        _hash_cache.pop(next(iter(_hash_cache)))
+    _hash_cache[key] = hashlib.sha1(key.encode()).hexdigest()[:8]
+    return _hash_cache[key]
 
 
 # --------------------------------------------------------
@@ -61,7 +78,7 @@ class Pattern:
 
     def __post_init__(self) -> None:
         if not self.id:
-            self.id = hashlib.sha256(str(self.state).encode()).hexdigest()[:8]
+            self.id = fast_hash(self.state)
 
     def __repr__(self) -> str:
         return f"Ψ[{self.id}](e={self.energy:.3f}, d={self.depth})"
@@ -118,6 +135,14 @@ def law_recursion(pattern: Pattern, max_depth: int = 64) -> None:
     Raises LawViolation when recursion depth exceeds *max_depth*.
     Apply ⊗ (Harmonic) to stabilize before continuing deep recursion.
     """
+    warning_depth = math.ceil(max_depth / 2)
+    if warning_depth <= pattern.depth < max_depth:
+        warnings.warn(
+            f"Recursion depth {pattern.depth} reached warning threshold "
+            f"({warning_depth}/{max_depth}). Consider applying ⊗ stabilization.",
+            RuntimeWarning,
+            stacklevel=2,
+        )
     if pattern.depth > max_depth:
         raise LawViolation(
             f"Recursion depth {pattern.depth} exceeds maximum {max_depth}. "
@@ -180,7 +205,7 @@ def op_genesis(state: Any = None, energy: float = 1.0) -> Pattern:
         label = "Ψ₀"
     else:
         label = str(state)
-    pattern_id = hashlib.sha256(label.encode()).hexdigest()[:8]
+    pattern_id = fast_hash(label)
     result = Pattern(id=pattern_id, state=label, energy=energy, depth=0)
     law_conservation(Pattern.void(), result)
     return result
@@ -364,9 +389,17 @@ class PhoenixIgnition:
 
     def __init__(self, verbose: bool = False) -> None:
         self.verbose = verbose
-        self._log: List[str] = []
+        self._log: List[str | Callable[[], str]] = []
 
-    def _emit(self, msg: str) -> None:
+    def _emit(self, msg: str | Callable[[], str]) -> None:
+        if callable(msg):
+            if self.verbose:
+                rendered = msg()
+                self._log.append(rendered)
+                print(rendered)
+            else:
+                self._log.append(msg)
+            return
         self._log.append(msg)
         if self.verbose:
             print(msg)
@@ -395,21 +428,21 @@ class PhoenixIgnition:
         self._emit("─" * 40)
 
         psi0 = op_genesis(seed)
-        self._emit(f"  ⊕(∅) → {psi0}")
+        self._emit(lambda psi0=psi0: f"  ⊕(∅) → {psi0}")
 
         psi0_prime = op_harmonic(psi0)
-        self._emit(f"  ⊗({psi0}) → {psi0_prime}")
+        self._emit(lambda psi0=psi0, psi0_prime=psi0_prime: f"  ⊗({psi0}) → {psi0_prime}")
 
         psi1 = op_recursive(psi0_prime)
-        self._emit(f"  ⊛({psi0_prime}) → {psi1}")
+        self._emit(lambda psi0_prime=psi0_prime, psi1=psi1: f"  ⊛({psi0_prime}) → {psi1}")
 
         psi1_prime = op_harmonic(psi1, amplify=1.5)
-        self._emit(f"  ⊗({psi1}) → {psi1_prime}")
+        self._emit(lambda psi1=psi1, psi1_prime=psi1_prime: f"  ⊗({psi1}) → {psi1_prime}")
 
         apex = op_apex(psi1_prime, threshold=self.APEX_THRESHOLD)
-        self._emit(f"  △({psi1_prime}) → {apex}")
+        self._emit(lambda psi1_prime=psi1_prime, apex=apex: f"  △({psi1_prime}) → {apex}")
         self._emit("─" * 40)
-        self._emit(f"  Apex reached: {apex}")
+        self._emit(lambda apex=apex: f"  Apex reached: {apex}")
 
         return apex
 
@@ -434,23 +467,23 @@ class PhoenixIgnition:
         self._emit("─" * 40)
 
         psi_old = op_genesis(seed, energy=1.0)
-        self._emit(f"  ⊕(∅) → {psi_old}")
+        self._emit(lambda psi_old=psi_old: f"  ⊕(∅) → {psi_old}")
 
         psi_old_prime = op_harmonic(psi_old)
-        self._emit(f"  ⊗({psi_old}) → {psi_old_prime}")
+        self._emit(lambda psi_old=psi_old, psi_old_prime=psi_old_prime: f"  ⊗({psi_old}) → {psi_old_prime}")
 
         void_state = op_void(psi_old_prime)
-        self._emit(f"  ⊝({psi_old_prime}) → {void_state}")
+        self._emit(lambda psi_old_prime=psi_old_prime, void_state=void_state: f"  ⊝({psi_old_prime}) → {void_state}")
 
         renewed_seed = f"renewed:{seed}" if seed is not None else "renewed"
         psi_new = op_genesis(renewed_seed, energy=1.0)
-        self._emit(f"  ⊕(∅) → {psi_new}  [renewed]")
+        self._emit(lambda psi_new=psi_new: f"  ⊕(∅) → {psi_new}  [renewed]")
 
         psi_new_prime = op_harmonic(psi_new)
-        self._emit(f"  ⊗({psi_new}) → {psi_new_prime}")
+        self._emit(lambda psi_new=psi_new, psi_new_prime=psi_new_prime: f"  ⊗({psi_new}) → {psi_new_prime}")
 
         self._emit("─" * 40)
-        self._emit(f"  Renewal complete: {psi_new_prime}")
+        self._emit(lambda psi_new_prime=psi_new_prime: f"  Renewal complete: {psi_new_prime}")
 
         return psi_new_prime
 
@@ -484,32 +517,33 @@ class PhoenixIgnition:
         patterns = []
         for s in seeds:
             p = op_genesis(s)
-            self._emit(f"  ⊕(∅) → {p}")
+            self._emit(lambda p=p: f"  ⊕(∅) → {p}")
             patterns.append(p)
 
         unified = op_convergence(*patterns)
-        self._emit(
-            f"  ⊳({', '.join(str(p) for p in patterns)}) → {unified}"
-        )
+        self._emit(lambda patterns=patterns, unified=unified: f"  ⊳({', '.join(str(p) for p in patterns)}) → {unified}")
 
         stable = op_harmonic(unified)
-        self._emit(f"  ⊗({unified}) → {stable}")
+        self._emit(lambda unified=unified, stable=stable: f"  ⊗({unified}) → {stable}")
 
         recursive = op_recursive(stable)
-        self._emit(f"  ⊛({stable}) → {recursive}")
+        self._emit(lambda stable=stable, recursive=recursive: f"  ⊛({stable}) → {recursive}")
 
         recursive_stabilized = op_harmonic(recursive, amplify=1.5)
-        self._emit(f"  ⊗({recursive}) → {recursive_stabilized}")
+        self._emit(lambda recursive=recursive, recursive_stabilized=recursive_stabilized: f"  ⊗({recursive}) → {recursive_stabilized}")
 
         apex = op_apex(recursive_stabilized, threshold=self.APEX_THRESHOLD)
-        self._emit(f"  △({recursive_stabilized}) → {apex}")
+        self._emit(lambda recursive_stabilized=recursive_stabilized, apex=apex: f"  △({recursive_stabilized}) → {apex}")
         self._emit("─" * 40)
-        self._emit(f"  Apex reached: {apex}")
+        self._emit(lambda apex=apex: f"  Apex reached: {apex}")
 
         return apex
 
     def get_log(self) -> List[str]:
-        """Return a copy of the internal operation log."""
+        """Materialize deferred log entries and return the internal operation log."""
+        for index, entry in enumerate(self._log):
+            if callable(entry):
+                self._log[index] = entry()
         return list(self._log)
 
 
