@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 class Stage(Enum):
-    CELLULAR_POTENTIAL = auto()
+    CELLULAR_POTENTIAL_ENERGY = auto()
     MOLECULAR_VALENCE_ORDER = auto()
     ENZYMATIC_REACTION_LOOPS = auto()
     LINEAGE_SPLIT_FIDELITY = auto()
@@ -16,7 +16,7 @@ class Stage(Enum):
 
 
 STAGE_NAMES = [
-    "Cellular Potential",
+    "Cellular Potential Energy",
     "Molecular Valence Order",
     "Enzymatic Reaction Loops",
     "Lineage Split Fidelity",
@@ -27,7 +27,7 @@ STAGE_NAMES = [
 ]
 
 ICONS = {
-    Stage.CELLULAR_POTENTIAL: "●",
+    Stage.CELLULAR_POTENTIAL_ENERGY: "●",
     Stage.MOLECULAR_VALENCE_ORDER: "●●",
     Stage.ENZYMATIC_REACTION_LOOPS: "✖",
     Stage.LINEAGE_SPLIT_FIDELITY: "⬢",
@@ -41,6 +41,7 @@ DEFAULT_THRESHOLDS = [0.12, 0.22, 0.34, 0.46, 0.58, 0.70, 0.82, 0.92]
 
 
 class PhoenixAnimator:
+    """Monotonic stage progression animator driven by simulation energies."""
     def __init__(self):
         self.active_stage = 1
         self.previous_energies = [0.0] * 8
@@ -62,13 +63,13 @@ class PhoenixAnimator:
         return [max(0.0, min(1.0, float(v))) for v in thresholds]
 
     def _derive_active_stage(self, energies, thresholds):
-        stage = self.active_stage
-        for idx in range(self.active_stage, 9):
+        stage = 1
+        for idx in range(1, 9):
             if energies[idx - 1] >= thresholds[idx - 1]:
                 stage = idx
             else:
                 break
-        return stage
+        return max(self.active_stage, stage)
 
     def step(self, record):
         energies = self._to_stage_energies(record)
@@ -104,13 +105,19 @@ def load_simulation_data(path="phoenix_simulation_output.json"):
 
 
 def validate_stage_transitions(states):
-    previous = 1
-    for state in states:
+    if not states:
+        return
+
+    previous = states[0]["active_stage"]
+    if previous < 1 or previous > 8:
+        raise ValueError(f"Invalid stage index: {previous}")
+
+    for state in states[1:]:
         current = state["active_stage"]
+        if current < 1 or current > 8:
+            raise ValueError(f"Invalid stage index: {current}")
         if current < previous:
             raise ValueError(f"Invalid regression: stage {previous} -> {current}")
-        if current > previous + 1:
-            raise ValueError(f"Invalid jump: stage {previous} -> {current}")
         previous = current
 
 

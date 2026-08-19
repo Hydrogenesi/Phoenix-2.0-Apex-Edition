@@ -102,7 +102,7 @@ function Set-StageEnergies {
     $System.Stage8_EvolutionarySingularityMass = $Energies[7]
 }
 
-function Clamp-Unit {
+function Limit-Unit {
     param([double]$Value)
     return [math]::Max(0.0, [math]::Min(1.0, $Value))
 }
@@ -144,7 +144,7 @@ function Update-PhoenixConvergenceMetrics {
     for ($i = 0; $i -lt 8; $i++) {
         $weighted += $energies[$i] * $weights[$i]
     }
-    $System.MeaningApexIndex = Clamp-Unit ($weighted / ($weights | Measure-Object -Sum).Sum)
+    $System.MeaningApexIndex = Limit-Unit ($weighted / ($weights | Measure-Object -Sum).Sum)
 
     if ($total -le 0) {
         $System.EntropicNegentropy = 0.0
@@ -158,7 +158,7 @@ function Update-PhoenixConvergenceMetrics {
             }
         }
         $maxEntropy = [math]::Log(8)
-        $System.EntropicNegentropy = Clamp-Unit (1.0 - ($entropy / $maxEntropy))
+        $System.EntropicNegentropy = Limit-Unit (1.0 - ($entropy / $maxEntropy))
     }
 
     $adjacent = @()
@@ -167,7 +167,7 @@ function Update-PhoenixConvergenceMetrics {
         $b = $energies[$i + 1]
         $adjacent += 1.0 - [math]::Abs($a - $b)
     }
-    $System.ResonanceHarmony = Clamp-Unit (($adjacent | Measure-Object -Average).Average)
+    $System.ResonanceHarmony = Limit-Unit (($adjacent | Measure-Object -Average).Average)
 }
 
 function Update-PhoenixStageEnergies {
@@ -176,13 +176,14 @@ function Update-PhoenixStageEnergies {
         [double]$Omega,
         [double]$Lambda,
         [double]$Sigma,
+        [double]$Xi,
         [double]$Phi
     )
 
     $energies = Get-StageEnergies -System $System
     $thresholds = Get-StageThresholds -System $System
 
-    $baseDrive = Clamp-Unit (([math]::Abs($Omega) * 0.24) + ([math]::Abs($Lambda) * 0.30) + ([math]::Abs($Sigma) * 0.18) + ([math]::Abs($Phi) * 6.0))
+    $baseDrive = Limit-Unit (([math]::Abs($Omega) * 0.22) + ([math]::Abs($Lambda) * 0.30) + ([math]::Abs($Sigma) * 0.16) + ([math]::Abs($Xi) * 0.14) + ([math]::Abs($Phi) * 6.0))
 
     $updated = @()
     for ($i = 0; $i -lt 8; $i++) {
@@ -196,7 +197,7 @@ function Update-PhoenixStageEnergies {
 
         $retained = $current * 0.88
         $delta = ($feedForward * 0.42 * $gate) + ($baseDrive * 0.08)
-        $updated += (Clamp-Unit ($retained + $delta))
+        $updated += (Limit-Unit ($retained + $delta))
     }
 
     Set-StageEnergies -System $System -Energies $updated
@@ -220,7 +221,7 @@ function Update-PhoenixStageEnergies {
 function Get-ProgressBar {
     param([double]$Value)
 
-    $clamped = Clamp-Unit $Value
+    $clamped = Limit-Unit $Value
     $filled = [int][math]::Round($clamped * 10)
     $empty = 10 - $filled
     return ("█" * $filled) + ("░" * $empty)
@@ -256,7 +257,7 @@ function Invoke-OperatorHUDv13 {
 
     Write-Host "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     Write-Host "Convergence Metrics:"
-    Write-Host ("  Meaning Apex Index:    {0:N3} ({1:N1}% to singularity)" -f $System.MeaningApexIndex, ($System.MeaningApexIndex * 100))
+    Write-Host ("  Meaning Apex Index:    {0:N3} ({1:N1}% singularity attained)" -f $System.MeaningApexIndex, ($System.MeaningApexIndex * 100))
     Write-Host ("  Entropic Negentropy:   {0:N3}" -f $System.EntropicNegentropy)
     Write-Host ("  Resonance Harmony:     {0:N3}" -f $System.ResonanceHarmony)
     Write-Host "  Convergence Status:    $status"
@@ -295,12 +296,22 @@ function Invoke-PhoenixIgnitionLoop {
         $System.ContractedSigma = Invoke-Contraction -x $Sigma -Scale 10
         $System.ContractedPhi = Invoke-Contraction -x $Phi -Scale 10
 
-        Update-PhoenixStageEnergies -System $System -Omega $Omega -Lambda $Lambda -Sigma $Sigma -Phi $Phi
+        Update-PhoenixStageEnergies -System $System -Omega $Omega -Lambda $Lambda -Sigma $Sigma -Xi $Xi -Phi $Phi
 
         $record = [ordered]@{
             iteration = $i
             active_stage = $System.ActiveStage
             active_stage_name = $System.ActiveStageName
+            deltas = [ordered]@{
+                omega = $System.DeltaOmega
+                sigma = $System.DeltaSigma
+                phi = $System.DeltaPhi
+            }
+            contracted = [ordered]@{
+                omega = $System.ContractedOmega
+                sigma = $System.ContractedSigma
+                phi = $System.ContractedPhi
+            }
             stage_energies = Get-StageEnergies -System $System
             stage_thresholds = Get-StageThresholds -System $System
             meaning_apex_index = $System.MeaningApexIndex
@@ -315,7 +326,7 @@ function Invoke-PhoenixIgnitionLoop {
     }
 
     if ($OutputPath) {
-        $records | ConvertTo-Json -Depth 6 | Out-File -FilePath $OutputPath -Encoding UTF8
+        @{ iterations = $records } | ConvertTo-Json -Depth 6 | Out-File -FilePath $OutputPath -Encoding UTF8
     }
 
     return [pscustomobject]@{
@@ -330,11 +341,18 @@ function Test-PhoenixSystem {
 
     $errors = @()
 
-    if ($null -eq $System.Curvature) { $errors += "Curvature missing" }
-    if ($null -eq $System.AngularMomentum) { $errors += "AngularMomentum missing" }
-    if ($null -eq $System.RadialTensionInner) { $errors += "RadialTensionInner missing" }
-    if ($null -eq $System.RadialTensionOuter) { $errors += "RadialTensionOuter missing" }
-    if ($null -eq $System.CoreDensity) { $errors += "CoreDensity missing" }
+    $coreValues = @(
+        @{ Name = "Curvature"; Value = $System.Curvature },
+        @{ Name = "AngularMomentum"; Value = $System.AngularMomentum },
+        @{ Name = "RadialTensionInner"; Value = $System.RadialTensionInner },
+        @{ Name = "RadialTensionOuter"; Value = $System.RadialTensionOuter },
+        @{ Name = "CoreDensity"; Value = $System.CoreDensity }
+    )
+    foreach ($entry in $coreValues) {
+        if ([double]::IsNaN($entry.Value) -or [double]::IsInfinity($entry.Value)) {
+            $errors += "$($entry.Name) must be finite"
+        }
+    }
 
     $energies = Get-StageEnergies -System $System
     foreach ($energy in $energies) {
