@@ -15,3 +15,8 @@ operators:
     module: src.au.ops.agn_replication
     function: run
     description: AGN replication gradient evaluation
+  - id: ha-8-1
+    kind: adapter
+    module: src.au.ops.ha_8_1
+    function: run
+    description: HA_8.1 external system adapter — normalizes HA_8.1 payloads into the Apex operator contract
