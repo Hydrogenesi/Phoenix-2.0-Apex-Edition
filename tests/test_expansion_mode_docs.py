@@ -21,7 +21,7 @@ def test_operator_pages_count_and_sections():
         "## Tri-Link Dashboard",
     ]
     for page in pages:
-        text = page.read_text()
+        text = page.read_text(encoding="utf-8")
         for marker in required_markers:
             assert marker in text, f"{marker} missing in {page.name}"
 
@@ -49,8 +49,9 @@ def test_engine_and_animation_docs_exist():
 
 
 def test_mkdocs_nav_includes_new_sections():
-    nav = (ROOT / "mkdocs.yml").read_text()
+    nav = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
     assert "Operators Reference" in nav
     assert "Ceremonies" in nav
     assert "Phoenix Engine (Detailed)" in nav
     assert "Animations" in nav
+
