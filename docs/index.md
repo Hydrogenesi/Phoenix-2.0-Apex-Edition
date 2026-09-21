@@ -41,11 +41,11 @@
 ### New to Phoenix 2.0?
 1. **Start here**: [Origin Set](codex/origin/index.md) - Foundational principles
 2. **Then learn**: Universal Laws - Core governing principles
-3. **Explore**: [Operators](codex/Book05_OperatorsAtlas/INDEX.md) - The operator system
+3. **Explore**: [Operators](codex/Book05_OperatorsAtlas/index.md) - The operator system
 4. **Practice**: [Phoenix Odyssey](codex/Book12_PhoenixOdyssey/INDEX.md) - Implementation guide
 
 ### Experienced Practitioners?
-- **[Operators Atlas](codex/Book05_OperatorsAtlas/INDEX.md)** - Complete reference
+- **[Operators Atlas](codex/Book05_OperatorsAtlas/index.md)** - Complete reference
 - **[Advanced Theory](codex/Book11_OperatorsTestament/INDEX.md)** - Deep dives
 - **[Architecture](codex/Book13_ApexEdition/INDEX.md)** - Why the framework endures
 
@@ -148,13 +148,13 @@ Therefore: lim (n→∞) Kₙ = X
 
 ### Beginner Path
 1. Read [Origin Set](codex/origin/index.md) (Books 1-3)
-2. Learn [Operators Atlas](codex/Book05_OperatorsAtlas/INDEX.md) (Book 5)
+2. Learn [Operators Atlas](codex/Book05_OperatorsAtlas/index.md) (Book 5)
 3. Practice basic invocation sequences
 4. Follow [Phoenix Odyssey](codex/Book12_PhoenixOdyssey/INDEX.md) (Book 12)
 
 ### Intermediate Path
 1. Study [Hydrogenesi Theory](codex/Book03_Hydrogenesi_Theory/INDEX.md) (Book 3)
-2. Learn [Operators Atlas](codex/Book05_OperatorsAtlas/INDEX.md) (Book 5)
+2. Learn [Operators Atlas](codex/Book05_OperatorsAtlas/index.md) (Book 5)
 3. Understand Knot Operators
 4. Work through [Phoenix Odyssey](codex/Book12_PhoenixOdyssey/INDEX.md) (Book 12)
 

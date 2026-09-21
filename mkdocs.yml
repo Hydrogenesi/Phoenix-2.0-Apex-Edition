@@ -42,7 +42,7 @@ nav:
           - Chapters: codex/Book04_FractalContinuum/chapters/
       
       - Book 05 — Operators Atlas:
-          - Overview: codex/Book05_OperatorsAtlas/INDEX.md
+          - Overview: codex/Book05_OperatorsAtlas/index.md
           - Chapters: codex/Book05_OperatorsAtlas/chapters/
           - Operators Reference: codex/Book05_OperatorsAtlas/operators/index.md
           - Composition System: codex/Book05_OperatorsAtlas/operators/composition.md
@@ -81,7 +81,7 @@ nav:
           - Chapters: codex/Book08_SongOfFlame/chapters/
       
       - Book 09 — Phoenix Archive:
-          - Overview: codex/Book09_PhoenixArchive/INDEX.md
+          - Overview: codex/Book09_PhoenixArchive/index.md
           - Chapters: codex/Book09_PhoenixArchive/chapters/
           - Ceremonies: codex/Book09_PhoenixArchive/ceremonies/index.md
           - Sigils: codex/Book09_PhoenixArchive/ceremonies/sigils.md

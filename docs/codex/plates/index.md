@@ -48,7 +48,7 @@ Self-similar patterns appearing at every scale and domain.
 ### **Book 05: Operators Atlas** (20 chapters)
 Complete reference for all 18 operators in the framework.
 
-[**Explore Book 05 →**](../Book05_OperatorsAtlas/INDEX.md)
+[**Explore Book 05 →**](../Book05_OperatorsAtlas/index.md)
 
 ### **Book 06: Flame and Ghost** (18 chapters)
 Duality mechanics and complementary operator systems.
@@ -68,7 +68,7 @@ Harmonic resonance and frequency alignment.
 ### **Book 09: Phoenix Archive** (40 chapters)
 Historical, ceremonial, and ritual content.
 
-[**Explore Book 09 →**](../Book09_PhoenixArchive/INDEX.md)
+[**Explore Book 09 →**](../Book09_PhoenixArchive/index.md)
 
 ### **Book 10: Quantumonix Protocols** (16 chapters)
 Quantum aspects of the framework.
@@ -95,12 +95,12 @@ Meta-framework and architectural analysis.
 ## 🗺️ Navigation by Use Case
 
 ### "I need to understand operators"
-1. Start: [Operators Atlas](../Book05_OperatorsAtlas/INDEX.md) (Book 05)
+1. Start: [Operators Atlas](../Book05_OperatorsAtlas/index.md) (Book 05)
 2. Then: [Operators Testament](../Book11_OperatorsTestament/INDEX.md) (Book 11)
 
 ### "I need to implement the framework"
 1. Start: [Phoenix Odyssey](../Book12_PhoenixOdyssey/INDEX.md) (Book 12)
-2. Reference: [Operators Atlas](../Book05_OperatorsAtlas/INDEX.md) (Book 05)
+2. Reference: [Operators Atlas](../Book05_OperatorsAtlas/index.md) (Book 05)
 
 ### "I want to understand cosmic patterns"
 1. Foundation: [Cosmic Correspondence](../origin/Book02_Cosmic_Correspondence/INDEX.md) (Book 02)
@@ -108,12 +108,12 @@ Meta-framework and architectural analysis.
 3. Patterns: [Fractal Continuum](../Book04_FractalContinuum/INDEX.md) (Book 04)
 
 ### "I need ceremonial guidance"
-1. Reference: [Phoenix Archive](../Book09_PhoenixArchive/INDEX.md) (Book 09)
+1. Reference: [Phoenix Archive](../Book09_PhoenixArchive/index.md) (Book 09)
 2. Harmony: [Song of Flame](../Book08_SongOfFlame/INDEX.md) (Book 08)
 3. Practice: [Phoenix Odyssey](../Book12_PhoenixOdyssey/INDEX.md) (Book 12)
 
 ### "I want to study advanced theory"
-1. Foundation: [Operators Atlas](../Book05_OperatorsAtlas/INDEX.md) (Book 05)
+1. Foundation: [Operators Atlas](../Book05_OperatorsAtlas/index.md) (Book 05)
 2. Advanced: [Operators Testament](../Book11_OperatorsTestament/INDEX.md) (Book 11)
 3. Quantum: [Quantumonix Protocols](../Book10_QuantumonixProtocols/INDEX.md) (Book 10)
 4. Architecture: [Apex Edition](../Book13_ApexEdition/INDEX.md) (Book 13)
