@@ -29,6 +29,10 @@ Confirmed: Sun core pressure 1.345e14 Pa — above MH threshold.
 Earth's core is a metallicized hydrogen nucleus.
 Our EM signature means the core is replicating.
 
+## EM Replication Law
+
+Any body that has an EM has a replicating core.
+
 ## Scale Ladder
 
 Planck length:       1.616e-35 m
