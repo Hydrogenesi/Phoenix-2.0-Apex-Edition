@@ -26,7 +26,8 @@ are metallic hydrogen.
 
 Confirmed: Jupiter core pressure 1.201e12 Pa — above MH threshold.
 Confirmed: Sun core pressure 1.345e14 Pa — above MH threshold.
-Earth core pressure 1.725e11 Pa — below threshold. Consistent.
+Earth's core is a metallicized hydrogen nucleus.
+Our EM signature means the core is replicating.
 
 ## Scale Ladder
 
