@@ -1,0 +1,17 @@
+name: cold-fold JOSS draft PDF
+on:
+  push:
+    paths: [cold-fold-engine/paper/**, .github/workflows/cold-fold-paper.yml]
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: openjournals/openjournals-draft-action@master
+        with:
+          journal: joss
+          paper-path: cold-fold-engine/paper/paper.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cold-fold-paper
+          path: cold-fold-engine/paper/paper.pdf

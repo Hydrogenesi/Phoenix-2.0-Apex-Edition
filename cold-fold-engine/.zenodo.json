@@ -1,0 +1,9 @@
+{
+  "title": "cold_fold_engine: a deterministic, verifiable plate-pipeline state machine",
+  "upload_type": "software",
+  "description": "A dependency-free Python engine in which each stage declares preconditions, a pure transition and postconditions, returning COMPLETE, BLOCKED or FAILED. State is immutable and every run produces a SHA-256 trace digest, so reproducibility is machine-checkable.",
+  "creators": [{"name": "James Stanley", "orcid": "[ORCID]"}],
+  "license": "MIT",
+  "keywords": ["deterministic systems", "finite-state machines", "reproducibility", "design by contract", "Cold Fold"],
+  "access_right": "open"
+}
