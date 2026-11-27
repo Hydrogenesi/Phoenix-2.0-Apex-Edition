@@ -1,0 +1,26 @@
+name: cold-fold-engine
+on:
+  push:
+    paths: [cold-fold-engine/**, .github/workflows/cold-fold-engine.yml]
+  pull_request:
+    paths: [cold-fold-engine/**, .github/workflows/cold-fold-engine.yml]
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: cold-fold-engine
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[test]"
+      - run: python -m pytest tests -q -c /dev/null
+        shell: bash
+      - run: python runner.py organism --out runs
+      - run: python cold_fold_pyto.py

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cold-fold-engine"
+version = "7.1.0"
+description = "A deterministic, verifiable plate-pipeline state machine"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "James Stanley"}]
+keywords = ["deterministic", "state machine", "reproducibility", "design by contract", "Cold Fold"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/tree/main/cold-fold-engine"
+Issues = "https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/issues"
+
+[tool.setuptools.packages.find]
+include = ["cold_fold_engine*"]
