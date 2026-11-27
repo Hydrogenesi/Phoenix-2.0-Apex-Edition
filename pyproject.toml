@@ -5,7 +5,19 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hydrogenesis"
 version = "0.1.0"
-description = "Your project description"
+description = "Phoenix 2.0 Apex Edition, including the Cold Fold Engine (executable Cold Fold codex)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "James Stanley" }]
 requires-python = ">=3.13"
+dependencies = ["numpy", "scipy"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "pytest-cov"]
+
+[project.urls]
+Homepage = "https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition"
+Issues = "https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition/issues"
+
 [tool.setuptools.packages.find]
-include = ["Hydrogenesi*"]
+include = ["Hydrogenesi*", "cold_fold*"]

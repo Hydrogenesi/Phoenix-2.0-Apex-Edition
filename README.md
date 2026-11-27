@@ -876,3 +876,25 @@ Phoenix-2.0-Apex-Edition v2.0.0-apex finalized on July 23, 2026
 **Bound through 🔗 The Third**  
 **Converging to △ Apex**
 
+
+---
+
+## ❄️ Cold Fold Engine
+
+The **Cold Fold Engine** (`cold_fold/`) is the executable form of the Cold Fold
+Codex by James Stanley. It encodes the codex's operators (`COLD_FOLD()`,
+`IGNITE_ACCRETION()`, …) as ordered state sequences, checks its laws (the
+Secretion Law, *no secretion, no accretion*; the Current Law, *no current, no
+replication*; the Tri-Plate and Neutron Hinge Laws) as invariants, and ties
+each claim to the raw measurement that would test it.
+
+The current paradigm and the codex are both interpretations of the
+observations; neither owns the data.
+
+```bash
+pip install -e ".[test]"
+python -m pytest
+```
+
+The JOSS paper for the engine is in [`paper/`](paper/paper.md). Please cite the
+software using [`CITATION.cff`](CITATION.cff) (GitHub's **Cite this repository** button).

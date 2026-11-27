@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Phoenix 2.0 Apex Edition — Cold Fold Engine"
+type: software
+authors:
+  - family-names: Stanley
+    given-names: James
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add your ORCID iD
+version: 0.1.0
+date-released: 2026-11-27
+license: MIT
+repository-code: "https://github.com/Hydrogenesi/Phoenix-2.0-Apex-Edition"
